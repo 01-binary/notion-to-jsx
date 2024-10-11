@@ -1,6 +1,7 @@
 {
   "name": "notion-to-jsx",
   "private": true,
+  "author": "Jinsoo Lee",
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
