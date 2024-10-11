@@ -10,6 +10,8 @@
   "author": "Jinsoo Lee",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*"
   }
 }
