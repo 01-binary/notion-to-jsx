@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "author": "Jinsoo Lee",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
 }
