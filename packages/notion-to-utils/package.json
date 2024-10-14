@@ -11,9 +11,12 @@
   "author": "Jinsoo Lee",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^5.6.3",
-    "vitest": "^2.1.2",
     "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*"
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.2"
+  },
+  "dependencies": {
+    "@notionhq/client": "^2.2.15"
   }
 }
