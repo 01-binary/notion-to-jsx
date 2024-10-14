@@ -82,6 +82,18 @@ importers:
         specifier: ^5.3.3
         version: 5.6.3
 
+  packages/#types:
+    devDependencies:
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../#eslint-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../#typescript-config
+      typescript:
+        specifier: ^5.6.3
+        version: 5.6.3
+
   packages/#typescript-config: {}
 
   packages/notion-to-jsx:
