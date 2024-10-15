@@ -2,6 +2,7 @@ import { Client as NotionClient } from '@notionhq/client';
 
 import type { ClientOptions } from '@notionhq/client/build/src/Client';
 import { isPageObjectResponse } from '../page/isPageObjectResponse';
+import { isPropertyFileType } from '../file/isPropertyFileType';
 
 export class Client extends NotionClient {
   constructor(options: ClientOptions = {}) {
@@ -33,6 +34,22 @@ export class Client extends NotionClient {
       return filteredProperties; // 추출된 properties 반환
     }
 
+    return;
+  }
+
+  async getFileUrl(pageId: string, propertyKey: string) {
+    const res = await this.pages.retrieve({
+      page_id: pageId,
+    });
+
+    if (isPropertyFileType(res, propertyKey)) {
+      const property = res.properties[propertyKey]!;
+      const fileObj = property.files[0];
+      if ('file' in fileObj) {
+        const fileUrl = fileObj.file.url;
+        return fileUrl;
+      }
+    }
     return;
   }
 }
