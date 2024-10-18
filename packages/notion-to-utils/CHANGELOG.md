@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 0.3.0
+
+### Minor Changes
+
+- Test
+
 ## 0.2.1
 
 ### Patch Changes
