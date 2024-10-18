@@ -7,7 +7,6 @@
     "url": "https://github.com/01-binary/notion-to-jsx",
     "directory": "/packages/notion-to-utils"
   },
-  "type": "module",
   "exports": {
     ".": {
       "import": {
