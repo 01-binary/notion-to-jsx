@@ -6,7 +6,7 @@
   "scripts": {
     "test": "vitest",
     "test:watch": "vitest --watch",
-    "build": "tsup src/index.ts --format cjs,esm --dts --minify"
+    "build": "tsup"
   },
   "keywords": [],
   "author": "Jinsoo Lee",
