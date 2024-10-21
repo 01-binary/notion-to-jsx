@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 0.4.0
+
+### Minor Changes
+
+- commonjs 추가
+
 ## 0.3.0
 
 ### Minor Changes
