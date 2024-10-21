@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 0.4.3
+
+### Patch Changes
+
+- notionhq api-endpoints type d.ts 명시
+
 ## 0.4.2
 
 ### Patch Changes
