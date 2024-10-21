@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 0.4.2
+
+### Patch Changes
+
+- notionhq api-endpoints type wrapping
+
 ## 0.4.1
 
 ### Patch Changes
