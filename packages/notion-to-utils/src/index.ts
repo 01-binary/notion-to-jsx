@@ -1,2 +1,12 @@
 export * from './client';
-export type * from '@notionhq/client/build/src/api-endpoints.d.ts';
+
+import type {
+  PageObjectResponse,
+  MultiSelectPropertyItemObjectResponse,
+  GetPageResponse,
+} from '@notionhq/client/build/src/api-endpoints';
+export type {
+  PageObjectResponse,
+  MultiSelectPropertyItemObjectResponse,
+  GetPageResponse,
+};

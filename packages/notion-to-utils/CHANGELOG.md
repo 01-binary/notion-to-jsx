@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 0.4.4
+
+### Patch Changes
+
+- type 명시 추가
+
 ## 0.4.3
 
 ### Patch Changes
