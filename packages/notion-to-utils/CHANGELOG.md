@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 0.4.1
+
+### Patch Changes
+
+- require exports add
+
 ## 0.4.0
 
 ### Minor Changes
