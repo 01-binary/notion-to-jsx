@@ -23,10 +23,10 @@ const getFileUrlValidMock = {
       files: [
         {
           file: {
-            url: 'https://~~',
-            expiry_time: 'string',
+            url: 'https://example.com/file.pdf',
+            expiry_time: '2023-05-05T12:00:00.000Z',
           },
-          name: 'test',
+          name: 'test.pdf',
           type: 'file',
         },
       ],
@@ -46,9 +46,27 @@ const getFileUrlInValidMock = {
   },
 };
 
+const getFileUrlExternalMock = {
+  object: 'page',
+  properties: {
+    [KEY]: {
+      type: 'files',
+      files: [
+        {
+          name: 'External File',
+          type: 'external',
+          external: {
+            url: 'https://example.com/external-file.pdf',
+          },
+        },
+      ],
+      id: '1',
+    },
+  },
+};
+
 describe('getFileUrl', () => {
-  it('should return fileUrl when valid pageId, valid propertyKey are provided', async () => {
-    // Mock the notionClient.pages.retrieve method
+  it('유효한 pageId와 유효한 propertyKey가 제공될 때 fileUrl을 반환한다', async () => {
     notionClient.pages.retrieve = vi
       .fn()
       .mockResolvedValue(getFileUrlValidMock);
@@ -57,23 +75,57 @@ describe('getFileUrl', () => {
     expect(fileUrl).toEqual(
       getFileUrlValidMock.properties[KEY].files[0]?.file.url
     );
+    expect(notionClient.pages.retrieve).toHaveBeenCalledWith({
+      page_id: TEST_ID,
+    });
   });
 
-  it('should return undefined when invalid pageId, valid propertyKey are provided', async () => {
+  it('유효하지 않은 pageId와 유효한 propertyKey가 제공될 때 undefined를 반환한다', async () => {
     notionClient.pages.retrieve = vi
       .fn()
       .mockResolvedValue(getFileUrlInValidMock);
 
     const fileUrl = await notionClient.getFileUrl(TEST_ID, KEY);
     expect(fileUrl).toBeUndefined();
+    expect(notionClient.pages.retrieve).toHaveBeenCalledWith({
+      page_id: TEST_ID,
+    });
   });
 
-  it('should return undefined when valid pageId, invalid propertyKey are provided', async () => {
+  it('유효한 pageId와 유효하지 않은 propertyKey가 제공될 때 undefined를 반환한다', async () => {
     notionClient.pages.retrieve = vi
       .fn()
       .mockResolvedValue(getFileUrlValidMock);
 
-    const fileUrl = await notionClient.getFileUrl(TEST_ID, 'temp');
+    const fileUrl = await notionClient.getFileUrl(TEST_ID, 'invalidKey');
     expect(fileUrl).toBeUndefined();
+    expect(notionClient.pages.retrieve).toHaveBeenCalledWith({
+      page_id: TEST_ID,
+    });
+  });
+
+  it('외부 파일 타입에 대해 undefined를 반환한다', async () => {
+    notionClient.pages.retrieve = vi
+      .fn()
+      .mockResolvedValue(getFileUrlExternalMock);
+
+    const fileUrl = await notionClient.getFileUrl(TEST_ID, KEY);
+    expect(fileUrl).toBeUndefined();
+    expect(notionClient.pages.retrieve).toHaveBeenCalledWith({
+      page_id: TEST_ID,
+    });
+  });
+
+  it('API 오류를 적절히 처리한다', async () => {
+    notionClient.pages.retrieve = vi
+      .fn()
+      .mockRejectedValue(new Error('API Error'));
+
+    await expect(notionClient.getFileUrl(TEST_ID, KEY)).rejects.toThrow(
+      'API Error'
+    );
+    expect(notionClient.pages.retrieve).toHaveBeenCalledWith({
+      page_id: TEST_ID,
+    });
   });
 });
