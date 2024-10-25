@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 0.4.6
+
+### Patch Changes
+
+- test 및 client 메소드 분리
+
 ## 0.4.5
 
 ### Patch Changes
