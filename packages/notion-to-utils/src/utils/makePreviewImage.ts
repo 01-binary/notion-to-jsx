@@ -1,5 +1,3 @@
-import lqip from 'lqip-modern';
-
 export interface PreviewImage {
   originalWidth: number;
   originalHeight: number;
@@ -24,9 +22,13 @@ export const makePreviewImage = async (url: string) => {
     const response = await fetch(url);
     const buffer = Buffer.from(await response.arrayBuffer());
 
+    // 동적 import 사용
+    const lqip = (await import('lqip-modern')).default;
+
     const {
       metadata: { dataURIBase64, originalHeight, originalWidth },
     } = await lqip(buffer);
+
     const result: PreviewImage = {
       dataURIBase64,
       originalHeight,

@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 0.4.8
+
+### Patch Changes
+
+- Dynamic import 추가
+
 ## 0.4.7
 
 ### Patch Changes
