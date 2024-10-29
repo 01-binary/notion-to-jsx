@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 0.4.14
+
+### Patch Changes
+
+- preview 함수 제외
+
 ## 0.4.13
 
 ### Patch Changes
