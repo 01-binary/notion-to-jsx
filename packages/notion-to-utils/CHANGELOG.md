@@ -1,5 +1,17 @@
 # notion-to-utils
 
+## 0.4.10
+
+### Patch Changes
+
+- version up
+
+## 0.4.9
+
+### Patch Changes
+
+- tsup externals 추가
+
 ## 0.4.8
 
 ### Patch Changes
