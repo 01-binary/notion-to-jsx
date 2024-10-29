@@ -1,5 +1,17 @@
 # notion-to-utils
 
+## 0.4.13
+
+### Patch Changes
+
+- test
+
+## 0.4.12
+
+### Patch Changes
+
+- external lqip-modern 추가
+
 ## 0.4.11
 
 ### Patch Changes

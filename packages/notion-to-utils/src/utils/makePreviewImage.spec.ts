@@ -1,12 +1,4 @@
-import {
-  describe,
-  it,
-  expect,
-  beforeEach,
-  vi,
-  beforeAll,
-  afterEach,
-} from 'vitest';
+import { describe, it, expect, vi, beforeAll, afterEach } from 'vitest';
 import { makePreviewImage } from './makePreviewImage';
 import lqip from 'lqip-modern';
 
