@@ -1,6 +1,6 @@
 {
   "name": "notion-to-utils",
-  "version": "0.4.14",
+  "version": "0.4.15",
   "description": "",
   "repository": {
     "type": "git",
@@ -40,8 +40,6 @@
     "vitest": "^2.1.2"
   },
   "dependencies": {
-    "@notionhq/client": "^2.2.15",
-    "@types/lqip-modern": "^1.1.7",
-    "lqip-modern": "^2.1.0"
+    "@notionhq/client": "^2.2.15"
   }
 }

@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 0.4.15
+
+### Patch Changes
+
+- lqip lib 삭제
+
 ## 0.4.14
 
 ### Patch Changes
