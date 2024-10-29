@@ -9,5 +9,5 @@ export default defineConfig({
   clean: true,
   dts: true,
   minify: true,
-  external: ['@notionhq/client', 'lqip-modern', '@types/lqip-modern'],
+  external: ['@notionhq'],
 });

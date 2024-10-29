@@ -1,5 +1,5 @@
 export * from './client';
-export * from './utils';
+// export * from './utils'; // ? lqip-modern 사이즈 문제로 일단 제외
 
 import type {
   PageObjectResponse,
