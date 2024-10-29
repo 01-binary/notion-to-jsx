@@ -5,6 +5,12 @@ import {
 
 type NonEmptyArray<T> = [T, ...T[]];
 
+/**
+ * Type guard function to check if a property of a Notion page is a files property and contains at least one file
+ * @param {GetPageResponse} obj - The response object from Notion API
+ * @param {keyof PageObjectResponse['properties']} propertyKey - The key of the property to check
+ * @returns {boolean} True if the property exists, is of type 'files', and contains at least one file
+ */
 export const isPropertyFileType = (
   obj: GetPageResponse,
   propertyKey: keyof PageObjectResponse['properties']

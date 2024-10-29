@@ -1,5 +1,5 @@
 import { Client } from '@notionhq/client';
-import { isPropertyFileType } from '../file/isPropertyFileType';
+import { isPropertyFileType } from './utils/isPropertyFileType';
 /**
  * Retrieves the URL of a file attached to a specific property of a Notion page.
  *

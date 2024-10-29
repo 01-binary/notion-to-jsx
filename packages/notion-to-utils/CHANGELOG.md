@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 0.4.7
+
+### Patch Changes
+
+- makePreviewImage 추가
+
 ## 0.4.6
 
 ### Patch Changes

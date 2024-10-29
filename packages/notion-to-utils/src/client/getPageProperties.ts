@@ -1,5 +1,5 @@
 import { Client } from '@notionhq/client';
-import { isPageObjectResponse } from '../page/isPageObjectResponse';
+import { isPageObjectResponse } from './utils/isPageObjectResponse';
 
 /**
  * Retrieves properties of a Notion page.
