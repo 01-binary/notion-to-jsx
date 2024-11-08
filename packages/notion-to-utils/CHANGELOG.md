@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 0.4.16
+
+### Patch Changes
+
+- 9ee675a: asd
+
 ## 0.4.15
 
 ### Patch Changes
