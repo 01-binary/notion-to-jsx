@@ -8,7 +8,9 @@
     "lint": "turbo lint",
     "test": "turbo run test",
     "test:watch": "turbo run test:watch",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "version": "changeset version",
+    "publish": "changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.9",
