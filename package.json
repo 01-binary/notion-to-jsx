@@ -9,7 +9,7 @@
     "test": "turbo run test",
     "test:watch": "turbo run test:watch",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "version": "changeset version",
+    "packages-version": "changeset version",
     "publish": "changeset publish"
   },
   "devDependencies": {
