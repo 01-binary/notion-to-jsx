@@ -2,6 +2,7 @@
   "name": "notion-to-jsx",
   "version": "0.0.0",
   "description": "",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/01-binary/notion-to-jsx",

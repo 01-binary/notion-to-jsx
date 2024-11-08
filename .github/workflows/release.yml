@@ -25,14 +25,21 @@ jobs:
         with:
           version: 9
 
-      - name: Create .npmrc file
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
 
-      - name: Create Release Pull Request
+      - name: Creating .npmrc
+        run: |
+          cat << EOF > "$HOME/.npmrc"
+            //registry.npmjs.org/:_authToken=$NPM_TOKEN
+          EOF
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Create Release Pull Request or Publish to npm
         uses: changesets/action@v1
         with:
-          version: pnpm packages-version
-          publish: pnpm publish
+          publish: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
