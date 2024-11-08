@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 0.4.17
+
+### Patch Changes
+
+- 3606472: 원복
+
 ## 0.4.16
 
 ### Patch Changes
