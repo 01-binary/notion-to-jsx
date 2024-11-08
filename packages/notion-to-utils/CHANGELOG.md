@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 0.4.18
+
+### Patch Changes
+
+- 9ab8f6f: build 커맨드 추가
+
 ## 0.4.17
 
 ### Patch Changes
