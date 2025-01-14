@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 0.4.21
+
+### Patch Changes
+
+- f3ee87e: makePreviewImage error return null
+
 ## 0.4.20
 
 ### Patch Changes
