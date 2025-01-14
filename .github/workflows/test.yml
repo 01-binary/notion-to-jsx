@@ -31,8 +31,8 @@ jobs:
       - name: Run tests with coverage
         run: pnpm --filter notion-to-utils test -- --coverage
 
-      # - name: Report Coverage
-      #   uses: davelosert/vitest-coverage-report-action@v2
-      #   with:
-      #     working-directory: packages/notion-to-utils
-      #     vite-config-path: vitest.config.ts
+      - name: Report Coverage
+        uses: davelosert/vitest-coverage-report-action@v2
+        with:
+          working-directory: packages/notion-to-utils
+          vite-config-path: vitest.config.ts
