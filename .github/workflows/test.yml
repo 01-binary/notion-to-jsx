@@ -35,8 +35,8 @@ jobs:
         uses: EnricoMi/publish-unit-test-result-action@v2
         if: always()
         with:
-          working-directory: packages/notion-to-utils
-          files: test-results.xml
+          files: |
+            packages/notion-to-utils/test-results.xml
           check_name: Unit Test Report
 
       - name: Report Coverage
