@@ -52,7 +52,7 @@ describe('makePreviewImage', () => {
     expect(lqip).toHaveBeenCalledWith(mockBuffer);
   });
 
-  it('에러가 발생했을 때 undefined를 반환한다', async () => {
+  it('에러가 발생했을 때 null를 반환한다', async () => {
     const mockImageUrl = 'https://example.com/invalid-image.jpg';
 
     // fetch 에러 시뮬레이션
@@ -62,6 +62,6 @@ describe('makePreviewImage', () => {
 
     const result = await makePreviewImage(mockImageUrl);
 
-    expect(result).toBeUndefined();
+    expect(result).toBeNull();
   });
 });
