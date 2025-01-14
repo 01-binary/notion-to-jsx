@@ -31,8 +31,16 @@ jobs:
       - name: Run tests with coverage
         run: pnpm --filter notion-to-utils test -- --coverage
 
-      # - name: Report Coverage
-      #   uses: davelosert/vitest-coverage-report-action@v2
-      #   with:
-      #     working-directory: packages/notion-to-utils
-      #     vite-config-path: vitest.config.ts
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v2
+        if: always()
+        with:
+          files: |
+            packages/notion-to-utils/test-results.xml
+          check_name: Unit Test Report
+
+      - name: Report Coverage
+        uses: davelosert/vitest-coverage-report-action@v2
+        with:
+          working-directory: packages/notion-to-utils
+          vite-config-path: vitest.config.ts
