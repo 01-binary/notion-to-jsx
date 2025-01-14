@@ -31,6 +31,14 @@ jobs:
       - name: Run tests with coverage
         run: pnpm --filter notion-to-utils test -- --coverage
 
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v2
+        if: always()
+        with:
+          working-directory: packages/notion-to-utils
+          files: test-results.xml
+          check_name: Unit Test Report
+
       - name: Report Coverage
         uses: davelosert/vitest-coverage-report-action@v2
         with:
