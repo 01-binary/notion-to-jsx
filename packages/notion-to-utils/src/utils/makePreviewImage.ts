@@ -36,6 +36,6 @@ export const makePreviewImage = async (url: string) => {
     };
     return result;
   } catch (error) {
-    return undefined;
+    return null;
   }
 };
