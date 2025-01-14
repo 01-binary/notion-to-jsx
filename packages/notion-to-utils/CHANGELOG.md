@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 0.4.20
+
+### Patch Changes
+
+- c1b5928: makePreviewImage add
+
 ## 0.4.19
 
 ### Patch Changes
