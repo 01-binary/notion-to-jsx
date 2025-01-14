@@ -37,10 +37,12 @@
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@types/lqip-modern": "^1.1.7",
     "typescript": "^5.6.3",
     "vitest": "^2.1.2"
   },
   "dependencies": {
-    "@notionhq/client": "^2.2.15"
+    "@notionhq/client": "^2.2.15",
+    "lqip-modern": "^2.2.1"
   }
 }
