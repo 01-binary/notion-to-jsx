@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Renderer } from './Renderer';
+import { Renderer } from '../components/Renderer';
 import { NotionBlock } from '../types';
 
 const meta = {

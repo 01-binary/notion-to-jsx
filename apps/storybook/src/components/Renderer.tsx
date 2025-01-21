@@ -13,10 +13,10 @@ import {
   MemoizedRichText,
   MemoizedImage,
   MemoizedBookmark,
-} from '../components/MemoizedComponents';
+} from './MemoizedComponents';
 import { useKeyboardNavigation } from '../hooks/useKeyboardNavigation';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
-import testData from './test.json';
+import testData from '../constants/test.json';
 
 interface RichTextItem {
   type: 'text';
@@ -54,7 +54,7 @@ const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
 `;
 
 const Container = styled.div`
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   padding: ${({ theme }) => theme.spacing.xl};
 `;
