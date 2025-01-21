@@ -3,11 +3,11 @@
   "private": true,
   "author": "Jinsoo Lee",
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "test": "turbo run test",
-    "test:watch": "turbo run test:watch",
+    "build": "turbo build --filter=!./apps/storybook",
+    "dev": "turbo dev --filter=!./apps/storybook",
+    "lint": "turbo lint --filter=!./apps/storybook",
+    "test": "turbo run test --filter=!./apps/storybook",
+    "test:watch": "turbo run test:watch --filter=!./apps/storybook",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "packages-version": "changeset version",
     "release": "changeset publish"
