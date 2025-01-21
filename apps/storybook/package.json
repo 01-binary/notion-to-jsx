@@ -10,9 +10,13 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@types/prismjs": "^1.26.5",
+    "@types/styled-components": "^5.1.34",
     "notion-to-utils": "workspace:*",
+    "prismjs": "^1.29.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "styled-components": "^6.1.14"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.4",
