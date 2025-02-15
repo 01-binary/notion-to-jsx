@@ -5,6 +5,8 @@
   "scripts": {
     "build": "turbo build --filter=!./apps/storybook",
     "dev": "turbo dev --filter=!./apps/storybook",
+    "storybook": "turbo run storybook",
+    "build-storybook": "turbo run build-storybook",
     "lint": "turbo lint --filter=!./apps/storybook",
     "test": "turbo run test --filter=!./apps/storybook",
     "test:watch": "turbo run test:watch --filter=!./apps/storybook",
