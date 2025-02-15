@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Renderer } from '../components/Renderer';
-import { NotionBlock } from '../types';
+import { Renderer, NotionBlock } from 'notion-to-jsx';
 
 const meta = {
   title: 'Components/Renderer',
