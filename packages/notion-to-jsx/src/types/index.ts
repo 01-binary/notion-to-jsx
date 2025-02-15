@@ -19,7 +19,16 @@ export interface RichTextItem {
 export interface NotionBlock {
   object: 'block';
   id: string;
-  type: 'paragraph' | 'heading_1' | 'heading_2' | 'heading_3' | 'bulleted_list_item' | 'numbered_list_item' | 'code' | 'image' | 'bookmark';
+  type:
+    | 'paragraph'
+    | 'heading_1'
+    | 'heading_2'
+    | 'heading_3'
+    | 'bulleted_list_item'
+    | 'numbered_list_item'
+    | 'code'
+    | 'image'
+    | 'bookmark';
   paragraph?: {
     rich_text: RichTextItem[];
     color: string;

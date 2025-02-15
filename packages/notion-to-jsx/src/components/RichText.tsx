@@ -39,7 +39,7 @@ const StyledText = styled.span<StyledTextProps>`
   }};
 `;
 
-interface RichTextProps {
+export interface RichTextProps {
   richText: RichTextItem[];
 }
 
@@ -47,7 +47,8 @@ export const RichText: React.FC<RichTextProps> = ({ richText }) => {
   return (
     <>
       {richText.map((text, index) => {
-        const { bold, italic, strikethrough, underline, code, color } = text.annotations;
+        const { bold, italic, strikethrough, underline, code, color } =
+          text.annotations;
 
         const content = text.text.link ? (
           <a

@@ -1,7 +1,7 @@
 // import { Client } from 'notion-to-utils';
 import React, { useEffect, useState, useMemo, useCallback } from 'react';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
-import Prism from 'prismjs';
+import Prism, { Grammar } from 'prismjs';
 import 'prismjs/themes/prism.css';
 import 'prismjs/components/prism-typescript';
 import 'prismjs/components/prism-javascript';
@@ -42,16 +42,16 @@ const notion = {
   },
 };
 
-const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
-  body {
-    background-color: ${({ theme }) => theme.colors.background};
-    color: ${({ theme }) => theme.colors.text};
-    font-family: ${({ theme }) => theme.typography.fontFamily.base};
-    line-height: ${({ theme }) => theme.typography.lineHeight.base};
-    margin: 0;
-    padding: 0;
-  }
-`;
+// const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
+//   body {
+//     background-color: ${({ theme }) => theme.colors.background};
+//     color: ${({ theme }) => theme.colors.text};
+//     font-family: ${({ theme }) => theme.typography.fontFamily.base};
+//     line-height: ${({ theme }) => theme.typography.lineHeight.base};
+//     margin: 0;
+//     padding: 0;
+//   }
+// `;
 
 const Container = styled.div`
   max-width: 900px;
@@ -148,7 +148,7 @@ const CodeBlock: React.FC<{
   const highlightedCode = useMemo(() => {
     const prismLanguage =
       Prism.languages[language] || Prism.languages.plaintext;
-    return Prism.highlight(code, prismLanguage, language);
+    return Prism.highlight(code, prismLanguage as Grammar, language);
   }, [code, language]);
 
   return (
@@ -173,7 +173,9 @@ const ListBlocksRenderer: React.FC<{
 }> = ({ blocks, startIndex, type }) => {
   let consecutiveItems = 0;
   for (let i = startIndex; i < blocks.length; i++) {
-    if (blocks[i].type === `${type}_list_item`) {
+    const block = blocks[i];
+    if (!block) break;
+    if (block.type === `${type}_list_item`) {
       consecutiveItems++;
     } else {
       break;
@@ -182,9 +184,15 @@ const ListBlocksRenderer: React.FC<{
 
   return (
     <List as={type === 'numbered' ? 'ol' : 'ul'} type={type}>
-      {blocks.slice(startIndex, startIndex + consecutiveItems).map((block) => (
-        <BlockRenderer key={block.id} block={block} />
-      ))}
+      {blocks
+        .slice(startIndex, startIndex + consecutiveItems)
+        .map((block, index) => (
+          <BlockRenderer
+            key={block.id}
+            block={block}
+            index={startIndex + index}
+          />
+        ))}
     </List>
   );
 };
@@ -237,7 +245,7 @@ const BlockRenderer: React.FC<{
       );
     case 'bulleted_list_item':
       return (
-        <ListItem ref={ref} tabIndex={0} role="listitem">
+        <ListItem ref={ref as any} tabIndex={0} role="listitem">
           {block.bulleted_list_item?.rich_text && (
             <MemoizedRichText richText={block.bulleted_list_item.rich_text} />
           )}
@@ -245,7 +253,7 @@ const BlockRenderer: React.FC<{
       );
     case 'numbered_list_item':
       return (
-        <ListItem ref={ref} tabIndex={0} role="listitem">
+        <ListItem ref={ref as any} tabIndex={0} role="listitem">
           {block.numbered_list_item?.rich_text && (
             <MemoizedRichText richText={block.numbered_list_item.rich_text} />
           )}
@@ -347,10 +355,11 @@ export const Renderer: React.FC<{
 
     for (let i = 0; i < blocks.length; i++) {
       const block = blocks[i];
+      if (!block) break;
 
       if (
         block.type === 'bulleted_list_item' &&
-        (i === 0 || blocks[i - 1].type !== 'bulleted_list_item')
+        (i === 0 || blocks[i - 1]?.type !== 'bulleted_list_item')
       ) {
         result.push(
           <List
@@ -369,18 +378,19 @@ export const Renderer: React.FC<{
         );
         while (
           i + 1 < blocks.length &&
-          blocks[i + 1].type === 'bulleted_list_item'
+          blocks[i + 1] &&
+          blocks[i + 1]?.type === 'bulleted_list_item'
         ) {
           i++;
         }
       } else if (
         block.type === 'numbered_list_item' &&
-        (i === 0 || blocks[i - 1].type !== 'numbered_list_item')
+        (i === 0 || blocks[i - 1]?.type !== 'numbered_list_item')
       ) {
         result.push(
           <List
             as="ol"
-            type="numbered"
+            type="1"
             role="list"
             aria-label="Numbered list"
             key={block.id}
@@ -394,7 +404,8 @@ export const Renderer: React.FC<{
         );
         while (
           i + 1 < blocks.length &&
-          blocks[i + 1].type === 'numbered_list_item'
+          blocks[i + 1] &&
+          blocks[i + 1]?.type === 'numbered_list_item'
         ) {
           i++;
         }
@@ -418,7 +429,7 @@ export const Renderer: React.FC<{
 
   return (
     <ThemeProvider theme={theme}>
-      <GlobalStyle />
+      {/* <GlobalStyle /> */}
       <Container role="main" aria-label="Notion page content">
         {renderedBlocks}
       </Container>

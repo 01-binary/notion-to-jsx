@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { RichTextItem } from '../types';
 import { RichText } from './RichText';
 
-interface ImageProps {
+export interface ImageProps {
   src: string;
   alt: string;
   caption?: RichTextItem[];
@@ -46,7 +46,12 @@ const Caption = styled.figcaption`
   font-size: ${({ theme }) => theme.typography.fontSize.small};
 `;
 
-export const Image: React.FC<ImageProps> = ({ src, alt, caption, priority = false }) => {
+export const Image: React.FC<ImageProps> = ({
+  src,
+  alt,
+  caption,
+  priority = false,
+}) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [error, setError] = useState(false);
 
@@ -58,16 +63,8 @@ export const Image: React.FC<ImageProps> = ({ src, alt, caption, priority = fals
   return (
     <figure>
       <ImageContainer>
-        {!isLoaded && !error && (
-          <Placeholder>
-            Loading...
-          </Placeholder>
-        )}
-        {error && (
-          <Placeholder>
-            Failed to load image
-          </Placeholder>
-        )}
+        {!isLoaded && !error && <Placeholder>Loading...</Placeholder>}
+        {error && <Placeholder>Failed to load image</Placeholder>}
         <StyledImage
           src={src}
           alt={alt}

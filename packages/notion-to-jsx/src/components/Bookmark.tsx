@@ -10,7 +10,7 @@ interface OpenGraphData {
   siteName: string;
 }
 
-interface BookmarkProps {
+export interface BookmarkProps {
   url: string;
   caption?: RichTextItem[];
 }
@@ -75,7 +75,7 @@ const fetchOpenGraphData = async (url: string): Promise<OpenGraphData> => {
     title: new URL(url).hostname,
     description: 'No description available',
     image: '',
-    siteName: new URL(url).hostname.split('.')[1]
+    siteName: new URL(url).hostname.split('.')[1] as string,
   };
 };
 
@@ -97,12 +97,21 @@ export const Bookmark: React.FC<BookmarkProps> = ({ url, caption }) => {
   }, [url]);
 
   return (
-    <a href={url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ textDecoration: 'none' }}
+    >
       <Card>
-        {ogData?.image && <PreviewImage src={ogData.image} alt={ogData.title} loading="lazy" />}
+        {ogData?.image && (
+          <PreviewImage src={ogData.image} alt={ogData.title} loading="lazy" />
+        )}
         <Content>
           <Title>{ogData?.title || url}</Title>
-          {ogData?.description && <Description>{ogData.description}</Description>}
+          {ogData?.description && (
+            <Description>{ogData.description}</Description>
+          )}
           {ogData?.siteName && <SiteName>{ogData.siteName}</SiteName>}
           {caption && caption.length > 0 && (
             <Caption>
