@@ -1,5 +1,5 @@
 import { BlockRenderer } from '../Block';
-import { List } from './styles';
+import { List } from './List';
 
 export interface Props {
   blocks: any[];

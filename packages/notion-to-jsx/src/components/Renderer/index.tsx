@@ -6,6 +6,7 @@ import { NotionBlock } from '../../types';
 import testData from '../../constants/test.json';
 import { useKeyboardNavigation } from '../../hooks/useKeyboardNavigation';
 import { darkTheme, lightTheme } from '../../styles/theme.css';
+import { List } from './components/List';
 // import { BlockRenderer } from './components/Block';
 // import { List, ListBlocksRenderer } from './components/List';
 
@@ -65,22 +66,21 @@ export const Renderer: React.FC<Props> = React.memo(
           block.type === 'bulleted_list_item' &&
           (i === 0 || blocks[i - 1]?.type !== 'bulleted_list_item')
         ) {
-          result
-            .push
-            // <List
-            //   as="ul"
-            //   type="bulleted"
-            //   role="list"
-            //   aria-label="Bulleted list"
-            //   key={block.id}
-            // >
-            //   <ListBlocksRenderer
-            //     blocks={blocks}
-            //     startIndex={i}
-            //     type="bulleted"
-            //   />
-            // </List>
-            ();
+          result.push(
+            <List
+              as="ul"
+              type="bulleted"
+              role="list"
+              aria-label="Bulleted list"
+              key={block.id}
+            >
+              {/* <ListBlocksRenderer
+                blocks={blocks}
+                startIndex={i}
+                type="bulleted"
+              /> */}
+            </List>
+          );
           while (
             i + 1 < blocks.length &&
             blocks[i + 1] &&
@@ -92,22 +92,21 @@ export const Renderer: React.FC<Props> = React.memo(
           block.type === 'numbered_list_item' &&
           (i === 0 || blocks[i - 1]?.type !== 'numbered_list_item')
         ) {
-          result
-            .push
-            // <List
-            //   as="ol"
-            //   type="1"
-            //   role="list"
-            //   aria-label="Numbered list"
-            //   key={block.id}
-            // >
-            //   <ListBlocksRenderer
-            //     blocks={blocks}
-            //     startIndex={i}
-            //     type="numbered"
-            //   />
-            // </List>
-            ();
+          result.push(
+            <List
+              as="ol"
+              type="1"
+              role="list"
+              aria-label="Numbered list"
+              key={block.id}
+            >
+              {/* <ListBlocksRenderer
+                  blocks={blocks}
+                  startIndex={i}
+                  type="numbered"
+                /> */}
+            </List>
+          );
           while (
             i + 1 < blocks.length &&
             blocks[i + 1] &&
