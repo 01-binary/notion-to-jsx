@@ -74,6 +74,7 @@ export const Renderer: React.FC<Props> = React.memo(
               aria-label="Bulleted list"
               key={block.id}
             >
+              TEMP
               {/* <ListBlocksRenderer
                 blocks={blocks}
                 startIndex={i}
@@ -95,11 +96,12 @@ export const Renderer: React.FC<Props> = React.memo(
           result.push(
             <List
               as="ol"
-              type="1"
+              type="numbered"
               role="list"
               aria-label="Numbered list"
               key={block.id}
             >
+              TEMP
               {/* <ListBlocksRenderer
                   blocks={blocks}
                   startIndex={i}
