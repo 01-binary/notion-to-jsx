@@ -8,7 +8,6 @@ import { useKeyboardNavigation } from '../../hooks/useKeyboardNavigation';
 import { darkTheme, lightTheme } from '../../styles/theme.css';
 import { List, ListBlocksRenderer } from './components/List';
 import { BlockRenderer } from './components/Block';
-// import { List, ListBlocksRenderer } from './components/List';
 
 const notion = {
   getPageBlocks: async () => {

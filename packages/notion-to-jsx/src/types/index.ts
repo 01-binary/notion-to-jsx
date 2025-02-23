@@ -1,28 +1,4 @@
-export interface RichTextItem {
-  type: 'text';
-  text: {
-    content: string;
-    link: string | null;
-  };
-  content: string;
-  link: string | null;
-  annotations: {
-    bold: boolean;
-    italic: boolean;
-    strikethrough: boolean;
-    underline: boolean;
-    code: boolean;
-    color: string;
-  };
-  bold: boolean;
-  italic: boolean;
-  strikethrough: boolean;
-  underline: boolean;
-  code: boolean;
-  color: string;
-  plain_text: string;
-  href: string | null;
-}
+import { RichTextItem } from '../components/Renderer/components/RichText/RichTexts';
 
 export interface NotionBlock {
   object: 'block';

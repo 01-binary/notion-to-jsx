@@ -1,5 +1,4 @@
 import React, { useMemo } from 'react';
-import { RichTextItem } from '../../../../types';
 import { codeBlock } from './styles.css';
 import Prism, { Grammar } from 'prismjs';
 import { MemoizedRichText } from '../MemoizedComponents';
@@ -9,6 +8,7 @@ import 'prismjs/components/prism-typescript';
 import 'prismjs/components/prism-javascript';
 import 'prismjs/components/prism-jsx';
 import 'prismjs/components/prism-tsx';
+import { RichTextItem } from '../RichText/RichTexts';
 
 if (typeof window !== 'undefined') {
   window.Prism = Prism;

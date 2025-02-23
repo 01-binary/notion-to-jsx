@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { RichTextItem } from '../../../../types';
 import { MemoizedRichText } from '../MemoizedComponents';
 import {
   imageContainer,
@@ -7,6 +6,7 @@ import {
   placeholder,
   caption,
 } from './styles.css';
+import { RichTextItem } from '../RichText/RichTexts';
 
 export interface ImageProps {
   src: string;

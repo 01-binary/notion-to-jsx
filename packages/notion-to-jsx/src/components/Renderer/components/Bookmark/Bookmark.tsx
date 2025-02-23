@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { type RichTextItem } from '../../../../types';
 import { MemoizedRichText } from '../MemoizedComponents';
 import {
   link,
@@ -11,6 +10,7 @@ import {
   siteName,
   caption,
 } from './styles.css';
+import { RichTextItem } from '../RichText/RichTexts';
 
 interface OpenGraphData {
   title: string;
