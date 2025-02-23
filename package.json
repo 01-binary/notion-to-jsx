@@ -5,6 +5,7 @@
   "scripts": {
     "build": "turbo build --filter=!./apps/storybook",
     "dev": "turbo dev --filter=!./apps/storybook",
+    "dev:storybook": "turbo run dev storybook --filter=notion-to-jsx --filter=storybook",
     "storybook": "turbo run storybook",
     "build-storybook": "turbo run build-storybook",
     "lint": "turbo lint --filter=!./apps/storybook",

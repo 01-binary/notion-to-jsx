@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { RichTextItem } from '../types';
-import { RichText } from './RichText';
+import RichTexts from './RichTexts';
 
 export interface ImageProps {
   src: string;
@@ -76,7 +76,7 @@ export const Image: React.FC<ImageProps> = ({
       </ImageContainer>
       {caption && caption.length > 0 && (
         <Caption>
-          <RichText richText={caption} />
+          <RichTexts richTexts={caption} />
         </Caption>
       )}
     </figure>

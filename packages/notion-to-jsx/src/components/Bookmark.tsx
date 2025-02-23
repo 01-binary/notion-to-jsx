@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { RichTextItem } from '../types';
-import { RichText } from './RichText';
+import { type RichTextItem } from '../types';
+import RichTexts from './RichTexts';
 
 interface OpenGraphData {
   title: string;
@@ -79,7 +79,7 @@ const fetchOpenGraphData = async (url: string): Promise<OpenGraphData> => {
   };
 };
 
-export const Bookmark: React.FC<BookmarkProps> = ({ url, caption }) => {
+const Bookmark: React.FC<BookmarkProps> = ({ url, caption }) => {
   const [ogData, setOgData] = useState<OpenGraphData | null>(null);
   const [error, setError] = useState(false);
 
@@ -115,7 +115,7 @@ export const Bookmark: React.FC<BookmarkProps> = ({ url, caption }) => {
           {ogData?.siteName && <SiteName>{ogData.siteName}</SiteName>}
           {caption && caption.length > 0 && (
             <Caption>
-              <RichText richText={caption} />
+              <RichTexts richTexts={caption} />
             </Caption>
           )}
         </Content>
@@ -123,3 +123,5 @@ export const Bookmark: React.FC<BookmarkProps> = ({ url, caption }) => {
     </a>
   );
 };
+
+export default Bookmark;

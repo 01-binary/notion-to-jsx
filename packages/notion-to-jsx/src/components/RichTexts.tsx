@@ -40,13 +40,13 @@ const StyledText = styled.span<StyledTextProps>`
 `;
 
 export interface RichTextProps {
-  richText: RichTextItem[];
+  richTexts: RichTextItem[];
 }
 
-export const RichText: React.FC<RichTextProps> = ({ richText }) => {
+const RichTexts: React.FC<RichTextProps> = ({ richTexts }) => {
   return (
     <>
-      {richText.map((text, index) => {
+      {richTexts.map((text, index) => {
         const { bold, italic, strikethrough, underline, code, color } =
           text.annotations;
 
@@ -80,3 +80,5 @@ export const RichText: React.FC<RichTextProps> = ({ richText }) => {
     </>
   );
 };
+
+export default RichTexts;
