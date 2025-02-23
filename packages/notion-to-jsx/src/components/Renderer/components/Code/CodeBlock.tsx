@@ -1,17 +1,15 @@
 import React, { useMemo } from 'react';
+import { RichTextItem } from '../../../../types';
+import { codeBlock } from './styles.css';
 import Prism, { Grammar } from 'prismjs';
+import { MemoizedRichText } from '../MemoizedComponents';
+
 import 'prismjs/themes/prism.css';
 import 'prismjs/components/prism-typescript';
 import 'prismjs/components/prism-javascript';
 import 'prismjs/components/prism-jsx';
 import 'prismjs/components/prism-tsx';
 
-import { MemoizedRichText } from '../MemoizedComponents';
-import { CodeBlockWrapper } from './styles';
-import { RichTextItem } from '../../../../types';
-import { Caption } from '../Media';
-
-// Ensure Prism is available in the browser environment
 if (typeof window !== 'undefined') {
   window.Prism = Prism;
 }
@@ -31,11 +29,13 @@ const CodeBlock: React.FC<Props> = ({ code, language, caption }) => {
 
   return (
     <>
-      <CodeBlockWrapper dangerouslySetInnerHTML={{ __html: highlightedCode }} />
+      <pre className={codeBlock}>
+        <code dangerouslySetInnerHTML={{ __html: highlightedCode }} />
+      </pre>
       {caption && (
-        <Caption>
+        <figcaption>
           <MemoizedRichText richTexts={caption} />
-        </Caption>
+        </figcaption>
       )}
     </>
   );

@@ -67,16 +67,16 @@ const BlockRenderer: React.FC<Props> = ({ block, onFocus, index }) => {
         </div>
       );
 
-    // case 'code':
-    //   return (
-    //     <div {...blockProps}>
-    //       <CodeBlock
-    //         code={block.code.rich_text[0].text.content}
-    //         language={block.code.language}
-    //         caption={block.code.caption?.[0]?.plain_text}
-    //       />
-    //     </div>
-    //   );
+    case 'code':
+      return (
+        <div {...blockProps}>
+          <CodeBlock
+            code={block.code.rich_text[0].text.content}
+            language={block.code.language}
+            caption={block.code.caption?.[0]?.plain_text}
+          />
+        </div>
+      );
 
     // case 'image':
     //   return (

@@ -8,6 +8,6 @@ export default defineConfig({
   splitting: false,
   sourcemap: true,
   clean: true,
-  external: ['react', 'react-dom', 'styled-components'],
+  external: ['react', 'react-dom', 'styled-components', 'prismjs'],
   esbuildPlugins: [vanillaExtractPlugin()],
 });
