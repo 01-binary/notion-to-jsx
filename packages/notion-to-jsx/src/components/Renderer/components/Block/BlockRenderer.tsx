@@ -88,18 +88,8 @@ const BlockRenderer: React.FC<Props> = ({ block, onFocus, index }) => {
         </figure>
       );
 
-    // case 'bookmark':
-    //   return (
-    //     <BookmarkCard {...blockProps}>
-    //       <BookmarkLink
-    //         href={block.bookmark.url}
-    //         target="_blank"
-    //         rel="noopener noreferrer"
-    //       >
-    //         <MemoizedBookmark url={block.bookmark.url} />
-    //       </BookmarkLink>
-    //     </BookmarkCard>
-    //   );
+    case 'bookmark':
+      return <MemoizedBookmark url={block.bookmark.url} />;
 
     default:
       return null;

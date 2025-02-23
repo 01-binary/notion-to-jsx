@@ -1,7 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
 import { type RichTextItem } from '../../../../types';
-import RichTexts from '../RichText/RichTexts';
+import { MemoizedRichText } from '../MemoizedComponents';
+import {
+  link,
+  card,
+  content,
+  previewImage,
+  title,
+  description,
+  siteName,
+  caption,
+} from './styles.css';
 
 interface OpenGraphData {
   title: string;
@@ -15,68 +24,28 @@ export interface BookmarkProps {
   caption?: RichTextItem[];
 }
 
-const Card = styled.div`
-  margin: ${({ theme }) => theme.spacing.md} 0;
-  border: 1px solid ${({ theme }) => theme.colors.border};
-  border-radius: ${({ theme }) => theme.borderRadius.md};
-  overflow: hidden;
-  transition: box-shadow 0.2s ease;
-
-  &:hover {
-    box-shadow: ${({ theme }) => theme.shadows.md};
-  }
-`;
-
-const Content = styled.div`
-  padding: ${({ theme }) => theme.spacing.md};
-`;
-
-const PreviewImage = styled.img`
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  background: ${({ theme }) => theme.colors.code.background};
-`;
-
-const Title = styled.h4`
-  margin: 0 0 ${({ theme }) => theme.spacing.xs};
-  font-size: ${({ theme }) => theme.typography.fontSize.base};
-  color: ${({ theme }) => theme.colors.text};
-`;
-
-const Description = styled.p`
-  margin: 0;
-  font-size: ${({ theme }) => theme.typography.fontSize.small};
-  color: ${({ theme }) => theme.colors.secondary};
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-`;
-
-const SiteName = styled.div`
-  margin-top: ${({ theme }) => theme.spacing.sm};
-  font-size: ${({ theme }) => theme.typography.fontSize.small};
-  color: ${({ theme }) => theme.colors.primary};
-`;
-
-const Caption = styled.div`
-  margin-top: ${({ theme }) => theme.spacing.sm};
-  padding-top: ${({ theme }) => theme.spacing.sm};
-  border-top: 1px solid ${({ theme }) => theme.colors.border};
-  font-size: ${({ theme }) => theme.typography.fontSize.small};
-  color: ${({ theme }) => theme.colors.secondary};
-`;
-
 // 실제 프로덕션에서는 서버 사이드에서 처리하거나 전용 API를 사용해야 합니다
 const fetchOpenGraphData = async (url: string): Promise<OpenGraphData> => {
-  // 임시로 더미 데이터를 반환
-  return {
-    title: new URL(url).hostname,
-    description: 'No description available',
-    image: '',
-    siteName: new URL(url).hostname.split('.')[1] as string,
-  };
+  try {
+    const parsedUrl = new URL(url);
+    const domain = parsedUrl.hostname;
+    const siteName = domain.split('.')[1] || domain;
+
+    // 임시로 더미 데이터를 반환
+    return {
+      title: domain,
+      description: 'No description available',
+      image: '',
+      siteName: siteName,
+    };
+  } catch {
+    return {
+      title: url,
+      description: 'Invalid URL',
+      image: '',
+      siteName: 'Unknown',
+    };
+  }
 };
 
 const Bookmark: React.FC<BookmarkProps> = ({ url, caption }) => {
@@ -97,29 +66,31 @@ const Bookmark: React.FC<BookmarkProps> = ({ url, caption }) => {
   }, [url]);
 
   return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      style={{ textDecoration: 'none' }}
-    >
-      <Card>
+    <a href={url} target="_blank" rel="noopener noreferrer" className={link}>
+      <div className={card}>
         {ogData?.image && (
-          <PreviewImage src={ogData.image} alt={ogData.title} loading="lazy" />
+          <img
+            className={previewImage}
+            src={ogData.image}
+            alt={ogData.title}
+            loading="lazy"
+          />
         )}
-        <Content>
-          <Title>{ogData?.title || url}</Title>
+        <div className={content}>
+          <h4 className={title}>{ogData?.title || url}</h4>
           {ogData?.description && (
-            <Description>{ogData.description}</Description>
+            <p className={description}>{ogData.description}</p>
           )}
-          {ogData?.siteName && <SiteName>{ogData.siteName}</SiteName>}
-          {caption && caption.length > 0 && (
-            <Caption>
-              <RichTexts richTexts={caption} />
-            </Caption>
+          {ogData?.siteName && (
+            <div className={siteName}>{ogData.siteName}</div>
           )}
-        </Content>
-      </Card>
+          {/* {caption && caption.length > 0 && (
+            <div className={caption}>
+              <MemoizedRichText richTexts={caption} />
+            </div>
+          )} */}
+        </div>
+      </div>
     </a>
   );
 };
