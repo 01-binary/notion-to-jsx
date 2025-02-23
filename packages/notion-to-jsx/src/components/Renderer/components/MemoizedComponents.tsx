@@ -1,8 +1,8 @@
 import React from 'react';
-import RichText, { RichTextProps } from './RichTexts';
+import RichText, { RichTextProps } from './RichText/RichTexts';
 import { Image, ImageProps } from './Image';
-import Bookmark, { type BookmarkProps } from './Bookmark';
-import { RichTextItem } from '../types';
+import Bookmark, { type BookmarkProps } from './Bookmark/Bookmark';
+import { RichTextItem } from '../../../types';
 
 export const MemoizedRichText = React.memo<RichTextProps>(
   RichText,

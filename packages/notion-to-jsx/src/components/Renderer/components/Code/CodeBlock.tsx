@@ -6,7 +6,7 @@ import 'prismjs/components/prism-javascript';
 import 'prismjs/components/prism-jsx';
 import 'prismjs/components/prism-tsx';
 
-import { MemoizedRichText } from '../../../MemoizedComponents';
+import { MemoizedRichText } from '../MemoizedComponents';
 import { CodeBlockWrapper } from './styles';
 import { RichTextItem } from '../../../../types';
 import { Caption } from '../Media';

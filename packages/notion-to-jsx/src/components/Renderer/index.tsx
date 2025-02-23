@@ -6,8 +6,8 @@ import { NotionBlock } from '../../types';
 import testData from '../../constants/test.json';
 import { useKeyboardNavigation } from '../../hooks/useKeyboardNavigation';
 import { darkTheme, lightTheme } from '../../styles/theme.css';
-import { List } from './components/List';
-// import { BlockRenderer } from './components/Block';
+import { List, ListBlocksRenderer } from './components/List';
+import { BlockRenderer } from './components/Block';
 // import { List, ListBlocksRenderer } from './components/List';
 
 const notion = {
@@ -74,12 +74,11 @@ export const Renderer: React.FC<Props> = React.memo(
               aria-label="Bulleted list"
               key={block.id}
             >
-              TEMP
-              {/* <ListBlocksRenderer
+              <ListBlocksRenderer
                 blocks={blocks}
                 startIndex={i}
                 type="bulleted"
-              /> */}
+              />
             </List>
           );
           while (
@@ -101,12 +100,11 @@ export const Renderer: React.FC<Props> = React.memo(
               aria-label="Numbered list"
               key={block.id}
             >
-              TEMP
-              {/* <ListBlocksRenderer
-                  blocks={blocks}
-                  startIndex={i}
-                  type="numbered"
-                /> */}
+              <ListBlocksRenderer
+                blocks={blocks}
+                startIndex={i}
+                type="numbered"
+              />
             </List>
           );
           while (
@@ -120,15 +118,14 @@ export const Renderer: React.FC<Props> = React.memo(
           block.type !== 'bulleted_list_item' &&
           block.type !== 'numbered_list_item'
         ) {
-          result
-            .push
-            // <BlockRenderer
-            //   key={block.id}
-            //   block={block}
-            //   index={i}
-            //   onFocus={() => handleBlockFocus(i)}
-            // />
-            ();
+          result.push(
+            <BlockRenderer
+              key={block.id}
+              block={block}
+              index={i}
+              onFocus={() => handleBlockFocus(i)}
+            />
+          );
         }
       }
 

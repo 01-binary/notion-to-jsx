@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { RichTextItem } from '../types';
-import RichTexts from './RichTexts';
+import { RichTextItem } from '../../../../types';
+import RichTexts from '../RichText/RichTexts';
 
 export interface ImageProps {
   src: string;
@@ -46,7 +46,7 @@ const Caption = styled.figcaption`
   font-size: ${({ theme }) => theme.typography.fontSize.small};
 `;
 
-export const Image: React.FC<ImageProps> = ({
+const Image: React.FC<ImageProps> = ({
   src,
   alt,
   caption,
@@ -82,3 +82,5 @@ export const Image: React.FC<ImageProps> = ({
     </figure>
   );
 };
+
+export default Image;

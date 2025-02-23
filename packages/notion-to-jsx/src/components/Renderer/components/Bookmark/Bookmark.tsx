@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { type RichTextItem } from '../types';
-import RichTexts from './RichTexts';
+import { type RichTextItem } from '../../../../types';
+import RichTexts from '../RichText/RichTexts';
 
 interface OpenGraphData {
   title: string;

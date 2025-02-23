@@ -4,7 +4,7 @@ import {
   MemoizedRichText,
   MemoizedImage,
   MemoizedBookmark,
-} from '../../../MemoizedComponents';
+} from '../MemoizedComponents';
 import { CodeBlock } from '../Code';
 import { Heading1, Heading2, Heading3, Paragraph } from '../Typography';
 import { BookmarkCard, BookmarkLink, ImageWrapper } from '../Media';
@@ -67,44 +67,44 @@ const BlockRenderer: React.FC<Props> = ({ block, onFocus, index }) => {
         </div>
       );
 
-    case 'code':
-      return (
-        <div {...blockProps}>
-          <CodeBlock
-            code={block.code.rich_text[0].text.content}
-            language={block.code.language}
-            caption={block.code.caption?.[0]?.plain_text}
-          />
-        </div>
-      );
+    // case 'code':
+    //   return (
+    //     <div {...blockProps}>
+    //       <CodeBlock
+    //         code={block.code.rich_text[0].text.content}
+    //         language={block.code.language}
+    //         caption={block.code.caption?.[0]?.plain_text}
+    //       />
+    //     </div>
+    //   );
 
-    case 'image':
-      return (
-        <ImageWrapper {...blockProps}>
-          <MemoizedImage
-            src={block.image.file?.url || block.image.external?.url}
-            alt={block.image.caption?.[0]?.plain_text || ''}
-          />
-          {block.image.caption && (
-            <figcaption>
-              <MemoizedRichText richTexts={block.image.caption} />
-            </figcaption>
-          )}
-        </ImageWrapper>
-      );
+    // case 'image':
+    //   return (
+    //     <ImageWrapper {...blockProps}>
+    //       <MemoizedImage
+    //         src={block.image.file?.url || block.image.external?.url}
+    //         alt={block.image.caption?.[0]?.plain_text || ''}
+    //       />
+    //       {block.image.caption && (
+    //         <figcaption>
+    //           <MemoizedRichText richTexts={block.image.caption} />
+    //         </figcaption>
+    //       )}
+    //     </ImageWrapper>
+    //   );
 
-    case 'bookmark':
-      return (
-        <BookmarkCard {...blockProps}>
-          <BookmarkLink
-            href={block.bookmark.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <MemoizedBookmark url={block.bookmark.url} />
-          </BookmarkLink>
-        </BookmarkCard>
-      );
+    // case 'bookmark':
+    //   return (
+    //     <BookmarkCard {...blockProps}>
+    //       <BookmarkLink
+    //         href={block.bookmark.url}
+    //         target="_blank"
+    //         rel="noopener noreferrer"
+    //       >
+    //         <MemoizedBookmark url={block.bookmark.url} />
+    //       </BookmarkLink>
+    //     </BookmarkCard>
+    //   );
 
     default:
       return null;
