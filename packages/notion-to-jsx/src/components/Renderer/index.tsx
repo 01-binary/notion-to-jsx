@@ -27,117 +27,120 @@ const notion = {
 //   }
 // `;
 
-export const Renderer: React.FC<{
+interface Props {
   isDarkMode?: boolean;
   onBlockFocus?: (index: number) => void;
-}> = React.memo(({ isDarkMode = false, onBlockFocus }) => {
-  const [blocks, setBlocks] = useState<NotionBlock[]>([]);
-  const theme = isDarkMode ? darkTheme : lightTheme;
-  const [focusedIndex, setFocusedIndex] = useState<number>(-1);
+}
+export const Renderer: React.FC<Props> = React.memo(
+  ({ isDarkMode = false, onBlockFocus }) => {
+    const [blocks, setBlocks] = useState<NotionBlock[]>([]);
+    const theme = isDarkMode ? darkTheme : lightTheme;
+    const [focusedIndex, setFocusedIndex] = useState<number>(-1);
 
-  // For test
-  useEffect(() => {
-    const fetchBlocks = async () => {
-      const result = await notion.getPageBlocks();
-      setBlocks(result);
-    };
+    // For test
+    useEffect(() => {
+      const fetchBlocks = async () => {
+        const result = await notion.getPageBlocks();
+        setBlocks(result);
+      };
 
-    fetchBlocks();
-  }, []);
+      fetchBlocks();
+    }, []);
 
-  const handleBlockFocus = useCallback(
-    (index: number) => {
-      setFocusedIndex(index);
-      onBlockFocus?.(index);
-    },
-    [onBlockFocus]
-  );
+    const handleBlockFocus = useCallback(
+      (index: number) => {
+        setFocusedIndex(index);
+        onBlockFocus?.(index);
+      },
+      [onBlockFocus]
+    );
 
-  const renderedBlocks = useMemo(() => {
-    const result: JSX.Element[] = [];
+    const renderedBlocks = useMemo(() => {
+      const result: JSX.Element[] = [];
 
-    for (let i = 0; i < blocks.length; i++) {
-      const block = blocks[i];
-      if (!block) break;
+      for (let i = 0; i < blocks.length; i++) {
+        const block = blocks[i];
+        if (!block) break;
 
-      if (
-        block.type === 'bulleted_list_item' &&
-        (i === 0 || blocks[i - 1]?.type !== 'bulleted_list_item')
-      ) {
-        result.push(
-          <List
-            as="ul"
-            type="bulleted"
-            role="list"
-            aria-label="Bulleted list"
-            key={block.id}
-          >
-            <ListBlocksRenderer
-              blocks={blocks}
-              startIndex={i}
+        if (
+          block.type === 'bulleted_list_item' &&
+          (i === 0 || blocks[i - 1]?.type !== 'bulleted_list_item')
+        ) {
+          result.push(
+            <List
+              as="ul"
               type="bulleted"
-            />
-          </List>
-        );
-        while (
-          i + 1 < blocks.length &&
-          blocks[i + 1] &&
-          blocks[i + 1]?.type === 'bulleted_list_item'
+              role="list"
+              aria-label="Bulleted list"
+              key={block.id}
+            >
+              <ListBlocksRenderer
+                blocks={blocks}
+                startIndex={i}
+                type="bulleted"
+              />
+            </List>
+          );
+          while (
+            i + 1 < blocks.length &&
+            blocks[i + 1] &&
+            blocks[i + 1]?.type === 'bulleted_list_item'
+          ) {
+            i++;
+          }
+        } else if (
+          block.type === 'numbered_list_item' &&
+          (i === 0 || blocks[i - 1]?.type !== 'numbered_list_item')
         ) {
-          i++;
-        }
-      } else if (
-        block.type === 'numbered_list_item' &&
-        (i === 0 || blocks[i - 1]?.type !== 'numbered_list_item')
-      ) {
-        result.push(
-          <List
-            as="ol"
-            type="1"
-            role="list"
-            aria-label="Numbered list"
-            key={block.id}
-          >
-            <ListBlocksRenderer
-              blocks={blocks}
-              startIndex={i}
-              type="numbered"
-            />
-          </List>
-        );
-        while (
-          i + 1 < blocks.length &&
-          blocks[i + 1] &&
-          blocks[i + 1]?.type === 'numbered_list_item'
+          result.push(
+            <List
+              as="ol"
+              type="1"
+              role="list"
+              aria-label="Numbered list"
+              key={block.id}
+            >
+              <ListBlocksRenderer
+                blocks={blocks}
+                startIndex={i}
+                type="numbered"
+              />
+            </List>
+          );
+          while (
+            i + 1 < blocks.length &&
+            blocks[i + 1] &&
+            blocks[i + 1]?.type === 'numbered_list_item'
+          ) {
+            i++;
+          }
+        } else if (
+          block.type !== 'bulleted_list_item' &&
+          block.type !== 'numbered_list_item'
         ) {
-          i++;
+          result.push(
+            <BlockRenderer
+              key={block.id}
+              block={block}
+              index={i}
+              onFocus={() => handleBlockFocus(i)}
+            />
+          );
         }
-      } else if (
-        block.type !== 'bulleted_list_item' &&
-        block.type !== 'numbered_list_item'
-      ) {
-        result.push(
-          <BlockRenderer
-            key={block.id}
-            block={block}
-            index={i}
-            onFocus={() => handleBlockFocus(i)}
-          />
-        );
       }
-    }
 
-    return result;
-  }, [blocks, handleBlockFocus]);
+      return result;
+    }, [blocks, handleBlockFocus]);
 
-  return (
-    <ThemeProvider theme={theme}>
-      {/* <GlobalStyle /> */}
-      <Container role="main" aria-label="Notion page content">
-        {renderedBlocks}
-      </Container>
-    </ThemeProvider>
-  );
-});
+    return (
+      <ThemeProvider theme={theme}>
+        {/* <GlobalStyle /> */}
+        <Container role="main" aria-label="Notion page content">
+          {renderedBlocks}
+        </Container>
+      </ThemeProvider>
+    );
+  }
+);
 
 Renderer.displayName = 'Renderer';
