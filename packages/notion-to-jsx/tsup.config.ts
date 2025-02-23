@@ -1,4 +1,5 @@
 import { defineConfig } from 'tsup';
+import { vanillaExtractPlugin } from '@vanilla-extract/esbuild-plugin';
 
 export default defineConfig({
   entry: ['src/index.ts'],
@@ -8,4 +9,5 @@ export default defineConfig({
   sourcemap: true,
   clean: true,
   external: ['react', 'react-dom', 'styled-components'],
+  esbuildPlugins: [vanillaExtractPlugin()],
 });
