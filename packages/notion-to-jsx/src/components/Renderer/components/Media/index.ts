@@ -1,1 +1,1 @@
-export * from './styles';
+export { Bookmark } from './Media';

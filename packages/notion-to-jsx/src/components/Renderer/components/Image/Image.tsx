@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
 import { RichTextItem } from '../../../../types';
-import RichTexts from '../RichText/RichTexts';
+import { MemoizedRichText } from '../MemoizedComponents';
+import {
+  imageContainer,
+  styledImage,
+  placeholder,
+  caption,
+} from './styles.css';
 
 export interface ImageProps {
   src: string;
@@ -10,46 +15,10 @@ export interface ImageProps {
   priority?: boolean;
 }
 
-const ImageContainer = styled.div`
-  position: relative;
-  width: 100%;
-  background: ${({ theme }) => theme.colors.code.background};
-  border-radius: ${({ theme }) => theme.borderRadius.md};
-  overflow: hidden;
-`;
-
-const StyledImage = styled.img<{ $isLoaded: boolean }>`
-  width: 100%;
-  height: auto;
-  display: block;
-  opacity: ${({ $isLoaded }) => ($isLoaded ? 1 : 0)};
-  transition: opacity 0.3s ease;
-`;
-
-const Placeholder = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: ${({ theme }) => theme.colors.code.background};
-  color: ${({ theme }) => theme.colors.secondary};
-`;
-
-const Caption = styled.figcaption`
-  text-align: center;
-  color: ${({ theme }) => theme.colors.secondary};
-  margin-top: ${({ theme }) => theme.spacing.sm};
-  font-size: ${({ theme }) => theme.typography.fontSize.small};
-`;
-
 const Image: React.FC<ImageProps> = ({
   src,
   alt,
-  caption,
+  caption: imageCaption,
   priority = false,
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -61,23 +30,23 @@ const Image: React.FC<ImageProps> = ({
   }, [src]);
 
   return (
-    <figure>
-      <ImageContainer>
-        {!isLoaded && !error && <Placeholder>Loading...</Placeholder>}
-        {error && <Placeholder>Failed to load image</Placeholder>}
-        <StyledImage
+    <figure className={imageContainer}>
+      <div>
+        {!isLoaded && !error && <div className={placeholder}>Loading...</div>}
+        {error && <div className={placeholder}>Failed to load image</div>}
+        <img
+          className={styledImage({ loaded: isLoaded })}
           src={src}
           alt={alt}
-          $isLoaded={isLoaded}
           loading={priority ? 'eager' : 'lazy'}
           onLoad={() => setIsLoaded(true)}
           onError={() => setError(true)}
         />
-      </ImageContainer>
-      {caption && caption.length > 0 && (
-        <Caption>
-          <RichTexts richTexts={caption} />
-        </Caption>
+      </div>
+      {imageCaption && imageCaption.length > 0 && (
+        <figcaption className={caption}>
+          <MemoizedRichText richTexts={imageCaption} />
+        </figcaption>
       )}
     </figure>
   );

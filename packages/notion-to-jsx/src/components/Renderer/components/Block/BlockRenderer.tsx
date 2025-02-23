@@ -7,7 +7,6 @@ import {
 } from '../MemoizedComponents';
 import { CodeBlock } from '../Code';
 import { Heading1, Heading2, Heading3, Paragraph } from '../Typography';
-import { BookmarkCard, BookmarkLink, ImageWrapper } from '../Media';
 
 export interface Props {
   block: any;
@@ -78,20 +77,16 @@ const BlockRenderer: React.FC<Props> = ({ block, onFocus, index }) => {
         </div>
       );
 
-    // case 'image':
-    //   return (
-    //     <ImageWrapper {...blockProps}>
-    //       <MemoizedImage
-    //         src={block.image.file?.url || block.image.external?.url}
-    //         alt={block.image.caption?.[0]?.plain_text || ''}
-    //       />
-    //       {block.image.caption && (
-    //         <figcaption>
-    //           <MemoizedRichText richTexts={block.image.caption} />
-    //         </figcaption>
-    //       )}
-    //     </ImageWrapper>
-    //   );
+    case 'image':
+      return (
+        <figure {...blockProps}>
+          <MemoizedImage
+            src={block.image.file?.url || block.image.external?.url}
+            alt={block.image.caption?.[0]?.plain_text || ''}
+            caption={block.image.caption}
+          />
+        </figure>
+      );
 
     // case 'bookmark':
     //   return (
