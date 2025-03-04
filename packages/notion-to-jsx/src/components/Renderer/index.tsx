@@ -132,9 +132,12 @@ export const Renderer: React.FC<Props> = React.memo(
     }, [blocks, handleBlockFocus]);
 
     return (
-      <div className={container} role="main" aria-label="Notion page content">
+      <article
+        className={`${theme} ${container}`}
+        aria-label="Notion page content"
+      >
         {renderedBlocks}
-      </div>
+      </article>
     );
   }
 );
