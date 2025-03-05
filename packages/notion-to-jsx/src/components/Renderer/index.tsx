@@ -5,9 +5,10 @@ import { container } from './styles.css';
 import { NotionBlock } from '../../types';
 import testData from '../../constants/test.json';
 import { useKeyboardNavigation } from '../../hooks/useKeyboardNavigation';
-import { darkTheme, lightTheme } from '../../styles/theme.css';
 import { List, ListBlocksRenderer } from './components/List';
 import { BlockRenderer } from './components/Block';
+import '../../styles/reset.css';
+import { darkTheme, lightTheme } from '../../styles/theme.css';
 
 const notion = {
   getPageBlocks: async () => {
