@@ -6,10 +6,6 @@ const baseTypography = {
   color: vars.colors.text,
   fontFamily: vars.typography.fontFamily.base,
   lineHeight: vars.typography.lineHeight.base,
-  ':hover': {
-    backgroundColor: vars.colors.background,
-    opacity: 0.8,
-  },
   selectors: {
     '&:focus-visible': {
       outline: `2px solid ${vars.colors.primary}`,
@@ -21,27 +17,29 @@ const baseTypography = {
 
 export const paragraph = style({
   ...baseTypography,
-  margin: `${vars.spacing.sm} 0`,
+  padding: `${vars.spacing.xs} ${vars.spacing.xxs}`,
   fontSize: vars.typography.fontSize.base,
+  fontWeight: vars.typography.fontWeight.medium,
+  whiteSpace: 'pre-wrap', // 줄바꿈
 });
 
 export const heading1 = style({
   ...baseTypography,
   fontSize: vars.typography.fontSize.h1,
-  // fontWeight: vars.typography.fontWeight.bold,
+  fontWeight: vars.typography.fontWeight.bold,
   margin: `${vars.spacing.lg} 0 ${vars.spacing.md}`,
 });
 
 export const heading2 = style({
   ...baseTypography,
   fontSize: vars.typography.fontSize.h2,
-  // fontWeight: vars.typography.fontWeight.semibold,
+  fontWeight: vars.typography.fontWeight.bold,
   margin: `${vars.spacing.md} 0 ${vars.spacing.sm}`,
 });
 
 export const heading3 = style({
   ...baseTypography,
   fontSize: vars.typography.fontSize.h3,
-  // fontWeight: vars.typography.fontWeight.medium,
+  fontWeight: vars.typography.fontWeight.bold,
   margin: `${vars.spacing.sm} 0 ${vars.spacing.xs}`,
 });

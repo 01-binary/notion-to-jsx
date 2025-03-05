@@ -10,6 +10,7 @@ export const vars = createThemeContract({
     code: {
       background: null,
       text: null,
+      inline: null,
     },
   },
   typography: {
@@ -25,6 +26,12 @@ export const vars = createThemeContract({
       h2: null,
       h3: null,
     },
+    fontWeight: {
+      normal: null,
+      medium: null,
+      semibold: null,
+      bold: null,
+    },
     lineHeight: {
       tight: null,
       base: null,
@@ -32,6 +39,7 @@ export const vars = createThemeContract({
     },
   },
   spacing: {
+    xxs: null,
     xs: null,
     sm: null,
     md: null,
@@ -53,18 +61,19 @@ export const vars = createThemeContract({
 export const lightTheme = createTheme(vars, {
   colors: {
     background: '#ffffff',
-    text: '#24292e',
+    text: '#37352f',
     primary: '#0366d6',
     secondary: '#586069',
     border: '#e1e4e8',
     code: {
-      background: '#f6f8fa',
+      background: 'rgba(135,131,120,.1)',
       text: '#24292e',
+      inline: '#EB5757',
     },
   },
   typography: {
     fontFamily: {
-      base: '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif',
+      base: 'ui-sans-serif -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif',
       code: 'SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace',
     },
     fontSize: {
@@ -75,6 +84,12 @@ export const lightTheme = createTheme(vars, {
       h2: '1.5rem',
       h3: '1.25rem',
     },
+    fontWeight: {
+      normal: '400',
+      medium: '500',
+      semibold: '600',
+      bold: '700',
+    },
     lineHeight: {
       tight: '1.25',
       base: '1.5',
@@ -82,6 +97,7 @@ export const lightTheme = createTheme(vars, {
     },
   },
   spacing: {
+    xxs: '0.125rem',
     xs: '0.25rem',
     sm: '0.5rem',
     md: '1rem',
@@ -110,11 +126,12 @@ export const darkTheme = createTheme(vars, {
     code: {
       background: '#161b22',
       text: '#c9d1d9',
+      inline: '#EB5757',
     },
   },
   typography: {
     fontFamily: {
-      base: '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif',
+      base: 'ui-sans-serif -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif',
       code: 'SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace',
     },
     fontSize: {
@@ -125,6 +142,12 @@ export const darkTheme = createTheme(vars, {
       h2: '1.5rem',
       h3: '1.25rem',
     },
+    fontWeight: {
+      normal: '400',
+      medium: '500',
+      semibold: '600',
+      bold: '700',
+    },
     lineHeight: {
       tight: '1.25',
       base: '1.5',
@@ -132,6 +155,7 @@ export const darkTheme = createTheme(vars, {
     },
   },
   spacing: {
+    xxs: '0.125rem',
     xs: '0.25rem',
     sm: '0.5rem',
     md: '1rem',

@@ -50,13 +50,14 @@ const RichTexts: React.FC<RichTextProps> = ({ richTexts }) => {
         ) : (
           text.text.content
         );
-
-        const colorValue =
-          color === 'default'
-            ? 'inherit'
-            : color?.includes('_background')
-              ? `var(--notion-${color})`
-              : `var(--notion-${color})`;
+        
+        // TODO: NOTION COLOR 적용
+        // const colorValue =
+        //   color === 'default'
+        //     ? 'inherit'
+        //     : color?.includes('_background')
+        //       ? `var(--notion-${color})`
+        //       : `var(--notion-${color})`;
 
         return (
           <span
@@ -68,7 +69,7 @@ const RichTexts: React.FC<RichTextProps> = ({ richTexts }) => {
               underline,
               code,
             })}
-            style={{ color: colorValue }}
+            // style={{ color: colorValue }}
           >
             {content}
           </span>
