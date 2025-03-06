@@ -1,54 +1,78 @@
 import React, { useState, useEffect } from 'react';
-import { MemoizedRichText } from '../MemoizedComponents';
 import {
   link,
   card,
   content,
+  previewContainer,
   previewImage,
   title,
   description,
   siteName,
-  caption,
+  favicon,
+  urlText,
 } from './styles.css';
-import { RichTextItem } from '../RichText/RichTexts';
 
 interface OpenGraphData {
   title: string;
   description: string;
   image: string;
   siteName: string;
+  url: string;
+  favicon?: string;
 }
 
 export interface BookmarkProps {
   url: string;
-  caption?: RichTextItem[];
 }
 
-// 실제 프로덕션에서는 서버 사이드에서 처리하거나 전용 API를 사용해야 합니다
+// OpenGraph 데이터를 가져오는 함수
 const fetchOpenGraphData = async (url: string): Promise<OpenGraphData> => {
   try {
+    const apiUrl = `https://api.microlink.io/?url=${encodeURIComponent(url)}`;
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error('Failed to fetch metadata');
+    }
+
+    const { status, data: metaData } = data;
+
+    if (status !== 'success') {
+      throw new Error('API returned error status');
+    }
+
     const parsedUrl = new URL(url);
     const domain = parsedUrl.hostname;
-    const siteName = domain.split('.')[1] || domain;
 
-    // 임시로 더미 데이터를 반환
+    return {
+      title: metaData.title || domain,
+      description: metaData.description || 'No description available',
+      image: metaData.image?.url || '',
+      siteName: metaData.publisher || domain,
+      url: metaData.url || '',
+      favicon:
+        metaData.logo?.url ||
+        `https://www.google.com/s2/favicons?domain=${domain}&sz=64`,
+    };
+  } catch (error) {
+    console.error('Error fetching OpenGraph data:', error);
+
+    const parsedUrl = new URL(url);
+    const domain = parsedUrl.hostname;
+
     return {
       title: domain,
       description: 'No description available',
       image: '',
-      siteName: siteName,
-    };
-  } catch {
-    return {
-      title: url,
-      description: 'Invalid URL',
-      image: '',
-      siteName: 'Unknown',
+      url: '',
+      siteName: domain,
+      favicon: `https://www.google.com/s2/favicons?domain=${domain}&sz=64`,
     };
   }
 };
 
-const Bookmark: React.FC<BookmarkProps> = ({ url, caption }) => {
+const Bookmark: React.FC<BookmarkProps> = ({ url }) => {
   const [ogData, setOgData] = useState<OpenGraphData | null>(null);
   const [error, setError] = useState(false);
 
@@ -68,28 +92,33 @@ const Bookmark: React.FC<BookmarkProps> = ({ url, caption }) => {
   return (
     <a href={url} target="_blank" rel="noopener noreferrer" className={link}>
       <div className={card}>
-        {ogData?.image && (
-          <img
-            className={previewImage}
-            src={ogData.image}
-            alt={ogData.title}
-            loading="lazy"
-          />
-        )}
         <div className={content}>
-          <h4 className={title}>{ogData?.title || url}</h4>
-          {ogData?.description && (
-            <p className={description}>{ogData.description}</p>
-          )}
-          {ogData?.siteName && (
-            <div className={siteName}>{ogData.siteName}</div>
-          )}
-          {/* {caption && caption.length > 0 && (
-            <div className={caption}>
-              <MemoizedRichText richTexts={caption} />
-            </div>
-          )} */}
+          <div>
+            <h4 className={title}>{ogData?.title || url}</h4>
+            <p className={description}>{ogData?.description || ''}</p>
+          </div>
+          <div className={siteName}>
+            {ogData?.favicon && (
+              <img src={ogData.favicon} alt="" className={favicon} />
+            )}
+            <span className={urlText}>{ogData?.url || ''}</span>
+          </div>
         </div>
+        {ogData?.image && (
+          <div className={previewContainer}>
+            <img
+              className={previewImage}
+              src={ogData.image}
+              alt={ogData.title}
+              loading="lazy"
+              onError={(e) => {
+                // 이미지 로드 실패 시 처리
+                const target = e.target as HTMLImageElement;
+                target.style.display = 'none';
+              }}
+            />
+          </div>
+        )}
       </div>
     </a>
   );
