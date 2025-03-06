@@ -27,19 +27,19 @@ export const heading1 = style({
   ...baseTypography,
   fontSize: vars.typography.fontSize.h1,
   fontWeight: vars.typography.fontWeight.bold,
-  margin: `${vars.spacing.lg} 0 ${vars.spacing.md}`,
+  padding: `${vars.spacing.lg} 0 ${vars.spacing.md}`,
 });
 
 export const heading2 = style({
   ...baseTypography,
   fontSize: vars.typography.fontSize.h2,
   fontWeight: vars.typography.fontWeight.bold,
-  margin: `${vars.spacing.md} 0 ${vars.spacing.sm}`,
+  padding: `${vars.spacing.md} 0 ${vars.spacing.sm}`,
 });
 
 export const heading3 = style({
   ...baseTypography,
   fontSize: vars.typography.fontSize.h3,
   fontWeight: vars.typography.fontWeight.bold,
-  margin: `${vars.spacing.sm} 0 ${vars.spacing.xs}`,
+  padding: `${vars.spacing.sm} 0 ${vars.spacing.xs}`,
 });

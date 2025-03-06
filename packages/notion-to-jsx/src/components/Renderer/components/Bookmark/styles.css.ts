@@ -6,7 +6,6 @@ export const link = style({
 });
 
 export const card = style({
-  margin: `${vars.spacing.md} 0`,
   border: `1px solid ${vars.colors.border}`,
   borderRadius: vars.borderRadius.md,
   overflow: 'hidden',
@@ -17,7 +16,7 @@ export const card = style({
 });
 
 export const content = style({
-  padding: vars.spacing.md,
+  padding: vars.spacing.base,
 });
 
 export const previewImage = style({
@@ -28,13 +27,13 @@ export const previewImage = style({
 });
 
 export const title = style({
-  margin: `0 0 ${vars.spacing.xs}`,
+  padding: `0 0 ${vars.spacing.xs}`,
   fontSize: vars.typography.fontSize.base,
   color: vars.colors.text,
 });
 
 export const description = style({
-  margin: 0,
+  padding: 0,
   fontSize: vars.typography.fontSize.small,
   color: vars.colors.secondary,
   display: '-webkit-box',
@@ -44,15 +43,7 @@ export const description = style({
 });
 
 export const siteName = style({
-  marginTop: vars.spacing.sm,
+  paddingTop: vars.spacing.sm,
   fontSize: vars.typography.fontSize.small,
   color: vars.colors.primary,
-});
-
-export const caption = style({
-  marginTop: vars.spacing.sm,
-  paddingTop: vars.spacing.sm,
-  borderTop: `1px solid ${vars.colors.border}`,
-  fontSize: vars.typography.fontSize.small,
-  color: vars.colors.secondary,
 });

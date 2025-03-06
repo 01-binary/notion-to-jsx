@@ -42,6 +42,7 @@ export const vars = createThemeContract({
     xxs: null,
     xs: null,
     sm: null,
+    base: null,
     md: null,
     lg: null,
     xl: null,
@@ -100,6 +101,7 @@ export const lightTheme = createTheme(vars, {
     xxs: '0.125rem',
     xs: '0.25rem',
     sm: '0.5rem',
+    base: '0.75rem',
     md: '1rem',
     lg: '1.5rem',
     xl: '2rem',
@@ -158,6 +160,7 @@ export const darkTheme = createTheme(vars, {
     xxs: '0.125rem',
     xs: '0.25rem',
     sm: '0.5rem',
+    base: '0.75rem',
     md: '1rem',
     lg: '1.5rem',
     xl: '2rem',
@@ -169,7 +172,7 @@ export const darkTheme = createTheme(vars, {
   },
   shadows: {
     sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
-    md: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+    md: '0 3px 4px 0 rgba(0, 0, 0, 0.1)',
     lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
   },
 });
