@@ -54,7 +54,7 @@ async function fetchAndSaveBlocks() {
     const blocks = await client.getPageBlocks(PAGE_ID);
 
     // JSON 파일로 저장
-    const outputPath = join(__dirname, '../src/data/notionBlocks.json');
+    const outputPath = join(__dirname, '../src/sample-data/notionBlocks.json');
     console.log(`저장 경로: ${outputPath}`);
     writeFileSync(outputPath, JSON.stringify(blocks, null, 2), 'utf8');
 

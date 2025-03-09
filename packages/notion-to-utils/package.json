@@ -27,6 +27,7 @@
   ],
   "sideEffects": false,
   "scripts": {
+    "dev": "tsup --watch",
     "test": "vitest run",
     "test:watch": "vitest --watch",
     "build": "tsup"

@@ -68,8 +68,8 @@
       "caption": [],
       "type": "file",
       "file": {
-        "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/cd7314a5-d906-43b0-81e7-42eff82c02a3/566f127b-9e73-491d-bee6-5afd075653a2/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46642FEXGJE%2F20250309%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250309T124627Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECwaCXVzLXdlc3QtMiJGMEQCIHre8dI1bt9zihac4jNVFS9ZoA4%2FqBBhU%2Bsw3jR0caAdAiBDcl0HlDuZqjgCCKQWhkPc9B%2FbWrKrSZKUoD9n2R7CICr%2FAwh1EAAaDDYzNzQyMzE4MzgwNSIMgY84eNgY%2FzHhPyToKtwDJe421SwJIJO2JANOUC%2F3En1FCiUP4p6N%2BMiudGw2X1JPh9q9AeFupOuALCcEmH7OQNLGOW2UBDh66ps9RLn11JVLbBanBUm50R74F2kfbJwUuS2JfUGiZK%2BOn3qaDtDsc6Cd49hEG0reQS8QuKZQuKtf5G%2Fu7znv8e43n5Qq%2BzGBCvPS6BqdRxSr47XQw8%2FrpMeBBsAkT8QP%2BkQKTcgFgTcFkAcfpBlZZLKI%2FjXq6gQI1EqlFL9YCwJttBLWWxKYYEZB2Ap74s5k3GKIS6I%2BaNGQP9gEE55%2B1gIcYSwjSxl9u%2Blqjk6cWUJaWFq43E651fWMCy%2FyqW6nbzSJ0wbZBnnK353FPbC91Y9fQr8EtfBN1rgFLXZi7UD0ihBRtkFVEJM%2F7pcQtYe3NxhpK40jAsE1C4uZp17XR%2FDXWaeMIiwD%2FBvqKlm6IwG%2FB3bASijsjhLFnHgs9ajr37HBzg59eiYDgYvqVTRm6PwsRdQNziWWEDz0WJonYIfb%2Bl2xw0rbgCi9AP8Rj8TKEzMXsyGxaur9R94%2FEEsYW6Ez7cB4nSdFLXWxg4fOZbdrmfk6iceGUNCeI2odYnJRgLZNu94AKmVinswTpp0OoHA1NqhD3uLhuTg7YRy0KzcgqHgw0oe2vgY6pgGL8c7PfNR76%2F%2BrB%2B73ArTFHkYAtGJfcFDTvAKlQ5bVdNY%2Bp9vxsI%2BFcEKiQ9Z7Nd2OoPPwMMkcuf3kDwYYU%2F1kmCniDrbQr1rMAketnKg5YovFuHwCNNE%2FRIHBNfH2JgSrscT0%2B6iYEUfFUSsxnusQ6PyMftHlOS7fqagoclVgCaTl43tJRAwoFrEozjNkywhgMXxFbpQYDpFrxsjtwLDKuVemDfL3&X-Amz-Signature=51b7fcbc935acff583bd3383dd9f6e610a8f7c47d5e507966b840f2c7d66ce8c&X-Amz-SignedHeaders=host&x-id=GetObject",
-        "expiry_time": "2025-03-09T13:46:27.277Z"
+        "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/cd7314a5-d906-43b0-81e7-42eff82c02a3/566f127b-9e73-491d-bee6-5afd075653a2/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466STLNN5SA%2F20250309%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250309T131205Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECsaCXVzLXdlc3QtMiJGMEQCIG94TkWa3mK1%2B5nVswsMblZQyl7j7VaT%2BqotVsKeSggXAiAQYbbvAf2NGeiVYD52%2FaNMKZ4YTg1%2BWJpH3%2Bmpc9xspir%2FAwh0EAAaDDYzNzQyMzE4MzgwNSIM%2F1rPCZwhKhp3eLk6KtwDZy4%2B20E51YbCCaXojGLfYiQw9vPtTNXK6tdO8gaTMKtEi5Nywg04k%2B9Jek8QTwgn1IM420f%2Bd%2B7ZeQxkGCZgYidrz1sKcxbWajR2%2B%2BsfabgkHxJePiFy5I%2FOxbBXdvwVrt5jDSn7KwwK9e1qUM40iTf3aDS1TBiTHdYFqed%2BE7vUg0%2Ffy7Qxo1huc%2BV0l0zWCzkqIykzPOJlFayl55TLK7%2B%2FXjcUD6ofLoCFQSXa6LvNMDcfSWKWbVMC05tnE9yBGsgKh23njD6DcbvtBFZM3NL4N0%2FCvxY2KuegsVlCY4598rhoogs%2BK%2B9GhXaCqnylT3iC8aR3ce3PNpEdO%2FUUnv1H1KZiFZh9tYblBdGcRocUnItGTq%2BPQJy89ooWIYkO0cfkPZiOtkVkhvc8JFHDRMsafTi92RLimnHP9pS%2FobUcQ5sLaLse96pISiT%2BdBJCTLJ%2FkK%2BmLHAb4deSmonck3VFr28Gdg33O8k0hlrlVDKnRYyhW%2BBrTg4R7VJkd6S9wOLvCgCNwBiwpPNy3gKNwTdnegDxLca5VV7EzC%2BeUWvCwCUxztpwyssi8SKks98Nib20n37ZbGamMWHLVzBfUtIhUvbwNCTqnug1uZEoe85mAFVMNvKDbJFH9CYw0tq1vgY6pgG1EFVVrhMNjCsu4q1c8btf3gVyMiqDnyPKQVm%2BGFD9CMIGHOQzTnYYdek5JJDDlQHzf5YxMVmDj9xFwb70UvCTf0NETvihF8T8s04Aik2m5t0%2FpSeKZbsZFoPvv16QeSS5BI9gaJJp7%2F1wDciv2yWG02uAxgp0kTlBZzYwCmsbAoBJhzuqppOnQ7MNLPOhPYtJCye%2BOjzgHukv19fC4vyZQCMcOof6&X-Amz-Signature=16278af11d7907fbb4ac58410f358cfce25f65b020be49ddfca13828dc47c7e9&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "expiry_time": "2025-03-09T14:12:04.810Z"
       }
     }
   },
@@ -4152,7 +4152,53 @@
         }
       ],
       "color": "default"
-    }
+    },
+    "children": [
+      {
+        "object": "block",
+        "id": "1809c6bf-2b17-80c0-a3fa-eb27906b54ed",
+        "parent": {
+          "type": "block_id",
+          "block_id": "1809c6bf-2b17-806c-8e9b-ccb1156e3441"
+        },
+        "created_time": "2025-01-19T10:48:00.000Z",
+        "last_edited_time": "2025-01-19T10:48:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "bulleted_list_item",
+        "bulleted_list_item": {
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "별도의 복잡한 설정 없이도 사용 가능",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "별도의 복잡한 설정 없이도 사용 가능",
+              "href": null
+            }
+          ],
+          "color": "default"
+        }
+      }
+    ]
   },
   {
     "object": "block",
@@ -4196,7 +4242,114 @@
         }
       ],
       "color": "default"
-    }
+    },
+    "children": [
+      {
+        "object": "block",
+        "id": "1809c6bf-2b17-80fa-a85a-fb53dc7663e1",
+        "parent": {
+          "type": "block_id",
+          "block_id": "1809c6bf-2b17-80c6-9ec1-f27e61b7e5ee"
+        },
+        "created_time": "2025-01-19T10:48:00.000Z",
+        "last_edited_time": "2025-01-19T11:15:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "bulleted_list_item",
+        "bulleted_list_item": {
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "esbuild",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": true,
+                "color": "default"
+              },
+              "plain_text": "esbuild",
+              "href": null
+            },
+            {
+              "type": "text",
+              "text": {
+                "content": " 를 기반으로 하여 매우 빠른 빌드 속도를 제공",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": " 를 기반으로 하여 매우 빠른 빌드 속도를 제공",
+              "href": null
+            }
+          ],
+          "color": "default"
+        }
+      },
+      {
+        "object": "block",
+        "id": "1809c6bf-2b17-8016-ad06-f8e9edc855f2",
+        "parent": {
+          "type": "block_id",
+          "block_id": "1809c6bf-2b17-80c6-9ec1-f27e61b7e5ee"
+        },
+        "created_time": "2025-01-19T10:48:00.000Z",
+        "last_edited_time": "2025-01-19T10:48:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "bulleted_list_item",
+        "bulleted_list_item": {
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "병렬 처리를 통해 모든 CPU 코어를 최대한 활용",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "병렬 처리를 통해 모든 CPU 코어를 최대한 활용",
+              "href": null
+            }
+          ],
+          "color": "default"
+        }
+      }
+    ]
   },
   {
     "object": "block",
@@ -4407,8 +4560,8 @@
       "caption": [],
       "type": "file",
       "file": {
-        "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/cd7314a5-d906-43b0-81e7-42eff82c02a3/10d9f59d-d3e2-429a-ad72-c8b15b1f536b/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46642FEXGJE%2F20250309%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250309T124627Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECwaCXVzLXdlc3QtMiJGMEQCIHre8dI1bt9zihac4jNVFS9ZoA4%2FqBBhU%2Bsw3jR0caAdAiBDcl0HlDuZqjgCCKQWhkPc9B%2FbWrKrSZKUoD9n2R7CICr%2FAwh1EAAaDDYzNzQyMzE4MzgwNSIMgY84eNgY%2FzHhPyToKtwDJe421SwJIJO2JANOUC%2F3En1FCiUP4p6N%2BMiudGw2X1JPh9q9AeFupOuALCcEmH7OQNLGOW2UBDh66ps9RLn11JVLbBanBUm50R74F2kfbJwUuS2JfUGiZK%2BOn3qaDtDsc6Cd49hEG0reQS8QuKZQuKtf5G%2Fu7znv8e43n5Qq%2BzGBCvPS6BqdRxSr47XQw8%2FrpMeBBsAkT8QP%2BkQKTcgFgTcFkAcfpBlZZLKI%2FjXq6gQI1EqlFL9YCwJttBLWWxKYYEZB2Ap74s5k3GKIS6I%2BaNGQP9gEE55%2B1gIcYSwjSxl9u%2Blqjk6cWUJaWFq43E651fWMCy%2FyqW6nbzSJ0wbZBnnK353FPbC91Y9fQr8EtfBN1rgFLXZi7UD0ihBRtkFVEJM%2F7pcQtYe3NxhpK40jAsE1C4uZp17XR%2FDXWaeMIiwD%2FBvqKlm6IwG%2FB3bASijsjhLFnHgs9ajr37HBzg59eiYDgYvqVTRm6PwsRdQNziWWEDz0WJonYIfb%2Bl2xw0rbgCi9AP8Rj8TKEzMXsyGxaur9R94%2FEEsYW6Ez7cB4nSdFLXWxg4fOZbdrmfk6iceGUNCeI2odYnJRgLZNu94AKmVinswTpp0OoHA1NqhD3uLhuTg7YRy0KzcgqHgw0oe2vgY6pgGL8c7PfNR76%2F%2BrB%2B73ArTFHkYAtGJfcFDTvAKlQ5bVdNY%2Bp9vxsI%2BFcEKiQ9Z7Nd2OoPPwMMkcuf3kDwYYU%2F1kmCniDrbQr1rMAketnKg5YovFuHwCNNE%2FRIHBNfH2JgSrscT0%2B6iYEUfFUSsxnusQ6PyMftHlOS7fqagoclVgCaTl43tJRAwoFrEozjNkywhgMXxFbpQYDpFrxsjtwLDKuVemDfL3&X-Amz-Signature=95b66cfbe39d99251377bc25a54c58a31b314be02588641b930a70a940803fcd&X-Amz-SignedHeaders=host&x-id=GetObject",
-        "expiry_time": "2025-03-09T13:46:27.795Z"
+        "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/cd7314a5-d906-43b0-81e7-42eff82c02a3/10d9f59d-d3e2-429a-ad72-c8b15b1f536b/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466STLNN5SA%2F20250309%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250309T131205Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECsaCXVzLXdlc3QtMiJGMEQCIG94TkWa3mK1%2B5nVswsMblZQyl7j7VaT%2BqotVsKeSggXAiAQYbbvAf2NGeiVYD52%2FaNMKZ4YTg1%2BWJpH3%2Bmpc9xspir%2FAwh0EAAaDDYzNzQyMzE4MzgwNSIM%2F1rPCZwhKhp3eLk6KtwDZy4%2B20E51YbCCaXojGLfYiQw9vPtTNXK6tdO8gaTMKtEi5Nywg04k%2B9Jek8QTwgn1IM420f%2Bd%2B7ZeQxkGCZgYidrz1sKcxbWajR2%2B%2BsfabgkHxJePiFy5I%2FOxbBXdvwVrt5jDSn7KwwK9e1qUM40iTf3aDS1TBiTHdYFqed%2BE7vUg0%2Ffy7Qxo1huc%2BV0l0zWCzkqIykzPOJlFayl55TLK7%2B%2FXjcUD6ofLoCFQSXa6LvNMDcfSWKWbVMC05tnE9yBGsgKh23njD6DcbvtBFZM3NL4N0%2FCvxY2KuegsVlCY4598rhoogs%2BK%2B9GhXaCqnylT3iC8aR3ce3PNpEdO%2FUUnv1H1KZiFZh9tYblBdGcRocUnItGTq%2BPQJy89ooWIYkO0cfkPZiOtkVkhvc8JFHDRMsafTi92RLimnHP9pS%2FobUcQ5sLaLse96pISiT%2BdBJCTLJ%2FkK%2BmLHAb4deSmonck3VFr28Gdg33O8k0hlrlVDKnRYyhW%2BBrTg4R7VJkd6S9wOLvCgCNwBiwpPNy3gKNwTdnegDxLca5VV7EzC%2BeUWvCwCUxztpwyssi8SKks98Nib20n37ZbGamMWHLVzBfUtIhUvbwNCTqnug1uZEoe85mAFVMNvKDbJFH9CYw0tq1vgY6pgG1EFVVrhMNjCsu4q1c8btf3gVyMiqDnyPKQVm%2BGFD9CMIGHOQzTnYYdek5JJDDlQHzf5YxMVmDj9xFwb70UvCTf0NETvihF8T8s04Aik2m5t0%2FpSeKZbsZFoPvv16QeSS5BI9gaJJp7%2F1wDciv2yWG02uAxgp0kTlBZzYwCmsbAoBJhzuqppOnQ7MNLPOhPYtJCye%2BOjzgHukv19fC4vyZQCMcOof6&X-Amz-Signature=0b6ab1f158ebad0d10a5b604d79f9a916effea79013e4b9e7926dfc69f4c912e&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "expiry_time": "2025-03-09T14:12:05.218Z"
       }
     }
   },
