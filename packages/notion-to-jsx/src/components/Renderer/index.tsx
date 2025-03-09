@@ -1,9 +1,9 @@
-import React, { useEffect, useState, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import { container } from './styles.css';
 
 import { NotionBlock } from '../../types';
 import { useKeyboardNavigation } from '../../hooks/useKeyboardNavigation';
-import { List, ListBlocksRenderer } from './components/List';
+import { ListBlocksRenderer } from './components/List';
 import { BlockRenderer } from './components/Block';
 import '../../styles/reset.css';
 import { darkTheme, lightTheme } from '../../styles/theme.css';
