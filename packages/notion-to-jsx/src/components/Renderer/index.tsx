@@ -1,40 +1,22 @@
-// import { Client } from 'notion-to-utils';
 import React, { useEffect, useState, useMemo, useCallback } from 'react';
 import { container } from './styles.css';
 
 import { NotionBlock } from '../../types';
-import testData from '../../constants/test.json';
 import { useKeyboardNavigation } from '../../hooks/useKeyboardNavigation';
 import { List, ListBlocksRenderer } from './components/List';
 import { BlockRenderer } from './components/Block';
 import '../../styles/reset.css';
 import { darkTheme, lightTheme } from '../../styles/theme.css';
 
-const notion = {
-  getPageBlocks: async () => {
-    return testData as NotionBlock[];
-  },
-};
-
 interface Props {
+  blocks: NotionBlock[];
   isDarkMode?: boolean;
   onBlockFocus?: (index: number) => void;
 }
 export const Renderer: React.FC<Props> = React.memo(
-  ({ isDarkMode = false, onBlockFocus }) => {
-    const [blocks, setBlocks] = useState<NotionBlock[]>([]);
+  ({ blocks, isDarkMode = false, onBlockFocus }) => {
     const theme = isDarkMode ? darkTheme : lightTheme;
     const [focusedIndex, setFocusedIndex] = useState<number>(-1);
-
-    // TODO: For test
-    useEffect(() => {
-      const fetchBlocks = async () => {
-        const result = await notion.getPageBlocks();
-        setBlocks(result);
-      };
-
-      fetchBlocks();
-    }, []);
 
     const handleBlockFocus = useCallback(
       (index: number) => {
