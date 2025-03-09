@@ -18,9 +18,13 @@ const ListBlocksRenderer: React.FC<Props> = ({ blocks, startIndex, type }) => {
       break;
     }
   }
-
   return (
-    <List as={type === 'numbered' ? 'ol' : 'ul'} type={type}>
+    <List
+      as={type === 'numbered' ? 'ol' : 'ul'}
+      type={type}
+      role="list"
+      aria-label={type === 'bulleted' ? 'Bulleted list' : 'Numbered list'}
+    >
       {blocks
         .slice(startIndex, startIndex + consecutiveItems)
         .map((block, index) => (
