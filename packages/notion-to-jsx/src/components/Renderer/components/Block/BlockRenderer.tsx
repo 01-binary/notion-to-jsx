@@ -7,7 +7,6 @@ import {
 } from '../MemoizedComponents';
 import { CodeBlock } from '../Code';
 import { Heading1, Heading2, Heading3, Paragraph } from '../Typography';
-import { ListItem } from '../List';
 
 export interface Props {
   block: any;
@@ -51,20 +50,6 @@ const BlockRenderer: React.FC<Props> = ({ block, onFocus, index }) => {
         <Heading3 {...blockProps}>
           <MemoizedRichText richTexts={block.heading_3.rich_text} />
         </Heading3>
-      );
-
-    case 'bulleted_list_item':
-      return (
-        <ListItem {...blockProps}>
-          <MemoizedRichText richTexts={block.bulleted_list_item.rich_text} />
-        </ListItem>
-      );
-
-    case 'numbered_list_item':
-      return (
-        <ListItem {...blockProps}>
-          <MemoizedRichText richTexts={block.numbered_list_item.rich_text} />
-        </ListItem>
       );
 
     case 'code':
