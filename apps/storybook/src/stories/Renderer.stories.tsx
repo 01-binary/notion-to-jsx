@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Renderer, NotionBlock } from 'notion-to-jsx';
+import notionBlocks from '../sample-data/notionBlocks.json';
 
 const meta = {
   title: 'Components/Renderer',
@@ -24,20 +25,16 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-// 페이지 ID
-const PAGE_ID = '1239c6bf-2b17-8076-a838-d17ca1c89783';
-
 export const Default: Story = {
   args: {
-    blocks: [] as NotionBlock[], // 초기에는 빈 배열로 설정
+    blocks: notionBlocks as NotionBlock[], // JSON 파일에서 불러온 블록 데이터 사용
     isDarkMode: false,
   },
-  decorators: [(Story) => <Story args={{ blocks: [], isDarkMode: false }} />],
 };
 
 export const DarkMode: Story = {
   args: {
-    blocks: [] as NotionBlock[], // 초기에는 빈 배열로 설정
+    blocks: notionBlocks as NotionBlock[], // JSON 파일에서 불러온 블록 데이터 사용
     isDarkMode: true,
   },
   decorators: [
@@ -45,7 +42,7 @@ export const DarkMode: Story = {
       <div
         style={{ background: '#1a1a1a', minHeight: '100vh', padding: '1em' }}
       >
-        <Story args={{ blocks: [], isDarkMode: true }} />
+        <Story />
       </div>
     ),
   ],

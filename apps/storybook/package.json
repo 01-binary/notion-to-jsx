@@ -10,6 +10,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "dotenv": "^16.4.7",
     "notion-to-jsx": "workspace:*",
     "notion-to-utils": "workspace:*",
     "react": "^18.3.1",
