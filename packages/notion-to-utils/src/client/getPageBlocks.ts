@@ -65,13 +65,8 @@ async function fetchBlockChildren(
             // file URL 처리
             if (imageBlock.image.file && imageBlock.image.file.url) {
               const url = imageBlock.image.file.url;
-              const userId = imageBlock.last_edited_by?.id;
               // 포맷팅된 URL로 교체
-              imageBlock.image.file.url = formatNotionImageUrl(
-                url,
-                block.id,
-                userId
-              );
+              imageBlock.image.file.url = formatNotionImageUrl(url, block.id);
             }
             // external URL 처리
             else if (
@@ -79,12 +74,10 @@ async function fetchBlockChildren(
               imageBlock.image.external.url
             ) {
               const url = imageBlock.image.external.url;
-              const userId = imageBlock.last_edited_by?.id;
               // 포맷팅된 URL로 교체
               imageBlock.image.external.url = formatNotionImageUrl(
                 url,
-                block.id,
-                userId
+                block.id
               );
             }
           }

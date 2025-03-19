@@ -15,8 +15,7 @@
  */
 export const formatNotionImageUrl = (
   url: string | undefined,
-  blockId?: string,
-  userId?: string | undefined
+  blockId?: string
 ): string => {
   // URL이 없거나 유효하지 않은 경우 빈 문자열 또는 원래 URL 반환
   if (!url || typeof url !== 'string' || !url.startsWith('https://')) {
@@ -85,8 +84,7 @@ export const getFormattedImageUrlFromBlock = (block: any): string | null => {
         // expiry_time 필드가 있는 경우에도 무시하고 URL만 사용
         // URL에서 기본 이미지 경로만 추출하여 사용
         const blockId = block.id;
-        const userId = block.last_edited_by?.id;
-        return formatNotionImageUrl(url, blockId, userId);
+        return formatNotionImageUrl(url, blockId);
       }
     }
 

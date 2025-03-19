@@ -15,8 +15,8 @@ export class Client extends NotionClient {
   getFileUrl = (pageId: string, propertyKey: string) =>
     getFileUrlFunc(this, pageId, propertyKey);
   getPageBlocks = (pageId: string) => getPageBlocksFunc(this, pageId);
-  formatNotionImageUrl = (url: string, blockId?: string, userId?: string) =>
-    formatNotionImageUrlFunc(url, blockId, userId);
+  formatNotionImageUrl = (url: string, blockId?: string) =>
+    formatNotionImageUrlFunc(url, blockId);
 }
 
 export default Client;
