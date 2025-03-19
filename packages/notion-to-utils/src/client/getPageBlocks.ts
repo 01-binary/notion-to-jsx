@@ -4,6 +4,7 @@ import {
   BlockObjectResponse,
   PartialBlockObjectResponse,
 } from '@notionhq/client/build/src/api-endpoints';
+import { formatNotionImageUrl } from './formatNotionImageUrl';
 
 // 블록 타입 정의
 export type NotionBlock = BlockObjectResponse | PartialBlockObjectResponse;
@@ -53,6 +54,41 @@ async function fetchBlockChildren(
         const blockWithChildren = {
           ...block,
         } as unknown as NotionBlockWithChildren;
+
+        // 이미지 블록인 경우 URL 포맷팅 처리
+        if ('type' in block && block.type === 'image') {
+          // 타입 안전성을 위해 any로 처리
+          const imageBlock = block as any;
+
+          // 이미지 속성이 있는지 확인
+          if (imageBlock.image) {
+            // file URL 처리
+            if (imageBlock.image.file && imageBlock.image.file.url) {
+              const url = imageBlock.image.file.url;
+              const userId = imageBlock.last_edited_by?.id;
+              // 포맷팅된 URL로 교체
+              imageBlock.image.file.url = formatNotionImageUrl(
+                url,
+                block.id,
+                userId
+              );
+            }
+            // external URL 처리
+            else if (
+              imageBlock.image.external &&
+              imageBlock.image.external.url
+            ) {
+              const url = imageBlock.image.external.url;
+              const userId = imageBlock.last_edited_by?.id;
+              // 포맷팅된 URL로 교체
+              imageBlock.image.external.url = formatNotionImageUrl(
+                url,
+                block.id,
+                userId
+              );
+            }
+          }
+        }
 
         // 타입 가드를 사용하여 has_children 속성 확인
         if (hasChildren(block)) {
