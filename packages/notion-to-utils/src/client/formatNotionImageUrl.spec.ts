@@ -30,11 +30,10 @@ describe('formatNotionImageUrl', () => {
     const s3Url =
       'https://prod-files-secure.s3.us-west-2.amazonaws.com/cd7314a5-d906-43b0-81e7-42eff82c02a3/566f127b-9e73-491d-bee6-5afd075653a2/image.png';
     const blockId = '17f9c6bf-2b17-8016-bf79-dc83ab79fb78';
-    const userId = '5146391e-8b65-47f2-83b6-2bfe81194f32';
 
-    const expected = `https://www.notion.so/image/${encodeURIComponent(s3Url)}?table=block&id=${blockId}&userId=${userId}&cache=v2`;
+    const expected = `https://www.notion.so/image/${encodeURIComponent(s3Url)}?table=block&id=${blockId}&cache=v2`;
 
-    const result = formatNotionImageUrl(s3Url, blockId, userId);
+    const result = formatNotionImageUrl(s3Url, blockId);
 
     expect(result).toBe(expected);
   });
@@ -114,8 +113,7 @@ describe('getFormattedImageUrlFromBlock', () => {
 
     const expectedUrl = formatNotionImageUrl(
       mockBlock.image.file.url,
-      mockBlock.id,
-      mockBlock.last_edited_by.id
+      mockBlock.id
     );
 
     const result = getFormattedImageUrlFromBlock(mockBlock);
@@ -139,8 +137,7 @@ describe('getFormattedImageUrlFromBlock', () => {
 
     const expectedUrl = formatNotionImageUrl(
       mockBlock.image.external.url,
-      mockBlock.id,
-      mockBlock.last_edited_by.id
+      mockBlock.id
     );
 
     const result = getFormattedImageUrlFromBlock(mockBlock);
@@ -186,7 +183,7 @@ describe('getFormattedImageUrlFromBlock', () => {
         file: {
           get url() {
             throw new Error('액세스 오류');
-          }
+          },
         },
       },
     };
