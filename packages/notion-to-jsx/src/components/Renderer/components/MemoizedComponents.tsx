@@ -2,6 +2,7 @@ import React from 'react';
 import RichText, { RichTextItem, RichTextProps } from './RichText/RichTexts';
 import { Image, ImageProps } from './Image';
 import Bookmark, { type BookmarkProps } from './Bookmark/Bookmark';
+import LinkPreview, { type LinkPreviewProps } from './LinkPreview/LinkPreview';
 
 export const MemoizedRichText = React.memo<RichTextProps>(
   RichText,
@@ -21,10 +22,14 @@ export const MemoizedImage = React.memo<ImageProps>(Image, (prev, next) => {
 export const MemoizedBookmark = React.memo<BookmarkProps>(
   Bookmark,
   (prev, next) => {
-    return (
-      prev.url === next.url &&
-      JSON.stringify(prev.caption) === JSON.stringify(next.caption)
-    );
+    return prev.url === next.url;
+  }
+);
+
+export const MemoizedLinkPreview = React.memo<LinkPreviewProps>(
+  LinkPreview,
+  (prev, next) => {
+    return prev.url === next.url;
   }
 );
 

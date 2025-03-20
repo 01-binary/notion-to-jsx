@@ -4,6 +4,7 @@ import {
   MemoizedRichText,
   MemoizedImage,
   MemoizedBookmark,
+  MemoizedLinkPreview,
 } from '../MemoizedComponents';
 import { CodeBlock } from '../Code';
 import { Heading1, Heading2, Heading3, Paragraph } from '../Typography';
@@ -24,6 +25,13 @@ const BlockRenderer: React.FC<Props> = ({ block, onFocus, index }) => {
   };
 
   switch (block.type) {
+    case 'link_preview':
+      return (
+        <MemoizedLinkPreview
+          url={block.link_preview.url}
+          {...blockProps}
+        />
+      );
     case 'paragraph':
       return (
         <Paragraph {...blockProps}>
