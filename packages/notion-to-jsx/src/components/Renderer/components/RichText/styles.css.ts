@@ -30,13 +30,15 @@ export const richText = recipe({
     },
     code: {
       true: {
-        background: vars.colors.code.background,
-        padding: '0.2em 0.4em',
+        background: vars.colors.code.inlineBackground,
+        padding: '0.1em 0.35em',
         borderRadius: vars.borderRadius.sm,
         fontWeight: vars.typography.fontWeight.medium,
         fontFamily: vars.typography.fontFamily.code,
         fontSize: '0.85em',
         color: vars.colors.code.inline,
+        display: 'inline-block',
+        verticalAlign: 'middle',
       },
     },
   },

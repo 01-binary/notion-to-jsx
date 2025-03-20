@@ -6,6 +6,7 @@ import { vars } from '../../../../styles/theme.css';
 export const imageContainer = style({
   position: 'relative',
   width: '100%',
+  padding: `${vars.spacing.sm} 0`,
   borderRadius: vars.borderRadius.md,
   overflow: 'hidden',
   margin: '0 auto',

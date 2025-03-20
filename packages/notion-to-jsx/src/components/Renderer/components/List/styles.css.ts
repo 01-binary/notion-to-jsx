@@ -4,6 +4,7 @@ import { vars } from '../../../../styles/theme.css';
 
 export const list = recipe({
   base: {
+    padding: `${vars.spacing.xs} ${vars.spacing.xxs}`,
     paddingLeft: vars.spacing.lg,
   },
   variants: {
@@ -18,4 +19,6 @@ export const list = recipe({
   },
 });
 
-export const listItem = style({});
+export const listItem = style({
+  padding: `${vars.spacing.xxs} 0`,
+});

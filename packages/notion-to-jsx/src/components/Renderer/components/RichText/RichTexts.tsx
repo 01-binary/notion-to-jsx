@@ -50,7 +50,7 @@ const RichTexts: React.FC<RichTextProps> = ({ richTexts }) => {
         ) : (
           text.text.content
         );
-        
+
         // TODO: NOTION COLOR 적용
         // const colorValue =
         //   color === 'default'
@@ -69,7 +69,6 @@ const RichTexts: React.FC<RichTextProps> = ({ richTexts }) => {
               underline,
               code,
             })}
-            // style={{ color: colorValue }}
           >
             {content}
           </span>

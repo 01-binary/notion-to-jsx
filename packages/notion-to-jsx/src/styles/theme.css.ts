@@ -19,6 +19,7 @@ export const vars = createThemeContract({
       background: null,
       text: null,
       inline: null,
+      inlineBackground: null,
     },
   },
   typography: {
@@ -133,6 +134,7 @@ export const lightTheme = createTheme(vars, {
       background: 'rgba(135,131,120,.1)',
       text: '#24292e',
       inline: '#EB5757',
+      inlineBackground: 'rgba(135,131,120,.15)',
     },
   },
   shadows: {
@@ -159,6 +161,7 @@ export const darkTheme = createTheme(vars, {
       background: '#161b22',
       text: '#c9d1d9',
       inline: '#EB5757',
+      inlineBackground: '#161b22',
     },
   },
   shadows: {
