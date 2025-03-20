@@ -5,6 +5,7 @@ import {
   PartialBlockObjectResponse,
 } from '@notionhq/client/build/src/api-endpoints';
 import { formatNotionImageUrl } from './formatNotionImageUrl';
+import { addMetadataToImageBlock } from '../utils';
 
 // 블록 타입 정의
 export type NotionBlock = BlockObjectResponse | PartialBlockObjectResponse;
@@ -79,6 +80,13 @@ async function fetchBlockChildren(
                 url,
                 block.id
               );
+            }
+
+            // 이미지 메타데이터 추출 및 추가
+            try {
+              await addMetadataToImageBlock(imageBlock);
+            } catch (metadataError) {
+              console.error('이미지 메타데이터 추출 중 오류:', metadataError);
             }
           }
         }

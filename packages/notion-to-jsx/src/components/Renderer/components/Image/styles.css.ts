@@ -1,13 +1,40 @@
 import { style } from '@vanilla-extract/css';
 import { recipe } from '@vanilla-extract/recipes';
+import { createVar, fallbackVar } from '@vanilla-extract/css';
 import { vars } from '../../../../styles/theme.css';
 
 export const imageContainer = style({
   position: 'relative',
   width: '100%',
-  background: vars.colors.code.background,
   borderRadius: vars.borderRadius.md,
   overflow: 'hidden',
+  margin: '0 auto',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+});
+
+// CSS 변수 생성
+export const imageWidthVar = createVar();
+export const imageAspectRatioVar = createVar();
+
+export const imageWrapper = recipe({
+  base: {
+    position: 'relative',
+    maxWidth: '100%',
+    width: fallbackVar(imageWidthVar, '100%'),
+  },
+  variants: {
+    hasWidth: {
+      true: {},
+      false: {
+        width: '100%',
+      },
+    },
+  },
+  defaultVariants: {
+    hasWidth: false,
+  },
 });
 
 export const styledImage = recipe({
@@ -16,6 +43,8 @@ export const styledImage = recipe({
     height: 'auto',
     display: 'block',
     transition: 'opacity 0.3s ease',
+    objectFit: 'contain',
+    aspectRatio: fallbackVar(imageAspectRatioVar, 'auto'),
   },
   variants: {
     loaded: {
@@ -26,23 +55,26 @@ export const styledImage = recipe({
         opacity: 0,
       },
     },
+    hasAspectRatio: {
+      true: {},
+      false: {},
+    },
   },
   defaultVariants: {
     loaded: false,
+    hasAspectRatio: false,
   },
 });
 
 export const placeholder = style({
-  position: 'absolute',
-  top: 0,
-  left: 0,
-  right: 0,
-  bottom: 0,
+  // position: 'absolute',
+  // top: 0,
+  // left: 0,
+  // right: 0,
+  // bottom: 0,
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  background: vars.colors.code.background,
-  color: vars.colors.secondary,
 });
 
 export const caption = style({

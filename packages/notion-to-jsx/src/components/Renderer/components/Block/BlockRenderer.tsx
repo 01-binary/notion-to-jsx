@@ -70,6 +70,7 @@ const BlockRenderer: React.FC<Props> = ({ block, onFocus, index }) => {
             src={block.image.file?.url || block.image.external?.url}
             alt={block.image.caption?.[0]?.plain_text || ''}
             caption={block.image.caption}
+            format={block.image.format}
           />
         </figure>
       );
