@@ -14,8 +14,8 @@ dotenv.config({ path: resolve(__dirname, '../.env.local') });
 // 페이지 ID
 const PAGE_ID = '1239c6bf-2b17-8076-a838-d17ca1c89783';
 
-// ? using this script : pnpx tsx scripts/fetchNotionBlocks.ts
-async function fetchAndSaveBlocks() {
+// ? using this script : pnpx tsx scripts/fetchNotionProperties.ts
+async function fetchAndSaveProperties() {
   try {
     // Notion API 키 확인
     let apiKey = process.env.NOTION_API_KEY;
@@ -45,26 +45,30 @@ async function fetchAndSaveBlocks() {
       process.exit(1);
     }
 
-    console.log('Notion API에서 블록 데이터를 가져오는 중...');
+    console.log('Notion API에서 페이지 속성 데이터를 가져오는 중...');
 
     // Notion 클라이언트 생성
     const client = new Client({ auth: apiKey });
 
-    // 페이지 블록 가져오기
-    const blocks = await client.getPageBlocks(PAGE_ID);
+    // 페이지 속성 가져오기
+    const properties = await client.getPageProperties(PAGE_ID);
 
     // JSON 파일로 저장
-    const outputPath = join(__dirname, '../src/sample-data/notionBlocks.json');
+    const outputPath = join(__dirname, '../src/sample-data/notionTitle.json');
     console.log(`저장 경로: ${outputPath}`);
-    writeFileSync(outputPath, JSON.stringify(blocks, null, 2), 'utf8');
+    writeFileSync(outputPath, JSON.stringify(properties, null, 2), 'utf8');
 
-    console.log(`블록 데이터가 성공적으로 저장되었습니다: ${outputPath}`);
-    console.log(`총 ${blocks.length}개의 블록을 가져왔습니다.`);
+    console.log(
+      `페이지 속성 데이터가 성공적으로 저장되었습니다: ${outputPath}`
+    );
+    console.log(
+      `총 ${Object.keys(properties || {}).length}개의 속성을 가져왔습니다.`
+    );
   } catch (error) {
-    console.error('블록 데이터 가져오기 실패:', error);
+    console.error('페이지 속성 데이터 가져오기 실패:', error);
     process.exit(1);
   }
 }
 
 // 스크립트 실행
-fetchAndSaveBlocks();
+fetchAndSaveProperties();
