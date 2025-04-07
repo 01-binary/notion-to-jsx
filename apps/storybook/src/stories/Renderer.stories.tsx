@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Renderer, NotionBlock } from 'notion-to-jsx';
 import notionBlocks from '../sample-data/notionBlocks.json';
+import notionProperties from '../sample-data/notionProperties.json';
 
 const meta = {
   title: 'Components/Renderer',
@@ -29,6 +30,8 @@ export const Default: Story = {
   args: {
     blocks: notionBlocks as NotionBlock[], // JSON 파일에서 불러온 블록 데이터 사용
     isDarkMode: false,
+    title: notionProperties.Name,
+    cover: notionProperties.coverUrl,
   },
 };
 
@@ -36,6 +39,8 @@ export const DarkMode: Story = {
   args: {
     blocks: notionBlocks as NotionBlock[], // JSON 파일에서 불러온 블록 데이터 사용
     isDarkMode: true,
+    title: notionProperties.Name,
+    cover: notionProperties.coverUrl,
   },
   decorators: [
     (Story) => (
