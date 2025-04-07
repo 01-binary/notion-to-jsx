@@ -61,6 +61,8 @@ export const vars = createThemeContract({
     sm: null,
     md: null,
     lg: null,
+    xl: null,
+    xxl: null,
   },
   shadows: {
     sm: null,
@@ -114,6 +116,8 @@ const commonThemeValues = {
     sm: '0.25rem',
     md: '0.375rem',
     lg: '0.5rem',
+    xl: '0.75rem',
+    xxl: '1rem',
   },
 };
 

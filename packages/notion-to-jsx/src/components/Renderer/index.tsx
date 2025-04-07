@@ -7,14 +7,18 @@ import { ListBlocksRenderer } from './components/List';
 import { BlockRenderer } from './components/Block';
 import '../../styles/reset.css';
 import { darkTheme, lightTheme } from '../../styles/theme.css';
+import Title from '../Title';
+import Cover from '../Cover';
 
 interface Props {
   blocks: NotionBlock[];
+  title?: string;
+  cover?: string;
   isDarkMode?: boolean;
   onBlockFocus?: (index: number) => void;
 }
 export const Renderer: React.FC<Props> = React.memo(
-  ({ blocks, isDarkMode = false, onBlockFocus }) => {
+  ({ blocks, isDarkMode = false, title, cover, onBlockFocus }) => {
     const theme = isDarkMode ? darkTheme : lightTheme;
     const [focusedIndex, setFocusedIndex] = useState<number>(-1);
 
@@ -86,12 +90,16 @@ export const Renderer: React.FC<Props> = React.memo(
     }, [blocks, handleBlockFocus]);
 
     return (
-      <article
-        className={`${theme} ${container}`}
-        aria-label="Notion page content"
-      >
-        {renderedBlocks}
-      </article>
+      <>
+        {cover && <Cover src={cover} alt={title || 'Notion page content'} />}
+        <article
+          className={`${theme} ${container}`}
+          aria-label={title || 'Notion page content'}
+        >
+          {title && <Title title={title} />}
+          {renderedBlocks}
+        </article>
+      </>
     );
   }
 );
