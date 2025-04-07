@@ -10,11 +10,17 @@ export class Client extends NotionClient {
     super(options);
   }
 
-  getPageProperties = (pageId: string, keys?: string[]) =>
-    getPagePropertiesFunc(this, pageId, keys);
+  getPageProperties = (
+    pageId: string,
+    keys: string[] = [],
+    extractValues = true
+  ) => getPagePropertiesFunc(this, pageId, keys, extractValues);
+  getPageBlocks = (pageId: string) => getPageBlocksFunc(this, pageId);
+
+  //? 25.4.7 getFileUrl 외부에서 미사용
   getFileUrl = (pageId: string, propertyKey: string) =>
     getFileUrlFunc(this, pageId, propertyKey);
-  getPageBlocks = (pageId: string) => getPageBlocksFunc(this, pageId);
+  //? 25.4.7 formatNotionImageUrl 외부에서 미사용
   formatNotionImageUrl = (url: string, blockId?: string) =>
     formatNotionImageUrlFunc(url, blockId);
 }
