@@ -54,7 +54,10 @@ async function fetchAndSaveProperties() {
     const properties = await client.getPageProperties(PAGE_ID);
 
     // JSON 파일로 저장
-    const outputPath = join(__dirname, '../src/sample-data/notionTitle.json');
+    const outputPath = join(
+      __dirname,
+      '../src/sample-data/notionProperties.json'
+    );
     console.log(`저장 경로: ${outputPath}`);
     writeFileSync(outputPath, JSON.stringify(properties, null, 2), 'utf8');
 
