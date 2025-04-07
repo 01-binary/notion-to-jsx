@@ -66,6 +66,7 @@ export const formatNotionImageUrl = (
 
 /**
  * 노션 블록에서 이미지 URL을 추출하고 포맷팅하는 함수
+ * ! 현재 미사용 (25.4.7)
  *
  * @param block - 노션 블록 객체
  * @returns 포맷팅된 이미지 URL 또는 null
