@@ -24,7 +24,7 @@ importers:
         specifier: ^5.4.5
         version: 5.6.3
 
-  apps/storybook:
+  apps/renderer-storybook:
     dependencies:
       dotenv:
         specifier: ^16.4.7

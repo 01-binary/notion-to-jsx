@@ -42,3 +42,5 @@ pnpm-debug.log*
 *.pem
 
 test/
+
+storybook-static

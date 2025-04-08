@@ -1,5 +1,5 @@
 {
-  "name": "storybook",
+  "name": "renderer-storybook",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +7,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build:storybook": "storybook build"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
