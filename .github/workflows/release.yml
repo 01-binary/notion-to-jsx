@@ -25,12 +25,6 @@ jobs:
         with:
           version: 9
 
-      - name: Clear npm cache
-        run: npm cache clean --force
-
-      - name: Clear pnpm store
-        run: pnpm store prune
-
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
