@@ -8,4 +8,5 @@ export const cover = style({
   objectFit: 'cover',
   objectPosition: 'center 50%',
   borderRadius: '1.5rem',
+  margin: '0 auto',
 });
