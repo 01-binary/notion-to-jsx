@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 1.0.2
+
+### Patch Changes
+
+- 7e28a14: v1.0.2
+
 ## 1.0.1
 
 ### Patch Changes
