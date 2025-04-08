@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 1.0.0
+
+### Major Changes
+
+- 166c677: v1
+
 ## 0.4.21
 
 ### Patch Changes

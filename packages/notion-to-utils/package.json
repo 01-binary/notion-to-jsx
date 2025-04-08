@@ -1,6 +1,6 @@
 {
   "name": "notion-to-utils",
-  "version": "0.4.21",
+  "version": "1.0.0",
   "description": "Notion to JSX utils",
   "private": false,
   "repository": {
