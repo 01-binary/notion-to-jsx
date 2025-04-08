@@ -101,7 +101,7 @@ const Bookmark: React.FC<BookmarkProps> = ({ url }) => {
             {ogData?.favicon && (
               <img src={ogData.favicon} alt="" className={favicon} />
             )}
-            <div className={urlText}>{ogData?.url || ''}</div>
+            <span className={urlText}>{ogData?.url || ''}</span>
           </div>
         </div>
         {ogData?.image && (

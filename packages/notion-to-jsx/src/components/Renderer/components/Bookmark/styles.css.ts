@@ -60,9 +60,7 @@ export const title = style({
   minHeight: '1.5rem',
   overflow: 'hidden',
   textOverflow: 'ellipsis',
-  display: '-webkit-box',
-  WebkitLineClamp: 1,
-  WebkitBoxOrient: 'vertical',
+  whiteSpace: 'nowrap',
 });
 
 export const description = style({
@@ -100,6 +98,4 @@ export const urlText = style({
   whiteSpace: 'nowrap',
   textOverflow: 'ellipsis',
   maxWidth: '100%',
-  width: '1px',
-  flexGrow: 1,
 });
