@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 0.3.0
+
+### Minor Changes
+
+- 630ca94: test
+
 ## 0.2.0
 
 ### Minor Changes
