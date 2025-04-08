@@ -1,6 +1,6 @@
 {
   "name": "notion-to-jsx",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Notion blocks to JSX renderer",
   "private": true,
   "repository": {
@@ -20,7 +20,10 @@
   "files": [
     "dist"
   ],
-  "sideEffects": ["**/*.css", "**/*.css.ts"],
+  "sideEffects": [
+    "**/*.css",
+    "**/*.css.ts"
+  ],
   "keywords": [
     "notion",
     "jsx",
