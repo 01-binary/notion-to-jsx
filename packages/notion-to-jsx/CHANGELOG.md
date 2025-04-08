@@ -1,11 +1,5 @@
 # notion-to-jsx
 
-## 1.0.0
-
-### Major Changes
-
-- 3ba6373: v1
-
 ## 0.3.0
 
 ### Minor Changes
