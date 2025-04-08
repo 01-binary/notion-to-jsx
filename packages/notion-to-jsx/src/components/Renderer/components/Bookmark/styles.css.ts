@@ -36,6 +36,11 @@ export const previewContainer = style({
   justifyContent: 'center',
   maxHeight: '8rem',
   overflow: 'hidden',
+  '@media': {
+    '(max-width: 420px)': {
+      display: 'none',
+    },
+  },
 });
 
 export const previewImage = style({
@@ -55,7 +60,9 @@ export const title = style({
   minHeight: '1.5rem',
   overflow: 'hidden',
   textOverflow: 'ellipsis',
-  whiteSpace: 'nowrap',
+  display: '-webkit-box',
+  WebkitLineClamp: 1,
+  WebkitBoxOrient: 'vertical',
 });
 
 export const description = style({
@@ -93,4 +100,6 @@ export const urlText = style({
   whiteSpace: 'nowrap',
   textOverflow: 'ellipsis',
   maxWidth: '100%',
+  width: '1px',
+  flexGrow: 1,
 });
