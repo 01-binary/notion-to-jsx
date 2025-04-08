@@ -23,6 +23,8 @@ export interface ImageProps {
   format?: ImageFormat;
 }
 
+const MAX_WIDTH = 720;
+
 const Image: React.FC<ImageProps> = ({
   src,
   alt,
@@ -48,7 +50,9 @@ const Image: React.FC<ImageProps> = ({
           format?.block_width
             ? {
                 width:
-                  format.block_width > 900 ? '100%' : `${format.block_width}px`,
+                  format.block_width > MAX_WIDTH
+                    ? '100%'
+                    : `${format.block_width}px`,
               }
             : undefined
         }
@@ -58,7 +62,7 @@ const Image: React.FC<ImageProps> = ({
             className={placeholder}
             style={{
               width: format?.block_width
-                ? format.block_width > 900
+                ? format.block_width > MAX_WIDTH
                   ? '100%'
                   : `${format.block_width}px`
                 : '100%',
@@ -97,7 +101,7 @@ const Image: React.FC<ImageProps> = ({
             className={placeholder}
             style={{
               width: format?.block_width
-                ? format.block_width > 900
+                ? format.block_width > MAX_WIDTH
                   ? '100%'
                   : `${format.block_width}px`
                 : '100%',

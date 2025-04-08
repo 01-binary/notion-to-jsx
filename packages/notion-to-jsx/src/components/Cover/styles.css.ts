@@ -8,4 +8,11 @@ export const cover = style({
   objectFit: 'cover',
   objectPosition: 'center 50%',
   borderRadius: '1.5rem',
+  margin: '0 auto',
+  '@media': {
+    '(max-width: 900px)': {
+      borderRadius: '0.5rem',
+      height: '25vh',
+    },
+  },
 });

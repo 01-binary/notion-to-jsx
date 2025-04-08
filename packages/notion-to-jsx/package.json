@@ -20,7 +20,7 @@
   "files": [
     "dist"
   ],
-  "sideEffects": false,
+  "sideEffects": ["**/*.css", "**/*.css.ts"],
   "keywords": [
     "notion",
     "jsx",

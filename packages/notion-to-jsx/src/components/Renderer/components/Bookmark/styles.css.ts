@@ -36,6 +36,11 @@ export const previewContainer = style({
   justifyContent: 'center',
   maxHeight: '8rem',
   overflow: 'hidden',
+  '@media': {
+    '(max-width: 420px)': {
+      display: 'none',
+    },
+  },
 });
 
 export const previewImage = style({

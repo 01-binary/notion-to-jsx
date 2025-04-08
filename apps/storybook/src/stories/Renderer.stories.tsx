@@ -42,13 +42,4 @@ export const DarkMode: Story = {
     title: notionProperties.Name,
     cover: notionProperties.coverUrl,
   },
-  decorators: [
-    (Story) => (
-      <div
-        style={{ background: '#1a1a1a', minHeight: '100vh', padding: '1em' }}
-      >
-        <Story />
-      </div>
-    ),
-  ],
 };
