@@ -15,7 +15,6 @@ export const imageContainer = style({
   alignItems: 'center',
 });
 
-// CSS 변수 생성
 export const imageWidthVar = createVar();
 export const imageAspectRatioVar = createVar();
 
