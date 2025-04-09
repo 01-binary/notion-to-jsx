@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 1.1.1
+
+### Patch Changes
+
+- 148372b: prism css import delete
+
 ## 1.1.0
 
 ### Minor Changes
