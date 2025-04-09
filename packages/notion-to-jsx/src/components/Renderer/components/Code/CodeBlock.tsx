@@ -4,12 +4,6 @@ import Prism, { Grammar } from 'prismjs';
 import { MemoizedRichText } from '../MemoizedComponents';
 import { RichTextItem } from '../RichText/RichTexts';
 
-import 'prismjs/themes/prism.css';
-import 'prismjs/components/prism-typescript';
-import 'prismjs/components/prism-javascript';
-import 'prismjs/components/prism-jsx';
-import 'prismjs/components/prism-tsx';
-
 if (typeof window !== 'undefined') {
   window.Prism = Prism;
 }
