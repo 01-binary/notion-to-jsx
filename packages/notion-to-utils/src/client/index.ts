@@ -17,7 +17,6 @@ export class Client extends NotionClient {
   ) => getPagePropertiesFunc(this, pageId, keys, extractValues);
   getPageBlocks = (pageId: string) => getPageBlocksFunc(this, pageId);
 
-  //? 25.4.7 getFileUrl 외부에서 미사용
   getFileUrl = (pageId: string, propertyKey: string) =>
     getFileUrlFunc(this, pageId, propertyKey);
   //? 25.4.7 formatNotionImageUrl 외부에서 미사용

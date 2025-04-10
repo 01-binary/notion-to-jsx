@@ -1,0 +1,2151 @@
+[
+  {
+    "object": "block",
+    "id": "c6dba7fd-f75d-46f5-9211-ee125bacd4a7",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2023-06-13T14:38:00.000Z",
+    "last_edited_time": "2023-07-02T08:02:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_1",
+    "heading_1": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "이진수 (Lee Jin Soo)",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "이진수 (Lee Jin Soo)",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "5c0b2367-4cd5-4685-bb3c-868bd2d8c32e",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2024-01-07T06:35:00.000Z",
+    "last_edited_time": "2025-03-26T04:22:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "안녕하세요! 프론트엔드 5년 차 개발자 이진수입니다.\n기술을 단순히 사용하는 것보다 기술이 해결하고자 하는 문제와 원리에 대해 깊이 이해하는 것을 가장 중요하게 생각합니다. 🧐\n지속적인 블로그 포스팅과 스터디를 통해 지식을 공유하고 함께 성장하고 있습니다. ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "안녕하세요! 프론트엔드 5년 차 개발자 이진수입니다.\n기술을 단순히 사용하는 것보다 기술이 해결하고자 하는 문제와 원리에 대해 깊이 이해하는 것을 가장 중요하게 생각합니다. 🧐\n지속적인 블로그 포스팅과 스터디를 통해 지식을 공유하고 함께 성장하고 있습니다. ",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "549ab095-1cc4-403a-96d9-9854994c448d",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2023-06-13T14:38:00.000Z",
+    "last_edited_time": "2023-06-13T14:38:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "divider",
+    "divider": {}
+  },
+  {
+    "object": "block",
+    "id": "369da13c-58a2-45a4-be70-26f48af0d4c4",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2023-06-13T14:38:00.000Z",
+    "last_edited_time": "2024-04-24T08:53:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Work Experience",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Work Experience",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "6f398c0d-bfe9-4552-8a25-ff3232454abf",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2023-07-02T08:11:00.000Z",
+    "last_edited_time": "2023-07-02T08:21:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "자세한 이력서를 원하시면 메일 주세요!",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "gray"
+          },
+          "plain_text": "자세한 이력서를 원하시면 메일 주세요!",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1199c6bf-2b17-80af-ad29-e0dd5247777a",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2024-10-08T15:09:00.000Z",
+    "last_edited_time": "2024-10-08T15:09:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "삼쩜삼",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "삼쩜삼",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1199c6bf-2b17-80cb-ba06-f109e0ff0aba",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2024-10-08T15:09:00.000Z",
+    "last_edited_time": "2024-10-08T15:09:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "플랫폼팀 / 프론트엔드 개발자  2024.10 - 재직 중",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "gray"
+          },
+          "plain_text": "플랫폼팀 / 프론트엔드 개발자  2024.10 - 재직 중",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "7af43ff5-2538-4732-9a84-8e4d238df55b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2024-04-24T09:05:00.000Z",
+    "last_edited_time": "2024-04-24T09:05:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "핀다",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "핀다",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "89b9d7f5-0bb9-4e10-bfc3-a10fd79ab5d0",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2024-04-24T09:05:00.000Z",
+    "last_edited_time": "2024-10-10T05:28:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "현금흐름팀 / 프론트엔드 개발자  2022.03 - 2024.08",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "gray"
+          },
+          "plain_text": "현금흐름팀 / 프론트엔드 개발자  2022.03 - 2024.08",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "382be85f-e14c-4967-a08d-d1ec7b7c7b16",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2023-07-02T08:09:00.000Z",
+    "last_edited_time": "2024-10-10T05:28:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "신용 관련 프로덕트 개발 및 유지보수",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "신용 관련 프로덕트 개발 및 유지보수",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "  ",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "  ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "2022.12 - 2024.08",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "gray"
+          },
+          "plain_text": "2022.12 - 2024.08",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "24b97930-deca-4504-8489-d73be692412e",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2023-07-02T08:11:00.000Z",
+    "last_edited_time": "2024-04-24T08:58:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "CX 툴 마이그레이션  ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "CX 툴 마이그레이션  ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "2024.03 - 2024.04",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "gray"
+          },
+          "plain_text": "2024.03 - 2024.04",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "8bea7147-d535-4202-b711-9003e1cafc87",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2024-04-24T08:55:00.000Z",
+    "last_edited_time": "2024-04-24T08:58:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "디자인 시스템 개발  ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "디자인 시스템 개발  ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "2023.10 - 2024.04",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "gray"
+          },
+          "plain_text": "2023.10 - 2024.04",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "09c63dcd-0444-4dee-99fc-2f93b4317bfa",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2024-04-24T08:55:00.000Z",
+    "last_edited_time": "2024-04-24T08:59:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "핀다 웹 모노레포 전환  ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "핀다 웹 모노레포 전환  ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "2022.11 - 2023.03",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "gray"
+          },
+          "plain_text": "2022.11 - 2023.03",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "f547ac8b-4123-4816-bb5a-39c963b6b150",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2024-04-24T08:55:00.000Z",
+    "last_edited_time": "2024-04-24T08:59:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "마이데이터 관련 프로덕트 개발 및 유지보수  ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "마이데이터 관련 프로덕트 개발 및 유지보수  ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "2022.03 - 2022.12",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "gray"
+          },
+          "plain_text": "2022.03 - 2022.12",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1b72c642-8db1-4759-8a18-4ddf1e16a3dc",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2024-04-24T09:05:00.000Z",
+    "last_edited_time": "2024-04-24T09:05:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "아이겐코리아",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "아이겐코리아",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "7d5b3392-ad31-4489-b2f2-0e3b1569d0d0",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2024-04-24T09:05:00.000Z",
+    "last_edited_time": "2024-04-24T09:05:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "개발팀 / 프론트엔드 개발자  2020.12 - 2022.02",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "gray"
+          },
+          "plain_text": "개발팀 / 프론트엔드 개발자  2020.12 - 2022.02",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "37048a39-e2b4-46a1-b5c6-5500d6842536",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2023-07-02T08:14:00.000Z",
+    "last_edited_time": "2024-04-24T08:59:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Embeddable Widget 개발  ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Embeddable Widget 개발  ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "2021.07 - 2022.02",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "gray"
+          },
+          "plain_text": "2021.07 - 2022.02",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "43bbf68a-3c33-41a8-99de-64eb309d6901",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2023-07-02T08:14:00.000Z",
+    "last_edited_time": "2024-04-24T08:59:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "어드민 리팩토링 및 유지보수",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "어드민 리팩토링 및 유지보수",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "  ",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "  ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "2020.12 - 2022.02",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "gray"
+          },
+          "plain_text": "2020.12 - 2022.02",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "7c3ab79a-1407-4ba3-a9b4-e32d7ade6845",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2024-04-24T09:05:00.000Z",
+    "last_edited_time": "2024-04-24T09:05:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "신세계아이앤씨",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "신세계아이앤씨",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "5835561d-a7df-4869-b226-ace86094ac87",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2024-04-24T09:06:00.000Z",
+    "last_edited_time": "2024-04-24T09:06:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "MSP / 클라우드 아키텍트  2020.04 - 2020.11",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "gray"
+          },
+          "plain_text": "MSP / 클라우드 아키텍트  2020.04 - 2020.11",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "d925622f-4597-40cd-bfd4-8c4501c9bb6a",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2023-07-02T08:17:00.000Z",
+    "last_edited_time": "2024-04-24T08:59:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "마이크로 사이트 개발 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "마이크로 사이트 개발 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " ",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "2020.06 - 2020.07",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "gray"
+          },
+          "plain_text": "2020.06 - 2020.07",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "24a094c7-ba97-4776-9dbc-265561b2a758",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2024-04-24T08:57:00.000Z",
+    "last_edited_time": "2024-04-24T08:59:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Public Cloud 환경에서 Infra 운영",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Public Cloud 환경에서 Infra 운영",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "  ",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "  ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "2020.04 - 2020.11",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "gray"
+          },
+          "plain_text": "2020.04 - 2020.11",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "255d7cbf-8085-4404-8392-30a190f8c3d5",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2023-07-02T08:22:00.000Z",
+    "last_edited_time": "2023-07-02T08:22:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "divider",
+    "divider": {}
+  },
+  {
+    "object": "block",
+    "id": "d5fad27a-1fd8-47e8-8f27-300df004475f",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2023-07-02T08:22:00.000Z",
+    "last_edited_time": "2024-04-24T08:53:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Achievement",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Achievement",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "5a28cf88-f0d0-4db6-bd70-d1fa67f54ad5",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2024-04-24T08:57:00.000Z",
+    "last_edited_time": "2024-04-24T08:59:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "NextJS로 자체 블로그 개발",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "NextJS로 자체 블로그 개발",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "  ",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "  ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "2023.06 - 2023.08",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "gray"
+          },
+          "plain_text": "2023.06 - 2023.08",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "a548a256-7b29-483f-8f30-1d0c274067c3",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2024-04-24T08:57:00.000Z",
+    "last_edited_time": "2024-04-24T08:59:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "스파르타 코딩클럽 React 튜터",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "스파르타 코딩클럽 React 튜터",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "  ",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "  ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "2022.11 - 2023.03",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "gray"
+          },
+          "plain_text": "2022.11 - 2023.03",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "6ba1562d-05b6-47e3-a10b-589f678d5e06",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2024-04-24T08:57:00.000Z",
+    "last_edited_time": "2024-05-05T08:34:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "글또",
+            "link": {
+              "url": "/ac5b18a482fb4df497d4e8257ad4d516"
+            }
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "글또",
+          "href": "/ac5b18a482fb4df497d4e8257ad4d516"
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 9기",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 9기",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "  ",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "  ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "2023.12 - 2024.05",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "gray"
+          },
+          "plain_text": "2023.12 - 2024.05",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "7a310aee-1a63-4581-bc57-ae184e14a945",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2024-04-24T08:57:00.000Z",
+    "last_edited_time": "2024-05-05T08:34:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "프론트엔드 아티클 스터디 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "프론트엔드 아티클 스터디 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " ",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "2023.08 - 2024.04",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "gray"
+          },
+          "plain_text": "2023.08 - 2024.04",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "39c04643-50c4-4534-956b-f272082ebb1d",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2023-06-13T14:38:00.000Z",
+    "last_edited_time": "2023-07-02T08:22:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "divider",
+    "divider": {}
+  },
+  {
+    "object": "block",
+    "id": "b54cc0f1-41ff-4beb-aea2-ee97cf99d9a8",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2023-06-13T14:38:00.000Z",
+    "last_edited_time": "2023-07-02T08:22:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Education",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Education",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "220eb80e-f5e8-4801-9cdd-0de740ad6af9",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2024-04-24T09:06:00.000Z",
+    "last_edited_time": "2024-05-09T16:56:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "동국대학교 컴퓨터공학과  ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "동국대학교 컴퓨터공학과  ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "2014.03 - 2020.02",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "gray"
+          },
+          "plain_text": "2014.03 - 2020.02",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "9315a7cd-8713-401b-8f9d-b395bf223561",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2023-06-13T14:38:00.000Z",
+    "last_edited_time": "2023-06-13T14:38:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "divider",
+    "divider": {}
+  },
+  {
+    "object": "block",
+    "id": "d341e021-4d89-4c56-8f11-6924de4497b6",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2023-06-13T14:38:00.000Z",
+    "last_edited_time": "2023-06-13T14:38:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Certificates",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Certificates",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "3b9b09eb-3717-4498-b9f4-f032ebd4e00f",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2024-04-24T08:58:00.000Z",
+    "last_edited_time": "2024-04-24T08:58:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "AWS Solutions Architect – Associate  ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "AWS Solutions Architect – Associate  ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "2021.06",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "gray"
+          },
+          "plain_text": "2021.06",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "f434f48b-677e-4e97-b41a-35dfa9a2a4db",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2024-04-24T08:58:00.000Z",
+    "last_edited_time": "2024-04-24T08:58:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "AWS Cloud Practitioner  ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "AWS Cloud Practitioner  ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "2020.06",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "gray"
+          },
+          "plain_text": "2020.06",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "3e3031e4-99b7-49b2-8af9-d0596d1fc4ce",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2023-06-13T14:38:00.000Z",
+    "last_edited_time": "2023-06-13T14:38:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "divider",
+    "divider": {}
+  },
+  {
+    "object": "block",
+    "id": "7addb928-f230-407b-8e15-d3021b3919d6",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2023-07-02T08:08:00.000Z",
+    "last_edited_time": "2023-07-02T08:08:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Contact",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Contact",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "3b68ac55-18a6-4142-8e94-0d97a0c5bbc0",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2023-07-02T08:08:00.000Z",
+    "last_edited_time": "2023-07-02T08:08:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Email : ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Email : ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "binary01@kakao.com",
+            "link": {
+              "url": "mailto:binary01@kakao.com"
+            }
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "binary01@kakao.com",
+          "href": "mailto:binary01@kakao.com"
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "a64bd7ab-7fb3-4955-a4b7-95cd910e06ee",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2023-07-02T08:08:00.000Z",
+    "last_edited_time": "2023-07-02T08:08:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Github: ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Github: ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "github.com/01-binary",
+            "link": {
+              "url": "https://github.com/01-binary"
+            }
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "github.com/01-binary",
+          "href": "https://github.com/01-binary"
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "76b32202-e658-4f41-a0ed-b83ede03ec60",
+    "parent": {
+      "type": "page_id",
+      "page_id": "76318ec3-9f83-4cc2-af54-7d81daab0131"
+    },
+    "created_time": "2023-07-02T08:08:00.000Z",
+    "last_edited_time": "2023-07-02T08:08:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Instagram : ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Instagram : ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "instagram.com/01_binary",
+            "link": {
+              "url": "https://instagram.com/01_binary"
+            }
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "instagram.com/01_binary",
+          "href": "https://instagram.com/01_binary"
+        }
+      ],
+      "color": "default"
+    }
+  }
+]

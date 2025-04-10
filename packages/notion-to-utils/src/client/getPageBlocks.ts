@@ -60,7 +60,6 @@ async function fetchBlockChildren(
         if ('type' in block && block.type === 'image') {
           // 타입 안전성을 위해 any로 처리
           const imageBlock = block as any;
-
           // 이미지 속성이 있는지 확인
           if (imageBlock.image) {
             // file URL 처리

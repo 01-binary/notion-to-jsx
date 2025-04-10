@@ -11,9 +11,7 @@ export async function getImageMetadata(url: string): Promise<{
   aspectRatio: number;
 } | null> {
   try {
-    // URL이 Notion 이미지 URL인 경우 특별한 처리가 필요할 수 있음
     const result = await probe(url);
-
     return {
       width: result.width,
       height: result.height,
