@@ -145,7 +145,7 @@ const LinkPreview: React.FC<LinkPreviewProps> = ({ url }) => {
         <div className={content}>
           <div className={title}>{repoName}</div>
           <div className={updatedText}>
-            {loading ? 'Loading...' : `NotionX • ${updatedTimeText}`}
+            {loading ? 'Loading...' : `${repoName} • ${updatedTimeText}`}
           </div>
         </div>
       </div>
