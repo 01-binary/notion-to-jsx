@@ -8,6 +8,7 @@ import {
 } from '../MemoizedComponents';
 import { CodeBlock } from '../Code';
 import { Heading1, Heading2, Heading3, Paragraph } from '../Typography';
+import { ColumnList } from '../Column';
 
 export interface Props {
   block: any;
@@ -27,10 +28,7 @@ const BlockRenderer: React.FC<Props> = ({ block, onFocus, index }) => {
   switch (block.type) {
     case 'link_preview':
       return (
-        <MemoizedLinkPreview
-          url={block.link_preview.url}
-          {...blockProps}
-        />
+        <MemoizedLinkPreview url={block.link_preview.url} {...blockProps} />
       );
     case 'paragraph':
       return (
@@ -86,7 +84,15 @@ const BlockRenderer: React.FC<Props> = ({ block, onFocus, index }) => {
     case 'bookmark':
       return <MemoizedBookmark url={block.bookmark.url} />;
 
+    case 'column_list':
+      return <ColumnList block={block} onFocus={onFocus} />;
+
+    case 'column':
+      // 개별 column은 ColumnList에서 처리됩니다
+      return null;
+
     default:
+      console.log(`지원되지 않는 블록 타입: ${block.type}`, block);
       return null;
   }
 };
