@@ -9,6 +9,7 @@ import {
 import { CodeBlock } from '../Code';
 import { Heading1, Heading2, Heading3, Paragraph } from '../Typography';
 import { ColumnList } from '../Column';
+import { Quote } from '../Quote';
 
 export interface Props {
   block: any;
@@ -90,6 +91,9 @@ const BlockRenderer: React.FC<Props> = ({ block, onFocus, index }) => {
     case 'column':
       // 개별 column은 ColumnList에서 처리됩니다
       return null;
+
+    case 'quote':
+      return <Quote richText={block.quote.rich_text} {...blockProps} />;
 
     default:
       console.log(`지원되지 않는 블록 타입: ${block.type}`, block);
