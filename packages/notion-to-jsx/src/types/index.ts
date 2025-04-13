@@ -12,7 +12,10 @@ export interface NotionBlock {
     | 'numbered_list_item'
     | 'code'
     | 'image'
-    | 'bookmark';
+    | 'bookmark'
+    | 'table'
+    | 'table_row'
+    | 'quote';
   paragraph?: {
     rich_text: RichTextItem[];
     color: string;
@@ -51,5 +54,23 @@ export interface NotionBlock {
   bookmark?: {
     url: string;
     caption: RichTextItem[];
+  };
+  table?: {
+    table_width: number;
+    has_column_header: boolean;
+    has_row_header: boolean;
+  };
+  table_row?: {
+    cells: RichTextItem[][];
+  };
+  quote?: {
+    rich_text: RichTextItem[];
+    color: string;
+  };
+  children?: NotionBlock[];
+  has_children?: boolean;
+  parent?: {
+    type: string;
+    [key: string]: any;
   };
 }
