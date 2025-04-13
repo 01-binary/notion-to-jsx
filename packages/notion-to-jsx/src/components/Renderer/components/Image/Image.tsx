@@ -33,11 +33,9 @@ const Image: React.FC<ImageProps> = ({
   format,
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const [error, setError] = useState(false);
 
   useEffect(() => {
     setIsLoaded(false);
-    setError(false);
   }, [src]);
 
   return (
@@ -46,26 +44,29 @@ const Image: React.FC<ImageProps> = ({
         className={imageWrapper({
           hasWidth: !!format?.block_width,
         })}
-        style={
-          format?.block_width
-            ? {
-                width:
-                  format.block_width > MAX_WIDTH
-                    ? '100%'
-                    : `${format.block_width}px`,
-              }
-            : undefined
-        }
-      >
-        {!isLoaded && !error && (
-          <div
-            className={placeholder}
-            style={{
-              width: format?.block_width
+        style={{
+          width:
+            format?.block_aspect_ratio && format.block_aspect_ratio < 1
+              ? `${format.block_aspect_ratio * 100}%`
+              : format?.block_width
                 ? format.block_width > MAX_WIDTH
                   ? '100%'
                   : `${format.block_width}px`
                 : '100%',
+        }}
+      >
+        {!isLoaded && (
+          <div
+            className={placeholder}
+            style={{
+              width:
+                format?.block_aspect_ratio && format.block_aspect_ratio < 1
+                  ? `${format.block_aspect_ratio * 100}%`
+                  : format?.block_width
+                    ? format.block_width > MAX_WIDTH
+                      ? '100%'
+                      : `${format.block_width}px`
+                    : '100%',
               aspectRatio: format?.block_aspect_ratio
                 ? `${format.block_aspect_ratio}`
                 : 'auto',
@@ -96,55 +97,6 @@ const Image: React.FC<ImageProps> = ({
             </svg>
           </div>
         )}
-        {error && (
-          <div
-            className={placeholder}
-            style={{
-              width: format?.block_width
-                ? format.block_width > MAX_WIDTH
-                  ? '100%'
-                  : `${format.block_width}px`
-                : '100%',
-              aspectRatio: format?.block_aspect_ratio
-                ? `${format.block_aspect_ratio}`
-                : 'auto',
-            }}
-          >
-            <svg
-              width="48"
-              height="48"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                stroke="#FF6B6B"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M15 9L9 15"
-                stroke="#FF6B6B"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M9 9L15 15"
-                stroke="#FF6B6B"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-            <div style={{ width: '10px' }} />
-            <p style={{ color: '#FF6B6B', fontSize: '14px' }}>
-              Image Load failed
-            </p>
-          </div>
-        )}
         <img
           className={styledImage({
             loaded: isLoaded,
@@ -154,7 +106,6 @@ const Image: React.FC<ImageProps> = ({
           alt={alt}
           loading={priority ? 'eager' : 'lazy'}
           onLoad={() => setIsLoaded(true)}
-          onError={() => setError(true)}
           width={format?.block_width}
           height={format?.block_height}
           style={

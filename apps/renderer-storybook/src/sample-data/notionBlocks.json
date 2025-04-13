@@ -1,13 +1,13 @@
 [
   {
     "object": "block",
-    "id": "29a578ef-ed0e-4585-b432-0c727dbda133",
+    "id": "16e9c6bf-2b17-8004-af7b-d69e9f375183",
     "parent": {
       "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
     },
-    "created_time": "2024-04-14T13:02:00.000Z",
-    "last_edited_time": "2024-04-14T13:43:00.000Z",
+    "created_time": "2025-01-01T07:05:00.000Z",
+    "last_edited_time": "2025-01-01T11:57:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -25,7 +25,7 @@
         {
           "type": "text",
           "text": {
-            "content": "23년 12월, 글또 9기에 참여하며 벌써 마지막, 10번째 글을 쓰게 되었다. 올해는 유난히 시간이 빠르게 흘러갔다. 😊",
+            "content": "24년에도 새로운 경험을 많이 했다. 차근차근 기억을 더듬어 가며 회고해 보자.",
             "link": null
           },
           "annotations": {
@@ -36,7 +36,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "23년 12월, 글또 9기에 참여하며 벌써 마지막, 10번째 글을 쓰게 되었다. 올해는 유난히 시간이 빠르게 흘러갔다. 😊",
+          "plain_text": "24년에도 새로운 경험을 많이 했다. 차근차근 기억을 더듬어 가며 회고해 보자.",
           "href": null
         }
       ],
@@ -45,13 +45,13 @@
   },
   {
     "object": "block",
-    "id": "b5f3e041-6591-4fb4-9cf8-40d659ee755d",
+    "id": "16e9c6bf-2b17-809b-acbd-d5b1e45141f1",
     "parent": {
       "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
     },
-    "created_time": "2024-04-14T13:20:00.000Z",
-    "last_edited_time": "2024-04-14T13:21:00.000Z",
+    "created_time": "2025-01-01T07:15:00.000Z",
+    "last_edited_time": "2025-01-01T07:15:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -69,7 +69,7 @@
         {
           "type": "text",
           "text": {
-            "content": "글또 with udemy",
+            "content": "여행",
             "link": null
           },
           "annotations": {
@@ -80,7 +80,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "글또 with udemy",
+          "plain_text": "여행",
           "href": null
         }
       ],
@@ -90,13 +90,13 @@
   },
   {
     "object": "block",
-    "id": "d224a888-a13a-4117-a7e9-a9da764dd17b",
+    "id": "16e9c6bf-2b17-8063-9ee9-d290440b3e29",
     "parent": {
       "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
     },
-    "created_time": "2024-04-14T13:21:00.000Z",
-    "last_edited_time": "2024-04-14T14:34:00.000Z",
+    "created_time": "2025-01-01T07:15:00.000Z",
+    "last_edited_time": "2025-01-01T11:57:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -114,7 +114,7 @@
         {
           "type": "text",
           "text": {
-            "content": "동아리에서는 신청자에 한해 유데미 강의를 최대 2개까지 제공해 주었다. 강의를 2개 다 수강할 자신은 없어서 하나만 신청하기로 했다.",
+            "content": "24년에도 해외여행을 많이 갔다. 나열해 보면 아래와 같다.",
             "link": null
           },
           "annotations": {
@@ -125,7 +125,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "동아리에서는 신청자에 한해 유데미 강의를 최대 2개까지 제공해 주었다. 강의를 2개 다 수강할 자신은 없어서 하나만 신청하기로 했다.",
+          "plain_text": "24년에도 해외여행을 많이 갔다. 나열해 보면 아래와 같다.",
           "href": null
         }
       ],
@@ -134,13 +134,322 @@
   },
   {
     "object": "block",
-    "id": "c7df8444-f280-4e35-8057-85be63d21f7b",
+    "id": "16e9c6bf-2b17-8089-9365-d5caccf56161",
     "parent": {
       "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
     },
-    "created_time": "2024-04-14T13:13:00.000Z",
-    "last_edited_time": "2024-04-14T13:13:00.000Z",
+    "created_time": "2025-01-01T07:17:00.000Z",
+    "last_edited_time": "2025-01-01T07:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "괌 (4월)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "괌 (4월)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-80ee-a810-eee70ac0d5cc",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T07:17:00.000Z",
+    "last_edited_time": "2025-01-01T07:18:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "방콕, 치앙마이 (7월)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "방콕, 치앙마이 (7월)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-8087-81ae-cae327cbb385",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T07:18:00.000Z",
+    "last_edited_time": "2025-01-01T07:18:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "세부 (8월 ~ 10월)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "세부 (8월 ~ 10월)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-80a4-8028-f12d6957fb8e",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T07:18:00.000Z",
+    "last_edited_time": "2025-01-01T07:19:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "삿포로 (11월)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "삿포로 (11월)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-80e3-baba-e4b5770a268b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T07:19:00.000Z",
+    "last_edited_time": "2025-01-01T11:35:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "4번이나 갔다니 너무 많이 갔나 생각도 들지만, 역시 여행을 많이 다니면 새로운 경험과 기억들이 많이 생겨서 그런지 한 해를 기억하기 쉽고 시간도 느리게 가는 거 같다!",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "4번이나 갔다니 너무 많이 갔나 생각도 들지만, 역시 여행을 많이 다니면 새로운 경험과 기억들이 많이 생겨서 그런지 한 해를 기억하기 쉽고 시간도 느리게 가는 거 같다!",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-80b3-9b0d-f4306ff5f23f",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T08:27:00.000Z",
+    "last_edited_time": "2025-01-01T08:27:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "괌",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "괌",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-80bf-8136-f390174ca40e",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T07:21:00.000Z",
+    "last_edited_time": "2025-01-01T11:33:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "우선 괌은 미국이라 그런지 물가가 너무 비쌌고 돌고래 투어에서 돌고래를 못 본 기억이 난다 ㅠㅠ\n해외에서는 처음으로 렌트를 해서 셀프 투어를 하며 괌을 한 바퀴 돌아봤다.\n‘드라이브를 좋아하는 나’여서 새로운 나무, 바다, 풍경에서 드라이브하는 경험이 너무 좋았다!",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "우선 괌은 미국이라 그런지 물가가 너무 비쌌고 돌고래 투어에서 돌고래를 못 본 기억이 난다 ㅠㅠ\n해외에서는 처음으로 렌트를 해서 셀프 투어를 하며 괌을 한 바퀴 돌아봤다.\n‘드라이브를 좋아하는 나’여서 새로운 나무, 바다, 풍경에서 드라이브하는 경험이 너무 좋았다!",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-802b-a121-d33b5376b58b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T13:58:00.000Z",
+    "last_edited_time": "2025-01-01T13:59:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -154,28 +463,46 @@
     "in_trash": false,
     "type": "image",
     "image": {
-      "caption": [],
+      "caption": [
+        {
+          "type": "text",
+          "text": {
+            "content": "괌에서 모은 원기옥",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "괌에서 모은 원기옥",
+          "href": null
+        }
+      ],
       "type": "file",
       "file": {
-        "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2Fc06a5f4e-f360-4af2-8f04-da12f527c414%2FUntitled.png?table=block&id=c7df8444-f280-4e35-8057-85be63d21f7b&cache=v2",
-        "expiry_time": "2025-04-13T06:49:44.831Z"
+        "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2Fdb51ef9e-8aae-410c-813f-93de64c1b501%2Fqweqweqe.jpg?table=block&id=16e9c6bf-2b17-802b-a121-d33b5376b58b&cache=v2",
+        "expiry_time": "2025-04-13T11:42:33.078Z"
       },
       "format": {
-        "block_width": 1686,
-        "block_height": 730,
-        "block_aspect_ratio": 2.3095890410958906
+        "block_width": 2376,
+        "block_height": 1584,
+        "block_aspect_ratio": 1.5
       }
     }
   },
   {
     "object": "block",
-    "id": "5fd27e96-8178-4e50-aa05-271154a1c248",
+    "id": "16e9c6bf-2b17-8082-b1d7-db1dbdc92f06",
     "parent": {
       "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
     },
-    "created_time": "2024-04-14T13:22:00.000Z",
-    "last_edited_time": "2024-04-14T13:22:00.000Z",
+    "created_time": "2025-01-01T08:27:00.000Z",
+    "last_edited_time": "2025-01-01T08:27:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -187,13 +514,13 @@
     "has_children": false,
     "archived": false,
     "in_trash": false,
-    "type": "heading_2",
-    "heading_2": {
+    "type": "heading_3",
+    "heading_3": {
       "rich_text": [
         {
           "type": "text",
           "text": {
-            "content": "선택한 강의",
+            "content": "방콕, 치앙마이",
             "link": null
           },
           "annotations": {
@@ -204,7 +531,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "선택한 강의",
+          "plain_text": "방콕, 치앙마이",
           "href": null
         }
       ],
@@ -214,13 +541,13 @@
   },
   {
     "object": "block",
-    "id": "a3630d5f-28cd-45d2-8f21-5474735dcc5e",
+    "id": "16e9c6bf-2b17-8049-908c-d462c2b35192",
     "parent": {
       "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
     },
-    "created_time": "2024-04-14T13:05:00.000Z",
-    "last_edited_time": "2024-04-14T13:29:00.000Z",
+    "created_time": "2025-01-01T07:24:00.000Z",
+    "last_edited_time": "2025-01-01T11:57:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -238,7 +565,7 @@
         {
           "type": "text",
           "text": {
-            "content": "내가 신청한 강의는 ",
+            "content": "방콕, 치앙마이는 지금은 전 직장인 핀다에서 워케이션 + 휴가로 일주일 조금 넘게 갔다.\n방콕에 대한 첫인상은 과장을 좀 더 보태서 충격적이었다! 태국은 방콕에 모든 경제, 인프라가 몰빵 된 나라다.\n빌딩 숲, 마천루, 엄청 큰 백화점 등 서울과 비교해서 크게 뒤지지는 않겠구나 생각했다. 앞서 말한 것 말고도 방콕에는 구경할 관광지도 되게 많다. 왜 이렇게 많을까 궁금해서 찾아봤더니 전쟁으로 파괴된 적이 없어서 유적지가 잘 보존되어 있다고 한다. 방콕에서는 살 수도 있겠는데?? 라고 생각했다.",
             "link": null
           },
           "annotations": {
@@ -249,41 +576,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "내가 신청한 강의는 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "React Three fiber(R3F)로 배우는 인터렉티브 3D 웹 개발",
-            "link": null
-          },
-          "annotations": {
-            "bold": true,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "React Three fiber(R3F)로 배우는 인터렉티브 3D 웹 개발",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "이다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "이다.",
+          "plain_text": "방콕, 치앙마이는 지금은 전 직장인 핀다에서 워케이션 + 휴가로 일주일 조금 넘게 갔다.\n방콕에 대한 첫인상은 과장을 좀 더 보태서 충격적이었다! 태국은 방콕에 모든 경제, 인프라가 몰빵 된 나라다.\n빌딩 숲, 마천루, 엄청 큰 백화점 등 서울과 비교해서 크게 뒤지지는 않겠구나 생각했다. 앞서 말한 것 말고도 방콕에는 구경할 관광지도 되게 많다. 왜 이렇게 많을까 궁금해서 찾아봤더니 전쟁으로 파괴된 적이 없어서 유적지가 잘 보존되어 있다고 한다. 방콕에서는 살 수도 있겠는데?? 라고 생각했다.",
           "href": null
         }
       ],
@@ -292,39 +585,13 @@
   },
   {
     "object": "block",
-    "id": "1f3396f7-9176-4be3-b148-8a172a675862",
+    "id": "16e9c6bf-2b17-80f1-b255-cc19e3e4cd8b",
     "parent": {
       "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
     },
-    "created_time": "2024-04-14T13:06:00.000Z",
-    "last_edited_time": "2024-04-14T13:06:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bookmark",
-    "bookmark": {
-      "caption": [],
-      "url": "https://www.udemy.com/course/react-three-fiber-r3f/"
-    }
-  },
-  {
-    "object": "block",
-    "id": "885546e1-69eb-418c-a738-6bb1cbce5659",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T13:24:00.000Z",
-    "last_edited_time": "2024-04-14T14:25:00.000Z",
+    "created_time": "2025-01-01T07:32:00.000Z",
+    "last_edited_time": "2025-01-01T11:57:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -342,7 +609,7 @@
         {
           "type": "text",
           "text": {
-            "content": "작년부터 웹 3D에 대한 궁금증이 많았고, 몇 개의 강의를 장바구니에 담아두었었다.\n24년에 웹 3D 공부를 시작하기로 마음먹었는데, 글또에서 유데미와 연계하여 강의를 무료로 제공한다고 해서 장바구니에 담아두었던 강의를 선택하게 되었다.",
+            "content": "치앙마이는 태국의 제2의 도시라고 하지만 방콕과는 느낌이 많이 달랐다. 약간 성수 같은 느낌이랄까? 뭘 하거나 볼 게 많지는 않아서 워케이션으로 가면 딱 좋겠다고 생각했다. 오토바이를 한 번도 운전해 본 적이 없지만, 한번 경험해보고 싶어서 일주일 동안 렌트해서 운전하고 다녔다. 왕복 3시간 동안 운전해서 온천도 갔다 왔는데 3시간은 쫌 힘들더라.. 워케이션으로 많이 오는 도시에서 코워킹 스페이스를 가서 일도 해봤고 유명한 게이바(게이들이 나와서 쇼하는 거에요 오해하지 마세요) 가서 재미난 구경도 했다!",
             "link": null
           },
           "annotations": {
@@ -353,7 +620,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "작년부터 웹 3D에 대한 궁금증이 많았고, 몇 개의 강의를 장바구니에 담아두었었다.\n24년에 웹 3D 공부를 시작하기로 마음먹었는데, 글또에서 유데미와 연계하여 강의를 무료로 제공한다고 해서 장바구니에 담아두었던 강의를 선택하게 되었다.",
+          "plain_text": "치앙마이는 태국의 제2의 도시라고 하지만 방콕과는 느낌이 많이 달랐다. 약간 성수 같은 느낌이랄까? 뭘 하거나 볼 게 많지는 않아서 워케이션으로 가면 딱 좋겠다고 생각했다. 오토바이를 한 번도 운전해 본 적이 없지만, 한번 경험해보고 싶어서 일주일 동안 렌트해서 운전하고 다녔다. 왕복 3시간 동안 운전해서 온천도 갔다 왔는데 3시간은 쫌 힘들더라.. 워케이션으로 많이 오는 도시에서 코워킹 스페이스를 가서 일도 해봤고 유명한 게이바(게이들이 나와서 쇼하는 거에요 오해하지 마세요) 가서 재미난 구경도 했다!",
           "href": null
         }
       ],
@@ -362,13 +629,13 @@
   },
   {
     "object": "block",
-    "id": "328ec07b-6ec9-4d6d-958a-a9ef74ea41a4",
+    "id": "16e9c6bf-2b17-8095-b608-d1d027696489",
     "parent": {
       "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
     },
-    "created_time": "2024-04-14T13:22:00.000Z",
-    "last_edited_time": "2024-04-14T13:29:00.000Z",
+    "created_time": "2025-01-01T07:46:00.000Z",
+    "last_edited_time": "2025-01-01T07:47:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -380,13 +647,13 @@
     "has_children": false,
     "archived": false,
     "in_trash": false,
-    "type": "heading_2",
-    "heading_2": {
-      "rich_text": [
+    "type": "image",
+    "image": {
+      "caption": [
         {
           "type": "text",
           "text": {
-            "content": "강의 대상 및 구성",
+            "content": "먹을꺼 사서 숙소로 돌아가는 나",
             "link": null
           },
           "annotations": {
@@ -397,7 +664,60 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "강의 대상 및 구성",
+          "plain_text": "먹을꺼 사서 숙소로 돌아가는 나",
+          "href": null
+        }
+      ],
+      "type": "file",
+      "file": {
+        "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2F9892bcdc-899f-4e9b-92ca-eb6bfdb26539%2FKakaoTalk_Photo_2025-01-01-16-44-53.jpeg?table=block&id=16e9c6bf-2b17-8095-b608-d1d027696489&cache=v2",
+        "expiry_time": "2025-04-13T11:42:33.083Z"
+      },
+      "format": {
+        "block_width": 4000,
+        "block_height": 3000,
+        "block_aspect_ratio": 1.3333333333333333
+      }
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-80fc-94ee-decd2598b433",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T08:27:00.000Z",
+    "last_edited_time": "2025-01-01T08:27:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "세부",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "세부",
           "href": null
         }
       ],
@@ -407,101 +727,13 @@
   },
   {
     "object": "block",
-    "id": "39a3be53-e752-42e0-87b6-0999f2830f0d",
+    "id": "16e9c6bf-2b17-8099-824e-ea5d402f4762",
     "parent": {
       "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
     },
-    "created_time": "2024-04-14T13:31:00.000Z",
-    "last_edited_time": "2024-04-14T13:46:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "자바스크립트, 타입스크립트 사용 경험이 있는 사람",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "자바스크립트, 타입스크립트 사용 경험이 있는 사람",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "4b6c3d92-131e-4344-8235-f43dae142f09",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T13:31:00.000Z",
-    "last_edited_time": "2024-04-14T13:46:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "React에 관심이 있는 사람",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "React에 관심이 있는 사람",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "161a8d8a-2a87-4bb8-bb7f-1b9d7cdd22f8",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T13:29:00.000Z",
-    "last_edited_time": "2024-04-14T13:53:00.000Z",
+    "created_time": "2025-01-01T07:48:00.000Z",
+    "last_edited_time": "2025-01-01T12:04:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -519,7 +751,7 @@
         {
           "type": "text",
           "text": {
-            "content": "자바스크립트와 간단한 타입스크립트를 사용할 줄 아는 분을 대상으로 강의해서 해당 언어를 사용해 본 사람이 듣는 것을 추천한다.\nReact는 몰라도 될 만큼 강사님이 자세히 알려주시긴 하지만 ",
+            "content": "밑에서 이야기하겠지만 퇴사를 해버렸다. 외부로 티 내지 않았지만 속으로 고민이 많았다. 항상 해외여행을 가면 영어를 좀 더 잘하고 싶다는 욕심이 생기는데 이번 기회에 해외로 가서 영어 공부나 해볼까?? 라는 생각이 들어 자료를 찾아봤다. 여러 군데를 고려했는데 제일 빡센 곳은 필리핀 세부라서 그곳으로 6주 동안 어학연수를 가기로 했다. 성향이 P라서 그런가 결정하고 예약까지 다 해버리는데 2주도 안 걸렸던 거 같다.. 나는 왜 이렇게 즉흥적일까..",
             "link": null
           },
           "annotations": {
@@ -530,41 +762,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "자바스크립트와 간단한 타입스크립트를 사용할 줄 아는 분을 대상으로 강의해서 해당 언어를 사용해 본 사람이 듣는 것을 추천한다.\nReact는 몰라도 될 만큼 강사님이 자세히 알려주시긴 하지만 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "useRef, useEffect",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "useRef, useEffect",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 등을 조금 사용해서 React를 조금이라도 이해하고 있는 사람이 듣는 것을 추천한다!",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 등을 조금 사용해서 React를 조금이라도 이해하고 있는 사람이 듣는 것을 추천한다!",
+          "plain_text": "밑에서 이야기하겠지만 퇴사를 해버렸다. 외부로 티 내지 않았지만 속으로 고민이 많았다. 항상 해외여행을 가면 영어를 좀 더 잘하고 싶다는 욕심이 생기는데 이번 기회에 해외로 가서 영어 공부나 해볼까?? 라는 생각이 들어 자료를 찾아봤다. 여러 군데를 고려했는데 제일 빡센 곳은 필리핀 세부라서 그곳으로 6주 동안 어학연수를 가기로 했다. 성향이 P라서 그런가 결정하고 예약까지 다 해버리는데 2주도 안 걸렸던 거 같다.. 나는 왜 이렇게 즉흥적일까..",
           "href": null
         }
       ],
@@ -573,13 +771,198 @@
   },
   {
     "object": "block",
-    "id": "57cecfdc-a186-411d-a07d-b30a87ff0ec4",
+    "id": "16e9c6bf-2b17-806c-92c4-e1b60c7972ec",
     "parent": {
       "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
     },
-    "created_time": "2024-04-14T13:52:00.000Z",
-    "last_edited_time": "2024-04-14T13:52:00.000Z",
+    "created_time": "2025-01-01T07:55:00.000Z",
+    "last_edited_time": "2025-01-01T11:39:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "한국 교육식 영어 공부는 충실하게 했지만 군대를 갔다 와서 따로 영어 공부를 한 적은 없다. 다른 것보다 스피킹이 많이 부족하다고 생각해서 어학원의 파워스피킹 과정을 신청했다. 어학원에 있는 코스 전부 기본 10시간인데 파워스피킹 과정은 그룹 수업 3개, 1:1 수업 6개, 자습 1개였다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "한국 교육식 영어 공부는 충실하게 했지만 군대를 갔다 와서 따로 영어 공부를 한 적은 없다. 다른 것보다 스피킹이 많이 부족하다고 생각해서 어학원의 파워스피킹 과정을 신청했다. 어학원에 있는 코스 전부 기본 10시간인데 파워스피킹 과정은 그룹 수업 3개, 1:1 수업 6개, 자습 1개였다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-802b-8255-f89d3a916a70",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T08:21:00.000Z",
+    "last_edited_time": "2025-01-01T12:08:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "아침 8시부터 시작인데 나는 외부 기숙사에서 살아 아침 6시 40분쯤에 일어나서 와야 했다. 그리고 수업 다 끝나고 집에 들어가면 7시쯤 되었다. 고등학교 때도 이렇게 안 살았던 거 같은데 너무 빡셌다. (나중에는 적응되었지만..) 외국인이랑 말을 해보는 것 자체가 처음이라 첫 주는 너무 힘들었다. 2~3일 차에는 “아.. 그냥 집에 갈까??” 고민하고 환불 규정도 찾아봤다. 하지만 시간이 지나며 좋은 친구들도 사귀고 적응할 수 있었다. 스피킹에 대한 자신감도 많이 생겼다. ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "아침 8시부터 시작인데 나는 외부 기숙사에서 살아 아침 6시 40분쯤에 일어나서 와야 했다. 그리고 수업 다 끝나고 집에 들어가면 7시쯤 되었다. 고등학교 때도 이렇게 안 살았던 거 같은데 너무 빡셌다. (나중에는 적응되었지만..) 외국인이랑 말을 해보는 것 자체가 처음이라 첫 주는 너무 힘들었다. 2~3일 차에는 “아.. 그냥 집에 갈까??” 고민하고 환불 규정도 찾아봤다. 하지만 시간이 지나며 좋은 친구들도 사귀고 적응할 수 있었다. 스피킹에 대한 자신감도 많이 생겼다. ",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-803d-863b-e60c1fede703",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T08:18:00.000Z",
+    "last_edited_time": "2025-01-01T08:19:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "image",
+    "image": {
+      "caption": [
+        {
+          "type": "text",
+          "text": {
+            "content": "GPT가 지어준 내 영어 이름 LIAM",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "GPT가 지어준 내 영어 이름 LIAM",
+          "href": null
+        }
+      ],
+      "type": "file",
+      "file": {
+        "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2F318b840d-9a16-4d36-80d2-4665c6bb6a9e%2FKakaoTalk_Photo_2025-01-01-17-18-09.jpeg?table=block&id=16e9c6bf-2b17-803d-863b-e60c1fede703&cache=v2",
+        "expiry_time": "2025-04-13T11:42:33.085Z"
+      },
+      "format": {
+        "block_width": 1050,
+        "block_height": 1400,
+        "block_aspect_ratio": 0.75
+      }
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-8032-be83-fe676dc74b71",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T08:21:00.000Z",
+    "last_edited_time": "2025-01-01T12:08:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "처음 사귀어본 외국인 친구, 날 놀아준 착한 한국 친구들(ㅋㅋ), 너무나 좋은 내 선생님들 덕분에 소중한 경험을 6주 동안 하며 한국으로 다시 돌아갔다. (하고 싶은 이야기는 너무 많지만 분량을 위해 요 정도로 마무리!)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "처음 사귀어본 외국인 친구, 날 놀아준 착한 한국 친구들(ㅋㅋ), 너무나 좋은 내 선생님들 덕분에 소중한 경험을 6주 동안 하며 한국으로 다시 돌아갔다. (하고 싶은 이야기는 너무 많지만 분량을 위해 요 정도로 마무리!)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-8031-b03c-f06df91edfec",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T08:20:00.000Z",
+    "last_edited_time": "2025-01-01T08:20:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -596,13 +979,13 @@
     "children": [
       {
         "object": "block",
-        "id": "8081892d-511e-4dda-8167-a5055b5d384f",
+        "id": "61320a3d-2231-4449-a847-59469933b3ef",
         "parent": {
           "type": "block_id",
-          "block_id": "57cecfdc-a186-411d-a07d-b30a87ff0ec4"
+          "block_id": "16e9c6bf-2b17-8031-b03c-f06df91edfec"
         },
-        "created_time": "2024-04-14T13:52:00.000Z",
-        "last_edited_time": "2024-04-14T13:52:00.000Z",
+        "created_time": "2025-01-01T08:20:00.000Z",
+        "last_edited_time": "2025-01-01T08:36:00.000Z",
         "created_by": {
           "object": "user",
           "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -619,13 +1002,13 @@
         "children": [
           {
             "object": "block",
-            "id": "b7df994f-06c9-4a70-aca6-0174f453c96e",
+            "id": "16e9c6bf-2b17-8018-956d-deaf7edfe826",
             "parent": {
               "type": "block_id",
-              "block_id": "8081892d-511e-4dda-8167-a5055b5d384f"
+              "block_id": "61320a3d-2231-4449-a847-59469933b3ef"
             },
-            "created_time": "2024-04-14T13:52:00.000Z",
-            "last_edited_time": "2024-04-14T13:52:00.000Z",
+            "created_time": "2025-01-01T08:18:00.000Z",
+            "last_edited_time": "2025-01-01T12:12:00.000Z",
             "created_by": {
               "object": "user",
               "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -639,16 +1022,34 @@
             "in_trash": false,
             "type": "image",
             "image": {
-              "caption": [],
+              "caption": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "우수한(?) 성적으로 졸업해 스피치를 하게된 나",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "우수한(?) 성적으로 졸업해 스피치를 하게된 나",
+                  "href": null
+                }
+              ],
               "type": "file",
               "file": {
-                "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2Ff53f1612-5ee2-49e9-9100-dff4ce3a0480%2FUntitled.png?table=block&id=b7df994f-06c9-4a70-aca6-0174f453c96e&cache=v2",
-                "expiry_time": "2025-04-13T06:49:46.909Z"
+                "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2Fc2c71ca2-87ad-4d41-ad4f-d40e125a0af2%2FKakaoTalk_Photo_2025-01-01-17-18-18.jpeg?table=block&id=16e9c6bf-2b17-8018-956d-deaf7edfe826&cache=v2",
+                "expiry_time": "2025-04-13T11:42:33.679Z"
               },
               "format": {
-                "block_width": 736,
-                "block_height": 636,
-                "block_aspect_ratio": 1.1572327044025157
+                "block_width": 3000,
+                "block_height": 4000,
+                "block_aspect_ratio": 0.75
               }
             }
           }
@@ -656,13 +1057,13 @@
       },
       {
         "object": "block",
-        "id": "0496bdb2-dd21-44d0-9f90-496148f69832",
+        "id": "3529a816-3605-41fb-b173-1cb972d3984d",
         "parent": {
           "type": "block_id",
-          "block_id": "57cecfdc-a186-411d-a07d-b30a87ff0ec4"
+          "block_id": "16e9c6bf-2b17-8031-b03c-f06df91edfec"
         },
-        "created_time": "2024-04-14T13:52:00.000Z",
-        "last_edited_time": "2024-04-14T13:52:00.000Z",
+        "created_time": "2025-01-01T08:20:00.000Z",
+        "last_edited_time": "2025-01-01T08:27:00.000Z",
         "created_by": {
           "object": "user",
           "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -679,13 +1080,13 @@
         "children": [
           {
             "object": "block",
-            "id": "a498377c-f5d2-4f48-b075-b55fe944f2d4",
+            "id": "16e9c6bf-2b17-805a-b196-c2087bb03c34",
             "parent": {
               "type": "block_id",
-              "block_id": "0496bdb2-dd21-44d0-9f90-496148f69832"
+              "block_id": "3529a816-3605-41fb-b173-1cb972d3984d"
             },
-            "created_time": "2024-04-14T13:52:00.000Z",
-            "last_edited_time": "2024-04-14T13:52:00.000Z",
+            "created_time": "2025-01-01T08:21:00.000Z",
+            "last_edited_time": "2025-01-01T08:22:00.000Z",
             "created_by": {
               "object": "user",
               "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -699,16 +1100,34 @@
             "in_trash": false,
             "type": "image",
             "image": {
-              "caption": [],
+              "caption": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "영롱한 졸업장",
+                    "link": null
+                  },
+                  "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                  },
+                  "plain_text": "영롱한 졸업장",
+                  "href": null
+                }
+              ],
               "type": "file",
               "file": {
-                "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2Fea73b161-9e70-48f5-a8ef-03ab45c2c9fc%2FUntitled.png?table=block&id=a498377c-f5d2-4f48-b075-b55fe944f2d4&cache=v2",
-                "expiry_time": "2025-04-13T06:49:47.100Z"
+                "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2F73ea75db-9624-4fbd-bf34-b57e9925c7f2%2Fimage.png?table=block&id=16e9c6bf-2b17-805a-b196-c2087bb03c34&cache=v2",
+                "expiry_time": "2025-04-13T11:42:34.203Z"
               },
               "format": {
-                "block_width": 728,
-                "block_height": 638,
-                "block_aspect_ratio": 1.141065830721003
+                "block_width": 1094,
+                "block_height": 1472,
+                "block_aspect_ratio": 0.7432065217391305
               }
             }
           }
@@ -718,91 +1137,13 @@
   },
   {
     "object": "block",
-    "id": "8d22020f-0874-4abb-89c2-f2473ade96ab",
+    "id": "16e9c6bf-2b17-8092-98dd-f25c6052d77c",
     "parent": {
       "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
     },
-    "created_time": "2024-04-14T13:34:00.000Z",
-    "last_edited_time": "2024-04-14T14:08:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "강의 시간은 대략 10시간 정도 된다.\n목차는 소개 및 환경 세팅, ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "강의 시간은 대략 10시간 정도 된다.\n목차는 소개 및 환경 세팅, ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "Three.js, R3F",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "Three.js, R3F",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 에 대한 개념 설명 및 예제 그리고 마지막으로 미니 프로젝트로 이루어져 있다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 에 대한 개념 설명 및 예제 그리고 마지막으로 미니 프로젝트로 이루어져 있다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "04211191-7116-412a-90e5-81a3f86728c5",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T14:14:00.000Z",
-    "last_edited_time": "2024-04-14T14:14:00.000Z",
+    "created_time": "2025-01-01T08:27:00.000Z",
+    "last_edited_time": "2025-01-01T08:27:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -820,18 +1161,18 @@
         {
           "type": "text",
           "text": {
-            "content": "핵심 포인트",
+            "content": "삿포로",
             "link": null
           },
           "annotations": {
-            "bold": true,
+            "bold": false,
             "italic": false,
             "strikethrough": false,
             "underline": false,
             "code": false,
             "color": "default"
           },
-          "plain_text": "핵심 포인트",
+          "plain_text": "삿포로",
           "href": null
         }
       ],
@@ -841,13 +1182,13 @@
   },
   {
     "object": "block",
-    "id": "1d69223e-976a-41f8-b6a5-af2b3e58616a",
+    "id": "16e9c6bf-2b17-80b0-aa72-d40aedcf7a72",
     "parent": {
       "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
     },
-    "created_time": "2024-04-14T14:14:00.000Z",
-    "last_edited_time": "2024-04-14T14:14:00.000Z",
+    "created_time": "2025-01-01T08:27:00.000Z",
+    "last_edited_time": "2025-01-01T12:08:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -865,51 +1206,7 @@
         {
           "type": "text",
           "text": {
-            "content": "웹을 표현하는 방법",
-            "link": null
-          },
-          "annotations": {
-            "bold": true,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "웹을 표현하는 방법",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "f04e29a2-88ec-432b-9922-cb4c879ba2dd",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T14:05:00.000Z",
-    "last_edited_time": "2024-04-14T14:05:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "numbered_list_item",
-    "numbered_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "DOM",
+            "content": "나의 첫 해외여행은 삿포로였다. 어언 6년 전이었지.. 아마\n여자친구가 한 번도 안 가봐서 다시 가보기로 했다. 엔화도 860원일 때 최저점에 사놓아서 더 좋았다.\n첫 삿포로 때와 시간이 많이 지났지만 기억이 새록새록 났다. 그런데 3박 4일을 갔는데 유난히 시간이 왜 이렇게 빠르게 느껴지는지 여자친구도 공감했다. 물리적으로는 가깝지만 문화적으로는 많이 다른 일본은 개인적으로 흥미가 많다. 25년에도 1~2번은 일본을 갈 생각이다.",
             "link": null
           },
           "annotations": {
@@ -920,7 +1217,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "DOM",
+          "plain_text": "나의 첫 해외여행은 삿포로였다. 어언 6년 전이었지.. 아마\n여자친구가 한 번도 안 가봐서 다시 가보기로 했다. 엔화도 860원일 때 최저점에 사놓아서 더 좋았다.\n첫 삿포로 때와 시간이 많이 지났지만 기억이 새록새록 났다. 그런데 3박 4일을 갔는데 유난히 시간이 왜 이렇게 빠르게 느껴지는지 여자친구도 공감했다. 물리적으로는 가깝지만 문화적으로는 많이 다른 일본은 개인적으로 흥미가 많다. 25년에도 1~2번은 일본을 갈 생각이다.",
           "href": null
         }
       ],
@@ -929,645 +1226,13 @@
   },
   {
     "object": "block",
-    "id": "4a0a634d-dd38-4629-8672-f9e95a63e3ca",
+    "id": "16e9c6bf-2b17-80d7-b093-ffbec0ed58b1",
     "parent": {
       "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
     },
-    "created_time": "2024-04-14T14:05:00.000Z",
-    "last_edited_time": "2024-04-14T14:05:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "numbered_list_item",
-    "numbered_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "SVG ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "SVG ",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "3644e6dc-f3ee-4129-9abf-3366edf76993",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T14:05:00.000Z",
-    "last_edited_time": "2024-04-14T14:05:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "numbered_list_item",
-    "numbered_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Canvas",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Canvas",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "6a01ea44-032e-4461-88ab-757e4d0fe3fa",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T14:05:00.000Z",
-    "last_edited_time": "2024-04-14T14:12:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "React Three fiber(R3F)로 배우는 인터렉티브 3D 웹 개발에서는 ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "React Three fiber(R3F)로 배우는 인터렉티브 3D 웹 개발에서는 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "Canvas",
-            "link": null
-          },
-          "annotations": {
-            "bold": true,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Canvas",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "에 대한 이야기를 주로 다룬다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "에 대한 이야기를 주로 다룬다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "f51c77f7-6c05-46fb-bccc-251e84364aa8",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T14:11:00.000Z",
-    "last_edited_time": "2024-04-14T14:38:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "image",
-    "image": {
-      "caption": [],
-      "type": "file",
-      "file": {
-        "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2F54c39d09-068d-4f54-962c-64ec1bd5f78e%2FUntitled.png?table=block&id=f51c77f7-6c05-46fb-bccc-251e84364aa8&cache=v2",
-        "expiry_time": "2025-04-13T06:49:44.845Z"
-      },
-      "format": {
-        "block_width": 1200,
-        "block_height": 1016,
-        "block_aspect_ratio": 1.1811023622047243
-      }
-    }
-  },
-  {
-    "object": "block",
-    "id": "6a623aa8-8928-401f-a776-a304ab58e32e",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T14:14:00.000Z",
-    "last_edited_time": "2024-04-14T14:34:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Three.js의 기본 구조",
-            "link": null
-          },
-          "annotations": {
-            "bold": true,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Three.js의 기본 구조",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "3cd0ad85-729c-4c00-8cca-a9619d1b543b",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T14:13:00.000Z",
-    "last_edited_time": "2024-04-14T14:13:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "numbered_list_item",
-    "numbered_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Scene (무대)",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Scene (무대)",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "506afb91-2005-4e0b-a875-97bb67984e94",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T14:13:00.000Z",
-    "last_edited_time": "2024-04-14T14:13:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "numbered_list_item",
-    "numbered_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Camera",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Camera",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "738b7c55-7c5b-4038-b6b2-3d6d291eb04b",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T14:13:00.000Z",
-    "last_edited_time": "2024-04-14T14:13:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "numbered_list_item",
-    "numbered_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Renderder (찍힌 장면)",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Renderder (찍힌 장면)",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "6af8483e-fbf5-48c4-926a-f6f8150fc2a8",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T14:35:00.000Z",
-    "last_edited_time": "2024-04-14T14:35:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": " Three.js의 구성 요소",
-            "link": null
-          },
-          "annotations": {
-            "bold": true,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " Three.js의 구성 요소",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "7ee40de4-7c89-4e0d-9317-e1aaa747e078",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T14:28:00.000Z",
-    "last_edited_time": "2024-04-14T14:29:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "image",
-    "image": {
-      "caption": [],
-      "type": "file",
-      "file": {
-        "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2Fbc5606ae-3241-4841-8883-40a8082f1139%2FUntitled.png?table=block&id=7ee40de4-7c89-4e0d-9317-e1aaa747e078&cache=v2",
-        "expiry_time": "2025-04-13T06:49:44.845Z"
-      },
-      "format": {
-        "block_width": 1410,
-        "block_height": 612,
-        "block_aspect_ratio": 2.303921568627451
-      }
-    }
-  },
-  {
-    "object": "block",
-    "id": "899b86f3-bbab-4630-af0e-2bfe380ecf30",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T14:29:00.000Z",
-    "last_edited_time": "2024-04-14T14:29:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Geometry: Mesh의 형상",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Geometry: Mesh의 형상",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "65f631a0-b505-4e0b-ab64-ac11c0376dfa",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T14:29:00.000Z",
-    "last_edited_time": "2024-04-14T14:30:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "점 3개로 면을 만들 수 있다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "점 3개로 면을 만들 수 있다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1957a84d-2bc5-4390-aa85-ae0698d8c4f2",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T14:30:00.000Z",
-    "last_edited_time": "2024-04-17T10:03:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Geometry에서 하나의 Segment는 점 3개로 이루어진 삼각형이다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Geometry에서 하나의 Segment는 점 3개로 이루어진 삼각형이다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "b02d9578-39f1-417b-85d0-00ad6632670f",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T14:31:00.000Z",
-    "last_edited_time": "2024-04-17T10:02:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Geometry에서 Segment가 적을 수록(삼각형을 적게 사용할수록) 메모리 효율은 증가하나, Segment가 너무 적으면 형상이 깨진다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Geometry에서 Segment가 적을 수록(삼각형을 적게 사용할수록) 메모리 효율은 증가하나, Segment가 너무 적으면 형상이 깨진다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "eae4b713-b33d-479c-8e3f-7bba9da0ec2f",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T14:37:00.000Z",
-    "last_edited_time": "2024-04-17T10:04:00.000Z",
+    "created_time": "2025-01-01T08:34:00.000Z",
+    "last_edited_time": "2025-01-01T12:12:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -1585,7 +1250,7 @@
         {
           "type": "text",
           "text": {
-            "content": "Geometry Type",
+            "content": "눈 맞을랭?",
             "link": null
           },
           "annotations": {
@@ -1596,261 +1261,31 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "Geometry Type",
+          "plain_text": "눈 맞을랭?",
           "href": null
         }
       ],
       "type": "file",
       "file": {
-        "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2Fd5cdbd93-aeaf-4007-a5a3-d79be6b8f84f%2FUntitled.png?table=block&id=eae4b713-b33d-479c-8e3f-7bba9da0ec2f&cache=v2",
-        "expiry_time": "2025-04-13T06:49:44.840Z"
+        "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2F4729e80d-3ade-4301-a411-67ab48bb897d%2Fimage.png?table=block&id=16e9c6bf-2b17-80d7-b093-ffbec0ed58b1&cache=v2",
+        "expiry_time": "2025-04-13T11:42:33.091Z"
       },
       "format": {
-        "block_width": 1468,
-        "block_height": 826,
-        "block_aspect_ratio": 1.7772397094430992
+        "block_width": 4284,
+        "block_height": 5712,
+        "block_aspect_ratio": 0.75
       }
     }
   },
   {
     "object": "block",
-    "id": "d6c9b452-ec90-4e2a-b2e0-23246db98784",
+    "id": "16e9c6bf-2b17-80fe-88e4-d9d72ddb2cb0",
     "parent": {
       "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
     },
-    "created_time": "2024-04-14T14:29:00.000Z",
-    "last_edited_time": "2024-04-14T14:33:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Material: 색상 및 투명도 등을 지정",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Material: 색상 및 투명도 등을 지정",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "33641cb6-cfb4-4ab2-8d39-8748cb0bf892",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T14:15:00.000Z",
-    "last_edited_time": "2024-04-14T14:15:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "heading_3",
-    "heading_3": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "예제",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "예제",
-          "href": null
-        }
-      ],
-      "is_toggleable": false,
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "819ba595-5a0d-4536-ae03-06df7ad01b06",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T13:10:00.000Z",
-    "last_edited_time": "2024-04-14T13:12:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "image",
-    "image": {
-      "caption": [
-        {
-          "type": "text",
-          "text": {
-            "content": "강의 예제 (프레첼 같다..)",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "강의 예제 (프레첼 같다..)",
-          "href": null
-        }
-      ],
-      "type": "file",
-      "file": {
-        "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2F732efb96-6552-456c-8b4d-3f0eec89ec08%2FUntitled.png?table=block&id=819ba595-5a0d-4536-ae03-06df7ad01b06&cache=v2",
-        "expiry_time": "2025-04-13T06:49:44.833Z"
-      },
-      "format": {
-        "block_width": 1852,
-        "block_height": 974,
-        "block_aspect_ratio": 1.9014373716632444
-      }
-    }
-  },
-  {
-    "object": "block",
-    "id": "a2867ec5-1702-4b73-987b-b067d2e8c92f",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T13:12:00.000Z",
-    "last_edited_time": "2024-04-14T14:33:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "위 사진은 강의 예제 중 하나를 스크린샷 찍은 것이다. (프레첼 같이 생겨서 빵 먹고 싶었다..)",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "위 사진은 강의 예제 중 하나를 스크린샷 찍은 것이다. (프레첼 같이 생겨서 빵 먹고 싶었다..)",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1f949671-378d-4a3b-8dbd-f232c1e467be",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T13:06:00.000Z",
-    "last_edited_time": "2024-04-14T14:10:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "웹 3D에 대한 배경지식이 없어도 강사님이 자세하게 설명해 주셔서 수강하는 데 어려움이 없었다.\n개념 설명 후 위 예제처럼 직접 타이핑하며 학습할 수 있어 좋았다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "웹 3D에 대한 배경지식이 없어도 강사님이 자세하게 설명해 주셔서 수강하는 데 어려움이 없었다.\n개념 설명 후 위 예제처럼 직접 타이핑하며 학습할 수 있어 좋았다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "084002be-8fdd-475f-b2f4-3e57b7292a3e",
-    "parent": {
-      "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
-    },
-    "created_time": "2024-04-14T13:36:00.000Z",
-    "last_edited_time": "2024-04-14T13:36:00.000Z",
+    "created_time": "2025-01-01T07:05:00.000Z",
+    "last_edited_time": "2025-01-01T07:08:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -1868,7 +1303,7 @@
         {
           "type": "text",
           "text": {
-            "content": "후기",
+            "content": "대외활동",
             "link": null
           },
           "annotations": {
@@ -1879,7 +1314,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "후기",
+          "plain_text": "대외활동",
           "href": null
         }
       ],
@@ -1889,13 +1324,13 @@
   },
   {
     "object": "block",
-    "id": "38472d6b-cbc5-4d36-a603-d6db416dea30",
+    "id": "16e9c6bf-2b17-80c2-974d-da9097db7dc2",
     "parent": {
       "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
     },
-    "created_time": "2024-04-14T14:16:00.000Z",
-    "last_edited_time": "2024-04-14T14:33:00.000Z",
+    "created_time": "2025-01-01T08:58:00.000Z",
+    "last_edited_time": "2025-01-01T11:43:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -1913,7 +1348,7 @@
         {
           "type": "text",
           "text": {
-            "content": "3D에 대한 막연한 두려움이 있어서 ",
+            "content": "올해는 이직도 하고 여행(어학연수 포함)을 많이 가서 그런가 프론트엔드 개발자로서 대외활동한 게 별로 없는 것 같다.",
             "link": null
           },
           "annotations": {
@@ -1924,75 +1359,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "3D에 대한 막연한 두려움이 있어서 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "Three.js",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "Three.js",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 에 대한 공부를 미뤄왔던 것 같다. 막상 해보니 인터렉티브하고 화려해 보이는 것들(줌 인 아웃, 그림자 효과 등) 대부분은 이미 구현이 되어있고 ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 에 대한 공부를 미뤄왔던 것 같다. 막상 해보니 인터렉티브하고 화려해 보이는 것들(줌 인 아웃, 그림자 효과 등) 대부분은 이미 구현이 되어있고 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "Three.js",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "Three.js",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 에서 가져와 활용하면 해보고 싶은 건 다 해볼 수 있다는 느낌을 받았다. ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 에서 가져와 활용하면 해보고 싶은 건 다 해볼 수 있다는 느낌을 받았다. ",
+          "plain_text": "올해는 이직도 하고 여행(어학연수 포함)을 많이 가서 그런가 프론트엔드 개발자로서 대외활동한 게 별로 없는 것 같다.",
           "href": null
         }
       ],
@@ -2001,13 +1368,58 @@
   },
   {
     "object": "block",
-    "id": "f14f4f6d-8c16-4396-93e4-0c3eb8dbee13",
+    "id": "16e9c6bf-2b17-8077-ba8f-df5a02d936b4",
     "parent": {
       "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
     },
-    "created_time": "2024-04-14T13:44:00.000Z",
-    "last_edited_time": "2024-04-14T14:22:00.000Z",
+    "created_time": "2025-01-01T08:58:00.000Z",
+    "last_edited_time": "2025-01-01T08:58:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "멘토링",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "멘토링",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-806a-b15b-fe40bdfc8130",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T08:43:00.000Z",
+    "last_edited_time": "2025-01-01T11:59:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -2025,7 +1437,7 @@
         {
           "type": "text",
           "text": {
-            "content": "강의에서 Three.js 공식 사이트를 참고하며 개념 설명과 예제를 보여주는 방식이 매우 유익했다. 공식 문서만 보고 공부했다면 재미도 없고 시행착오가 많았을 텐데, 강의를 통해 미니 프로젝트도 진행하며 실무에서의 프로젝트 진행 방법에 대해 배울 수 있었다.\n나처럼 3D에 막연한 두려움이 있거나 웹 3D에 입문하려는 분들에게 아주 좋은 강의라고 생각한다! 🌟",
+            "content": "23년도에 시작한 여러 스터디를 마치고 7월 ~ 8월까지 2달 정도 코드잇에서 프론트엔드 멘토링을 했다.\n일주일에 1~2회, 1시간 동안 멘티들이 프로젝트를 수행하며 궁금한 부분이나 현직자로서 일하는 나에게 궁금한 점을 질문한다.\n멘토인 나나, 멘티들에게도 뜻깊은 1시간이 될 수 있도록 고민하며 진행했다.\n하지만 멘토링 스킬을 더욱 발전시켜야 한다고 느낀다. 사실 멘토링은 돈을 벌고 싶어서 한다기보다 요즘 취준생들이 중점으로 준비하는 것, 취준생의 생각, 멘티에게 질문을 받으며 나 스스로에 대한 기술적 피드백 등을 하며 취업 시장에서 멀어지지 않으려고 하는 게 주목적이다. 앞으로도 기회가 있으면 꾸준히 참여해 볼 생각이다.",
             "link": null
           },
           "annotations": {
@@ -2036,7 +1448,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "강의에서 Three.js 공식 사이트를 참고하며 개념 설명과 예제를 보여주는 방식이 매우 유익했다. 공식 문서만 보고 공부했다면 재미도 없고 시행착오가 많았을 텐데, 강의를 통해 미니 프로젝트도 진행하며 실무에서의 프로젝트 진행 방법에 대해 배울 수 있었다.\n나처럼 3D에 막연한 두려움이 있거나 웹 3D에 입문하려는 분들에게 아주 좋은 강의라고 생각한다! 🌟",
+          "plain_text": "23년도에 시작한 여러 스터디를 마치고 7월 ~ 8월까지 2달 정도 코드잇에서 프론트엔드 멘토링을 했다.\n일주일에 1~2회, 1시간 동안 멘티들이 프로젝트를 수행하며 궁금한 부분이나 현직자로서 일하는 나에게 궁금한 점을 질문한다.\n멘토인 나나, 멘티들에게도 뜻깊은 1시간이 될 수 있도록 고민하며 진행했다.\n하지만 멘토링 스킬을 더욱 발전시켜야 한다고 느낀다. 사실 멘토링은 돈을 벌고 싶어서 한다기보다 요즘 취준생들이 중점으로 준비하는 것, 취준생의 생각, 멘티에게 질문을 받으며 나 스스로에 대한 기술적 피드백 등을 하며 취업 시장에서 멀어지지 않으려고 하는 게 주목적이다. 앞으로도 기회가 있으면 꾸준히 참여해 볼 생각이다.",
           "href": null
         }
       ],
@@ -2045,13 +1457,13 @@
   },
   {
     "object": "block",
-    "id": "87855937-697c-409b-bbd0-2b3c87065c42",
+    "id": "16e9c6bf-2b17-803d-9df4-ef96a4fd6952",
     "parent": {
       "type": "page_id",
-      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
     },
-    "created_time": "2024-04-14T14:21:00.000Z",
-    "last_edited_time": "2024-04-14T14:21:00.000Z",
+    "created_time": "2025-01-01T08:48:00.000Z",
+    "last_edited_time": "2025-01-01T12:00:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -2065,7 +1477,743 @@
     "in_trash": false,
     "type": "paragraph",
     "paragraph": {
-      "rich_text": [],
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "요즘 시장이 너무 안 좋아서 안타깝다.. AI를 개발자 대부분이 사용하면서부터 신입을 더 안 뽑는 것 같다 ㅠ\n멘토링이 끝난 이후에도 물어보고 싶은 게 있으면 편하게 연락 주었으면 좋겠다!",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "요즘 시장이 너무 안 좋아서 안타깝다.. AI를 개발자 대부분이 사용하면서부터 신입을 더 안 뽑는 것 같다 ㅠ\n멘토링이 끝난 이후에도 물어보고 싶은 게 있으면 편하게 연락 주었으면 좋겠다!",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-807f-b658-c89ece8ae2a4",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T08:58:00.000Z",
+    "last_edited_time": "2025-01-01T08:58:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "글또 10기",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "글또 10기",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-80d3-aa95-f076c4253943",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T07:06:00.000Z",
+    "last_edited_time": "2025-01-01T12:00:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "23년에 시작한 글또 9기에서 모든 회차 글 제출이라는 엄청난(?) 성과로 9기를 마무리하고 10월 정도에 글또 10기를 재 참여했다. 이런저런 핑계를 대며 10기에서는 글을 한 번밖에 제출하지 않았다.. 이거 포함하면 2번..\n25년부터는 정신 차리고 새 출발 하자!",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "23년에 시작한 글또 9기에서 모든 회차 글 제출이라는 엄청난(?) 성과로 9기를 마무리하고 10월 정도에 글또 10기를 재 참여했다. 이런저런 핑계를 대며 10기에서는 글을 한 번밖에 제출하지 않았다.. 이거 포함하면 2번..\n25년부터는 정신 차리고 새 출발 하자!",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-8060-aae9-cb76fc59a4e1",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T07:05:00.000Z",
+    "last_edited_time": "2025-01-01T08:44:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "투자",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "투자",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-801c-96e9-ca8b5865f6bc",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T07:06:00.000Z",
+    "last_edited_time": "2025-01-01T12:00:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "2년 넘게 손절 못하고 있던 카카오뱅크를 손절하고 AI 투자 플랫폼을 이용한 투자랑 코인을 해보기로 했다.\n핀트라는 어플에서 AI를 활용해 자동으로 주식을 사고팔고 하는 데 수익률이 꽤나 높다! 신기하다! 돈이 돈을 번다는 게 이런 건가.. 25년도 꾸준히 활용해 볼 생각이다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "2년 넘게 손절 못하고 있던 카카오뱅크를 손절하고 AI 투자 플랫폼을 이용한 투자랑 코인을 해보기로 했다.\n핀트라는 어플에서 AI를 활용해 자동으로 주식을 사고팔고 하는 데 수익률이 꽤나 높다! 신기하다! 돈이 돈을 번다는 게 이런 건가.. 25년도 꾸준히 활용해 볼 생각이다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-80bf-8912-cb0562153a85",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T09:02:00.000Z",
+    "last_edited_time": "2025-01-01T12:00:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "코인은 중요한 시기에 큰 도움을 주어 나에게 의미가 조금 다르다. 17년 말 군대에서 리플을 250원에 샀었는데 한 4000원쯤에 팔았던 것 같다. 전역 후 복학해서는 부모님한테 경제적 지원을 받지 않아서 돈이 항상 없었는데 리플을 판 돈으로 졸업 때까지 생활비로 쓸 수 있었다. 20대에 굴곡이 많았지만 학업적 성취를 가장 많이 해야 했던 건 대학교 3~4학년이다. 바쁠 때는 하루에 1~2시간 잔 적도 흔한데, 돈도 없었으면 훨씬 힘들었을 거다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "코인은 중요한 시기에 큰 도움을 주어 나에게 의미가 조금 다르다. 17년 말 군대에서 리플을 250원에 샀었는데 한 4000원쯤에 팔았던 것 같다. 전역 후 복학해서는 부모님한테 경제적 지원을 받지 않아서 돈이 항상 없었는데 리플을 판 돈으로 졸업 때까지 생활비로 쓸 수 있었다. 20대에 굴곡이 많았지만 학업적 성취를 가장 많이 해야 했던 건 대학교 3~4학년이다. 바쁠 때는 하루에 1~2시간 잔 적도 흔한데, 돈도 없었으면 훨씬 힘들었을 거다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-800a-b432-c19bbd7ffa4a",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T09:12:00.000Z",
+    "last_edited_time": "2025-01-01T12:00:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "21년도에도 불장이 왔는데 그때는 돈이 없었다. 주변에 블록체인에 관심이 많은 친구도 있고 나 또한 투자를 하지는 않았지만 코인 시장은 계속 보고 있었다. 올해 초부터 코인을 조금씩 모으기 시작했고 10월 정도부터 코인이 많이 올랐다. 현재까지는 수익률이 +이긴 하다. 근데 언제 -가 될지는 모른다. 상승장이 끝난 건지 이제 시작인지 아무도 모르지만 최대한 보수적으로 행동해 많이 버는 것보단 덜 잃는 것을 중점으로 하려고 한다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "21년도에도 불장이 왔는데 그때는 돈이 없었다. 주변에 블록체인에 관심이 많은 친구도 있고 나 또한 투자를 하지는 않았지만 코인 시장은 계속 보고 있었다. 올해 초부터 코인을 조금씩 모으기 시작했고 10월 정도부터 코인이 많이 올랐다. 현재까지는 수익률이 +이긴 하다. 근데 언제 -가 될지는 모른다. 상승장이 끝난 건지 이제 시작인지 아무도 모르지만 최대한 보수적으로 행동해 많이 버는 것보단 덜 잃는 것을 중점으로 하려고 한다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-8062-999f-cdcb34f10479",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T07:06:00.000Z",
+    "last_edited_time": "2025-01-01T08:45:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "문화생활",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "문화생활",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-8011-ad85-cb98f9ce5680",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T08:44:00.000Z",
+    "last_edited_time": "2025-01-01T11:48:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "국가대표 축구를 봤다. 관중에 압도되었다. TV로 보는 것과 너무 달랐다.\n기회가 될 때마다 티켓팅을 해보려고 한다. 흥민이 형 영국에 있을 때 경기를 한번 보러 가고 싶기도 하다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "국가대표 축구를 봤다. 관중에 압도되었다. TV로 보는 것과 너무 달랐다.\n기회가 될 때마다 티켓팅을 해보려고 한다. 흥민이 형 영국에 있을 때 경기를 한번 보러 가고 싶기도 하다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-80d9-bfad-dc59cb2433c2",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T09:18:00.000Z",
+    "last_edited_time": "2025-01-01T09:20:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "페스티벌 2번, 10cm 콘서트, 비와이 콘서트, 이 글을 쓰는 시점 어제는 성시경 콘서트를 갔다.\n학창 시절, 20대 … 노래를 달고 살았는데 내가 좋아하던 사람들 전성기가 지나가기 전에 많이 많이 보고 싶다! ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "페스티벌 2번, 10cm 콘서트, 비와이 콘서트, 이 글을 쓰는 시점 어제는 성시경 콘서트를 갔다.\n학창 시절, 20대 … 노래를 달고 살았는데 내가 좋아하던 사람들 전성기가 지나가기 전에 많이 많이 보고 싶다! ",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-800b-a79f-ffdb15e61598",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T07:07:00.000Z",
+    "last_edited_time": "2025-01-01T07:07:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "이직",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "이직",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-8056-9952-e20829671842",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T11:09:00.000Z",
+    "last_edited_time": "2025-01-01T12:01:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "2년 반 동안 다닌 핀다를 퇴사하고 이직했다. 짧게 이야기해 보면 내가 이직한 이유는 나 자신의 성장이 어느 순간 정체되었다고 판단해서다. 백오피스, 웹뷰 같은 대부분의 프론트엔드 개발자들이 하는 일은 많이 해보았고 관련 일을 하며 일어나는 트러블 슈팅도 많이 경험해서 좀 더 플랫폼적인 일을 해보고 싶었다. 개발적으로도 도전을 많이 하는 회사를 경험해보고 싶었다. 2년 반 다닌 직장을 옮기기로 마음먹는 건 쉽지 않았다. 내가 알고 있는 개발 히스토리, 친해진 사람들, 새로운 프로젝트를 하더라도 오래 다닌 회사에서 하는 게 마음이 편한 건 사실이다.\n하지만 앞으로 10년, 20년 일한다고 생각했을 때 당장의 편함보다는 커리어나 경험적으로 유리한 선택을 하는 게 나을 것이라고 판단하고 퇴사를 결심했다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "2년 반 동안 다닌 핀다를 퇴사하고 이직했다. 짧게 이야기해 보면 내가 이직한 이유는 나 자신의 성장이 어느 순간 정체되었다고 판단해서다. 백오피스, 웹뷰 같은 대부분의 프론트엔드 개발자들이 하는 일은 많이 해보았고 관련 일을 하며 일어나는 트러블 슈팅도 많이 경험해서 좀 더 플랫폼적인 일을 해보고 싶었다. 개발적으로도 도전을 많이 하는 회사를 경험해보고 싶었다. 2년 반 다닌 직장을 옮기기로 마음먹는 건 쉽지 않았다. 내가 알고 있는 개발 히스토리, 친해진 사람들, 새로운 프로젝트를 하더라도 오래 다닌 회사에서 하는 게 마음이 편한 건 사실이다.\n하지만 앞으로 10년, 20년 일한다고 생각했을 때 당장의 편함보다는 커리어나 경험적으로 유리한 선택을 하는 게 나을 것이라고 판단하고 퇴사를 결심했다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-8033-9354-c48d4fbccbb5",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T11:19:00.000Z",
+    "last_edited_time": "2025-01-01T11:48:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "퇴사를 다짐하고 사실 면접은 삼쩜삼이랑 라인밖에 보지 않았는데 운 좋게 삼쩜삼에서 최종 합격을 주었다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "퇴사를 다짐하고 사실 면접은 삼쩜삼이랑 라인밖에 보지 않았는데 운 좋게 삼쩜삼에서 최종 합격을 주었다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-8027-8676-c782397b3302",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T11:21:00.000Z",
+    "last_edited_time": "2025-01-01T11:22:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "image",
+    "image": {
+      "caption": [
+        {
+          "type": "text",
+          "text": {
+            "content": "삼쩜삼에 입사한 나",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "삼쩜삼에 입사한 나",
+          "href": null
+        }
+      ],
+      "type": "file",
+      "file": {
+        "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2F7790768b-bcf2-4718-87d8-1c65d6c64e44%2Fimage.png?table=block&id=16e9c6bf-2b17-8027-8676-c782397b3302&cache=v2",
+        "expiry_time": "2025-04-13T11:42:33.104Z"
+      },
+      "format": {
+        "block_width": 1050,
+        "block_height": 1400,
+        "block_aspect_ratio": 0.75
+      }
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-8008-9075-d54e39d1c537",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T11:22:00.000Z",
+    "last_edited_time": "2025-01-01T11:50:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "아직 적응 중이라 부랴부랴 정신이 없지만, 내가 원했던 일들을 하고 있다!\n열정 많은 프론트엔드 개발자분들도 많아서 좋은 의견을 서로 주고받을 수 있는 문화라 아주 만족한다!\n25년은 삼쩜삼에 많은 기여를 할 수 있도록 노력할 것이다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "아직 적응 중이라 부랴부랴 정신이 없지만, 내가 원했던 일들을 하고 있다!\n열정 많은 프론트엔드 개발자분들도 많아서 좋은 의견을 서로 주고받을 수 있는 문화라 아주 만족한다!\n25년은 삼쩜삼에 많은 기여를 할 수 있도록 노력할 것이다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-80eb-a5e7-e4d3160505a9",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T08:58:00.000Z",
+    "last_edited_time": "2025-01-01T08:58:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "마무리",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "마무리",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "16e9c6bf-2b17-8021-bb3a-fba93c33f39b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+    },
+    "created_time": "2025-01-01T08:58:00.000Z",
+    "last_edited_time": "2025-01-01T12:01:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "연말에는 이직을 하고 적응한다는 핑계로 운동도 한 달에 1~2번 가고 일 외적으로는 아주 나태해진 것 같다..\nNotion 관련 라이브러리를 만들다 말았는데 상반기까지 얼추 끝내야겠다. 운동도 1월부터 다시 새 마음으로 다녀야겠다. 24년은 기술 관련 스터디를 많이 못했는데, 25년 회고 때는 많은 내용을 쓸 수 있도록 스터디도 여러 개 해봐야겠다. ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "연말에는 이직을 하고 적응한다는 핑계로 운동도 한 달에 1~2번 가고 일 외적으로는 아주 나태해진 것 같다..\nNotion 관련 라이브러리를 만들다 말았는데 상반기까지 얼추 끝내야겠다. 운동도 1월부터 다시 새 마음으로 다녀야겠다. 24년은 기술 관련 스터디를 많이 못했는데, 25년 회고 때는 많은 내용을 쓸 수 있도록 스터디도 여러 개 해봐야겠다. ",
+          "href": null
+        }
+      ],
       "color": "default"
     }
   }
