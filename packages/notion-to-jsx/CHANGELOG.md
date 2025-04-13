@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 1.2.0
+
+### Minor Changes
+
+- 54bd141: 미구현 컴포넌트 (Quote, Figma Type, Mention, Table, Toggle) 추가
+
 ## 1.1.1
 
 ### Patch Changes
