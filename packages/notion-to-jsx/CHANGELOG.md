@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 1.2.4
+
+### Patch Changes
+
+- ab8398a: Code Tokenize add
+
 ## 1.2.3
 
 ### Patch Changes
