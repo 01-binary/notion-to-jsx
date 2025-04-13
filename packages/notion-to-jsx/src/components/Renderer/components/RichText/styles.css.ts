@@ -90,4 +90,6 @@ export const richText = recipe({
 export const link = style({
   color: 'inherit',
   textDecoration: 'underline',
+  wordBreak: 'break-word',
+  overflowWrap: 'break-word',
 });
