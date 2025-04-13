@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 1.2.3
+
+### Patch Changes
+
+- 85f04ea: Column인 경우 Image size 조절
+
 ## 1.2.2
 
 ### Patch Changes
