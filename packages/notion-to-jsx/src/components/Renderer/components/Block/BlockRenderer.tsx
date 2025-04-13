@@ -109,7 +109,6 @@ const BlockRenderer: React.FC<Props> = ({ block, onFocus, index }) => {
       );
 
     default:
-      console.log(`지원되지 않는 블록 타입: ${block.type}`);
       return null;
   }
 };
