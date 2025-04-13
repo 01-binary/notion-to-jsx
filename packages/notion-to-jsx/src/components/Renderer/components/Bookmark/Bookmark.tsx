@@ -36,9 +36,9 @@ const fetchOpenGraphData = async (url: string): Promise<OpenGraphData> => {
       throw new Error('Failed to fetch metadata');
     }
 
-    const { status, data: metaData } = data;
+    const { status, data: metaData, statusCode } = data;
 
-    if (status !== 'success') {
+    if (status !== 'success' || statusCode !== 200) {
       throw new Error('API returned error status');
     }
 
