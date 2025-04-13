@@ -8,6 +8,10 @@ import {
 } from '../MemoizedComponents';
 import { CodeBlock } from '../Code';
 import { Heading1, Heading2, Heading3, Paragraph } from '../Typography';
+import { ColumnList } from '../Column';
+import { Quote } from '../Quote';
+import Table from '../Table';
+import { Toggle } from '../Toggle';
 
 export interface Props {
   block: any;
@@ -21,16 +25,12 @@ const BlockRenderer: React.FC<Props> = ({ block, onFocus, index }) => {
   const blockProps = {
     tabIndex: 0,
     onFocus,
-    'data-block-id': block.id,
   };
 
   switch (block.type) {
     case 'link_preview':
       return (
-        <MemoizedLinkPreview
-          url={block.link_preview.url}
-          {...blockProps}
-        />
+        <MemoizedLinkPreview url={block.link_preview.url} {...blockProps} />
       );
     case 'paragraph':
       return (
@@ -86,7 +86,24 @@ const BlockRenderer: React.FC<Props> = ({ block, onFocus, index }) => {
     case 'bookmark':
       return <MemoizedBookmark url={block.bookmark.url} />;
 
+    case 'column_list':
+      return <ColumnList block={block} onFocus={onFocus} />;
+
+    case 'column':
+      // 개별 column은 ColumnList에서 처리됩니다
+      return null;
+
+    case 'quote':
+      return <Quote richTexts={block.quote.rich_text} {...blockProps} />;
+
+    case 'table':
+      return <Table block={block} tabIndex={blockProps.tabIndex} />;
+      
+    case 'toggle':
+      return <Toggle block={block} tabIndex={blockProps.tabIndex} onFocus={onFocus} />;
+
     default:
+      console.log(`지원되지 않는 블록 타입: ${block.type}`, block);
       return null;
   }
 };

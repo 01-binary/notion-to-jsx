@@ -15,7 +15,6 @@ const RecursiveListItem: React.FC<{
 }> = ({ block, index }) => {
   const blockProps = {
     tabIndex: 0,
-    'data-block-id': block.id,
   };
 
   const blockType = block.type;
