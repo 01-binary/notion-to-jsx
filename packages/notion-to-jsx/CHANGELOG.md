@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 1.2.1
+
+### Patch Changes
+
+- 6272537: chore
+
 ## 1.2.0
 
 ### Minor Changes
