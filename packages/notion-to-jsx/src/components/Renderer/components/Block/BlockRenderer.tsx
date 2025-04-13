@@ -98,12 +98,18 @@ const BlockRenderer: React.FC<Props> = ({ block, onFocus, index }) => {
 
     case 'table':
       return <Table block={block} tabIndex={blockProps.tabIndex} />;
-      
+
     case 'toggle':
-      return <Toggle block={block} tabIndex={blockProps.tabIndex} onFocus={onFocus} />;
+      return (
+        <Toggle
+          block={block}
+          tabIndex={blockProps.tabIndex}
+          onFocus={onFocus}
+        />
+      );
 
     default:
-      console.log(`지원되지 않는 블록 타입: ${block.type}`, block);
+      console.log(`지원되지 않는 블록 타입: ${block.type}`);
       return null;
   }
 };
