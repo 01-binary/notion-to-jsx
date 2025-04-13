@@ -18,6 +18,7 @@ const Column: React.FC<ColumnProps> = ({ block, onFocus }) => {
           block={childBlock}
           onFocus={onFocus}
           index={index}
+          isColumn
         />
       ))}
     </div>

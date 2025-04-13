@@ -17,9 +17,15 @@ export interface Props {
   block: any;
   onFocus?: () => void;
   index: number;
+  isColumn?: boolean;
 }
 
-const BlockRenderer: React.FC<Props> = ({ block, onFocus, index }) => {
+const BlockRenderer: React.FC<Props> = ({
+  block,
+  onFocus,
+  index,
+  isColumn = false,
+}) => {
   if (!block) return null;
 
   const blockProps = {
@@ -79,6 +85,7 @@ const BlockRenderer: React.FC<Props> = ({ block, onFocus, index }) => {
             alt={block.image.caption?.[0]?.plain_text || ''}
             caption={block.image.caption}
             format={block.image.format}
+            isColumn={isColumn}
           />
         </figure>
       );
