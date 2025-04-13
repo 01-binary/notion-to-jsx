@@ -32,7 +32,6 @@ export async function addMetadataToImageBlock(block: any): Promise<any> {
   if (block.type !== 'image') {
     return block;
   }
-
   try {
     // 이미지 URL 가져오기
     let imageUrl = '';

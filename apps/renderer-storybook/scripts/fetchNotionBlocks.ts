@@ -12,7 +12,7 @@ const __dirname = dirname(__filename);
 dotenv.config({ path: resolve(__dirname, '../.env.local') });
 
 // 페이지 ID
-const PAGE_ID = '1239c6bf-2b17-8076-a838-d17ca1c89783';
+const PAGE_ID = '16e9c6bf2b17807aa496fc37fac0fb1b';
 
 // ? using this script : pnpx tsx scripts/fetchNotionBlocks.ts
 async function fetchAndSaveBlocks() {
@@ -52,7 +52,6 @@ async function fetchAndSaveBlocks() {
 
     // 페이지 블록 가져오기
     const blocks = await client.getPageBlocks(PAGE_ID);
-
     // JSON 파일로 저장
     const outputPath = join(__dirname, '../src/sample-data/notionBlocks.json');
     console.log(`저장 경로: ${outputPath}`);
