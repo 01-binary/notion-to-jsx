@@ -2,13 +2,7 @@ import React from 'react';
 import { richText, link } from './styles.css';
 
 export interface RichTextItem {
-  type: 'text';
-  text: {
-    content: string;
-    link: string | null;
-  };
-  content: string;
-  link: string | null;
+  type: 'text' | 'mention' | string;
   annotations: {
     bold: boolean;
     italic: boolean;
@@ -25,31 +19,61 @@ export interface RichTextItem {
   color: string;
   plain_text: string;
   href: string | null;
+
+  text?: {
+    content: string;
+    link: string | null;
+  };
 }
 
 export interface RichTextProps {
   richTexts: RichTextItem[];
 }
 
+/**
+ * 링크 컴포넌트를 생성하는 함수
+ */
+const renderLink = (href: string, content: React.ReactNode) => (
+  <a href={href} target="_blank" rel="noopener noreferrer" className={link}>
+    {content}
+  </a>
+);
+
 const RichTexts: React.FC<RichTextProps> = ({ richTexts }) => {
   return (
     <>
       {richTexts.map((text, index) => {
-        const { bold, italic, strikethrough, underline, code, color } =
+        const { bold, italic, strikethrough, underline, code } =
           text.annotations;
 
-        const content = text.text.link ? (
-          <a
-            href={text.text.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={link}
-          >
-            {text.text.content}
-          </a>
-        ) : (
-          text.text.content
-        );
+        // 컨텐츠 렌더링 로직
+        let content: React.ReactNode;
+
+        // TODO: Refactor
+        switch (text.type) {
+          case 'text': {
+            if (text.text) {
+              const { text: textData } = text;
+              content = textData.link
+                ? renderLink(textData.link, textData.content)
+                : textData.content;
+            } else {
+              content = text.plain_text;
+            }
+            break;
+          }
+
+          case 'mention': {
+            content = text.href
+              ? renderLink(text.href, text.plain_text)
+              : text.plain_text;
+            break;
+          }
+
+          default: {
+            content = text.plain_text;
+          }
+        }
 
         // TODO: NOTION COLOR 적용
         // const colorValue =

@@ -1,13 +1,13 @@
 [
   {
     "object": "block",
-    "id": "17f9c6bf-2b17-8055-91c7-cc5142fe72dd",
+    "id": "29a578ef-ed0e-4585-b432-0c727dbda133",
     "parent": {
       "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
     },
-    "created_time": "2025-01-18T07:54:00.000Z",
-    "last_edited_time": "2025-01-19T11:03:00.000Z",
+    "created_time": "2024-04-14T13:02:00.000Z",
+    "last_edited_time": "2024-04-14T13:43:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -25,7 +25,7 @@
         {
           "type": "text",
           "text": {
-            "content": "현재 여러분이 보고 있는 내 블로그의 포스팅은 아래 사진처럼 노션 Table(DB)에 저장되어 있다.",
+            "content": "23년 12월, 글또 9기에 참여하며 벌써 마지막, 10번째 글을 쓰게 되었다. 올해는 유난히 시간이 빠르게 흘러갔다. 😊",
             "link": null
           },
           "annotations": {
@@ -36,7 +36,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "현재 여러분이 보고 있는 내 블로그의 포스팅은 아래 사진처럼 노션 Table(DB)에 저장되어 있다.",
+          "plain_text": "23년 12월, 글또 9기에 참여하며 벌써 마지막, 10번째 글을 쓰게 되었다. 올해는 유난히 시간이 빠르게 흘러갔다. 😊",
           "href": null
         }
       ],
@@ -45,13 +45,102 @@
   },
   {
     "object": "block",
-    "id": "17f9c6bf-2b17-8016-bf79-dc83ab79fb78",
+    "id": "b5f3e041-6591-4fb4-9cf8-40d659ee755d",
     "parent": {
       "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
     },
-    "created_time": "2025-01-18T07:56:00.000Z",
-    "last_edited_time": "2025-01-18T07:56:00.000Z",
+    "created_time": "2024-04-14T13:20:00.000Z",
+    "last_edited_time": "2024-04-14T13:21:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "글또 with udemy",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "글또 with udemy",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "d224a888-a13a-4117-a7e9-a9da764dd17b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+    },
+    "created_time": "2024-04-14T13:21:00.000Z",
+    "last_edited_time": "2024-04-14T14:34:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "동아리에서는 신청자에 한해 유데미 강의를 최대 2개까지 제공해 주었다. 강의를 2개 다 수강할 자신은 없어서 하나만 신청하기로 했다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "동아리에서는 신청자에 한해 유데미 강의를 최대 2개까지 제공해 주었다. 강의를 2개 다 수강할 자신은 없어서 하나만 신청하기로 했다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "c7df8444-f280-4e35-8057-85be63d21f7b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+    },
+    "created_time": "2024-04-14T13:13:00.000Z",
+    "last_edited_time": "2024-04-14T13:13:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -68,25 +157,25 @@
       "caption": [],
       "type": "file",
       "file": {
-        "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2F566f127b-9e73-491d-bee6-5afd075653a2%2Fimage.png?table=block&id=17f9c6bf-2b17-8016-bf79-dc83ab79fb78&cache=v2",
-        "expiry_time": "2025-04-10T13:24:52.481Z"
+        "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2Fc06a5f4e-f360-4af2-8f04-da12f527c414%2FUntitled.png?table=block&id=c7df8444-f280-4e35-8057-85be63d21f7b&cache=v2",
+        "expiry_time": "2025-04-13T06:49:44.831Z"
       },
       "format": {
-        "block_width": 2998,
-        "block_height": 1468,
-        "block_aspect_ratio": 2.042234332425068
+        "block_width": 1686,
+        "block_height": 730,
+        "block_aspect_ratio": 2.3095890410958906
       }
     }
   },
   {
     "object": "block",
-    "id": "17f9c6bf-2b17-80ca-aea4-cbb0b114651a",
+    "id": "5fd27e96-8178-4e50-aa05-271154a1c248",
     "parent": {
       "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
     },
-    "created_time": "2025-01-18T08:03:00.000Z",
-    "last_edited_time": "2025-01-19T11:09:00.000Z",
+    "created_time": "2024-04-14T13:22:00.000Z",
+    "last_edited_time": "2024-04-14T13:22:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -98,13 +187,13 @@
     "has_children": false,
     "archived": false,
     "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
+    "type": "heading_2",
+    "heading_2": {
       "rich_text": [
         {
           "type": "text",
           "text": {
-            "content": "내 블로그는 ",
+            "content": "선택한 강의",
             "link": null
           },
           "annotations": {
@@ -115,169 +204,23 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "내 블로그는 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "NextJS",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "NextJS",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 와 ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 와 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "react-notion-x",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "react-notion-x",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 라이브러리 조합으로 작동한다.\n서버사이드에서 노션 페이지(포스팅)의 정보를 가져와 ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 라이브러리 조합으로 작동한다.\n서버사이드에서 노션 페이지(포스팅)의 정보를 가져와 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "react-notion-x",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "react-notion-x",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 의 렌더러를 사용해 포스팅을 보여주는 것이다. ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 의 렌더러를 사용해 포스팅을 보여주는 것이다. ",
+          "plain_text": "선택한 강의",
           "href": null
         }
       ],
+      "is_toggleable": false,
       "color": "default"
     }
   },
   {
     "object": "block",
-    "id": "17f9c6bf-2b17-80bd-9456-ddc8cb452772",
+    "id": "a3630d5f-28cd-45d2-8f21-5474735dcc5e",
     "parent": {
       "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
     },
-    "created_time": "2025-01-18T08:12:00.000Z",
-    "last_edited_time": "2025-01-18T08:12:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "code",
-    "code": {
-      "caption": [],
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "import { NotionRenderer } from 'react-notion-x';\n\nconst PostRenderer = ({ recordMap }: Props) => {\n  return (\n    <NotionRenderer\n      recordMap={recordMap}\n      fullPage\n      disableHeader\n      showTableOfContents\n      previewImages={!!recordMap?.preview_images}\n      components={{\n        Code,\n        Collection,\n        Equation,\n        Pdf,\n        Modal,\n        nextLink,\n        nextImage,\n      }}\n    />\n  );\n};",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "import { NotionRenderer } from 'react-notion-x';\n\nconst PostRenderer = ({ recordMap }: Props) => {\n  return (\n    <NotionRenderer\n      recordMap={recordMap}\n      fullPage\n      disableHeader\n      showTableOfContents\n      previewImages={!!recordMap?.preview_images}\n      components={{\n        Code,\n        Collection,\n        Equation,\n        Pdf,\n        Modal,\n        nextLink,\n        nextImage,\n      }}\n    />\n  );\n};",
-          "href": null
-        }
-      ],
-      "language": "typescript"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-80f4-a19e-cfff2ab01fb5",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T08:12:00.000Z",
-    "last_edited_time": "2025-01-19T11:10:00.000Z",
+    "created_time": "2024-04-14T13:05:00.000Z",
+    "last_edited_time": "2024-04-14T13:29:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -295,7 +238,7 @@
         {
           "type": "text",
           "text": {
-            "content": "현재 아주 잘 작동하고 있다. 다만 앞으로도 잘 작동할 것인지는 의문이 있는데 ",
+            "content": "내가 신청한 강의는 ",
             "link": null
           },
           "annotations": {
@@ -306,162 +249,13 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "현재 아주 잘 작동하고 있다. 다만 앞으로도 잘 작동할 것인지는 의문이 있는데 ",
+          "plain_text": "내가 신청한 강의는 ",
           "href": null
         },
         {
           "type": "text",
           "text": {
-            "content": "react-notion-x",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "react-notion-x",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 의 유틸 쪽에서 노션의 비공식 API를 쓰고 있기 때문이다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 의 유틸 쪽에서 노션의 비공식 API를 쓰고 있기 때문이다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-80c1-bca6-f76fb784c04e",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T08:21:00.000Z",
-    "last_edited_time": "2025-01-19T11:03:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "예를 들면, 노션에서 페이지 내보내기 기능이 있는데 노션의 공식 API에서는 내보내기 API가 없는 것이다.\n노션 앱에서는 당연히 API를 통해 내보내기 기능을 제공할 텐데 외부 개발자들이 사용할 수 있도록 내놓은 노션 공식 API에는 해당 API 기능이 빠져있는 것이다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "예를 들면, 노션에서 페이지 내보내기 기능이 있는데 노션의 공식 API에서는 내보내기 API가 없는 것이다.\n노션 앱에서는 당연히 API를 통해 내보내기 기능을 제공할 텐데 외부 개발자들이 사용할 수 있도록 내놓은 노션 공식 API에는 해당 API 기능이 빠져있는 것이다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-80d0-b834-c118c0add8fa",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T08:26:00.000Z",
-    "last_edited_time": "2025-01-19T11:10:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "이처럼 노션 공식 API만을 사용해서는 기능 구현이 번거롭거나 제한적인 부분들이 있다.\n그래서 그런지 대부분의 노션을 활용한 라이브러리는 노션 비공식 API를 활용하는 것 같다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "이처럼 노션 공식 API만을 사용해서는 기능 구현이 번거롭거나 제한적인 부분들이 있다.\n그래서 그런지 대부분의 노션을 활용한 라이브러리는 노션 비공식 API를 활용하는 것 같다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-80cd-909a-f206c07ddff7",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T08:26:00.000Z",
-    "last_edited_time": "2025-01-18T08:26:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "노션 비공식 API 모음",
+            "content": "React Three fiber(R3F)로 배우는 인터렉티브 3D 웹 개발",
             "link": null
           },
           "annotations": {
@@ -472,7 +266,24 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "노션 비공식 API 모음",
+          "plain_text": "React Three fiber(R3F)로 배우는 인터렉티브 3D 웹 개발",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "이다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "이다.",
           "href": null
         }
       ],
@@ -481,13 +292,13 @@
   },
   {
     "object": "block",
-    "id": "17f9c6bf-2b17-80f1-8bf0-ff89898a480c",
+    "id": "1f3396f7-9176-4be3-b148-8a172a675862",
     "parent": {
       "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
     },
-    "created_time": "2025-01-18T08:26:00.000Z",
-    "last_edited_time": "2025-01-18T08:26:00.000Z",
+    "created_time": "2024-04-14T13:06:00.000Z",
+    "last_edited_time": "2024-04-14T13:06:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -502,18 +313,18 @@
     "type": "bookmark",
     "bookmark": {
       "caption": [],
-      "url": "https://notebooks.githubusercontent.com/view/ipynb?browser=chrome&color_mode=auto&commit=05a8ff58c059f41e8662addd6cec4402eea96d24&device=unknown&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6a6b656c6c65797274702f6e6f74696f6e2d6170692f303561386666353863303539663431653836363261646464366365633434303265656139366432342f4e6f74696f6e4150492e6970796e62&logged_in=false&nwo=jkelleyrtp%2Fnotion-api&path=NotionAPI.ipynb&platform=android&repository_id=158154615&repository_type=Repository&version=104"
+      "url": "https://www.udemy.com/course/react-three-fiber-r3f/"
     }
   },
   {
     "object": "block",
-    "id": "17f9c6bf-2b17-8053-bf4b-fec18c132ecd",
+    "id": "885546e1-69eb-418c-a738-6bb1cbce5659",
     "parent": {
       "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
     },
-    "created_time": "2025-01-18T08:27:00.000Z",
-    "last_edited_time": "2025-01-18T08:33:00.000Z",
+    "created_time": "2024-04-14T13:24:00.000Z",
+    "last_edited_time": "2024-04-14T14:25:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -531,7 +342,7 @@
         {
           "type": "text",
           "text": {
-            "content": "하지만 비공식 API이기 때문에 언제든 하위 호환성이 깨질 수 있다.\n그리고 해당 라이브러리를 쓰면서 아래와 같은 몇몇 문제에 부딪혔다.",
+            "content": "작년부터 웹 3D에 대한 궁금증이 많았고, 몇 개의 강의를 장바구니에 담아두었었다.\n24년에 웹 3D 공부를 시작하기로 마음먹었는데, 글또에서 유데미와 연계하여 강의를 무료로 제공한다고 해서 장바구니에 담아두었던 강의를 선택하게 되었다.",
             "link": null
           },
           "annotations": {
@@ -542,7 +353,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "하지만 비공식 API이기 때문에 언제든 하위 호환성이 깨질 수 있다.\n그리고 해당 라이브러리를 쓰면서 아래와 같은 몇몇 문제에 부딪혔다.",
+          "plain_text": "작년부터 웹 3D에 대한 궁금증이 많았고, 몇 개의 강의를 장바구니에 담아두었었다.\n24년에 웹 3D 공부를 시작하기로 마음먹었는데, 글또에서 유데미와 연계하여 강의를 무료로 제공한다고 해서 장바구니에 담아두었던 강의를 선택하게 되었다.",
           "href": null
         }
       ],
@@ -551,39 +362,13 @@
   },
   {
     "object": "block",
-    "id": "17f9c6bf-2b17-805e-bbfc-e5db0c033774",
+    "id": "328ec07b-6ec9-4d6d-958a-a9ef74ea41a4",
     "parent": {
       "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
     },
-    "created_time": "2025-01-18T08:29:00.000Z",
-    "last_edited_time": "2025-01-18T08:29:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bookmark",
-    "bookmark": {
-      "caption": [],
-      "url": "https://binary01.me/posts/image-optimiztion"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-803b-8a68-e17688caf8b9",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T08:30:00.000Z",
-    "last_edited_time": "2025-01-18T08:39:00.000Z",
+    "created_time": "2024-04-14T13:22:00.000Z",
+    "last_edited_time": "2024-04-14T13:29:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -601,7 +386,7 @@
         {
           "type": "text",
           "text": {
-            "content": "라이브러리 만드는 목적",
+            "content": "강의 대상 및 구성",
             "link": null
           },
           "annotations": {
@@ -612,7 +397,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "라이브러리 만드는 목적",
+          "plain_text": "강의 대상 및 구성",
           "href": null
         }
       ],
@@ -622,13 +407,101 @@
   },
   {
     "object": "block",
-    "id": "1239c6bf-2b17-80f1-bce5-e9794adf2429",
+    "id": "39a3be53-e752-42e0-87b6-0999f2830f0d",
     "parent": {
       "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
     },
-    "created_time": "2024-10-18T08:04:00.000Z",
-    "last_edited_time": "2025-01-18T08:36:00.000Z",
+    "created_time": "2024-04-14T13:31:00.000Z",
+    "last_edited_time": "2024-04-14T13:46:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "자바스크립트, 타입스크립트 사용 경험이 있는 사람",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "자바스크립트, 타입스크립트 사용 경험이 있는 사람",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "4b6c3d92-131e-4344-8235-f43dae142f09",
+    "parent": {
+      "type": "page_id",
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+    },
+    "created_time": "2024-04-14T13:31:00.000Z",
+    "last_edited_time": "2024-04-14T13:46:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "React에 관심이 있는 사람",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "React에 관심이 있는 사람",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "161a8d8a-2a87-4bb8-bb7f-1b9d7cdd22f8",
+    "parent": {
+      "type": "page_id",
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+    },
+    "created_time": "2024-04-14T13:29:00.000Z",
+    "last_edited_time": "2024-04-14T13:53:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -646,7 +519,7 @@
         {
           "type": "text",
           "text": {
-            "content": "위와 같은 이유로 결국 나의 목적은 내 블로그에 쓸 노션 관련 라이브러리를 직접 만들어 보는 것이다.\n라이브러리를 만들며 달성하고 싶은 세부 목표는 아래와 같다.",
+            "content": "자바스크립트와 간단한 타입스크립트를 사용할 줄 아는 분을 대상으로 강의해서 해당 언어를 사용해 본 사람이 듣는 것을 추천한다.\nReact는 몰라도 될 만큼 강사님이 자세히 알려주시긴 하지만 ",
             "link": null
           },
           "annotations": {
@@ -657,260 +530,13 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "위와 같은 이유로 결국 나의 목적은 내 블로그에 쓸 노션 관련 라이브러리를 직접 만들어 보는 것이다.\n라이브러리를 만들며 달성하고 싶은 세부 목표는 아래와 같다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-80df-a201-cd5645ebfb2b",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T08:36:00.000Z",
-    "last_edited_time": "2025-01-18T08:37:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "numbered_list_item",
-    "numbered_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "최대한 노션 공식 API를 사용하여 현재 기능 + a 를 제공하는 라이브러리를 만든다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "최대한 노션 공식 API를 사용하여 현재 기능 + a 를 제공하는 라이브러리를 만든다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-806f-9626-ca4afd0caddb",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T08:37:00.000Z",
-    "last_edited_time": "2025-01-19T11:11:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "numbered_list_item",
-    "numbered_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "프론트엔드 개발자로서 직접 라이브러리를 만들어 오픈소스에 기여해보는 경험을 얻는다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "프론트엔드 개발자로서 직접 라이브러리를 만들어 오픈소스에 기여해보는 경험을 얻는다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-8086-8896-caa9b7e4f75e",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T08:39:00.000Z",
-    "last_edited_time": "2025-01-18T08:39:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "heading_2",
-    "heading_2": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Steps",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Steps",
-          "href": null
-        }
-      ],
-      "is_toggleable": false,
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-8095-9999-ce630824d3d4",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T08:52:00.000Z",
-    "last_edited_time": "2025-01-18T08:53:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "heading_3",
-    "heading_3": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "직접 구현해 볼 대상 선정",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "직접 구현해 볼 대상 선정",
-          "href": null
-        }
-      ],
-      "is_toggleable": false,
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1239c6bf-2b17-80f4-a225-f7177a870ef8",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2024-10-18T08:07:00.000Z",
-    "last_edited_time": "2025-04-10T12:12:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "553d6fc6-e170-4227-8810-0540e2142f82"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "link_preview",
-    "link_preview": {
-      "url": "https://github.com/NotionX/react-notion-x"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1239c6bf-2b17-8036-bd10-f04ed91adcdb",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2024-10-18T08:04:00.000Z",
-    "last_edited_time": "2025-01-19T11:11:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "내 블로그는 위 레포에서 ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "내 블로그는 위 레포에서 ",
+          "plain_text": "자바스크립트와 간단한 타입스크립트를 사용할 줄 아는 분을 대상으로 강의해서 해당 언어를 사용해 본 사람이 듣는 것을 추천한다.\nReact는 몰라도 될 만큼 강사님이 자세히 알려주시긴 하지만 ",
           "href": null
         },
         {
           "type": "text",
           "text": {
-            "content": "notion-client",
+            "content": "useRef, useEffect",
             "link": null
           },
           "annotations": {
@@ -921,13 +547,13 @@
             "code": true,
             "color": "default"
           },
-          "plain_text": "notion-client",
+          "plain_text": "useRef, useEffect",
           "href": null
         },
         {
           "type": "text",
           "text": {
-            "content": ", ",
+            "content": " 등을 조금 사용해서 React를 조금이라도 이해하고 있는 사람이 듣는 것을 추천한다!",
             "link": null
           },
           "annotations": {
@@ -938,177 +564,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": ", ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "notion-utils",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "notion-utils",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": ", ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": ", ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "react-notion-x",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "react-notion-x",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 라이브러리를 쓰고 있는데\n우선, ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 라이브러리를 쓰고 있는데\n우선, ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "notion-client",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "notion-client",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": ", ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": ", ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "notion-utils",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "notion-utils",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 의 기능을 직접 만들어보자!\n",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 의 기능을 직접 만들어보자!\n",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "react-notion-x",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "react-notion-x",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 는 노션 컴포넌트 렌더러인데 코드 양이 방대해서 제일 나중에 작업한다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 는 노션 컴포넌트 렌더러인데 코드 양이 방대해서 제일 나중에 작업한다.",
+          "plain_text": " 등을 조금 사용해서 React를 조금이라도 이해하고 있는 사람이 듣는 것을 추천한다!",
           "href": null
         }
       ],
@@ -1117,3013 +573,13 @@
   },
   {
     "object": "block",
-    "id": "17f9c6bf-2b17-804f-8d23-d1c51b4b7cbe",
+    "id": "57cecfdc-a186-411d-a07d-b30a87ff0ec4",
     "parent": {
       "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
     },
-    "created_time": "2025-01-18T08:56:00.000Z",
-    "last_edited_time": "2025-01-18T08:58:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "heading_3",
-    "heading_3": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "기술 선정",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "기술 선정",
-          "href": null
-        }
-      ],
-      "is_toggleable": false,
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-800b-9a34-d0c3a4f93ab8",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T08:58:00.000Z",
-    "last_edited_time": "2025-01-18T08:59:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "라이브러리를 만드는데 필요한 기술을 정해보자.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "라이브러리를 만드는데 필요한 기술을 정해보자.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-8022-8c3e-e6a7fbd133aa",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T08:59:00.000Z",
-    "last_edited_time": "2025-01-18T09:00:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Package Management: pnpm",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Package Management: pnpm",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-80a9-842c-ebd15893c5be",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T08:59:00.000Z",
-    "last_edited_time": "2025-01-18T09:17:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Repo Management : turborepo",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Repo Management : turborepo",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-80ca-b07f-fab0875b5b76",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T09:01:00.000Z",
-    "last_edited_time": "2025-01-18T09:05:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Bundling: tsup",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Bundling: tsup",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-8005-81ae-fb976512c616",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T08:59:00.000Z",
-    "last_edited_time": "2025-01-18T09:00:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Testing : vitest",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Testing : vitest",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-809b-88e7-dbb7957f6393",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T08:59:00.000Z",
-    "last_edited_time": "2025-01-19T11:12:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Linting : ESLint + Prettier (Biome도 고려해보자)",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Linting : ESLint + Prettier (Biome도 고려해보자)",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-807b-b934-f6e69772cd3b",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T09:02:00.000Z",
-    "last_edited_time": "2025-01-18T09:02:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Versioning : Changeset",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Versioning : Changeset",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-8053-aa82-d389a4b5d205",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T09:02:00.000Z",
-    "last_edited_time": "2025-01-19T11:04:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "현재 인기가 많은 모노레포 툴은 turborepo라고 생각해서 선정했다.\n연장선으로 turborepo의 특정 버전 이상에서는 yarn berry의 PnP를 지원하지 않기 때문에 pnpm를 선택했다.\n나머지 도구도 현시점에서 많이 사용되고 레퍼런스가 많아 선정했다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "현재 인기가 많은 모노레포 툴은 turborepo라고 생각해서 선정했다.\n연장선으로 turborepo의 특정 버전 이상에서는 yarn berry의 PnP를 지원하지 않기 때문에 pnpm를 선택했다.\n나머지 도구도 현시점에서 많이 사용되고 레퍼런스가 많아 선정했다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-802d-a0da-e4d68ce171ec",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T09:20:00.000Z",
-    "last_edited_time": "2025-01-19T11:12:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "각 도구(Tool)는 자세히 보면 동일한 목적을 가진 도구에서 특징, 장점은 조금씩 차이가 있지만 큰 관점에서 목적에 맞게 비슷한 기능을 제공한다.\n어떤 도구에서 아주 뛰어난 특징, 장점은 시간이 지나며 다른 도구에서도 사용되고 그렇지 못한 도구는 인기를 잃는다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "각 도구(Tool)는 자세히 보면 동일한 목적을 가진 도구에서 특징, 장점은 조금씩 차이가 있지만 큰 관점에서 목적에 맞게 비슷한 기능을 제공한다.\n어떤 도구에서 아주 뛰어난 특징, 장점은 시간이 지나며 다른 도구에서도 사용되고 그렇지 못한 도구는 인기를 잃는다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-8016-8522-e147d42b9173",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T09:28:00.000Z",
-    "last_edited_time": "2025-01-19T11:13:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "각 도구(예를 들면 Testing)의 목적과 세부 도구(vitest, jest가 예시)들의 특징과 장점을 빠르게 학습하고 적용하는 게 오늘날 개발자에게 중요한 능력같다.\n(물론 JS, TS, React, Next 등 코어 한 라이브러리는 내부까지 깊게 파보는 게 너무 중요하다!)",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "각 도구(예를 들면 Testing)의 목적과 세부 도구(vitest, jest가 예시)들의 특징과 장점을 빠르게 학습하고 적용하는 게 오늘날 개발자에게 중요한 능력같다.\n(물론 JS, TS, React, Next 등 코어 한 라이브러리는 내부까지 깊게 파보는 게 너무 중요하다!)",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-80be-87d5-da491373da79",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T09:32:00.000Z",
-    "last_edited_time": "2025-01-18T09:33:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Changeset에 대한 설명과 적용은 아래 포스팅에서 이미 다루었다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Changeset에 대한 설명과 적용은 아래 포스팅에서 이미 다루었다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-8003-a5d7-f7efa72512d7",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T09:32:00.000Z",
-    "last_edited_time": "2025-01-18T09:32:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bookmark",
-    "bookmark": {
-      "caption": [],
-      "url": "https://binary01.me/posts/changeset-github-action"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-80db-aac9-fa0bb9cb1c10",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T09:33:00.000Z",
-    "last_edited_time": "2025-01-19T11:13:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "요즘 많이 사용하는 tsup에 대해 간단히 알아보고 기술 선정의 이유는 여기서 마무리한다. (하나 하나 다 쓰면 글이 너무 길어진다..ㅠ)",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "요즘 많이 사용하는 tsup에 대해 간단히 알아보고 기술 선정의 이유는 여기서 마무리한다. (하나 하나 다 쓰면 글이 너무 길어진다..ㅠ)",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-8034-8df9-da4fd6b94987",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T09:35:00.000Z",
-    "last_edited_time": "2025-01-19T11:17:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "heading_2",
-    "heading_2": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "JavaScript 모듈 시스템의 발전 과정",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "JavaScript 모듈 시스템의 발전 과정",
-          "href": null
-        }
-      ],
-      "is_toggleable": false,
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-8067-b85f-d38413e98868",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T11:17:00.000Z",
-    "last_edited_time": "2025-01-19T11:17:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "번들링에 대해 알아보려면 우선 JavaScript 모듈 시스템의 발전 과정을 알아봐야 한다.\n간단히 알아보자!",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "번들링에 대해 알아보려면 우선 JavaScript 모듈 시스템의 발전 과정을 알아봐야 한다.\n간단히 알아보자!",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-8005-bcb5-ce02b8e4a474",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:10:00.000Z",
-    "last_edited_time": "2025-01-19T11:17:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "heading_3",
-    "heading_3": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "초기 JavaScript",
-            "link": null
-          },
-          "annotations": {
-            "bold": true,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "초기 JavaScript",
-          "href": null
-        }
-      ],
-      "is_toggleable": false,
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-8083-b15f-eeb24bb1bfe7",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:11:00.000Z",
-    "last_edited_time": "2025-01-19T09:11:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "초기에는 물론 JavaScript의 모듈 시스템이 없었다. 그래서 전역 스코프에서 모든 코드가 실행되어 변수명 충돌 등의 문제가 발생했다. ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "초기에는 물론 JavaScript의 모듈 시스템이 없었다. 그래서 전역 스코프에서 모든 코드가 실행되어 변수명 충돌 등의 문제가 발생했다. ",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-8071-8485-d91b3f065cdb",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:11:00.000Z",
-    "last_edited_time": "2025-01-19T10:42:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "heading_3",
-    "heading_3": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "CommonJS (2009)",
-            "link": null
-          },
-          "annotations": {
-            "bold": true,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "CommonJS (2009)",
-          "href": null
-        }
-      ],
-      "is_toggleable": false,
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-801d-a773-d26c951283a9",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:11:00.000Z",
-    "last_edited_time": "2025-01-19T11:13:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Node.js",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "Node.js",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 가 서버사이드 JavaScript 개발을 위해 CommonJS를 채택했다.\n주요 특징은 아래와 같다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 가 서버사이드 JavaScript 개발을 위해 CommonJS를 채택했다.\n주요 특징은 아래와 같다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-8057-8726-dedf4974eece",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:12:00.000Z",
-    "last_edited_time": "2025-01-19T09:18:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "require()",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "require()",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 와 ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 와 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "module.exports",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "module.exports",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 를 사용한 동기적 모듈 로딩",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 를 사용한 동기적 모듈 로딩",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-80b0-b5de-ed9a28c9ceb3",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:12:00.000Z",
-    "last_edited_time": "2025-01-19T09:12:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "서버 환경에 최적화된 설계",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "서버 환경에 최적화된 설계",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-80c7-8281-e17c33ba1fde",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:12:00.000Z",
-    "last_edited_time": "2025-01-19T09:12:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "파일 시스템 접근이 빠른 서버 환경에 적합",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "파일 시스템 접근이 빠른 서버 환경에 적합",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-801a-9c0f-d07a047e2735",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:20:00.000Z",
-    "last_edited_time": "2025-01-19T09:20:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "동기적으로 모듈을 로드",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "동기적으로 모듈을 로드",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-80b3-8ceb-ea93a1f551f2",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:12:00.000Z",
-    "last_edited_time": "2025-01-19T11:13:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "이와 비슷한 시기에 ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "이와 비슷한 시기에 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "AMD",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "AMD",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 라는 모듈 시스템도 나왔다. ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 라는 모듈 시스템도 나왔다. ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "RequireJS",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "RequireJS",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 를 통해 구현되었는데 경쟁에서 밀려 오늘날에 거의 쓰이지 않는다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 를 통해 구현되었는데 경쟁에서 밀려 오늘날에 거의 쓰이지 않는다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "17f9c6bf-2b17-8076-bcae-d316d8f93c3c",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-18T09:20:00.000Z",
-    "last_edited_time": "2025-01-19T10:42:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "heading_3",
-    "heading_3": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "ES Modules",
-            "link": null
-          },
-          "annotations": {
-            "bold": true,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "ES Modules",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " (ES2015)",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " (ES2015)",
-          "href": null
-        }
-      ],
-      "is_toggleable": false,
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-8083-bb9b-c98b3f30e7ab",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:17:00.000Z",
-    "last_edited_time": "2025-01-19T09:18:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "JavaScript 언어 자체에 내장된 공식 모듈 시스템이다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "JavaScript 언어 자체에 내장된 공식 모듈 시스템이다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-80d8-a42e-cd47c67a06a8",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:18:00.000Z",
-    "last_edited_time": "2025-01-19T09:18:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "import",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "import",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 와 ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 와 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "export",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "export",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 문법으로 더 간결한 코드 작성 가능",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 문법으로 더 간결한 코드 작성 가능",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-8080-8dfe-f6975d0a2a98",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:18:00.000Z",
-    "last_edited_time": "2025-01-19T09:19:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "정적 분석이 가능해 트리 쉐이킹과 최적화에 유리",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "정적 분석이 가능해 트리 쉐이킹과 최적화에 유리",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-8072-9075-ee7c7c41343f",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:19:00.000Z",
-    "last_edited_time": "2025-01-19T11:13:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "브라우저와 ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "브라우저와 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "Node.js",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "Node.js",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 모두에서 사용 가능한 표준",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 모두에서 사용 가능한 표준",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-80c2-af3b-c6474cc5c76a",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:20:00.000Z",
-    "last_edited_time": "2025-01-19T09:20:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "비동기적으로 모듈을 로드하며, top-level await을 지원",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "비동기적으로 모듈을 로드하며, top-level await을 지원",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-80e7-93d1-f34ec3279b5a",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:21:00.000Z",
-    "last_edited_time": "2025-01-19T10:42:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "heading_3",
-    "heading_3": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "둘 간의 호환성",
-            "link": null
-          },
-          "annotations": {
-            "bold": true,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "둘 간의 호환성",
-          "href": null
-        }
-      ],
-      "is_toggleable": false,
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-8064-bd0c-e873338cbe61",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:21:00.000Z",
-    "last_edited_time": "2025-01-19T11:06:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "ESM에서는 CommonJS 모듈을 ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "ESM에서는 CommonJS 모듈을 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "import",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "import",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 할 수 있다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 할 수 있다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-80f4-9f34-c3f4eae84ed8",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:21:00.000Z",
-    "last_edited_time": "2025-01-19T11:14:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "CommonJS에서는 ESM 모듈을 직접 ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "CommonJS에서는 ESM 모듈을 직접 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "require",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "require",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 할 수 없으며, 동적 ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 할 수 없으며, 동적 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "import()",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "import()",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 를 사용해야 한다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 를 사용해야 한다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-8047-86ed-d40319822d68",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:19:00.000Z",
-    "last_edited_time": "2025-01-19T11:18:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "현재는 ESM이 ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "현재는 ESM이 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "JavaScript",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "JavaScript",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 의 표준 모듈 시스템이라고 할 수 있다.\n하지만, CommonJS도 여전히 ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 의 표준 모듈 시스템이라고 할 수 있다.\n하지만, CommonJS도 여전히 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "Node.js",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "Node.js",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 생태계에서 널리 사용되고 있으며, 레거시 코드와 호환성을 위해 지원한다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 생태계에서 널리 사용되고 있으며, 레거시 코드와 호환성을 위해 지원한다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-80d6-942d-ec60a864e86a",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:19:00.000Z",
-    "last_edited_time": "2025-01-19T11:19:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "현재 여러분의 코드를 ESM, CommonJS로 변환해주는 번들링 도구 중 많이 사용하는 것은 ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "현재 여러분의 코드를 ESM, CommonJS로 변환해주는 번들링 도구 중 많이 사용하는 것은 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "esbuild",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "esbuild",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": ", ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": ", ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "rollup",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "rollup",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 이 있다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 이 있다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-8098-b020-cfc45c3d1b79",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:27:00.000Z",
-    "last_edited_time": "2025-01-19T11:06:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "간단하게 두 개의 특징을 보자.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "간단하게 두 개의 특징을 보자.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-8089-a8c0-e474f9223c46",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:27:00.000Z",
-    "last_edited_time": "2025-01-19T10:42:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "heading_3",
-    "heading_3": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Rollup",
-            "link": null
-          },
-          "annotations": {
-            "bold": true,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Rollup",
-          "href": null
-        }
-      ],
-      "is_toggleable": false,
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-80fb-8462-d5c65492cf57",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:27:00.000Z",
-    "last_edited_time": "2025-01-19T09:27:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "format",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "format",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 옵션을 통해 ESM과 CommonJS 출력을 모두 지원",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 옵션을 통해 ESM과 CommonJS 출력을 모두 지원",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-802a-9e61-f1e8ba3e5daf",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:27:00.000Z",
-    "last_edited_time": "2025-01-19T09:27:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "하나의 소스코드로 두 가지 포맷의 번들을 동시에 생성",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "하나의 소스코드로 두 가지 포맷의 번들을 동시에 생성",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-80cf-9259-ef1788acbcce",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:28:00.000Z",
-    "last_edited_time": "2025-01-19T10:42:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "heading_3",
-    "heading_3": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "ESBuild",
-            "link": null
-          },
-          "annotations": {
-            "bold": true,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "ESBuild",
-          "href": null
-        }
-      ],
-      "is_toggleable": false,
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-8023-bfb7-d73adfed9407",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:28:00.000Z",
-    "last_edited_time": "2025-01-19T09:28:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Go 언어로 작성되어 매우 빠른 속도",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Go 언어로 작성되어 매우 빠른 속도",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-8059-93de-c0d8712dc6bf",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:28:00.000Z",
-    "last_edited_time": "2025-01-19T09:29:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "병렬 처리를 통해 모든 CPU 코어를 최대한 활용",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "병렬 처리를 통해 모든 CPU 코어를 최대한 활용",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-8061-b3eb-d0537bdfad7d",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:29:00.000Z",
-    "last_edited_time": "2025-01-19T09:29:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "증분 컴파일을 지원하여 변경된 부분만 다시 빌드",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "증분 컴파일을 지원하여 변경된 부분만 다시 빌드",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-80f3-88e9-f3bee8bf2a87",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:31:00.000Z",
-    "last_edited_time": "2025-01-19T09:31:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "ESM에서 CommonJS로의 변환이나 그 반대 경우에 일부 제한",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "ESM에서 CommonJS로의 변환이나 그 반대 경우에 일부 제한",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-8033-b5b9-d154480bb7e2",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T09:31:00.000Z",
-    "last_edited_time": "2025-01-19T11:15:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Vite와 같은 도구들은 개발 환경에서는 빠른 ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Vite와 같은 도구들은 개발 환경에서는 빠른 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "esbuild",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "esbuild",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 를 사용하고, 프로덕션 빌드에는 안정적인 ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 를 사용하고, 프로덕션 빌드에는 안정적인 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "rollup",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "rollup",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 을 사용하는 전략을 채택하고 있는데, ESM ↔ CommonJS로 변환 시에 일부 제한이 있어서 그런 전략을 선택했나?? 하는 생각이 든다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 을 사용하는 전략을 채택하고 있는데, ESM ↔ CommonJS로 변환 시에 일부 제한이 있어서 그런 전략을 선택했나?? 하는 생각이 든다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-809b-bf60-e08411e09150",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T10:37:00.000Z",
-    "last_edited_time": "2025-01-19T11:15:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "그런데 나는 ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "그런데 나는 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "rollup",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "rollup",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " , ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " , ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "esbuild",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "esbuild",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "  둘 중 하나를 쓰지 않고 ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "  둘 중 하나를 쓰지 않고 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "tsup",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "tsup",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 를 사용했다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 를 사용했다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-804f-828f-ebc536996e58",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T10:41:00.000Z",
-    "last_edited_time": "2025-01-19T11:17:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "heading_2",
-    "heading_2": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "tsup이 뭔데?",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "tsup이 뭔데?",
-          "href": null
-        }
-      ],
-      "is_toggleable": false,
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-80a3-8e6a-d8bfbd055aa8",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T10:38:00.000Z",
-    "last_edited_time": "2025-01-19T11:20:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "tsup",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "tsup",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 은 2020년에 처음 출시되었으며, TypeScript 라이브러리를 위한 번들러이다.\n",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 은 2020년에 처음 출시되었으며, TypeScript 라이브러리를 위한 번들러이다.\n",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "rollup",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "rollup",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 를 간단히 사용해 본 적이 있는데 수많은 플러그인을 설치해야 하고 스크립트를 짜야할 것도 생각보다 많았다.\n",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 를 간단히 사용해 본 적이 있는데 수많은 플러그인을 설치해야 하고 스크립트를 짜야할 것도 생각보다 많았다.\n",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "tsup",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "tsup",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 은 이러한 문제를 해결하는 기존 번들러들의 복잡한 설정 없이 빠르게 번들링 할 수 있는 도구라고 할 수 있다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 은 이러한 문제를 해결하는 기존 번들러들의 복잡한 설정 없이 빠르게 번들링 할 수 있는 도구라고 할 수 있다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-8022-b51b-e6af7e7875a5",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T10:44:00.000Z",
-    "last_edited_time": "2025-01-19T11:15:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "esbuild",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "esbuild",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 의 성능과 SWC(Speedy Web Compiler)의 장점을 결합했다고 한다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 의 성능과 SWC(Speedy Web Compiler)의 장점을 결합했다고 한다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-80aa-95fb-fbc9a1ee4809",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T10:48:00.000Z",
-    "last_edited_time": "2025-01-19T10:48:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "주요 특징",
-            "link": null
-          },
-          "annotations": {
-            "bold": true,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "주요 특징",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-806c-8e9b-ccb1156e3441",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T10:48:00.000Z",
-    "last_edited_time": "2025-01-19T10:48:00.000Z",
+    "created_time": "2024-04-14T13:52:00.000Z",
+    "last_edited_time": "2024-04-14T13:52:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -4135,39 +591,18 @@
     "has_children": true,
     "archived": false,
     "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "Zero-Config 지향",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "Zero-Config 지향",
-          "href": null
-        }
-      ],
-      "color": "default"
-    },
+    "type": "column_list",
+    "column_list": {},
     "children": [
       {
         "object": "block",
-        "id": "1809c6bf-2b17-80c0-a3fa-eb27906b54ed",
+        "id": "8081892d-511e-4dda-8167-a5055b5d384f",
         "parent": {
           "type": "block_id",
-          "block_id": "1809c6bf-2b17-806c-8e9b-ccb1156e3441"
+          "block_id": "57cecfdc-a186-411d-a07d-b30a87ff0ec4"
         },
-        "created_time": "2025-01-19T10:48:00.000Z",
-        "last_edited_time": "2025-01-19T10:48:00.000Z",
+        "created_time": "2024-04-14T13:52:00.000Z",
+        "last_edited_time": "2024-04-14T13:52:00.000Z",
         "created_by": {
           "object": "user",
           "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -4176,149 +611,58 @@
           "object": "user",
           "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
         },
-        "has_children": false,
+        "has_children": true,
         "archived": false,
         "in_trash": false,
-        "type": "bulleted_list_item",
-        "bulleted_list_item": {
-          "rich_text": [
-            {
-              "type": "text",
-              "text": {
-                "content": "별도의 복잡한 설정 없이도 사용 가능",
-                "link": null
-              },
-              "annotations": {
-                "bold": false,
-                "italic": false,
-                "strikethrough": false,
-                "underline": false,
-                "code": false,
-                "color": "default"
-              },
-              "plain_text": "별도의 복잡한 설정 없이도 사용 가능",
-              "href": null
-            }
-          ],
-          "color": "default"
-        }
-      }
-    ]
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-80c6-9ec1-f27e61b7e5ee",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T10:48:00.000Z",
-    "last_edited_time": "2025-01-19T10:49:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": true,
-    "archived": false,
-    "in_trash": false,
-    "type": "bulleted_list_item",
-    "bulleted_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "성능",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "성능",
-          "href": null
-        }
-      ],
-      "color": "default"
-    },
-    "children": [
-      {
-        "object": "block",
-        "id": "1809c6bf-2b17-80fa-a85a-fb53dc7663e1",
-        "parent": {
-          "type": "block_id",
-          "block_id": "1809c6bf-2b17-80c6-9ec1-f27e61b7e5ee"
-        },
-        "created_time": "2025-01-19T10:48:00.000Z",
-        "last_edited_time": "2025-01-19T11:15:00.000Z",
-        "created_by": {
-          "object": "user",
-          "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-        },
-        "last_edited_by": {
-          "object": "user",
-          "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-        },
-        "has_children": false,
-        "archived": false,
-        "in_trash": false,
-        "type": "bulleted_list_item",
-        "bulleted_list_item": {
-          "rich_text": [
-            {
-              "type": "text",
-              "text": {
-                "content": "esbuild",
-                "link": null
-              },
-              "annotations": {
-                "bold": false,
-                "italic": false,
-                "strikethrough": false,
-                "underline": false,
-                "code": true,
-                "color": "default"
-              },
-              "plain_text": "esbuild",
-              "href": null
+        "type": "column",
+        "column": {},
+        "children": [
+          {
+            "object": "block",
+            "id": "b7df994f-06c9-4a70-aca6-0174f453c96e",
+            "parent": {
+              "type": "block_id",
+              "block_id": "8081892d-511e-4dda-8167-a5055b5d384f"
             },
-            {
-              "type": "text",
-              "text": {
-                "content": " 를 기반으로 하여 매우 빠른 빌드 속도를 제공",
-                "link": null
+            "created_time": "2024-04-14T13:52:00.000Z",
+            "last_edited_time": "2024-04-14T13:52:00.000Z",
+            "created_by": {
+              "object": "user",
+              "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+            },
+            "last_edited_by": {
+              "object": "user",
+              "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+            },
+            "has_children": false,
+            "archived": false,
+            "in_trash": false,
+            "type": "image",
+            "image": {
+              "caption": [],
+              "type": "file",
+              "file": {
+                "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2Ff53f1612-5ee2-49e9-9100-dff4ce3a0480%2FUntitled.png?table=block&id=b7df994f-06c9-4a70-aca6-0174f453c96e&cache=v2",
+                "expiry_time": "2025-04-13T06:49:46.909Z"
               },
-              "annotations": {
-                "bold": false,
-                "italic": false,
-                "strikethrough": false,
-                "underline": false,
-                "code": false,
-                "color": "default"
-              },
-              "plain_text": " 를 기반으로 하여 매우 빠른 빌드 속도를 제공",
-              "href": null
+              "format": {
+                "block_width": 736,
+                "block_height": 636,
+                "block_aspect_ratio": 1.1572327044025157
+              }
             }
-          ],
-          "color": "default"
-        }
+          }
+        ]
       },
       {
         "object": "block",
-        "id": "1809c6bf-2b17-8016-ad06-f8e9edc855f2",
+        "id": "0496bdb2-dd21-44d0-9f90-496148f69832",
         "parent": {
           "type": "block_id",
-          "block_id": "1809c6bf-2b17-80c6-9ec1-f27e61b7e5ee"
+          "block_id": "57cecfdc-a186-411d-a07d-b30a87ff0ec4"
         },
-        "created_time": "2025-01-19T10:48:00.000Z",
-        "last_edited_time": "2025-01-19T10:48:00.000Z",
+        "created_time": "2024-04-14T13:52:00.000Z",
+        "last_edited_time": "2024-04-14T13:52:00.000Z",
         "created_by": {
           "object": "user",
           "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -4327,44 +671,60 @@
           "object": "user",
           "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
         },
-        "has_children": false,
+        "has_children": true,
         "archived": false,
         "in_trash": false,
-        "type": "bulleted_list_item",
-        "bulleted_list_item": {
-          "rich_text": [
-            {
-              "type": "text",
-              "text": {
-                "content": "병렬 처리를 통해 모든 CPU 코어를 최대한 활용",
-                "link": null
+        "type": "column",
+        "column": {},
+        "children": [
+          {
+            "object": "block",
+            "id": "a498377c-f5d2-4f48-b075-b55fe944f2d4",
+            "parent": {
+              "type": "block_id",
+              "block_id": "0496bdb2-dd21-44d0-9f90-496148f69832"
+            },
+            "created_time": "2024-04-14T13:52:00.000Z",
+            "last_edited_time": "2024-04-14T13:52:00.000Z",
+            "created_by": {
+              "object": "user",
+              "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+            },
+            "last_edited_by": {
+              "object": "user",
+              "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+            },
+            "has_children": false,
+            "archived": false,
+            "in_trash": false,
+            "type": "image",
+            "image": {
+              "caption": [],
+              "type": "file",
+              "file": {
+                "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2Fea73b161-9e70-48f5-a8ef-03ab45c2c9fc%2FUntitled.png?table=block&id=a498377c-f5d2-4f48-b075-b55fe944f2d4&cache=v2",
+                "expiry_time": "2025-04-13T06:49:47.100Z"
               },
-              "annotations": {
-                "bold": false,
-                "italic": false,
-                "strikethrough": false,
-                "underline": false,
-                "code": false,
-                "color": "default"
-              },
-              "plain_text": "병렬 처리를 통해 모든 CPU 코어를 최대한 활용",
-              "href": null
+              "format": {
+                "block_width": 728,
+                "block_height": 638,
+                "block_aspect_ratio": 1.141065830721003
+              }
             }
-          ],
-          "color": "default"
-        }
+          }
+        ]
       }
     ]
   },
   {
     "object": "block",
-    "id": "1809c6bf-2b17-80c9-8869-f3e3561be2a9",
+    "id": "8d22020f-0874-4abb-89c2-f2473ade96ab",
     "parent": {
       "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
     },
-    "created_time": "2025-01-19T10:49:00.000Z",
-    "last_edited_time": "2025-01-19T10:50:00.000Z",
+    "created_time": "2024-04-14T13:34:00.000Z",
+    "last_edited_time": "2024-04-14T14:08:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -4382,7 +742,7 @@
         {
           "type": "text",
           "text": {
-            "content": "내 라이브러리에 사용한 ",
+            "content": "강의 시간은 대략 10시간 정도 된다.\n목차는 소개 및 환경 세팅, ",
             "link": null
           },
           "annotations": {
@@ -4393,13 +753,13 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "내 라이브러리에 사용한 ",
+          "plain_text": "강의 시간은 대략 10시간 정도 된다.\n목차는 소개 및 환경 세팅, ",
           "href": null
         },
         {
           "type": "text",
           "text": {
-            "content": "tsup.config.ts",
+            "content": "Three.js, R3F",
             "link": null
           },
           "annotations": {
@@ -4410,7 +770,24 @@
             "code": true,
             "color": "default"
           },
-          "plain_text": "tsup.config.ts",
+          "plain_text": "Three.js, R3F",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 에 대한 개념 설명 및 예제 그리고 마지막으로 미니 프로젝트로 이루어져 있다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 에 대한 개념 설명 및 예제 그리고 마지막으로 미니 프로젝트로 이루어져 있다.",
           "href": null
         }
       ],
@@ -4419,13 +796,13 @@
   },
   {
     "object": "block",
-    "id": "1239c6bf-2b17-80a0-a536-d02d64bb8a1f",
+    "id": "04211191-7116-412a-90e5-81a3f86728c5",
     "parent": {
       "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
     },
-    "created_time": "2024-10-18T08:11:00.000Z",
-    "last_edited_time": "2025-01-19T10:39:00.000Z",
+    "created_time": "2024-04-14T14:14:00.000Z",
+    "last_edited_time": "2024-04-14T14:14:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -4437,40 +814,40 @@
     "has_children": false,
     "archived": false,
     "in_trash": false,
-    "type": "code",
-    "code": {
-      "caption": [],
+    "type": "heading_3",
+    "heading_3": {
       "rich_text": [
         {
           "type": "text",
           "text": {
-            "content": "import { defineConfig } from 'tsup';\n\nexport default defineConfig({\n  entry: ['src/index.ts'], // 진입점으로 설정\n  target: 'esnext', // 최신 JavaScript 기능 지원\n  format: ['esm', 'cjs'], // esm 과 cjs 두 가지 포맷으로 빌드\n  splitting: true, // 코드 스플리팅 활성화\n  treeshake: true, // 트리쉐이킹으로 사용하지 않는 코드 제거\n  clean: true, // 빌드 전 이전 빌드 파일 정리\n  dts: true, // TypeScript 타입 정의 파일 생성\n  minify: true, // 코드 최소화\n});",
+            "content": "핵심 포인트",
             "link": null
           },
           "annotations": {
-            "bold": false,
+            "bold": true,
             "italic": false,
             "strikethrough": false,
             "underline": false,
             "code": false,
             "color": "default"
           },
-          "plain_text": "import { defineConfig } from 'tsup';\n\nexport default defineConfig({\n  entry: ['src/index.ts'], // 진입점으로 설정\n  target: 'esnext', // 최신 JavaScript 기능 지원\n  format: ['esm', 'cjs'], // esm 과 cjs 두 가지 포맷으로 빌드\n  splitting: true, // 코드 스플리팅 활성화\n  treeshake: true, // 트리쉐이킹으로 사용하지 않는 코드 제거\n  clean: true, // 빌드 전 이전 빌드 파일 정리\n  dts: true, // TypeScript 타입 정의 파일 생성\n  minify: true, // 코드 최소화\n});",
+          "plain_text": "핵심 포인트",
           "href": null
         }
       ],
-      "language": "typescript"
+      "is_toggleable": false,
+      "color": "default"
     }
   },
   {
     "object": "block",
-    "id": "1809c6bf-2b17-8023-a0dd-eded4d8cc529",
+    "id": "1d69223e-976a-41f8-b6a5-af2b3e58616a",
     "parent": {
       "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
     },
-    "created_time": "2025-01-19T10:53:00.000Z",
-    "last_edited_time": "2025-01-19T10:53:00.000Z",
+    "created_time": "2024-04-14T14:14:00.000Z",
+    "last_edited_time": "2024-04-14T14:14:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -4488,52 +865,18 @@
         {
           "type": "text",
           "text": {
-            "content": "위와 같이 설정하고 ",
+            "content": "웹을 표현하는 방법",
             "link": null
           },
           "annotations": {
-            "bold": false,
+            "bold": true,
             "italic": false,
             "strikethrough": false,
             "underline": false,
             "code": false,
             "color": "default"
           },
-          "plain_text": "위와 같이 설정하고 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "pnpm build",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "pnpm build",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 커맨드를 입력하면 아래와 같이 빌드가 되었음을 확인할 수 있다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 커맨드를 입력하면 아래와 같이 빌드가 되었음을 확인할 수 있다.",
+          "plain_text": "웹을 표현하는 방법",
           "href": null
         }
       ],
@@ -4542,13 +885,223 @@
   },
   {
     "object": "block",
-    "id": "1809c6bf-2b17-8096-aaf4-d89c3850bed0",
+    "id": "f04e29a2-88ec-432b-9922-cb4c879ba2dd",
     "parent": {
       "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
     },
-    "created_time": "2025-01-19T10:53:00.000Z",
-    "last_edited_time": "2025-04-10T12:19:00.000Z",
+    "created_time": "2024-04-14T14:05:00.000Z",
+    "last_edited_time": "2024-04-14T14:05:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "DOM",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "DOM",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "4a0a634d-dd38-4629-8672-f9e95a63e3ca",
+    "parent": {
+      "type": "page_id",
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+    },
+    "created_time": "2024-04-14T14:05:00.000Z",
+    "last_edited_time": "2024-04-14T14:05:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "SVG ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "SVG ",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "3644e6dc-f3ee-4129-9abf-3366edf76993",
+    "parent": {
+      "type": "page_id",
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+    },
+    "created_time": "2024-04-14T14:05:00.000Z",
+    "last_edited_time": "2024-04-14T14:05:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Canvas",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Canvas",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "6a01ea44-032e-4461-88ab-757e4d0fe3fa",
+    "parent": {
+      "type": "page_id",
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+    },
+    "created_time": "2024-04-14T14:05:00.000Z",
+    "last_edited_time": "2024-04-14T14:12:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "React Three fiber(R3F)로 배우는 인터렉티브 3D 웹 개발에서는 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "React Three fiber(R3F)로 배우는 인터렉티브 3D 웹 개발에서는 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "Canvas",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Canvas",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "에 대한 이야기를 주로 다룬다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "에 대한 이야기를 주로 다룬다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "f51c77f7-6c05-46fb-bccc-251e84364aa8",
+    "parent": {
+      "type": "page_id",
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+    },
+    "created_time": "2024-04-14T14:11:00.000Z",
+    "last_edited_time": "2024-04-14T14:38:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -4565,25 +1118,25 @@
       "caption": [],
       "type": "file",
       "file": {
-        "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2F10d9f59d-d3e2-429a-ad72-c8b15b1f536b%2Fimage.png?table=block&id=1809c6bf-2b17-8096-aaf4-d89c3850bed0&cache=v2",
-        "expiry_time": "2025-04-10T13:24:52.634Z"
+        "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2F54c39d09-068d-4f54-962c-64ec1bd5f78e%2FUntitled.png?table=block&id=f51c77f7-6c05-46fb-bccc-251e84364aa8&cache=v2",
+        "expiry_time": "2025-04-13T06:49:44.845Z"
       },
       "format": {
-        "block_width": 721,
-        "block_height": 473,
-        "block_aspect_ratio": 1.5243128964059196
+        "block_width": 1200,
+        "block_height": 1016,
+        "block_aspect_ratio": 1.1811023622047243
       }
     }
   },
   {
     "object": "block",
-    "id": "1809c6bf-2b17-8057-8709-f93cb980c22e",
+    "id": "6a623aa8-8928-401f-a776-a304ab58e32e",
     "parent": {
       "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
     },
-    "created_time": "2025-01-19T10:56:00.000Z",
-    "last_edited_time": "2025-01-19T11:21:00.000Z",
+    "created_time": "2024-04-14T14:14:00.000Z",
+    "last_edited_time": "2024-04-14T14:34:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -4601,154 +1154,18 @@
         {
           "type": "text",
           "text": {
-            "content": "별다른 설정 없이 config에 몇 개의 값만 추가해서 빌드를 정상적으로 하였다. 그런데 한 가지 의문점이 들었다. ",
+            "content": "Three.js의 기본 구조",
             "link": null
           },
           "annotations": {
-            "bold": false,
+            "bold": true,
             "italic": false,
             "strikethrough": false,
             "underline": false,
             "code": false,
             "color": "default"
           },
-          "plain_text": "별다른 설정 없이 config에 몇 개의 값만 추가해서 빌드를 정상적으로 하였다. 그런데 한 가지 의문점이 들었다. ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "esbuild",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "esbuild",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 에서는 ESM ↔ CommonJS로 변환 시에 일부 제한이 있다고 했는데 어떻게 ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 에서는 ESM ↔ CommonJS로 변환 시에 일부 제한이 있다고 했는데 어떻게 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "tsup",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "tsup",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": " 은 그 문제를 풀었을까? ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": " 은 그 문제를 풀었을까? ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "tsup",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "tsup",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "  레포 issue와 구글링을 해보았는데 명확한 정답은 찾지 못했다.\n그래서 아래와 같이 ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "  레포 issue와 구글링을 해보았는데 명확한 정답은 찾지 못했다.\n그래서 아래와 같이 ",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "tsup",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": true,
-            "color": "default"
-          },
-          "plain_text": "tsup",
-          "href": null
-        },
-        {
-          "type": "text",
-          "text": {
-            "content": "  개발자에게 질문을 남겼다..!",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "  개발자에게 질문을 남겼다..!",
+          "plain_text": "Three.js의 기본 구조",
           "href": null
         }
       ],
@@ -4757,13 +1174,13 @@
   },
   {
     "object": "block",
-    "id": "1809c6bf-2b17-8068-8031-d99c3ae7e103",
+    "id": "3cd0ad85-729c-4c00-8cca-a9619d1b543b",
     "parent": {
       "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
     },
-    "created_time": "2025-01-19T10:56:00.000Z",
-    "last_edited_time": "2025-01-19T10:56:00.000Z",
+    "created_time": "2024-04-14T14:13:00.000Z",
+    "last_edited_time": "2024-04-14T14:13:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -4775,39 +1192,13 @@
     "has_children": false,
     "archived": false,
     "in_trash": false,
-    "type": "bookmark",
-    "bookmark": {
-      "caption": [],
-      "url": "https://github.com/egoist/tsup/discussions/1274"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-8097-9b0a-e404737ba4fb",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T10:59:00.000Z",
-    "last_edited_time": "2025-01-19T10:59:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "heading_2",
-    "heading_2": {
+    "type": "numbered_list_item",
+    "numbered_list_item": {
       "rich_text": [
         {
           "type": "text",
           "text": {
-            "content": "마무리",
+            "content": "Scene (무대)",
             "link": null
           },
           "annotations": {
@@ -4818,23 +1209,110 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "마무리",
+          "plain_text": "Scene (무대)",
           "href": null
         }
       ],
-      "is_toggleable": false,
       "color": "default"
     }
   },
   {
     "object": "block",
-    "id": "1809c6bf-2b17-808a-ab86-efa61b3db7b3",
+    "id": "506afb91-2005-4e0b-a875-97bb67984e94",
     "parent": {
       "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
     },
-    "created_time": "2025-01-19T10:59:00.000Z",
-    "last_edited_time": "2025-01-19T11:07:00.000Z",
+    "created_time": "2024-04-14T14:13:00.000Z",
+    "last_edited_time": "2024-04-14T14:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Camera",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Camera",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "738b7c55-7c5b-4038-b6b2-3d6d291eb04b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+    },
+    "created_time": "2024-04-14T14:13:00.000Z",
+    "last_edited_time": "2024-04-14T14:13:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "numbered_list_item",
+    "numbered_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Renderder (찍힌 장면)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Renderder (찍힌 장면)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "6af8483e-fbf5-48c4-926a-f6f8150fc2a8",
+    "parent": {
+      "type": "page_id",
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+    },
+    "created_time": "2024-04-14T14:35:00.000Z",
+    "last_edited_time": "2024-04-14T14:35:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -4852,7 +1330,86 @@
         {
           "type": "text",
           "text": {
-            "content": "라이브러리에 유틸 코드와 테스트 코드 작성하는 것까지 작성하려고 했는데 생각보다 글이 길어져서 다음 편으로 넘겨야겠다!",
+            "content": " Three.js의 구성 요소",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " Three.js의 구성 요소",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "7ee40de4-7c89-4e0d-9317-e1aaa747e078",
+    "parent": {
+      "type": "page_id",
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+    },
+    "created_time": "2024-04-14T14:28:00.000Z",
+    "last_edited_time": "2024-04-14T14:29:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "image",
+    "image": {
+      "caption": [],
+      "type": "file",
+      "file": {
+        "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2Fbc5606ae-3241-4841-8883-40a8082f1139%2FUntitled.png?table=block&id=7ee40de4-7c89-4e0d-9317-e1aaa747e078&cache=v2",
+        "expiry_time": "2025-04-13T06:49:44.845Z"
+      },
+      "format": {
+        "block_width": 1410,
+        "block_height": 612,
+        "block_aspect_ratio": 2.303921568627451
+      }
+    }
+  },
+  {
+    "object": "block",
+    "id": "899b86f3-bbab-4630-af0e-2bfe380ecf30",
+    "parent": {
+      "type": "page_id",
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+    },
+    "created_time": "2024-04-14T14:29:00.000Z",
+    "last_edited_time": "2024-04-14T14:29:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Geometry: Mesh의 형상",
             "link": null
           },
           "annotations": {
@@ -4863,7 +1420,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "라이브러리에 유틸 코드와 테스트 코드 작성하는 것까지 작성하려고 했는데 생각보다 글이 길어져서 다음 편으로 넘겨야겠다!",
+          "plain_text": "Geometry: Mesh의 형상",
           "href": null
         }
       ],
@@ -4872,13 +1429,428 @@
   },
   {
     "object": "block",
-    "id": "17f9c6bf-2b17-803f-90a2-df58673c44b7",
+    "id": "65f631a0-b505-4e0b-ab64-ac11c0376dfa",
     "parent": {
       "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
     },
-    "created_time": "2025-01-18T08:17:00.000Z",
-    "last_edited_time": "2025-01-19T10:59:00.000Z",
+    "created_time": "2024-04-14T14:29:00.000Z",
+    "last_edited_time": "2024-04-14T14:30:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "점 3개로 면을 만들 수 있다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "점 3개로 면을 만들 수 있다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1957a84d-2bc5-4390-aa85-ae0698d8c4f2",
+    "parent": {
+      "type": "page_id",
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+    },
+    "created_time": "2024-04-14T14:30:00.000Z",
+    "last_edited_time": "2024-04-17T10:03:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Geometry에서 하나의 Segment는 점 3개로 이루어진 삼각형이다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Geometry에서 하나의 Segment는 점 3개로 이루어진 삼각형이다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "b02d9578-39f1-417b-85d0-00ad6632670f",
+    "parent": {
+      "type": "page_id",
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+    },
+    "created_time": "2024-04-14T14:31:00.000Z",
+    "last_edited_time": "2024-04-17T10:02:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bulleted_list_item",
+    "bulleted_list_item": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Geometry에서 Segment가 적을 수록(삼각형을 적게 사용할수록) 메모리 효율은 증가하나, Segment가 너무 적으면 형상이 깨진다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Geometry에서 Segment가 적을 수록(삼각형을 적게 사용할수록) 메모리 효율은 증가하나, Segment가 너무 적으면 형상이 깨진다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "eae4b713-b33d-479c-8e3f-7bba9da0ec2f",
+    "parent": {
+      "type": "page_id",
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+    },
+    "created_time": "2024-04-14T14:37:00.000Z",
+    "last_edited_time": "2024-04-17T10:04:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "image",
+    "image": {
+      "caption": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Geometry Type",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Geometry Type",
+          "href": null
+        }
+      ],
+      "type": "file",
+      "file": {
+        "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2Fd5cdbd93-aeaf-4007-a5a3-d79be6b8f84f%2FUntitled.png?table=block&id=eae4b713-b33d-479c-8e3f-7bba9da0ec2f&cache=v2",
+        "expiry_time": "2025-04-13T06:49:44.840Z"
+      },
+      "format": {
+        "block_width": 1468,
+        "block_height": 826,
+        "block_aspect_ratio": 1.7772397094430992
+      }
+    }
+  },
+  {
+    "object": "block",
+    "id": "d6c9b452-ec90-4e2a-b2e0-23246db98784",
+    "parent": {
+      "type": "page_id",
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+    },
+    "created_time": "2024-04-14T14:29:00.000Z",
+    "last_edited_time": "2024-04-14T14:33:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Material: 색상 및 투명도 등을 지정",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Material: 색상 및 투명도 등을 지정",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "33641cb6-cfb4-4ab2-8d39-8748cb0bf892",
+    "parent": {
+      "type": "page_id",
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+    },
+    "created_time": "2024-04-14T14:15:00.000Z",
+    "last_edited_time": "2024-04-14T14:15:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_3",
+    "heading_3": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "예제",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "예제",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "819ba595-5a0d-4536-ae03-06df7ad01b06",
+    "parent": {
+      "type": "page_id",
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+    },
+    "created_time": "2024-04-14T13:10:00.000Z",
+    "last_edited_time": "2024-04-14T13:12:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "image",
+    "image": {
+      "caption": [
+        {
+          "type": "text",
+          "text": {
+            "content": "강의 예제 (프레첼 같다..)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "강의 예제 (프레첼 같다..)",
+          "href": null
+        }
+      ],
+      "type": "file",
+      "file": {
+        "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2F732efb96-6552-456c-8b4d-3f0eec89ec08%2FUntitled.png?table=block&id=819ba595-5a0d-4536-ae03-06df7ad01b06&cache=v2",
+        "expiry_time": "2025-04-13T06:49:44.833Z"
+      },
+      "format": {
+        "block_width": 1852,
+        "block_height": 974,
+        "block_aspect_ratio": 1.9014373716632444
+      }
+    }
+  },
+  {
+    "object": "block",
+    "id": "a2867ec5-1702-4b73-987b-b067d2e8c92f",
+    "parent": {
+      "type": "page_id",
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+    },
+    "created_time": "2024-04-14T13:12:00.000Z",
+    "last_edited_time": "2024-04-14T14:33:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "위 사진은 강의 예제 중 하나를 스크린샷 찍은 것이다. (프레첼 같이 생겨서 빵 먹고 싶었다..)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "위 사진은 강의 예제 중 하나를 스크린샷 찍은 것이다. (프레첼 같이 생겨서 빵 먹고 싶었다..)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1f949671-378d-4a3b-8dbd-f232c1e467be",
+    "parent": {
+      "type": "page_id",
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+    },
+    "created_time": "2024-04-14T13:06:00.000Z",
+    "last_edited_time": "2024-04-14T14:10:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "웹 3D에 대한 배경지식이 없어도 강사님이 자세하게 설명해 주셔서 수강하는 데 어려움이 없었다.\n개념 설명 후 위 예제처럼 직접 타이핑하며 학습할 수 있어 좋았다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "웹 3D에 대한 배경지식이 없어도 강사님이 자세하게 설명해 주셔서 수강하는 데 어려움이 없었다.\n개념 설명 후 위 예제처럼 직접 타이핑하며 학습할 수 있어 좋았다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "084002be-8fdd-475f-b2f4-3e57b7292a3e",
+    "parent": {
+      "type": "page_id",
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
+    },
+    "created_time": "2024-04-14T13:36:00.000Z",
+    "last_edited_time": "2024-04-14T13:36:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -4896,7 +1868,7 @@
         {
           "type": "text",
           "text": {
-            "content": "Reference",
+            "content": "후기",
             "link": null
           },
           "annotations": {
@@ -4907,7 +1879,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "Reference",
+          "plain_text": "후기",
           "href": null
         }
       ],
@@ -4917,13 +1889,13 @@
   },
   {
     "object": "block",
-    "id": "17f9c6bf-2b17-80d6-98d4-ca159086f459",
+    "id": "38472d6b-cbc5-4d36-a603-d6db416dea30",
     "parent": {
       "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
     },
-    "created_time": "2025-01-18T08:17:00.000Z",
-    "last_edited_time": "2025-01-18T08:17:00.000Z",
+    "created_time": "2024-04-14T14:16:00.000Z",
+    "last_edited_time": "2024-04-14T14:33:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -4935,21 +1907,107 @@
     "has_children": false,
     "archived": false,
     "in_trash": false,
-    "type": "bookmark",
-    "bookmark": {
-      "caption": [],
-      "url": "https://blog.hwahae.co.kr/all/tech/10960"
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "3D에 대한 막연한 두려움이 있어서 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "3D에 대한 막연한 두려움이 있어서 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "Three.js",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "Three.js",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 에 대한 공부를 미뤄왔던 것 같다. 막상 해보니 인터렉티브하고 화려해 보이는 것들(줌 인 아웃, 그림자 효과 등) 대부분은 이미 구현이 되어있고 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 에 대한 공부를 미뤄왔던 것 같다. 막상 해보니 인터렉티브하고 화려해 보이는 것들(줌 인 아웃, 그림자 효과 등) 대부분은 이미 구현이 되어있고 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "Three.js",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "Three.js",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 에서 가져와 활용하면 해보고 싶은 건 다 해볼 수 있다는 느낌을 받았다. ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 에서 가져와 활용하면 해보고 싶은 건 다 해볼 수 있다는 느낌을 받았다. ",
+          "href": null
+        }
+      ],
+      "color": "default"
     }
   },
   {
     "object": "block",
-    "id": "17f9c6bf-2b17-802c-a63d-c0d9f02633b3",
+    "id": "f14f4f6d-8c16-4396-93e4-0c3eb8dbee13",
     "parent": {
       "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
     },
-    "created_time": "2025-01-18T09:05:00.000Z",
-    "last_edited_time": "2025-01-18T09:05:00.000Z",
+    "created_time": "2024-04-14T13:44:00.000Z",
+    "last_edited_time": "2024-04-14T14:22:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -4961,21 +2019,39 @@
     "has_children": false,
     "archived": false,
     "in_trash": false,
-    "type": "bookmark",
-    "bookmark": {
-      "caption": [],
-      "url": "https://blog.hoseung.me/2023-07-22-improve-library-bundling"
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "강의에서 Three.js 공식 사이트를 참고하며 개념 설명과 예제를 보여주는 방식이 매우 유익했다. 공식 문서만 보고 공부했다면 재미도 없고 시행착오가 많았을 텐데, 강의를 통해 미니 프로젝트도 진행하며 실무에서의 프로젝트 진행 방법에 대해 배울 수 있었다.\n나처럼 3D에 막연한 두려움이 있거나 웹 3D에 입문하려는 분들에게 아주 좋은 강의라고 생각한다! 🌟",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "강의에서 Three.js 공식 사이트를 참고하며 개념 설명과 예제를 보여주는 방식이 매우 유익했다. 공식 문서만 보고 공부했다면 재미도 없고 시행착오가 많았을 텐데, 강의를 통해 미니 프로젝트도 진행하며 실무에서의 프로젝트 진행 방법에 대해 배울 수 있었다.\n나처럼 3D에 막연한 두려움이 있거나 웹 3D에 입문하려는 분들에게 아주 좋은 강의라고 생각한다! 🌟",
+          "href": null
+        }
+      ],
+      "color": "default"
     }
   },
   {
     "object": "block",
-    "id": "1809c6bf-2b17-8019-b7be-f771ef8f5a36",
+    "id": "87855937-697c-409b-bbd0-2b3c87065c42",
     "parent": {
       "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
+      "page_id": "39e8f63b-2afe-4149-931f-3d9165d0de7e"
     },
-    "created_time": "2025-01-19T09:18:00.000Z",
-    "last_edited_time": "2025-01-19T09:18:00.000Z",
+    "created_time": "2024-04-14T14:21:00.000Z",
+    "last_edited_time": "2024-04-14T14:21:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -4987,36 +2063,10 @@
     "has_children": false,
     "archived": false,
     "in_trash": false,
-    "type": "bookmark",
-    "bookmark": {
-      "caption": [],
-      "url": "https://nodejs.org/api/esm.html"
-    }
-  },
-  {
-    "object": "block",
-    "id": "1809c6bf-2b17-80a4-9782-eb89659d968d",
-    "parent": {
-      "type": "page_id",
-      "page_id": "1239c6bf-2b17-8076-a838-d17ca1c89783"
-    },
-    "created_time": "2025-01-19T10:46:00.000Z",
-    "last_edited_time": "2025-01-19T10:46:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "bookmark",
-    "bookmark": {
-      "caption": [],
-      "url": "https://johnnyreilly.com/dual-publishing-esm-cjs-modules-with-tsup-and-are-the-types-wrong"
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [],
+      "color": "default"
     }
   }
 ]
