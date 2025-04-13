@@ -1,12 +1,13 @@
 import { style } from '@vanilla-extract/css';
+import { vars } from '../../../../styles/theme.css';
 
 export const container = style({
   position: 'relative',
-  margin: '0.5rem 0',
-  padding: '0.25rem 0 0.25rem 1rem',
+  margin: `${vars.spacing.xs} 0`,
+  padding: `${vars.spacing.xs} 0 ${vars.spacing.xs} 1rem`,
   borderLeft: '3px solid #e1e1e1',
   color: '#37352f',
-  fontSize: '1rem',
-  lineHeight: '1.5',
+  fontSize: vars.typography.fontSize.base,
+  lineHeight: vars.typography.lineHeight.base,
   fontStyle: 'italic',
 });
