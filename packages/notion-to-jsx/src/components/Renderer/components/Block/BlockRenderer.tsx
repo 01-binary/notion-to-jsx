@@ -10,6 +10,7 @@ import { CodeBlock } from '../Code';
 import { Heading1, Heading2, Heading3, Paragraph } from '../Typography';
 import { ColumnList } from '../Column';
 import { Quote } from '../Quote';
+import Table from '../Table';
 
 export interface Props {
   block: any;
@@ -23,7 +24,6 @@ const BlockRenderer: React.FC<Props> = ({ block, onFocus, index }) => {
   const blockProps = {
     tabIndex: 0,
     onFocus,
-    'data-block-id': block.id,
   };
 
   switch (block.type) {
@@ -93,7 +93,10 @@ const BlockRenderer: React.FC<Props> = ({ block, onFocus, index }) => {
       return null;
 
     case 'quote':
-      return <Quote richText={block.quote.rich_text} {...blockProps} />;
+      return <Quote richTexts={block.quote.rich_text} {...blockProps} />;
+
+    case 'table':
+      return <Table block={block} tabIndex={blockProps.tabIndex} />;
 
     default:
       console.log(`지원되지 않는 블록 타입: ${block.type}`, block);
