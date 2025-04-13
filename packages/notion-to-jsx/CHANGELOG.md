@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 1.2.2
+
+### Patch Changes
+
+- a194921: Image Size fix
+
 ## 1.2.1
 
 ### Patch Changes
