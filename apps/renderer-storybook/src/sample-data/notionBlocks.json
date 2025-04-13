@@ -1,13 +1,13 @@
 [
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-8004-af7b-d69e9f375183",
+    "id": "3e62523e-fb39-402a-8482-b1f652608c04",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T07:05:00.000Z",
-    "last_edited_time": "2025-01-01T11:57:00.000Z",
+    "created_time": "2024-05-03T06:36:00.000Z",
+    "last_edited_time": "2024-05-05T08:42:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -25,7 +25,7 @@
         {
           "type": "text",
           "text": {
-            "content": "24년에도 새로운 경험을 많이 했다. 차근차근 기억을 더듬어 가며 회고해 보자.",
+            "content": "회사에서 열심히 개발하다 보면 공통으로 요구하는 사항이 있다. 이러한 공통 요구 사항을 커스텀 훅으로 개발한 것 중 뒤로가기와 관련된 커스텀 훅 개발 경험을 공유해본다~!",
             "link": null
           },
           "annotations": {
@@ -36,7 +36,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "24년에도 새로운 경험을 많이 했다. 차근차근 기억을 더듬어 가며 회고해 보자.",
+          "plain_text": "회사에서 열심히 개발하다 보면 공통으로 요구하는 사항이 있다. 이러한 공통 요구 사항을 커스텀 훅으로 개발한 것 중 뒤로가기와 관련된 커스텀 훅 개발 경험을 공유해본다~!",
           "href": null
         }
       ],
@@ -45,13 +45,57 @@
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-809b-acbd-d5b1e45141f1",
+    "id": "38dffc8b-ffe7-4aa9-ae67-22a3919aeea4",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T07:15:00.000Z",
-    "last_edited_time": "2025-01-01T07:15:00.000Z",
+    "created_time": "2024-05-03T06:48:00.000Z",
+    "last_edited_time": "2024-05-03T10:24:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "커스텀 훅마다 JSdoc으로 파일 상단에 간단한 설명을 적었다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "커스텀 훅마다 JSdoc으로 파일 상단에 간단한 설명을 적었다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "13c560cb-d734-44e4-b169-f56299bb09e2",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T06:40:00.000Z",
+    "last_edited_time": "2024-05-03T06:42:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -69,7 +113,7 @@
         {
           "type": "text",
           "text": {
-            "content": "여행",
+            "content": "useAppointedGoBack",
             "link": null
           },
           "annotations": {
@@ -80,7 +124,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "여행",
+          "plain_text": "useAppointedGoBack",
           "href": null
         }
       ],
@@ -90,13 +134,58 @@
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-8063-9ee9-d290440b3e29",
+    "id": "1c8143aa-eb07-41e4-88a8-216678f4de13",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T07:15:00.000Z",
-    "last_edited_time": "2025-01-01T11:57:00.000Z",
+    "created_time": "2024-05-03T06:40:00.000Z",
+    "last_edited_time": "2024-05-03T08:00:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "code",
+    "code": {
+      "caption": [],
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "import { useCallback, useEffect } from 'react';\n\nimport { useRouter } from 'next/router';\n\n/**\n * 현재 페이지에서 뒤로가기 시 지정된 url로 뒤로가기합니다.\n *\n * 앱 네이티브 Back은 useEffect로 처리합니다. \n * 웹 헤더의 Back 경우, 해당 버튼 onClick에 goBack를 할당하면 됩니다.\n *\n * @param {string} url\n * @returns {function: void}\n */\n\nconst useAppointedGoBack = (url: string) => {\n  const router = useRouter();\n  const goBack = useCallback(() => {\n    router.back();\n  }, [router]);\n\n  useEffect(() => {\n    router.beforePopState(() => {\n      router.replace(url);\n      return false;\n    });\n\n    return () => {\n      router.beforePopState(() => true);\n    };\n  }, [router, url]);\n\n  return goBack;\n};\n\nexport default useAppointedGoBack;",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "import { useCallback, useEffect } from 'react';\n\nimport { useRouter } from 'next/router';\n\n/**\n * 현재 페이지에서 뒤로가기 시 지정된 url로 뒤로가기합니다.\n *\n * 앱 네이티브 Back은 useEffect로 처리합니다. \n * 웹 헤더의 Back 경우, 해당 버튼 onClick에 goBack를 할당하면 됩니다.\n *\n * @param {string} url\n * @returns {function: void}\n */\n\nconst useAppointedGoBack = (url: string) => {\n  const router = useRouter();\n  const goBack = useCallback(() => {\n    router.back();\n  }, [router]);\n\n  useEffect(() => {\n    router.beforePopState(() => {\n      router.replace(url);\n      return false;\n    });\n\n    return () => {\n      router.beforePopState(() => true);\n    };\n  }, [router, url]);\n\n  return goBack;\n};\n\nexport default useAppointedGoBack;",
+          "href": null
+        }
+      ],
+      "language": "typescript"
+    }
+  },
+  {
+    "object": "block",
+    "id": "eb7ee184-5b84-451d-92af-712dad0555da",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T06:43:00.000Z",
+    "last_edited_time": "2024-05-03T10:25:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -114,7 +203,7 @@
         {
           "type": "text",
           "text": {
-            "content": "24년에도 해외여행을 많이 갔다. 나열해 보면 아래와 같다.",
+            "content": "useAppointedGoBack",
             "link": null
           },
           "annotations": {
@@ -122,43 +211,16 @@
             "italic": false,
             "strikethrough": false,
             "underline": false,
-            "code": false,
+            "code": true,
             "color": "default"
           },
-          "plain_text": "24년에도 해외여행을 많이 갔다. 나열해 보면 아래와 같다.",
+          "plain_text": "useAppointedGoBack",
           "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "16e9c6bf-2b17-8089-9365-d5caccf56161",
-    "parent": {
-      "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
-    },
-    "created_time": "2025-01-01T07:17:00.000Z",
-    "last_edited_time": "2025-01-01T07:17:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "numbered_list_item",
-    "numbered_list_item": {
-      "rich_text": [
+        },
         {
           "type": "text",
           "text": {
-            "content": "괌 (4월)",
+            "content": " 은 뒤로가기 시 지정한 곳으로 뒤로 갈 수 있는 커스텀 훅이다.\nPage [A] → Page [B] → Page [C] 처럼 이어지는 플로우에서 예를 들면 Page [C]에서 뒤로가기 시 Page [B]가 아니라 Page [A] 혹은 플로우에 없는 아예 다른 페이지로 이동하고 싶은 요구사항이 종종 있다.\n이러한 요구사항을 해결할 수 있는 커스텀 훅이다.",
             "link": null
           },
           "annotations": {
@@ -169,7 +231,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "괌 (4월)",
+          "plain_text": " 은 뒤로가기 시 지정한 곳으로 뒤로 갈 수 있는 커스텀 훅이다.\nPage [A] → Page [B] → Page [C] 처럼 이어지는 플로우에서 예를 들면 Page [C]에서 뒤로가기 시 Page [B]가 아니라 Page [A] 혹은 플로우에 없는 아예 다른 페이지로 이동하고 싶은 요구사항이 종종 있다.\n이러한 요구사항을 해결할 수 있는 커스텀 훅이다.",
           "href": null
         }
       ],
@@ -178,145 +240,13 @@
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-80ee-a810-eee70ac0d5cc",
+    "id": "e7001c94-8fdd-474b-9610-764b91e23885",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T07:17:00.000Z",
-    "last_edited_time": "2025-01-01T07:18:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "numbered_list_item",
-    "numbered_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "방콕, 치앙마이 (7월)",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "방콕, 치앙마이 (7월)",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "16e9c6bf-2b17-8087-81ae-cae327cbb385",
-    "parent": {
-      "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
-    },
-    "created_time": "2025-01-01T07:18:00.000Z",
-    "last_edited_time": "2025-01-01T07:18:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "numbered_list_item",
-    "numbered_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "세부 (8월 ~ 10월)",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "세부 (8월 ~ 10월)",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "16e9c6bf-2b17-80a4-8028-f12d6957fb8e",
-    "parent": {
-      "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
-    },
-    "created_time": "2025-01-01T07:18:00.000Z",
-    "last_edited_time": "2025-01-01T07:19:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "numbered_list_item",
-    "numbered_list_item": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "삿포로 (11월)",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "삿포로 (11월)",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "16e9c6bf-2b17-80e3-baba-e4b5770a268b",
-    "parent": {
-      "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
-    },
-    "created_time": "2025-01-01T07:19:00.000Z",
-    "last_edited_time": "2025-01-01T11:35:00.000Z",
+    "created_time": "2024-05-03T06:56:00.000Z",
+    "last_edited_time": "2024-05-03T06:57:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -334,7 +264,7 @@
         {
           "type": "text",
           "text": {
-            "content": "4번이나 갔다니 너무 많이 갔나 생각도 들지만, 역시 여행을 많이 다니면 새로운 경험과 기억들이 많이 생겨서 그런지 한 해를 기억하기 쉽고 시간도 느리게 가는 거 같다!",
+            "content": "코드를 이해하기 위해선 ",
             "link": null
           },
           "annotations": {
@@ -345,7 +275,75 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "4번이나 갔다니 너무 많이 갔나 생각도 들지만, 역시 여행을 많이 다니면 새로운 경험과 기억들이 많이 생겨서 그런지 한 해를 기억하기 쉽고 시간도 느리게 가는 거 같다!",
+          "plain_text": "코드를 이해하기 위해선 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "goBack",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "goBack",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 함수와 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 함수와 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "useEffect",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "useEffect",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 안에 있는 로직을 이해하면 된다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 안에 있는 로직을 이해하면 된다.",
           "href": null
         }
       ],
@@ -354,13 +352,802 @@
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-80b3-9b0d-f4306ff5f23f",
+    "id": "fb8a9c72-38ee-4e64-af36-b6a824afd31d",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T08:27:00.000Z",
-    "last_edited_time": "2025-01-01T08:27:00.000Z",
+    "created_time": "2024-05-03T06:57:00.000Z",
+    "last_edited_time": "2024-05-03T06:57:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "goBack",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "goBack",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "33c3bbd2-b875-46d4-9090-9894efbfc032",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T06:57:00.000Z",
+    "last_edited_time": "2024-05-03T07:55:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "code",
+    "code": {
+      "caption": [],
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "  const goBack = useCallback(() => {\n    router.back();\n  }, [router]);",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "  const goBack = useCallback(() => {\n    router.back();\n  }, [router]);",
+          "href": null
+        }
+      ],
+      "language": "typescript"
+    }
+  },
+  {
+    "object": "block",
+    "id": "36a9a980-8a9b-41c6-b62b-909e16051269",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T06:57:00.000Z",
+    "last_edited_time": "2024-05-03T10:25:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "간단한 함수다. ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "간단한 함수다. ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "goBack",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "goBack",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 함수를 실행하면 기본적인 뒤로가기를 수행한다.\n기본 동작이라 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 함수를 실행하면 기본적인 뒤로가기를 수행한다.\n기본 동작이라 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "useAppointedGoBack",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "useAppointedGoBack",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 를 사용하는 페이지에서 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 를 사용하는 페이지에서 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "goBack",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "goBack",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 를 따로 사용하지 않아도 무방하지만, 응집성을 이유로 넣어놨다. (뒤로가기 수행은 페이지 내에서 처리하고 지정된 페이지로 이동은 이 훅에서 처리하면 헷갈릴 수도..)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 를 따로 사용하지 않아도 무방하지만, 응집성을 이유로 넣어놨다. (뒤로가기 수행은 페이지 내에서 처리하고 지정된 페이지로 이동은 이 훅에서 처리하면 헷갈릴 수도..)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "9343e494-b73a-4648-9f57-108d55ed8054",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T10:08:00.000Z",
+    "last_edited_time": "2024-05-03T10:08:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "useEffect",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "useEffect",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 내부",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 내부",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "717cd1d9-9014-45c7-9833-e84c140ed10f",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T07:56:00.000Z",
+    "last_edited_time": "2024-05-03T07:56:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "code",
+    "code": {
+      "caption": [],
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "  useEffect(() => {\n    router.beforePopState(() => {\n      router.replace(url);\n      return false;\n    });\n\n    return () => {\n      router.beforePopState(() => true);\n    };\n  }, [router, url]);",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "  useEffect(() => {\n    router.beforePopState(() => {\n      router.replace(url);\n      return false;\n    });\n\n    return () => {\n      router.beforePopState(() => true);\n    };\n  }, [router, url]);",
+          "href": null
+        }
+      ],
+      "language": "typescript"
+    }
+  },
+  {
+    "object": "block",
+    "id": "101e2d59-de7a-47dd-ba0a-d1cf1e81dbf1",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T07:56:00.000Z",
+    "last_edited_time": "2024-05-03T10:26:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "먼저 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "먼저 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "beforePopState",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "beforePopState",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 를 알아야 하는데 뒤로가기를 클릭하면 아래와 같은 기능이 수행된다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 를 알아야 하는데 뒤로가기를 클릭하면 아래와 같은 기능이 수행된다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "299e6121-3265-42be-a727-5a32a859011d",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T07:58:00.000Z",
+    "last_edited_time": "2024-05-03T10:27:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "뒤로가기 버튼 클릭 → 브라우저 주소 변경 (히스토리는 하나 줄었음) → ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "뒤로가기 버튼 클릭 → 브라우저 주소 변경 (히스토리는 하나 줄었음) → ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "router.beforePopState",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "router.beforePopState",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 실행 → ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 실행 → ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "router.beforePopState",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "router.beforePopState",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 함수가 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 함수가 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "false",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "false",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 를 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 를 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "return",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "return",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 하면 주소만 변경되고 실제로 화면을 이동하지 않음",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 하면 주소만 변경되고 실제로 화면을 이동하지 않음",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1aae50e1-0ae3-40ba-8d04-b4f5744d7e1b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T07:58:00.000Z",
+    "last_edited_time": "2024-05-03T10:28:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "위 특성을 활용하여 Page [A] → Page [B] → Page [C] 인 케이스에서 Page [C]에서 뒤로가기 시 Page [A]로 이동하고 싶다면 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "위 특성을 활용하여 Page [A] → Page [B] → Page [C] 인 케이스에서 Page [C]에서 뒤로가기 시 Page [A]로 이동하고 싶다면 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "url",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "url",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 에 Page [A]를 할당하고 뒤로가기 버튼 클릭 시 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 에 Page [A]를 할당하고 뒤로가기 버튼 클릭 시 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "goBack",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "goBack",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 함수를 실행하도록 해주면 된다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 함수를 실행하도록 해주면 된다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "f33298b6-0e5b-4ed8-a0cf-9e0a9da634a0",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T08:05:00.000Z",
+    "last_edited_time": "2024-05-03T08:07:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "그럼 Page [A] → Page [B] → Page [C] 인 케이스에서 Page [C]에서 뒤로가기 시 Page [B]로 주소가 이동되고 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "그럼 Page [A] → Page [B] → Page [C] 인 케이스에서 Page [C]에서 뒤로가기 시 Page [B]로 주소가 이동되고 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "router.beforePopState",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "router.beforePopState",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 의 callback이 실행되면서 Page [B]가 Page [A]로 replace된다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 의 callback이 실행되면서 Page [B]가 Page [A]로 replace된다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "7f089d80-20c8-47d9-a27e-6fab2f616946",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T07:12:00.000Z",
+    "last_edited_time": "2024-05-03T07:12:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -378,7 +1165,7 @@
         {
           "type": "text",
           "text": {
-            "content": "괌",
+            "content": "replace를 사용한 이유",
             "link": null
           },
           "annotations": {
@@ -389,7 +1176,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "괌",
+          "plain_text": "replace를 사용한 이유",
           "href": null
         }
       ],
@@ -399,13 +1186,13 @@
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-80bf-8136-f390174ca40e",
+    "id": "27c18c99-045d-45b3-9cd0-748d5d6158be",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T07:21:00.000Z",
-    "last_edited_time": "2025-01-01T11:33:00.000Z",
+    "created_time": "2024-05-03T07:09:00.000Z",
+    "last_edited_time": "2024-05-03T10:29:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -423,7 +1210,7 @@
         {
           "type": "text",
           "text": {
-            "content": "우선 괌은 미국이라 그런지 물가가 너무 비쌌고 돌고래 투어에서 돌고래를 못 본 기억이 난다 ㅠㅠ\n해외에서는 처음으로 렌트를 해서 셀프 투어를 하며 괌을 한 바퀴 돌아봤다.\n‘드라이브를 좋아하는 나’여서 새로운 나무, 바다, 풍경에서 드라이브하는 경험이 너무 좋았다!",
+            "content": "결과적으로 Page [A] → Page [B] → Page [C] 인 케이스에서 Page [C]에서 뒤로가기 시 Page [A]로 이동하면 히스토리는 Page [A] →  Page [A]가 된다. 지정된 페이지로 이동하긴 했지만, 히스토리가 약간 이상해 보일 수도 있다.",
             "link": null
           },
           "annotations": {
@@ -434,7 +1221,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "우선 괌은 미국이라 그런지 물가가 너무 비쌌고 돌고래 투어에서 돌고래를 못 본 기억이 난다 ㅠㅠ\n해외에서는 처음으로 렌트를 해서 셀프 투어를 하며 괌을 한 바퀴 돌아봤다.\n‘드라이브를 좋아하는 나’여서 새로운 나무, 바다, 풍경에서 드라이브하는 경험이 너무 좋았다!",
+          "plain_text": "결과적으로 Page [A] → Page [B] → Page [C] 인 케이스에서 Page [C]에서 뒤로가기 시 Page [A]로 이동하면 히스토리는 Page [A] →  Page [A]가 된다. 지정된 페이지로 이동하긴 했지만, 히스토리가 약간 이상해 보일 수도 있다.",
           "href": null
         }
       ],
@@ -443,13 +1230,13 @@
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-802b-a121-d33b5376b58b",
+    "id": "b039fa83-cfda-42ea-ad9c-eb0a43ab5056",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T13:58:00.000Z",
-    "last_edited_time": "2025-01-01T13:59:00.000Z",
+    "created_time": "2024-05-03T07:09:00.000Z",
+    "last_edited_time": "2024-05-03T10:29:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -461,13 +1248,13 @@
     "has_children": false,
     "archived": false,
     "in_trash": false,
-    "type": "image",
-    "image": {
-      "caption": [
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
         {
           "type": "text",
           "text": {
-            "content": "괌에서 모은 원기옥",
+            "content": "구현은 여러 가지 방법이 있겠지만 일단 이렇게 로직을 짠 이유는 요구사항이 그렇기 때문이다.",
             "link": null
           },
           "annotations": {
@@ -478,31 +1265,253 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "괌에서 모은 원기옥",
+          "plain_text": "구현은 여러 가지 방법이 있겠지만 일단 이렇게 로직을 짠 이유는 요구사항이 그렇기 때문이다.",
           "href": null
         }
       ],
-      "type": "file",
-      "file": {
-        "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2Fdb51ef9e-8aae-410c-813f-93de64c1b501%2Fqweqweqe.jpg?table=block&id=16e9c6bf-2b17-802b-a121-d33b5376b58b&cache=v2",
-        "expiry_time": "2025-04-13T11:42:33.078Z"
-      },
-      "format": {
-        "block_width": 2376,
-        "block_height": 1584,
-        "block_aspect_ratio": 1.5
-      }
+      "color": "default"
     }
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-8082-b1d7-db1dbdc92f06",
+    "id": "51b70424-b10b-4a22-97da-3855c51328cd",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T08:27:00.000Z",
-    "last_edited_time": "2025-01-01T08:27:00.000Z",
+    "created_time": "2024-05-03T07:27:00.000Z",
+    "last_edited_time": "2024-05-03T10:30:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "기획자가 사용자에게 기대하는 플로우는 Page [A] → Page [B] → Page [C] → Page [A] 인데 Page [B] 또는 Page [C] 에서 뒤로가기를 할 수 있어서 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "기획자가 사용자에게 기대하는 플로우는 Page [A] → Page [B] → Page [C] → Page [A] 인데 Page [B] 또는 Page [C] 에서 뒤로가기를 할 수 있어서 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "Page [B] 또는 Page [C] 에서 뒤로가기 할 때 원래 이동해야 할 페이지로 이동해주세요 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Page [B] 또는 Page [C] 에서 뒤로가기 할 때 원래 이동해야 할 페이지로 이동해주세요 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "라는 요구사항이 발생한 것이다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "라는 요구사항이 발생한 것이다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "dd8a3cd0-d1fb-4899-9b50-5325f3cd16f2",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T08:10:00.000Z",
+    "last_edited_time": "2024-05-03T10:30:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "callout",
+    "callout": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "왜 이런 요구사항이 발생할까?\n\n",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "왜 이런 요구사항이 발생할까?\n\n",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "예를 들어 신용 올리기의 경우, [신용 메인 → 신용 올리기 인트로 → 신용 올리기 로딩(요청 중) → 신용 올리기 결과 → 신용 메인]으로 플로우가 이루어진다.\n\n신용 올리기는 일주일에 한 번만 할 수 있는 룰이 있는데, 뒤로 가기 했을 때 신용 올리기 로딩(요청 중)으로 이동 가능하다면 계속 신용 올리기 요청을 할 수 있어서 뒤로 가기 시 신용 올리기 로딩으로 가는 것을 막아야 한다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "예를 들어 신용 올리기의 경우, [신용 메인 → 신용 올리기 인트로 → 신용 올리기 로딩(요청 중) → 신용 올리기 결과 → 신용 메인]으로 플로우가 이루어진다.\n\n신용 올리기는 일주일에 한 번만 할 수 있는 룰이 있는데, 뒤로 가기 했을 때 신용 올리기 로딩(요청 중)으로 이동 가능하다면 계속 신용 올리기 요청을 할 수 있어서 뒤로 가기 시 신용 올리기 로딩으로 가는 것을 막아야 한다.",
+          "href": null
+        }
+      ],
+      "icon": {
+        "type": "emoji",
+        "emoji": "❓"
+      },
+      "color": "gray_background"
+    }
+  },
+  {
+    "object": "block",
+    "id": "135e7a1d-851e-4079-a811-a6fa5a6291bb",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T08:10:00.000Z",
+    "last_edited_time": "2024-05-03T10:30:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "replace를 사용하면 현재 위치한 곳을 말 그대로 대체해버리기 때문에 replace를 활용해서 다시 돌아가면 안 되는 페이지를 다른 페이지로 대체할 수 있었다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "replace를 사용하면 현재 위치한 곳을 말 그대로 대체해버리기 때문에 replace를 활용해서 다시 돌아가면 안 되는 페이지를 다른 페이지로 대체할 수 있었다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "20b69b05-4171-4131-8a5e-8ed7303bd160",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T08:19:00.000Z",
+    "last_edited_time": "2024-05-03T10:31:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "추가로 히스토리가 Page [A] →  Page [A]가 되었으니 문제가 되지 않나요? 라고 생각할 수 있다.\n이는 기능을 개발할 때 인지하고 있는 부분이고 위치 시킬 Page [A]가 되는 페이지는 해당 페이지에서 웹뷰를 종료한다거나 다른 방식의 뒤로가기를 수행하는 페이지로만 이동할 수 있게끔 기획자랑 협의가 되어있는 상태라 문제가 되지 않았다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "추가로 히스토리가 Page [A] →  Page [A]가 되었으니 문제가 되지 않나요? 라고 생각할 수 있다.\n이는 기능을 개발할 때 인지하고 있는 부분이고 위치 시킬 Page [A]가 되는 페이지는 해당 페이지에서 웹뷰를 종료한다거나 다른 방식의 뒤로가기를 수행하는 페이지로만 이동할 수 있게끔 기획자랑 협의가 되어있는 상태라 문제가 되지 않았다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "74a317b0-19c2-46c5-a4d4-3ec201799d2b",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T06:54:00.000Z",
+    "last_edited_time": "2024-05-03T06:54:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -520,7 +1529,7 @@
         {
           "type": "text",
           "text": {
-            "content": "방콕, 치앙마이",
+            "content": "사용 예시",
             "link": null
           },
           "annotations": {
@@ -531,7 +1540,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "방콕, 치앙마이",
+          "plain_text": "사용 예시",
           "href": null
         }
       ],
@@ -541,13 +1550,13 @@
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-8049-908c-d462c2b35192",
+    "id": "da04e14b-3c51-4a6d-9a3b-61c6c502384a",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T07:24:00.000Z",
-    "last_edited_time": "2025-01-01T11:57:00.000Z",
+    "created_time": "2024-05-03T08:37:00.000Z",
+    "last_edited_time": "2024-05-03T10:13:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -559,13 +1568,14 @@
     "has_children": false,
     "archived": false,
     "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
+    "type": "code",
+    "code": {
+      "caption": [],
       "rich_text": [
         {
           "type": "text",
           "text": {
-            "content": "방콕, 치앙마이는 지금은 전 직장인 핀다에서 워케이션 + 휴가로 일주일 조금 넘게 갔다.\n방콕에 대한 첫인상은 과장을 좀 더 보태서 충격적이었다! 태국은 방콕에 모든 경제, 인프라가 몰빵 된 나라다.\n빌딩 숲, 마천루, 엄청 큰 백화점 등 서울과 비교해서 크게 뒤지지는 않겠구나 생각했다. 앞서 말한 것 말고도 방콕에는 구경할 관광지도 되게 많다. 왜 이렇게 많을까 궁금해서 찾아봤더니 전쟁으로 파괴된 적이 없어서 유적지가 잘 보존되어 있다고 한다. 방콕에서는 살 수도 있겠는데?? 라고 생각했다.",
+            "content": "const Component = () => {\n  const goBack = useAppointedGoBack('이동을 원하는 페이지 URL');\n\n  ...\n  \n  return (\n    <Header\n\t    goBack={goBack}\n\t    needButton={false}\n\t    isShare={isShare}\n\t    XButton\n    />\n  )\n}",
             "link": null
           },
           "annotations": {
@@ -576,22 +1586,22 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "방콕, 치앙마이는 지금은 전 직장인 핀다에서 워케이션 + 휴가로 일주일 조금 넘게 갔다.\n방콕에 대한 첫인상은 과장을 좀 더 보태서 충격적이었다! 태국은 방콕에 모든 경제, 인프라가 몰빵 된 나라다.\n빌딩 숲, 마천루, 엄청 큰 백화점 등 서울과 비교해서 크게 뒤지지는 않겠구나 생각했다. 앞서 말한 것 말고도 방콕에는 구경할 관광지도 되게 많다. 왜 이렇게 많을까 궁금해서 찾아봤더니 전쟁으로 파괴된 적이 없어서 유적지가 잘 보존되어 있다고 한다. 방콕에서는 살 수도 있겠는데?? 라고 생각했다.",
+          "plain_text": "const Component = () => {\n  const goBack = useAppointedGoBack('이동을 원하는 페이지 URL');\n\n  ...\n  \n  return (\n    <Header\n\t    goBack={goBack}\n\t    needButton={false}\n\t    isShare={isShare}\n\t    XButton\n    />\n  )\n}",
           "href": null
         }
       ],
-      "color": "default"
+      "language": "typescript"
     }
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-80f1-b255-cc19e3e4cd8b",
+    "id": "6261ef24-b92b-49d1-a04d-22b89767739f",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T07:32:00.000Z",
-    "last_edited_time": "2025-01-01T11:57:00.000Z",
+    "created_time": "2024-05-03T06:44:00.000Z",
+    "last_edited_time": "2024-05-03T06:44:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -603,13 +1613,13 @@
     "has_children": false,
     "archived": false,
     "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
+    "type": "heading_2",
+    "heading_2": {
       "rich_text": [
         {
           "type": "text",
           "text": {
-            "content": "치앙마이는 태국의 제2의 도시라고 하지만 방콕과는 느낌이 많이 달랐다. 약간 성수 같은 느낌이랄까? 뭘 하거나 볼 게 많지는 않아서 워케이션으로 가면 딱 좋겠다고 생각했다. 오토바이를 한 번도 운전해 본 적이 없지만, 한번 경험해보고 싶어서 일주일 동안 렌트해서 운전하고 다녔다. 왕복 3시간 동안 운전해서 온천도 갔다 왔는데 3시간은 쫌 힘들더라.. 워케이션으로 많이 오는 도시에서 코워킹 스페이스를 가서 일도 해봤고 유명한 게이바(게이들이 나와서 쇼하는 거에요 오해하지 마세요) 가서 재미난 구경도 했다!",
+            "content": "useScrollRestoration",
             "link": null
           },
           "annotations": {
@@ -620,104 +1630,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "치앙마이는 태국의 제2의 도시라고 하지만 방콕과는 느낌이 많이 달랐다. 약간 성수 같은 느낌이랄까? 뭘 하거나 볼 게 많지는 않아서 워케이션으로 가면 딱 좋겠다고 생각했다. 오토바이를 한 번도 운전해 본 적이 없지만, 한번 경험해보고 싶어서 일주일 동안 렌트해서 운전하고 다녔다. 왕복 3시간 동안 운전해서 온천도 갔다 왔는데 3시간은 쫌 힘들더라.. 워케이션으로 많이 오는 도시에서 코워킹 스페이스를 가서 일도 해봤고 유명한 게이바(게이들이 나와서 쇼하는 거에요 오해하지 마세요) 가서 재미난 구경도 했다!",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "16e9c6bf-2b17-8095-b608-d1d027696489",
-    "parent": {
-      "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
-    },
-    "created_time": "2025-01-01T07:46:00.000Z",
-    "last_edited_time": "2025-01-01T07:47:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "image",
-    "image": {
-      "caption": [
-        {
-          "type": "text",
-          "text": {
-            "content": "먹을꺼 사서 숙소로 돌아가는 나",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "먹을꺼 사서 숙소로 돌아가는 나",
-          "href": null
-        }
-      ],
-      "type": "file",
-      "file": {
-        "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2F9892bcdc-899f-4e9b-92ca-eb6bfdb26539%2FKakaoTalk_Photo_2025-01-01-16-44-53.jpeg?table=block&id=16e9c6bf-2b17-8095-b608-d1d027696489&cache=v2",
-        "expiry_time": "2025-04-13T11:42:33.083Z"
-      },
-      "format": {
-        "block_width": 4000,
-        "block_height": 3000,
-        "block_aspect_ratio": 1.3333333333333333
-      }
-    }
-  },
-  {
-    "object": "block",
-    "id": "16e9c6bf-2b17-80fc-94ee-decd2598b433",
-    "parent": {
-      "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
-    },
-    "created_time": "2025-01-01T08:27:00.000Z",
-    "last_edited_time": "2025-01-01T08:27:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "heading_3",
-    "heading_3": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "세부",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "세부",
+          "plain_text": "useScrollRestoration",
           "href": null
         }
       ],
@@ -727,13 +1640,58 @@
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-8099-824e-ea5d402f4762",
+    "id": "af81971a-6bd1-4169-87f0-16a88931342f",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T07:48:00.000Z",
-    "last_edited_time": "2025-01-01T12:04:00.000Z",
+    "created_time": "2024-05-03T06:43:00.000Z",
+    "last_edited_time": "2024-05-03T06:48:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "code",
+    "code": {
+      "caption": [],
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "import { useEffect, useState } from 'react';\n\nimport { useRouter } from 'next/router';\n\nimport Loading from '@/components/Loading';\n\nimport useIsomorphicLayoutEffect from '@/hooks/useIsomorphicLayoutEffect';\n\ninterface Props {\n  key: string;\n  isLoading?: boolean;\n}\n\n/**\n * 현재 페이지에 대한 스크롤 기록이 있을 경우, 해당 위치로 이동합니다.\n *\n * route 변경이 시작될 때, 세션 스토리지에 스크롤 값을 저장합니다.\n *\n * * Loading 상태를 표기하고 싶을 경우\n * 1. param { isLoading }에 Loading State를 넣어줍니다.\n * 2. 해당 훅의 return 값인 ScrollRestorationLoading, isScrollLoading로 컴포넌트에서 Loading 상태를 표기합니다.\n *    ex) src/features/credit/main/Normal/index.tsx\n *\n * * Loading 상태가 필요 없을 경우\n *\n * 1. param { isLoading }에 아무 값도 넣지 않으며,\n * 해당 훅의 return 값인 ScrollRestorationLoading, isScrollLoading를 컴포넌트에서 사용하지 않습니다.\n *\n * @param {key} string - 고유한 string\n * @param {boolean} isLoading - fetching 등에 대한 loading 값\n *\n * @returns {Component, boolean}\n */\n \nconst useScrollRestoration = ({ key = '', isLoading = false }: Props) => {\n  const router = useRouter();\n  const [scrollY, setScrollY] = useState<number>(0);\n  const [isScrollLoading, setIsScrollLoading] = useState<boolean>(true);\n\n  useEffect(() => {\n    if (!key) return undefined;\n\n    /**\n     * route 변경이 시작될 때, session 스토리지에 현재 위치를 저장합니다.\n     */\n    const routeChangeStartHandler = () => {\n      sessionStorage.setItem(\n        `__next_scroll_${key}`,\n        JSON.stringify({\n          x: window.pageXOffset,\n          y: window.pageYOffset,\n        }),\n      );\n    };\n    router.events.on('routeChangeStart', routeChangeStartHandler);\n    return () => {\n      router.events.off('routeChangeStart', routeChangeStartHandler);\n    };\n  }, [key, router.events]);\n\n  useIsomorphicLayoutEffect(() => {\n    if (!key || isLoading || !router.isReady) return;\n\n    window.history.scrollRestoration = 'manual';\n    const scroll = sessionStorage.getItem(`__next_scroll_${key}`);\n    if (scroll) {\n      const { y } = JSON.parse(scroll);\n      setScrollY(y || 0);\n\n      sessionStorage.removeItem(`__next_scroll_${key}`);\n    }\n    setIsScrollLoading(false);\n  }, [isLoading, key, router.isReady]);\n\n  useIsomorphicLayoutEffect(() => {\n    if (isScrollLoading) return;\n    window.scrollTo(0, scrollY);\n  }, [isScrollLoading, scrollY]);\n\n  const ScrollRestorationLoading = () => {\n    if (isLoading || isScrollLoading) {\n      return <Loading />;\n    }\n\n    return (\n      <section\n        className=\"w-full\"\n        style={{ height: scrollY }}\n      />\n    );\n  };\n  return { ScrollRestorationLoading, isScrollLoading };\n};\n\nexport default useScrollRestoration;\n",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "import { useEffect, useState } from 'react';\n\nimport { useRouter } from 'next/router';\n\nimport Loading from '@/components/Loading';\n\nimport useIsomorphicLayoutEffect from '@/hooks/useIsomorphicLayoutEffect';\n\ninterface Props {\n  key: string;\n  isLoading?: boolean;\n}\n\n/**\n * 현재 페이지에 대한 스크롤 기록이 있을 경우, 해당 위치로 이동합니다.\n *\n * route 변경이 시작될 때, 세션 스토리지에 스크롤 값을 저장합니다.\n *\n * * Loading 상태를 표기하고 싶을 경우\n * 1. param { isLoading }에 Loading State를 넣어줍니다.\n * 2. 해당 훅의 return 값인 ScrollRestorationLoading, isScrollLoading로 컴포넌트에서 Loading 상태를 표기합니다.\n *    ex) src/features/credit/main/Normal/index.tsx\n *\n * * Loading 상태가 필요 없을 경우\n *\n * 1. param { isLoading }에 아무 값도 넣지 않으며,\n * 해당 훅의 return 값인 ScrollRestorationLoading, isScrollLoading를 컴포넌트에서 사용하지 않습니다.\n *\n * @param {key} string - 고유한 string\n * @param {boolean} isLoading - fetching 등에 대한 loading 값\n *\n * @returns {Component, boolean}\n */\n \nconst useScrollRestoration = ({ key = '', isLoading = false }: Props) => {\n  const router = useRouter();\n  const [scrollY, setScrollY] = useState<number>(0);\n  const [isScrollLoading, setIsScrollLoading] = useState<boolean>(true);\n\n  useEffect(() => {\n    if (!key) return undefined;\n\n    /**\n     * route 변경이 시작될 때, session 스토리지에 현재 위치를 저장합니다.\n     */\n    const routeChangeStartHandler = () => {\n      sessionStorage.setItem(\n        `__next_scroll_${key}`,\n        JSON.stringify({\n          x: window.pageXOffset,\n          y: window.pageYOffset,\n        }),\n      );\n    };\n    router.events.on('routeChangeStart', routeChangeStartHandler);\n    return () => {\n      router.events.off('routeChangeStart', routeChangeStartHandler);\n    };\n  }, [key, router.events]);\n\n  useIsomorphicLayoutEffect(() => {\n    if (!key || isLoading || !router.isReady) return;\n\n    window.history.scrollRestoration = 'manual';\n    const scroll = sessionStorage.getItem(`__next_scroll_${key}`);\n    if (scroll) {\n      const { y } = JSON.parse(scroll);\n      setScrollY(y || 0);\n\n      sessionStorage.removeItem(`__next_scroll_${key}`);\n    }\n    setIsScrollLoading(false);\n  }, [isLoading, key, router.isReady]);\n\n  useIsomorphicLayoutEffect(() => {\n    if (isScrollLoading) return;\n    window.scrollTo(0, scrollY);\n  }, [isScrollLoading, scrollY]);\n\n  const ScrollRestorationLoading = () => {\n    if (isLoading || isScrollLoading) {\n      return <Loading />;\n    }\n\n    return (\n      <section\n        className=\"w-full\"\n        style={{ height: scrollY }}\n      />\n    );\n  };\n  return { ScrollRestorationLoading, isScrollLoading };\n};\n\nexport default useScrollRestoration;\n",
+          "href": null
+        }
+      ],
+      "language": "typescript"
+    }
+  },
+  {
+    "object": "block",
+    "id": "8a23dd44-e122-4931-9727-f2f537b5559e",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T08:46:00.000Z",
+    "last_edited_time": "2024-05-03T08:47:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -751,7 +1709,7 @@
         {
           "type": "text",
           "text": {
-            "content": "밑에서 이야기하겠지만 퇴사를 해버렸다. 외부로 티 내지 않았지만 속으로 고민이 많았다. 항상 해외여행을 가면 영어를 좀 더 잘하고 싶다는 욕심이 생기는데 이번 기회에 해외로 가서 영어 공부나 해볼까?? 라는 생각이 들어 자료를 찾아봤다. 여러 군데를 고려했는데 제일 빡센 곳은 필리핀 세부라서 그곳으로 6주 동안 어학연수를 가기로 했다. 성향이 P라서 그런가 결정하고 예약까지 다 해버리는데 2주도 안 걸렸던 거 같다.. 나는 왜 이렇게 즉흥적일까..",
+            "content": "useScrollRestoration",
             "link": null
           },
           "annotations": {
@@ -759,391 +1717,418 @@
             "italic": false,
             "strikethrough": false,
             "underline": false,
-            "code": false,
+            "code": true,
             "color": "default"
           },
-          "plain_text": "밑에서 이야기하겠지만 퇴사를 해버렸다. 외부로 티 내지 않았지만 속으로 고민이 많았다. 항상 해외여행을 가면 영어를 좀 더 잘하고 싶다는 욕심이 생기는데 이번 기회에 해외로 가서 영어 공부나 해볼까?? 라는 생각이 들어 자료를 찾아봤다. 여러 군데를 고려했는데 제일 빡센 곳은 필리핀 세부라서 그곳으로 6주 동안 어학연수를 가기로 했다. 성향이 P라서 그런가 결정하고 예약까지 다 해버리는데 2주도 안 걸렸던 거 같다.. 나는 왜 이렇게 즉흥적일까..",
+          "plain_text": "useScrollRestoration",
           "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "16e9c6bf-2b17-806c-92c4-e1b60c7972ec",
-    "parent": {
-      "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
-    },
-    "created_time": "2025-01-01T07:55:00.000Z",
-    "last_edited_time": "2025-01-01T11:39:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "한국 교육식 영어 공부는 충실하게 했지만 군대를 갔다 와서 따로 영어 공부를 한 적은 없다. 다른 것보다 스피킹이 많이 부족하다고 생각해서 어학원의 파워스피킹 과정을 신청했다. 어학원에 있는 코스 전부 기본 10시간인데 파워스피킹 과정은 그룹 수업 3개, 1:1 수업 6개, 자습 1개였다.",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "한국 교육식 영어 공부는 충실하게 했지만 군대를 갔다 와서 따로 영어 공부를 한 적은 없다. 다른 것보다 스피킹이 많이 부족하다고 생각해서 어학원의 파워스피킹 과정을 신청했다. 어학원에 있는 코스 전부 기본 10시간인데 파워스피킹 과정은 그룹 수업 3개, 1:1 수업 6개, 자습 1개였다.",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "16e9c6bf-2b17-802b-8255-f89d3a916a70",
-    "parent": {
-      "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
-    },
-    "created_time": "2025-01-01T08:21:00.000Z",
-    "last_edited_time": "2025-01-01T12:08:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "아침 8시부터 시작인데 나는 외부 기숙사에서 살아 아침 6시 40분쯤에 일어나서 와야 했다. 그리고 수업 다 끝나고 집에 들어가면 7시쯤 되었다. 고등학교 때도 이렇게 안 살았던 거 같은데 너무 빡셌다. (나중에는 적응되었지만..) 외국인이랑 말을 해보는 것 자체가 처음이라 첫 주는 너무 힘들었다. 2~3일 차에는 “아.. 그냥 집에 갈까??” 고민하고 환불 규정도 찾아봤다. 하지만 시간이 지나며 좋은 친구들도 사귀고 적응할 수 있었다. 스피킹에 대한 자신감도 많이 생겼다. ",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "아침 8시부터 시작인데 나는 외부 기숙사에서 살아 아침 6시 40분쯤에 일어나서 와야 했다. 그리고 수업 다 끝나고 집에 들어가면 7시쯤 되었다. 고등학교 때도 이렇게 안 살았던 거 같은데 너무 빡셌다. (나중에는 적응되었지만..) 외국인이랑 말을 해보는 것 자체가 처음이라 첫 주는 너무 힘들었다. 2~3일 차에는 “아.. 그냥 집에 갈까??” 고민하고 환불 규정도 찾아봤다. 하지만 시간이 지나며 좋은 친구들도 사귀고 적응할 수 있었다. 스피킹에 대한 자신감도 많이 생겼다. ",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "16e9c6bf-2b17-803d-863b-e60c1fede703",
-    "parent": {
-      "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
-    },
-    "created_time": "2025-01-01T08:18:00.000Z",
-    "last_edited_time": "2025-01-01T08:19:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "image",
-    "image": {
-      "caption": [
-        {
-          "type": "text",
-          "text": {
-            "content": "GPT가 지어준 내 영어 이름 LIAM",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "GPT가 지어준 내 영어 이름 LIAM",
-          "href": null
-        }
-      ],
-      "type": "file",
-      "file": {
-        "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2F318b840d-9a16-4d36-80d2-4665c6bb6a9e%2FKakaoTalk_Photo_2025-01-01-17-18-09.jpeg?table=block&id=16e9c6bf-2b17-803d-863b-e60c1fede703&cache=v2",
-        "expiry_time": "2025-04-13T11:42:33.085Z"
-      },
-      "format": {
-        "block_width": 1050,
-        "block_height": 1400,
-        "block_aspect_ratio": 0.75
-      }
-    }
-  },
-  {
-    "object": "block",
-    "id": "16e9c6bf-2b17-8032-be83-fe676dc74b71",
-    "parent": {
-      "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
-    },
-    "created_time": "2025-01-01T08:21:00.000Z",
-    "last_edited_time": "2025-01-01T12:08:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "처음 사귀어본 외국인 친구, 날 놀아준 착한 한국 친구들(ㅋㅋ), 너무나 좋은 내 선생님들 덕분에 소중한 경험을 6주 동안 하며 한국으로 다시 돌아갔다. (하고 싶은 이야기는 너무 많지만 분량을 위해 요 정도로 마무리!)",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "처음 사귀어본 외국인 친구, 날 놀아준 착한 한국 친구들(ㅋㅋ), 너무나 좋은 내 선생님들 덕분에 소중한 경험을 6주 동안 하며 한국으로 다시 돌아갔다. (하고 싶은 이야기는 너무 많지만 분량을 위해 요 정도로 마무리!)",
-          "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "16e9c6bf-2b17-8031-b03c-f06df91edfec",
-    "parent": {
-      "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
-    },
-    "created_time": "2025-01-01T08:20:00.000Z",
-    "last_edited_time": "2025-01-01T08:20:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": true,
-    "archived": false,
-    "in_trash": false,
-    "type": "column_list",
-    "column_list": {},
-    "children": [
-      {
-        "object": "block",
-        "id": "61320a3d-2231-4449-a847-59469933b3ef",
-        "parent": {
-          "type": "block_id",
-          "block_id": "16e9c6bf-2b17-8031-b03c-f06df91edfec"
         },
-        "created_time": "2025-01-01T08:20:00.000Z",
-        "last_edited_time": "2025-01-01T08:36:00.000Z",
-        "created_by": {
-          "object": "user",
-          "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+        {
+          "type": "text",
+          "text": {
+            "content": " 은 뒤로가기 시 스크롤을 복원해주는 커스텀 훅이다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 은 뒤로가기 시 스크롤을 복원해주는 커스텀 훅이다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "e0859ff6-75d3-46ea-afd8-89fec8f63934",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T08:39:00.000Z",
+    "last_edited_time": "2024-05-03T08:48:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "code",
+    "code": {
+      "caption": [],
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "// next.config.js\nmodule.exports = {\n  experimental: {\n    scrollRestoration: true\n  }\n}",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "// next.config.js\nmodule.exports = {\n  experimental: {\n    scrollRestoration: true\n  }\n}",
+          "href": null
+        }
+      ],
+      "language": "typescript"
+    }
+  },
+  {
+    "object": "block",
+    "id": "703661cb-4acc-4ba8-8927-6437f87257e1",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T08:48:00.000Z",
+    "last_edited_time": "2024-05-03T10:31:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "위와 같이 NextJS에서 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "위와 같이 NextJS에서 ",
+          "href": null
         },
-        "last_edited_by": {
-          "object": "user",
-          "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+        {
+          "type": "text",
+          "text": {
+            "content": "experimental",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "experimental",
+          "href": null
         },
-        "has_children": true,
-        "archived": false,
-        "in_trash": false,
-        "type": "column",
-        "column": {},
-        "children": [
-          {
-            "object": "block",
-            "id": "16e9c6bf-2b17-8018-956d-deaf7edfe826",
-            "parent": {
-              "type": "block_id",
-              "block_id": "61320a3d-2231-4449-a847-59469933b3ef"
-            },
-            "created_time": "2025-01-01T08:18:00.000Z",
-            "last_edited_time": "2025-01-01T12:12:00.000Z",
-            "created_by": {
-              "object": "user",
-              "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-            },
-            "last_edited_by": {
-              "object": "user",
-              "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-            },
-            "has_children": false,
-            "archived": false,
-            "in_trash": false,
-            "type": "image",
-            "image": {
-              "caption": [
-                {
-                  "type": "text",
-                  "text": {
-                    "content": "우수한(?) 성적으로 졸업해 스피치를 하게된 나",
-                    "link": null
-                  },
-                  "annotations": {
-                    "bold": false,
-                    "italic": false,
-                    "strikethrough": false,
-                    "underline": false,
-                    "code": false,
-                    "color": "default"
-                  },
-                  "plain_text": "우수한(?) 성적으로 졸업해 스피치를 하게된 나",
-                  "href": null
-                }
-              ],
-              "type": "file",
-              "file": {
-                "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2Fc2c71ca2-87ad-4d41-ad4f-d40e125a0af2%2FKakaoTalk_Photo_2025-01-01-17-18-18.jpeg?table=block&id=16e9c6bf-2b17-8018-956d-deaf7edfe826&cache=v2",
-                "expiry_time": "2025-04-13T11:42:33.679Z"
-              },
-              "format": {
-                "block_width": 3000,
-                "block_height": 4000,
-                "block_aspect_ratio": 0.75
-              }
+        {
+          "type": "text",
+          "text": {
+            "content": " 로 스크롤 복원을 제공해주긴 하지만, 이 훅을 개발할 때는 회사 프로젝트가 13 미만 버전이기도 했고 13.x.x 버전에서도 잘 작동하지 않는다는 Issue를 본 거 같아서 (",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 로 스크롤 복원을 제공해주긴 하지만, 이 훅을 개발할 때는 회사 프로젝트가 13 미만 버전이기도 했고 13.x.x 버전에서도 잘 작동하지 않는다는 Issue를 본 거 같아서 (",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "13.x.x대에서 잘 안되다 해결되었다는 트윗",
+            "link": {
+              "url": "https://twitter.com/felixmokross/status/1654215560677277701?lang=en"
             }
-          }
-        ]
-      },
-      {
-        "object": "block",
-        "id": "3529a816-3605-41fb-b173-1cb972d3984d",
-        "parent": {
-          "type": "block_id",
-          "block_id": "16e9c6bf-2b17-8031-b03c-f06df91edfec"
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "13.x.x대에서 잘 안되다 해결되었다는 트윗",
+          "href": "https://twitter.com/felixmokross/status/1654215560677277701?lang=en"
         },
-        "created_time": "2025-01-01T08:20:00.000Z",
-        "last_edited_time": "2025-01-01T08:27:00.000Z",
-        "created_by": {
-          "object": "user",
-          "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-        },
-        "last_edited_by": {
-          "object": "user",
-          "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-        },
-        "has_children": true,
-        "archived": false,
-        "in_trash": false,
-        "type": "column",
-        "column": {},
-        "children": [
-          {
-            "object": "block",
-            "id": "16e9c6bf-2b17-805a-b196-c2087bb03c34",
-            "parent": {
-              "type": "block_id",
-              "block_id": "3529a816-3605-41fb-b173-1cb972d3984d"
-            },
-            "created_time": "2025-01-01T08:21:00.000Z",
-            "last_edited_time": "2025-01-01T08:22:00.000Z",
-            "created_by": {
-              "object": "user",
-              "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-            },
-            "last_edited_by": {
-              "object": "user",
-              "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-            },
-            "has_children": false,
-            "archived": false,
-            "in_trash": false,
-            "type": "image",
-            "image": {
-              "caption": [
-                {
-                  "type": "text",
-                  "text": {
-                    "content": "영롱한 졸업장",
-                    "link": null
-                  },
-                  "annotations": {
-                    "bold": false,
-                    "italic": false,
-                    "strikethrough": false,
-                    "underline": false,
-                    "code": false,
-                    "color": "default"
-                  },
-                  "plain_text": "영롱한 졸업장",
-                  "href": null
-                }
-              ],
-              "type": "file",
-              "file": {
-                "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2F73ea75db-9624-4fbd-bf34-b57e9925c7f2%2Fimage.png?table=block&id=16e9c6bf-2b17-805a-b196-c2087bb03c34&cache=v2",
-                "expiry_time": "2025-04-13T11:42:34.203Z"
-              },
-              "format": {
-                "block_width": 1094,
-                "block_height": 1472,
-                "block_aspect_ratio": 0.7432065217391305
-              }
-            }
-          }
-        ]
-      }
-    ]
+        {
+          "type": "text",
+          "text": {
+            "content": ") 직접 구현했고 현재도 잘 작동한다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": ") 직접 구현했고 현재도 잘 작동한다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-8092-98dd-f25c6052d77c",
+    "id": "fa6645db-54af-4de4-90aa-5720dca63481",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T08:27:00.000Z",
-    "last_edited_time": "2025-01-01T08:27:00.000Z",
+    "created_time": "2024-05-03T08:54:00.000Z",
+    "last_edited_time": "2024-05-03T10:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "그리고 직접 만든 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "그리고 직접 만든 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "useScrollRestoration",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "useScrollRestoration",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 은 Loading 컴포넌트가 노출되는 화면에서도 Loading이 끝나고 스크롤을 복원해주는 기능도 있다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 은 Loading 컴포넌트가 노출되는 화면에서도 Loading이 끝나고 스크롤을 복원해주는 기능도 있다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "931d7e1f-9ca1-4cab-a734-158c73dafac8",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T08:53:00.000Z",
+    "last_edited_time": "2024-05-03T08:56:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "우선 route 변경이 시작될 때, 세션 스토리지에 스크롤 값을 저장하고 돌아올 때 해당 값으로 이동해서 스크롤 복원을 수행한다. 이는 NextJS의 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "우선 route 변경이 시작될 때, 세션 스토리지에 스크롤 값을 저장하고 돌아올 때 해당 값으로 이동해서 스크롤 복원을 수행한다. 이는 NextJS의 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "scrollRestoration",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "scrollRestoration",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 기능 구현과 비슷할 것이다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 기능 구현과 비슷할 것이다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "9fcea528-2867-4b69-bf38-0d4511d6b1d3",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T09:18:00.000Z",
+    "last_edited_time": "2024-05-03T10:17:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "useScrollRestoration",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "useScrollRestoration",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 은 Loading 상태를 표기하고 싶을 경우, Loading 상태를 표기하고 싶지 않은 경우로 나누어서 설명하겠다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 은 Loading 상태를 표기하고 싶을 경우, Loading 상태를 표기하고 싶지 않은 경우로 나누어서 설명하겠다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "f931e535-6701-4666-a28e-99d69bef119f",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T09:19:00.000Z",
+    "last_edited_time": "2024-05-03T09:19:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -1161,7 +2146,7 @@
         {
           "type": "text",
           "text": {
-            "content": "삿포로",
+            "content": "Loading 상태를 표기하고 싶지 않은 경우",
             "link": null
           },
           "annotations": {
@@ -1172,7 +2157,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "삿포로",
+          "plain_text": "Loading 상태를 표기하고 싶지 않은 경우",
           "href": null
         }
       ],
@@ -1182,13 +2167,13 @@
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-80b0-aa72-d40aedcf7a72",
+    "id": "91020d1c-32ce-4264-ae47-1db3585e3ac1",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T08:27:00.000Z",
-    "last_edited_time": "2025-01-01T12:08:00.000Z",
+    "created_time": "2024-05-03T08:56:00.000Z",
+    "last_edited_time": "2024-05-03T10:32:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -1206,7 +2191,7 @@
         {
           "type": "text",
           "text": {
-            "content": "나의 첫 해외여행은 삿포로였다. 어언 6년 전이었지.. 아마\n여자친구가 한 번도 안 가봐서 다시 가보기로 했다. 엔화도 860원일 때 최저점에 사놓아서 더 좋았다.\n첫 삿포로 때와 시간이 많이 지났지만 기억이 새록새록 났다. 그런데 3박 4일을 갔는데 유난히 시간이 왜 이렇게 빠르게 느껴지는지 여자친구도 공감했다. 물리적으로는 가깝지만 문화적으로는 많이 다른 일본은 개인적으로 흥미가 많다. 25년에도 1~2번은 일본을 갈 생각이다.",
+            "content": "이 경우는 일반적인 스크롤 복원과 같다.",
             "link": null
           },
           "annotations": {
@@ -1217,7 +2202,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "나의 첫 해외여행은 삿포로였다. 어언 6년 전이었지.. 아마\n여자친구가 한 번도 안 가봐서 다시 가보기로 했다. 엔화도 860원일 때 최저점에 사놓아서 더 좋았다.\n첫 삿포로 때와 시간이 많이 지났지만 기억이 새록새록 났다. 그런데 3박 4일을 갔는데 유난히 시간이 왜 이렇게 빠르게 느껴지는지 여자친구도 공감했다. 물리적으로는 가깝지만 문화적으로는 많이 다른 일본은 개인적으로 흥미가 많다. 25년에도 1~2번은 일본을 갈 생각이다.",
+          "plain_text": "이 경우는 일반적인 스크롤 복원과 같다.",
           "href": null
         }
       ],
@@ -1226,13 +2211,13 @@
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-80d7-b093-ffbec0ed58b1",
+    "id": "1b1c0632-c2ed-42db-80ba-30f97f0ec8bf",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T08:34:00.000Z",
-    "last_edited_time": "2025-01-01T12:12:00.000Z",
+    "created_time": "2024-05-03T09:19:00.000Z",
+    "last_edited_time": "2024-05-03T09:20:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -1244,66 +2229,14 @@
     "has_children": false,
     "archived": false,
     "in_trash": false,
-    "type": "image",
-    "image": {
-      "caption": [
-        {
-          "type": "text",
-          "text": {
-            "content": "눈 맞을랭?",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "눈 맞을랭?",
-          "href": null
-        }
-      ],
-      "type": "file",
-      "file": {
-        "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2F4729e80d-3ade-4301-a411-67ab48bb897d%2Fimage.png?table=block&id=16e9c6bf-2b17-80d7-b093-ffbec0ed58b1&cache=v2",
-        "expiry_time": "2025-04-13T11:42:33.091Z"
-      },
-      "format": {
-        "block_width": 4284,
-        "block_height": 5712,
-        "block_aspect_ratio": 0.75
-      }
-    }
-  },
-  {
-    "object": "block",
-    "id": "16e9c6bf-2b17-80fe-88e4-d9d72ddb2cb0",
-    "parent": {
-      "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
-    },
-    "created_time": "2025-01-01T07:05:00.000Z",
-    "last_edited_time": "2025-01-01T07:08:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "heading_2",
-    "heading_2": {
+    "type": "code",
+    "code": {
+      "caption": [],
       "rich_text": [
         {
           "type": "text",
           "text": {
-            "content": "대외활동",
+            "content": "  useEffect(() => {\n    if (!key) return undefined;\n\n    /**\n     * route 변경이 시작될 때, session 스토리지에 현재 위치를 저장합니다.\n     */\n    const routeChangeStartHandler = () => {\n      sessionStorage.setItem(\n        `__next_scroll_${key}`,\n        JSON.stringify({\n          x: window.pageXOffset,\n          y: window.pageYOffset,\n        }),\n      );\n    };\n    router.events.on('routeChangeStart', routeChangeStartHandler);\n    return () => {\n      router.events.off('routeChangeStart', routeChangeStartHandler);\n    };\n  }, [key, router.events]);",
             "link": null
           },
           "annotations": {
@@ -1314,23 +2247,22 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "대외활동",
+          "plain_text": "  useEffect(() => {\n    if (!key) return undefined;\n\n    /**\n     * route 변경이 시작될 때, session 스토리지에 현재 위치를 저장합니다.\n     */\n    const routeChangeStartHandler = () => {\n      sessionStorage.setItem(\n        `__next_scroll_${key}`,\n        JSON.stringify({\n          x: window.pageXOffset,\n          y: window.pageYOffset,\n        }),\n      );\n    };\n    router.events.on('routeChangeStart', routeChangeStartHandler);\n    return () => {\n      router.events.off('routeChangeStart', routeChangeStartHandler);\n    };\n  }, [key, router.events]);",
           "href": null
         }
       ],
-      "is_toggleable": false,
-      "color": "default"
+      "language": "typescript"
     }
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-80c2-974d-da9097db7dc2",
+    "id": "1a28be21-393b-47a4-bdcd-1241630ad894",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T08:58:00.000Z",
-    "last_edited_time": "2025-01-01T11:43:00.000Z",
+    "created_time": "2024-05-03T09:20:00.000Z",
+    "last_edited_time": "2024-05-03T10:18:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -1348,7 +2280,7 @@
         {
           "type": "text",
           "text": {
-            "content": "올해는 이직도 하고 여행(어학연수 포함)을 많이 가서 그런가 프론트엔드 개발자로서 대외활동한 게 별로 없는 것 같다.",
+            "content": "Page [A]에서 route가 변경될 때, 세션 스토리지에 스크롤 위치인 ",
             "link": null
           },
           "annotations": {
@@ -1359,7 +2291,75 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "올해는 이직도 하고 여행(어학연수 포함)을 많이 가서 그런가 프론트엔드 개발자로서 대외활동한 게 별로 없는 것 같다.",
+          "plain_text": "Page [A]에서 route가 변경될 때, 세션 스토리지에 스크롤 위치인 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "window.pageXOffset, window.pageYOffset",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "window.pageXOffset, window.pageYOffset",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 를 저장한다. key는 고유한 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 를 저장한다. key는 고유한 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "string",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "string",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 이고 key가 없다면 훅은 작동하지 않는다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 이고 key가 없다면 훅은 작동하지 않는다.",
           "href": null
         }
       ],
@@ -1368,13 +2368,982 @@
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-8077-ba8f-df5a02d936b4",
+    "id": "342f72cc-2180-4fd1-97bb-f13a8a590e42",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T08:58:00.000Z",
-    "last_edited_time": "2025-01-01T08:58:00.000Z",
+    "created_time": "2024-05-03T09:23:00.000Z",
+    "last_edited_time": "2024-05-03T09:24:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "code",
+    "code": {
+      "caption": [],
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "  const router = useRouter();\n  const [scrollY, setScrollY] = useState<number>(0);\n  const [isScrollLoading, setIsScrollLoading] = useState<boolean>(true);\n  \n  ...\n  \n  useIsomorphicLayoutEffect(() => {\n    if (!key || isLoading || !router.isReady) return;\n\n    window.history.scrollRestoration = 'manual';\n    const scroll = sessionStorage.getItem(`__next_scroll_${key}`);\n    if (scroll) {\n      const { y } = JSON.parse(scroll);\n      setScrollY(y || 0);\n\n      sessionStorage.removeItem(`__next_scroll_${key}`);\n    }\n    setIsScrollLoading(false);\n  }, [isLoading, key, router.isReady]);\n\n  useIsomorphicLayoutEffect(() => {\n    if (isScrollLoading) return;\n    window.scrollTo(0, scrollY);\n  }, [isScrollLoading, scrollY]);",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "  const router = useRouter();\n  const [scrollY, setScrollY] = useState<number>(0);\n  const [isScrollLoading, setIsScrollLoading] = useState<boolean>(true);\n  \n  ...\n  \n  useIsomorphicLayoutEffect(() => {\n    if (!key || isLoading || !router.isReady) return;\n\n    window.history.scrollRestoration = 'manual';\n    const scroll = sessionStorage.getItem(`__next_scroll_${key}`);\n    if (scroll) {\n      const { y } = JSON.parse(scroll);\n      setScrollY(y || 0);\n\n      sessionStorage.removeItem(`__next_scroll_${key}`);\n    }\n    setIsScrollLoading(false);\n  }, [isLoading, key, router.isReady]);\n\n  useIsomorphicLayoutEffect(() => {\n    if (isScrollLoading) return;\n    window.scrollTo(0, scrollY);\n  }, [isScrollLoading, scrollY]);",
+          "href": null
+        }
+      ],
+      "language": "typescript"
+    }
+  },
+  {
+    "object": "block",
+    "id": "8f7f4835-a822-473b-ac89-46b02c7bb720",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T09:24:00.000Z",
+    "last_edited_time": "2024-05-03T09:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "스크롤 복원은 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "스크롤 복원은 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "useLayoutEffect",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "useLayoutEffect",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 로 수행한다. ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 로 수행한다. ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "useEffect",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "useEffect",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 는 paint 작업 이후 비동기로 작동하기 때문에 사용자가 보기에 페이지가 뜬 후, 스크롤이 이동되는 것처럼 보일 수 있다. 이는 유저 경험을 떨어뜨리기에 paint 이전에 동기적으로 수행하는 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 는 paint 작업 이후 비동기로 작동하기 때문에 사용자가 보기에 페이지가 뜬 후, 스크롤이 이동되는 것처럼 보일 수 있다. 이는 유저 경험을 떨어뜨리기에 paint 이전에 동기적으로 수행하는 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "useLayoutEffect",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "useLayoutEffect",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 를 사용했다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 를 사용했다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "860fcca9-0132-4aeb-8c11-2dae4b8d17fe",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T09:43:00.000Z",
+    "last_edited_time": "2024-05-03T09:43:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "추가로 NextJS warning을 제거하기 위해 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "추가로 NextJS warning을 제거하기 위해 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "useIsomorphicLayoutEffect",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "useIsomorphicLayoutEffect",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 를 사용하였다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 를 사용하였다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "021651b4-2708-4cae-bd00-908c69300080",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T09:25:00.000Z",
+    "last_edited_time": "2024-05-03T10:33:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "코드 상단에 있는 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "코드 상단에 있는 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "useIsomorphicLayoutEffect",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "useIsomorphicLayoutEffect",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 부터 보면 조건문이 있는데, key가 없거나 router가 준비가 안 되었을 때 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 부터 보면 조건문이 있는데, key가 없거나 router가 준비가 안 되었을 때 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "return",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "return",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 한다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 한다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1ca59f3a-c09c-45c7-98f8-fca17a9d5755",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T09:28:00.000Z",
+    "last_edited_time": "2024-05-03T10:33:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "isLoading",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "isLoading",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 은 Loading 상태를 표기하고 싶을 때 필요하고 기본값은 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 은 Loading 상태를 표기하고 싶을 때 필요하고 기본값은 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "false",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "false",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 기 때문에 여기서는 무시해도 된다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 기 때문에 여기서는 무시해도 된다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "0b0eb373-ad31-4209-b294-c3345ed306da",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T09:27:00.000Z",
+    "last_edited_time": "2024-05-03T10:33:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "스크롤을 수동으로 복원하기 위해 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "스크롤을 수동으로 복원하기 위해 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "scrollRestoration",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "scrollRestoration",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 에 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 에 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "manual",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "manual",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 를 할당하고 세션 스토리지에서 값을 가져와 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 를 할당하고 세션 스토리지에서 값을 가져와 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "state",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "state",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 에 저장하고 세션 스토리지에 있는 값을 삭제한다. (x값은 아직 쓸 일이 없어 사용은 안 한다.)",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 에 저장하고 세션 스토리지에 있는 값을 삭제한다. (x값은 아직 쓸 일이 없어 사용은 안 한다.)",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "7233bbe7-5e63-429d-a1ed-82c74df3566e",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T09:30:00.000Z",
+    "last_edited_time": "2024-05-03T09:31:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "다음으로 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "다음으로 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "isScrollLoading",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "isScrollLoading",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 값을 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 값을 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "false",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "false",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 로 변경한다. 바로 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 로 변경한다. 바로 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "window.scrollTo(0, scrollY);",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "window.scrollTo(0, scrollY);",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 를 사용해 이동해도 되지만, Loading 상태를 표기하고 싶을 때 필요한 로직이라 따로 상태를 나누어 처리했다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 를 사용해 이동해도 되지만, Loading 상태를 표기하고 싶을 때 필요한 로직이라 따로 상태를 나누어 처리했다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "3227bf0c-ec05-46af-a91f-28c3d71a897d",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T09:32:00.000Z",
+    "last_edited_time": "2024-05-03T10:34:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "코드의 두 번째 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "코드의 두 번째 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "useIsomorphicLayoutEffect",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "useIsomorphicLayoutEffect",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 에서는 스크롤 값을 가져왔고 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 에서는 스크롤 값을 가져왔고 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "state",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "state",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 에 저장된 해당 위치로 스크롤 이동한다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 에 저장된 해당 위치로 스크롤 이동한다.",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "298f3b5f-39b8-4860-bd1f-aee774b511ba",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T09:36:00.000Z",
+    "last_edited_time": "2024-05-03T09:37:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "paragraph",
+    "paragraph": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "사용 예시",
+            "link": null
+          },
+          "annotations": {
+            "bold": true,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "사용 예시",
+          "href": null
+        }
+      ],
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "5eefac86-6731-4a49-a794-992a9aea2dbd",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T09:36:00.000Z",
+    "last_edited_time": "2024-05-03T09:56:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "code",
+    "code": {
+      "caption": [],
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "const NormalCredit = () => {\n\t...\n\t\n  useScrollRestoration({\n    key: '고유한 key string',\n  });\n  \n  ...\n};",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "const NormalCredit = () => {\n\t...\n\t\n  useScrollRestoration({\n    key: '고유한 key string',\n  });\n  \n  ...\n};",
+          "href": null
+        }
+      ],
+      "language": "typescript"
+    }
+  },
+  {
+    "object": "block",
+    "id": "49ef46ed-0937-49c3-bae3-43b793b59d5e",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T09:22:00.000Z",
+    "last_edited_time": "2024-05-03T10:34:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -1392,7 +3361,7 @@
         {
           "type": "text",
           "text": {
-            "content": "멘토링",
+            "content": "Loading 상태를 표기하고 싶을 경우",
             "link": null
           },
           "annotations": {
@@ -1403,7 +3372,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "멘토링",
+          "plain_text": "Loading 상태를 표기하고 싶을 경우",
           "href": null
         }
       ],
@@ -1413,13 +3382,13 @@
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-806a-b15b-fe40bdfc8130",
+    "id": "d32a2f1c-75cd-4660-994c-227a2e33635a",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T08:43:00.000Z",
-    "last_edited_time": "2025-01-01T11:59:00.000Z",
+    "created_time": "2024-05-03T09:22:00.000Z",
+    "last_edited_time": "2024-05-03T10:34:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -1437,7 +3406,7 @@
         {
           "type": "text",
           "text": {
-            "content": "23년도에 시작한 여러 스터디를 마치고 7월 ~ 8월까지 2달 정도 코드잇에서 프론트엔드 멘토링을 했다.\n일주일에 1~2회, 1시간 동안 멘티들이 프로젝트를 수행하며 궁금한 부분이나 현직자로서 일하는 나에게 궁금한 점을 질문한다.\n멘토인 나나, 멘티들에게도 뜻깊은 1시간이 될 수 있도록 고민하며 진행했다.\n하지만 멘토링 스킬을 더욱 발전시켜야 한다고 느낀다. 사실 멘토링은 돈을 벌고 싶어서 한다기보다 요즘 취준생들이 중점으로 준비하는 것, 취준생의 생각, 멘티에게 질문을 받으며 나 스스로에 대한 기술적 피드백 등을 하며 취업 시장에서 멀어지지 않으려고 하는 게 주목적이다. 앞으로도 기회가 있으면 꾸준히 참여해 볼 생각이다.",
+            "content": "예를 들어, Page [A]는 페이지가 마운트 될 때 API 요청을 하고 그동안 Loading 컴포넌트를 보여준다. 다른 페이지로 이동했다가 Page [A]로 이동할 때도 다시 API 요청을 하고 Loading 컴포넌트를 보여준다.",
             "link": null
           },
           "annotations": {
@@ -1448,7 +3417,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "23년도에 시작한 여러 스터디를 마치고 7월 ~ 8월까지 2달 정도 코드잇에서 프론트엔드 멘토링을 했다.\n일주일에 1~2회, 1시간 동안 멘티들이 프로젝트를 수행하며 궁금한 부분이나 현직자로서 일하는 나에게 궁금한 점을 질문한다.\n멘토인 나나, 멘티들에게도 뜻깊은 1시간이 될 수 있도록 고민하며 진행했다.\n하지만 멘토링 스킬을 더욱 발전시켜야 한다고 느낀다. 사실 멘토링은 돈을 벌고 싶어서 한다기보다 요즘 취준생들이 중점으로 준비하는 것, 취준생의 생각, 멘티에게 질문을 받으며 나 스스로에 대한 기술적 피드백 등을 하며 취업 시장에서 멀어지지 않으려고 하는 게 주목적이다. 앞으로도 기회가 있으면 꾸준히 참여해 볼 생각이다.",
+          "plain_text": "예를 들어, Page [A]는 페이지가 마운트 될 때 API 요청을 하고 그동안 Loading 컴포넌트를 보여준다. 다른 페이지로 이동했다가 Page [A]로 이동할 때도 다시 API 요청을 하고 Loading 컴포넌트를 보여준다.",
           "href": null
         }
       ],
@@ -1457,13 +3426,13 @@
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-803d-9df4-ef96a4fd6952",
+    "id": "98c23240-b761-44ab-80ad-0be63ad2f015",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T08:48:00.000Z",
-    "last_edited_time": "2025-01-01T12:00:00.000Z",
+    "created_time": "2024-05-03T09:35:00.000Z",
+    "last_edited_time": "2024-05-03T09:36:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -1481,7 +3450,7 @@
         {
           "type": "text",
           "text": {
-            "content": "요즘 시장이 너무 안 좋아서 안타깝다.. AI를 개발자 대부분이 사용하면서부터 신입을 더 안 뽑는 것 같다 ㅠ\n멘토링이 끝난 이후에도 물어보고 싶은 게 있으면 편하게 연락 주었으면 좋겠다!",
+            "content": "이 페이지에서 로딩이 완료된 후 스크롤 복원을 하려면 위에 설명한 로직이나 NextJS에서 제공하는 기능으로는 스크롤 복원을 할 수 없다.",
             "link": null
           },
           "annotations": {
@@ -1492,7 +3461,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "요즘 시장이 너무 안 좋아서 안타깝다.. AI를 개발자 대부분이 사용하면서부터 신입을 더 안 뽑는 것 같다 ㅠ\n멘토링이 끝난 이후에도 물어보고 싶은 게 있으면 편하게 연락 주었으면 좋겠다!",
+          "plain_text": "이 페이지에서 로딩이 완료된 후 스크롤 복원을 하려면 위에 설명한 로직이나 NextJS에서 제공하는 기능으로는 스크롤 복원을 할 수 없다.",
           "href": null
         }
       ],
@@ -1501,58 +3470,13 @@
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-807f-b658-c89ece8ae2a4",
+    "id": "6d1ae9f8-eee9-4cc8-94c6-1a117b823aa6",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T08:58:00.000Z",
-    "last_edited_time": "2025-01-01T08:58:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "heading_3",
-    "heading_3": {
-      "rich_text": [
-        {
-          "type": "text",
-          "text": {
-            "content": "글또 10기",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "글또 10기",
-          "href": null
-        }
-      ],
-      "is_toggleable": false,
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "16e9c6bf-2b17-80d3-aa95-f076c4253943",
-    "parent": {
-      "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
-    },
-    "created_time": "2025-01-01T07:06:00.000Z",
-    "last_edited_time": "2025-01-01T12:00:00.000Z",
+    "created_time": "2024-05-03T09:36:00.000Z",
+    "last_edited_time": "2024-05-03T10:34:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -1570,7 +3494,7 @@
         {
           "type": "text",
           "text": {
-            "content": "23년에 시작한 글또 9기에서 모든 회차 글 제출이라는 엄청난(?) 성과로 9기를 마무리하고 10월 정도에 글또 10기를 재 참여했다. 이런저런 핑계를 대며 10기에서는 글을 한 번밖에 제출하지 않았다.. 이거 포함하면 2번..\n25년부터는 정신 차리고 새 출발 하자!",
+            "content": "위 요구사항을 만족하기 위해 몇 가지 로직을 추가했다.",
             "link": null
           },
           "annotations": {
@@ -1581,7 +3505,7 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "23년에 시작한 글또 9기에서 모든 회차 글 제출이라는 엄청난(?) 성과로 9기를 마무리하고 10월 정도에 글또 10기를 재 참여했다. 이런저런 핑계를 대며 10기에서는 글을 한 번밖에 제출하지 않았다.. 이거 포함하면 2번..\n25년부터는 정신 차리고 새 출발 하자!",
+          "plain_text": "위 요구사항을 만족하기 위해 몇 가지 로직을 추가했다.",
           "href": null
         }
       ],
@@ -1590,13 +3514,13 @@
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-8060-aae9-cb76fc59a4e1",
+    "id": "5e95bb98-9644-4aac-8b53-e43c38e4584c",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T07:05:00.000Z",
-    "last_edited_time": "2025-01-01T08:44:00.000Z",
+    "created_time": "2024-05-03T09:38:00.000Z",
+    "last_edited_time": "2024-05-03T09:38:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -1608,13 +3532,14 @@
     "has_children": false,
     "archived": false,
     "in_trash": false,
-    "type": "heading_2",
-    "heading_2": {
+    "type": "code",
+    "code": {
+      "caption": [],
       "rich_text": [
         {
           "type": "text",
           "text": {
-            "content": "투자",
+            "content": "const useScrollRestoration = ({ key = '', isLoading = false }: Props)",
             "link": null
           },
           "annotations": {
@@ -1625,23 +3550,22 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "투자",
+          "plain_text": "const useScrollRestoration = ({ key = '', isLoading = false }: Props)",
           "href": null
         }
       ],
-      "is_toggleable": false,
-      "color": "default"
+      "language": "typescript"
     }
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-801c-96e9-ca8b5865f6bc",
+    "id": "b284ff39-ffec-409c-8f13-819d1eaa18ae",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T07:06:00.000Z",
-    "last_edited_time": "2025-01-01T12:00:00.000Z",
+    "created_time": "2024-05-03T09:38:00.000Z",
+    "last_edited_time": "2024-05-03T09:39:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -1659,7 +3583,24 @@
         {
           "type": "text",
           "text": {
-            "content": "2년 넘게 손절 못하고 있던 카카오뱅크를 손절하고 AI 투자 플랫폼을 이용한 투자랑 코인을 해보기로 했다.\n핀트라는 어플에서 AI를 활용해 자동으로 주식을 사고팔고 하는 데 수익률이 꽤나 높다! 신기하다! 돈이 돈을 번다는 게 이런 건가.. 25년도 꾸준히 활용해 볼 생각이다.",
+            "content": "useScrollRestoration",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "useScrollRestoration",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 의 Props에 ",
             "link": null
           },
           "annotations": {
@@ -1670,7 +3611,41 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "2년 넘게 손절 못하고 있던 카카오뱅크를 손절하고 AI 투자 플랫폼을 이용한 투자랑 코인을 해보기로 했다.\n핀트라는 어플에서 AI를 활용해 자동으로 주식을 사고팔고 하는 데 수익률이 꽤나 높다! 신기하다! 돈이 돈을 번다는 게 이런 건가.. 25년도 꾸준히 활용해 볼 생각이다.",
+          "plain_text": " 의 Props에 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "isLoading",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "isLoading",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 를 할당할 수 있는데 이는 API 요청 중을 의미하는 값이다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 를 할당할 수 있는데 이는 API 요청 중을 의미하는 값이다.",
           "href": null
         }
       ],
@@ -1679,13 +3654,58 @@
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-80bf-8912-cb0562153a85",
+    "id": "dade61ad-a19b-47df-a457-5f911b75f6e0",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T09:02:00.000Z",
-    "last_edited_time": "2025-01-01T12:00:00.000Z",
+    "created_time": "2024-05-03T09:39:00.000Z",
+    "last_edited_time": "2024-05-03T09:40:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "code",
+    "code": {
+      "caption": [],
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "useIsomorphicLayoutEffect(() => {\n    if (!key || isLoading || !router.isReady) return;\n    \n    ...\n    \n}, [isLoading, key, router.isReady]);",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "useIsomorphicLayoutEffect(() => {\n    if (!key || isLoading || !router.isReady) return;\n    \n    ...\n    \n}, [isLoading, key, router.isReady]);",
+          "href": null
+        }
+      ],
+      "language": "typescript"
+    }
+  },
+  {
+    "object": "block",
+    "id": "3546332f-c1c3-496b-972a-1eaa7f151391",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T09:37:00.000Z",
+    "last_edited_time": "2024-05-03T10:35:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -1703,7 +3723,7 @@
         {
           "type": "text",
           "text": {
-            "content": "코인은 중요한 시기에 큰 도움을 주어 나에게 의미가 조금 다르다. 17년 말 군대에서 리플을 250원에 샀었는데 한 4000원쯤에 팔았던 것 같다. 전역 후 복학해서는 부모님한테 경제적 지원을 받지 않아서 돈이 항상 없었는데 리플을 판 돈으로 졸업 때까지 생활비로 쓸 수 있었다. 20대에 굴곡이 많았지만 학업적 성취를 가장 많이 해야 했던 건 대학교 3~4학년이다. 바쁠 때는 하루에 1~2시간 잔 적도 흔한데, 돈도 없었으면 훨씬 힘들었을 거다.",
+            "content": "아까 본 첫 번째 ",
             "link": null
           },
           "annotations": {
@@ -1714,7 +3734,109 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "코인은 중요한 시기에 큰 도움을 주어 나에게 의미가 조금 다르다. 17년 말 군대에서 리플을 250원에 샀었는데 한 4000원쯤에 팔았던 것 같다. 전역 후 복학해서는 부모님한테 경제적 지원을 받지 않아서 돈이 항상 없었는데 리플을 판 돈으로 졸업 때까지 생활비로 쓸 수 있었다. 20대에 굴곡이 많았지만 학업적 성취를 가장 많이 해야 했던 건 대학교 3~4학년이다. 바쁠 때는 하루에 1~2시간 잔 적도 흔한데, 돈도 없었으면 훨씬 힘들었을 거다.",
+          "plain_text": "아까 본 첫 번째 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "useIsomorphicLayoutEffect",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "useIsomorphicLayoutEffect",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 에서 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 에서 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "isLoading",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "isLoading",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 이 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 이 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "true",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "true",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 일 때 (API 요청 중)는 스크롤 복원을 수행하지 않고 API 요청이 끝난 후 스크롤을 복원한다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 일 때 (API 요청 중)는 스크롤 복원을 수행하지 않고 API 요청이 끝난 후 스크롤을 복원한다.",
           "href": null
         }
       ],
@@ -1723,13 +3845,58 @@
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-800a-b432-c19bbd7ffa4a",
+    "id": "35e369b7-0c1c-4135-9867-5a84221f327b",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T09:12:00.000Z",
-    "last_edited_time": "2025-01-01T12:00:00.000Z",
+    "created_time": "2024-05-03T09:47:00.000Z",
+    "last_edited_time": "2024-05-03T09:50:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "code",
+    "code": {
+      "caption": [],
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "  const ScrollRestorationLoading = () => {\n    if (isLoading || isScrollLoading) {\n      return <Loading />;\n    }\n\n    return (\n      <div\n        className=\"w-full\"\n        style={{ height: scrollY }}\n      />\n    );\n  };",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "  const ScrollRestorationLoading = () => {\n    if (isLoading || isScrollLoading) {\n      return <Loading />;\n    }\n\n    return (\n      <div\n        className=\"w-full\"\n        style={{ height: scrollY }}\n      />\n    );\n  };",
+          "href": null
+        }
+      ],
+      "language": "typescript"
+    }
+  },
+  {
+    "object": "block",
+    "id": "ba3d6855-381b-4d33-8f71-ee8fb56fc1d8",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T09:47:00.000Z",
+    "last_edited_time": "2024-05-03T10:35:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -1747,7 +3914,7 @@
         {
           "type": "text",
           "text": {
-            "content": "21년도에도 불장이 왔는데 그때는 돈이 없었다. 주변에 블록체인에 관심이 많은 친구도 있고 나 또한 투자를 하지는 않았지만 코인 시장은 계속 보고 있었다. 올해 초부터 코인을 조금씩 모으기 시작했고 10월 정도부터 코인이 많이 올랐다. 현재까지는 수익률이 +이긴 하다. 근데 언제 -가 될지는 모른다. 상승장이 끝난 건지 이제 시작인지 아무도 모르지만 최대한 보수적으로 행동해 많이 버는 것보단 덜 잃는 것을 중점으로 하려고 한다.",
+            "content": "API가 요청 중이거나, 스크롤 복원 로직이 아직 끝나지 않았을 경우는 ",
             "link": null
           },
           "annotations": {
@@ -1758,40 +3925,13 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "21년도에도 불장이 왔는데 그때는 돈이 없었다. 주변에 블록체인에 관심이 많은 친구도 있고 나 또한 투자를 하지는 않았지만 코인 시장은 계속 보고 있었다. 올해 초부터 코인을 조금씩 모으기 시작했고 10월 정도부터 코인이 많이 올랐다. 현재까지는 수익률이 +이긴 하다. 근데 언제 -가 될지는 모른다. 상승장이 끝난 건지 이제 시작인지 아무도 모르지만 최대한 보수적으로 행동해 많이 버는 것보단 덜 잃는 것을 중점으로 하려고 한다.",
+          "plain_text": "API가 요청 중이거나, 스크롤 복원 로직이 아직 끝나지 않았을 경우는 ",
           "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "16e9c6bf-2b17-8062-999f-cdcb34f10479",
-    "parent": {
-      "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
-    },
-    "created_time": "2025-01-01T07:06:00.000Z",
-    "last_edited_time": "2025-01-01T08:45:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "heading_2",
-    "heading_2": {
-      "rich_text": [
+        },
         {
           "type": "text",
           "text": {
-            "content": "문화생활",
+            "content": "Loading",
             "link": null
           },
           "annotations": {
@@ -1799,44 +3939,16 @@
             "italic": false,
             "strikethrough": false,
             "underline": false,
-            "code": false,
+            "code": true,
             "color": "default"
           },
-          "plain_text": "문화생활",
+          "plain_text": "Loading",
           "href": null
-        }
-      ],
-      "is_toggleable": false,
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "16e9c6bf-2b17-8011-ad85-cb98f9ce5680",
-    "parent": {
-      "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
-    },
-    "created_time": "2025-01-01T08:44:00.000Z",
-    "last_edited_time": "2025-01-01T11:48:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
+        },
         {
           "type": "text",
           "text": {
-            "content": "국가대표 축구를 봤다. 관중에 압도되었다. TV로 보는 것과 너무 달랐다.\n기회가 될 때마다 티켓팅을 해보려고 한다. 흥민이 형 영국에 있을 때 경기를 한번 보러 가고 싶기도 하다.",
+            "content": " 컴포넌트를 보여준다.\nAPI 요청이 끝났고, 스크롤 복원 로직(기존 스크롤 위치를 ",
             "link": null
           },
           "annotations": {
@@ -1847,40 +3959,13 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "국가대표 축구를 봤다. 관중에 압도되었다. TV로 보는 것과 너무 달랐다.\n기회가 될 때마다 티켓팅을 해보려고 한다. 흥민이 형 영국에 있을 때 경기를 한번 보러 가고 싶기도 하다.",
+          "plain_text": " 컴포넌트를 보여준다.\nAPI 요청이 끝났고, 스크롤 복원 로직(기존 스크롤 위치를 ",
           "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "16e9c6bf-2b17-80d9-bfad-dc59cb2433c2",
-    "parent": {
-      "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
-    },
-    "created_time": "2025-01-01T09:18:00.000Z",
-    "last_edited_time": "2025-01-01T09:20:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
-      "rich_text": [
+        },
         {
           "type": "text",
           "text": {
-            "content": "페스티벌 2번, 10cm 콘서트, 비와이 콘서트, 이 글을 쓰는 시점 어제는 성시경 콘서트를 갔다.\n학창 시절, 20대 … 노래를 달고 살았는데 내가 좋아하던 사람들 전성기가 지나가기 전에 많이 많이 보고 싶다! ",
+            "content": "state",
             "link": null
           },
           "annotations": {
@@ -1888,43 +3973,16 @@
             "italic": false,
             "strikethrough": false,
             "underline": false,
-            "code": false,
+            "code": true,
             "color": "default"
           },
-          "plain_text": "페스티벌 2번, 10cm 콘서트, 비와이 콘서트, 이 글을 쓰는 시점 어제는 성시경 콘서트를 갔다.\n학창 시절, 20대 … 노래를 달고 살았는데 내가 좋아하던 사람들 전성기가 지나가기 전에 많이 많이 보고 싶다! ",
+          "plain_text": "state",
           "href": null
-        }
-      ],
-      "color": "default"
-    }
-  },
-  {
-    "object": "block",
-    "id": "16e9c6bf-2b17-800b-a79f-ffdb15e61598",
-    "parent": {
-      "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
-    },
-    "created_time": "2025-01-01T07:07:00.000Z",
-    "last_edited_time": "2025-01-01T07:07:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "heading_2",
-    "heading_2": {
-      "rich_text": [
+        },
         {
           "type": "text",
           "text": {
-            "content": "이직",
+            "content": " 에 저장)도 끝났다면 기존 스크롤 위치만큼 해당하는 빈 ",
             "link": null
           },
           "annotations": {
@@ -1935,23 +3993,90 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "이직",
+          "plain_text": " 에 저장)도 끝났다면 기존 스크롤 위치만큼 해당하는 빈 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "div",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "div",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 를 render 한다.\n이는 viewport 100%에 해당하는 ",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 를 render 한다.\n이는 viewport 100%에 해당하는 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "Loading",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "Loading",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 컴포넌트가 렌더된 상태에서 스크롤을 복원할 경우, 최대 높이가 100vh가 되어 스크롤 값이 100vh보다 클 때 원하는 높이만큼 스크롤 이동할 수 없기 때문이다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 컴포넌트가 렌더된 상태에서 스크롤을 복원할 경우, 최대 높이가 100vh가 되어 스크롤 값이 100vh보다 클 때 원하는 높이만큼 스크롤 이동할 수 없기 때문이다.",
           "href": null
         }
       ],
-      "is_toggleable": false,
       "color": "default"
     }
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-8056-9952-e20829671842",
+    "id": "e9e6e58e-95a8-434b-8683-b00da413425b",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T11:09:00.000Z",
-    "last_edited_time": "2025-01-01T12:01:00.000Z",
+    "created_time": "2024-05-03T09:54:00.000Z",
+    "last_edited_time": "2024-05-03T10:21:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -1969,7 +4094,7 @@
         {
           "type": "text",
           "text": {
-            "content": "2년 반 동안 다닌 핀다를 퇴사하고 이직했다. 짧게 이야기해 보면 내가 이직한 이유는 나 자신의 성장이 어느 순간 정체되었다고 판단해서다. 백오피스, 웹뷰 같은 대부분의 프론트엔드 개발자들이 하는 일은 많이 해보았고 관련 일을 하며 일어나는 트러블 슈팅도 많이 경험해서 좀 더 플랫폼적인 일을 해보고 싶었다. 개발적으로도 도전을 많이 하는 회사를 경험해보고 싶었다. 2년 반 다닌 직장을 옮기기로 마음먹는 건 쉽지 않았다. 내가 알고 있는 개발 히스토리, 친해진 사람들, 새로운 프로젝트를 하더라도 오래 다닌 회사에서 하는 게 마음이 편한 건 사실이다.\n하지만 앞으로 10년, 20년 일한다고 생각했을 때 당장의 편함보다는 커리어나 경험적으로 유리한 선택을 하는 게 나을 것이라고 판단하고 퇴사를 결심했다.",
+            "content": "위 ",
             "link": null
           },
           "annotations": {
@@ -1980,7 +4105,41 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "2년 반 동안 다닌 핀다를 퇴사하고 이직했다. 짧게 이야기해 보면 내가 이직한 이유는 나 자신의 성장이 어느 순간 정체되었다고 판단해서다. 백오피스, 웹뷰 같은 대부분의 프론트엔드 개발자들이 하는 일은 많이 해보았고 관련 일을 하며 일어나는 트러블 슈팅도 많이 경험해서 좀 더 플랫폼적인 일을 해보고 싶었다. 개발적으로도 도전을 많이 하는 회사를 경험해보고 싶었다. 2년 반 다닌 직장을 옮기기로 마음먹는 건 쉽지 않았다. 내가 알고 있는 개발 히스토리, 친해진 사람들, 새로운 프로젝트를 하더라도 오래 다닌 회사에서 하는 게 마음이 편한 건 사실이다.\n하지만 앞으로 10년, 20년 일한다고 생각했을 때 당장의 편함보다는 커리어나 경험적으로 유리한 선택을 하는 게 나을 것이라고 판단하고 퇴사를 결심했다.",
+          "plain_text": "위 ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "ScrollRestorationLoading",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "ScrollRestorationLoading",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 컴포넌트를 Page [A]에서 Loading 상태를 표기할 때 컴포넌트로 사용하면 요구 사항을 만족할 수 있다.",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 컴포넌트를 Page [A]에서 Loading 상태를 표기할 때 컴포넌트로 사용하면 요구 사항을 만족할 수 있다.",
           "href": null
         }
       ],
@@ -1989,13 +4148,13 @@
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-8033-9354-c48d4fbccbb5",
+    "id": "9c4eebc9-66f3-431f-b6f9-811163f52865",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T11:19:00.000Z",
-    "last_edited_time": "2025-01-01T11:48:00.000Z",
+    "created_time": "2024-05-03T08:53:00.000Z",
+    "last_edited_time": "2024-05-03T09:56:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -2013,18 +4172,18 @@
         {
           "type": "text",
           "text": {
-            "content": "퇴사를 다짐하고 사실 면접은 삼쩜삼이랑 라인밖에 보지 않았는데 운 좋게 삼쩜삼에서 최종 합격을 주었다.",
+            "content": "사용 예시",
             "link": null
           },
           "annotations": {
-            "bold": false,
+            "bold": true,
             "italic": false,
             "strikethrough": false,
             "underline": false,
             "code": false,
             "color": "default"
           },
-          "plain_text": "퇴사를 다짐하고 사실 면접은 삼쩜삼이랑 라인밖에 보지 않았는데 운 좋게 삼쩜삼에서 최종 합격을 주었다.",
+          "plain_text": "사용 예시",
           "href": null
         }
       ],
@@ -2033,13 +4192,13 @@
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-8027-8676-c782397b3302",
+    "id": "ff6ec9d4-b3ad-4bdd-af05-b8ebf8f6848c",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T11:21:00.000Z",
-    "last_edited_time": "2025-01-01T11:22:00.000Z",
+    "created_time": "2024-05-03T09:56:00.000Z",
+    "last_edited_time": "2024-05-03T10:22:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -2051,66 +4210,14 @@
     "has_children": false,
     "archived": false,
     "in_trash": false,
-    "type": "image",
-    "image": {
-      "caption": [
-        {
-          "type": "text",
-          "text": {
-            "content": "삼쩜삼에 입사한 나",
-            "link": null
-          },
-          "annotations": {
-            "bold": false,
-            "italic": false,
-            "strikethrough": false,
-            "underline": false,
-            "code": false,
-            "color": "default"
-          },
-          "plain_text": "삼쩜삼에 입사한 나",
-          "href": null
-        }
-      ],
-      "type": "file",
-      "file": {
-        "url": "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcd7314a5-d906-43b0-81e7-42eff82c02a3%2F7790768b-bcf2-4718-87d8-1c65d6c64e44%2Fimage.png?table=block&id=16e9c6bf-2b17-8027-8676-c782397b3302&cache=v2",
-        "expiry_time": "2025-04-13T11:42:33.104Z"
-      },
-      "format": {
-        "block_width": 1050,
-        "block_height": 1400,
-        "block_aspect_ratio": 0.75
-      }
-    }
-  },
-  {
-    "object": "block",
-    "id": "16e9c6bf-2b17-8008-9075-d54e39d1c537",
-    "parent": {
-      "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
-    },
-    "created_time": "2025-01-01T11:22:00.000Z",
-    "last_edited_time": "2025-01-01T11:50:00.000Z",
-    "created_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "last_edited_by": {
-      "object": "user",
-      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
-    },
-    "has_children": false,
-    "archived": false,
-    "in_trash": false,
-    "type": "paragraph",
-    "paragraph": {
+    "type": "code",
+    "code": {
+      "caption": [],
       "rich_text": [
         {
           "type": "text",
           "text": {
-            "content": "아직 적응 중이라 부랴부랴 정신이 없지만, 내가 원했던 일들을 하고 있다!\n열정 많은 프론트엔드 개발자분들도 많아서 좋은 의견을 서로 주고받을 수 있는 문화라 아주 만족한다!\n25년은 삼쩜삼에 많은 기여를 할 수 있도록 노력할 것이다.",
+            "content": "const NormalCredit = () => {\n  ...\n  const { isLoading } = useQuery(...); // 이 Query는 마운트 될 때마다 API를 요청해요~\n  const { ScrollRestorationLoading, isScrollLoading } = useScrollRestoration({\n    key: '고유한 key string',\n    isLoading\n  });\n  \n  ...\n  \n  if(isScrollLoading) return <ScrollRestorationLoading />\n  return (\n\t  ...\n  )\n};",
             "link": null
           },
           "annotations": {
@@ -2121,22 +4228,22 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "아직 적응 중이라 부랴부랴 정신이 없지만, 내가 원했던 일들을 하고 있다!\n열정 많은 프론트엔드 개발자분들도 많아서 좋은 의견을 서로 주고받을 수 있는 문화라 아주 만족한다!\n25년은 삼쩜삼에 많은 기여를 할 수 있도록 노력할 것이다.",
+          "plain_text": "const NormalCredit = () => {\n  ...\n  const { isLoading } = useQuery(...); // 이 Query는 마운트 될 때마다 API를 요청해요~\n  const { ScrollRestorationLoading, isScrollLoading } = useScrollRestoration({\n    key: '고유한 key string',\n    isLoading\n  });\n  \n  ...\n  \n  if(isScrollLoading) return <ScrollRestorationLoading />\n  return (\n\t  ...\n  )\n};",
           "href": null
         }
       ],
-      "color": "default"
+      "language": "typescript"
     }
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-80eb-a5e7-e4d3160505a9",
+    "id": "d151dd37-fc3f-4d04-94b6-0ae2622717c9",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T08:58:00.000Z",
-    "last_edited_time": "2025-01-01T08:58:00.000Z",
+    "created_time": "2024-05-03T08:39:00.000Z",
+    "last_edited_time": "2024-05-03T08:39:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -2175,13 +4282,13 @@
   },
   {
     "object": "block",
-    "id": "16e9c6bf-2b17-8021-bb3a-fba93c33f39b",
+    "id": "c8e121e4-c958-4830-8a6a-72fbe92b1862",
     "parent": {
       "type": "page_id",
-      "page_id": "16e9c6bf-2b17-807a-a496-fc37fac0fb1b"
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
     },
-    "created_time": "2025-01-01T08:58:00.000Z",
-    "last_edited_time": "2025-01-01T12:01:00.000Z",
+    "created_time": "2024-05-03T08:39:00.000Z",
+    "last_edited_time": "2024-05-03T10:37:00.000Z",
     "created_by": {
       "object": "user",
       "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
@@ -2199,7 +4306,24 @@
         {
           "type": "text",
           "text": {
-            "content": "연말에는 이직을 하고 적응한다는 핑계로 운동도 한 달에 1~2번 가고 일 외적으로는 아주 나태해진 것 같다..\nNotion 관련 라이브러리를 만들다 말았는데 상반기까지 얼추 끝내야겠다. 운동도 1월부터 다시 새 마음으로 다녀야겠다. 24년은 기술 관련 스터디를 많이 못했는데, 25년 회고 때는 많은 내용을 쓸 수 있도록 스터디도 여러 개 해봐야겠다. ",
+            "content": "useAppointedGoBack",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "useAppointedGoBack",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " , ",
             "link": null
           },
           "annotations": {
@@ -2210,11 +4334,116 @@
             "code": false,
             "color": "default"
           },
-          "plain_text": "연말에는 이직을 하고 적응한다는 핑계로 운동도 한 달에 1~2번 가고 일 외적으로는 아주 나태해진 것 같다..\nNotion 관련 라이브러리를 만들다 말았는데 상반기까지 얼추 끝내야겠다. 운동도 1월부터 다시 새 마음으로 다녀야겠다. 24년은 기술 관련 스터디를 많이 못했는데, 25년 회고 때는 많은 내용을 쓸 수 있도록 스터디도 여러 개 해봐야겠다. ",
+          "plain_text": " , ",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": "useScrollRestoration",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": true,
+            "color": "default"
+          },
+          "plain_text": "useScrollRestoration",
+          "href": null
+        },
+        {
+          "type": "text",
+          "text": {
+            "content": " 이외에도 다른 훅도 많은데 생각보다 내용이 길어서 2개만 소개해봤다.\n코드를 왜 이렇게 짰는지, 나조차 기억이 안 났는데 정리하며 예전에 했던 생각들과 왜 이렇게 해야 했는지 리마인드할 수 있어서 좋았다.\n또 소개해볼 만한 커스텀 훅이 있으면 나중에 작성해보겠다~!",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": " 이외에도 다른 훅도 많은데 생각보다 내용이 길어서 2개만 소개해봤다.\n코드를 왜 이렇게 짰는지, 나조차 기억이 안 났는데 정리하며 예전에 했던 생각들과 왜 이렇게 해야 했는지 리마인드할 수 있어서 좋았다.\n또 소개해볼 만한 커스텀 훅이 있으면 나중에 작성해보겠다~!",
           "href": null
         }
       ],
       "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1d17cbc9-32f3-449a-bb4c-de71f70ac7e4",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T09:44:00.000Z",
+    "last_edited_time": "2024-05-03T09:44:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "heading_2",
+    "heading_2": {
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Reference",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Reference",
+          "href": null
+        }
+      ],
+      "is_toggleable": false,
+      "color": "default"
+    }
+  },
+  {
+    "object": "block",
+    "id": "1072eaee-8a96-480a-948a-95f7f1584c01",
+    "parent": {
+      "type": "page_id",
+      "page_id": "53d5749d-64fc-49af-acb6-05a35a573cdd"
+    },
+    "created_time": "2024-05-03T09:44:00.000Z",
+    "last_edited_time": "2024-05-03T09:44:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "5146391e-8b65-47f2-83b6-2bfe81194f32"
+    },
+    "has_children": false,
+    "archived": false,
+    "in_trash": false,
+    "type": "bookmark",
+    "bookmark": {
+      "caption": [],
+      "url": "https://nextjs.org/docs/pages/api-reference/functions/use-router#routerbeforepopstate"
     }
   }
 ]
