@@ -39,7 +39,7 @@ const Image: React.FC<ImageProps> = ({
   }, [src]);
 
   return (
-    <figure className={imageContainer}>
+    <div className={imageContainer}>
       <div
         className={imageWrapper({
           hasWidth: !!format?.block_width,
@@ -53,20 +53,20 @@ const Image: React.FC<ImageProps> = ({
                   ? '100%'
                   : `${format.block_width}px`
                 : '100%',
+          aspectRatio: format?.block_aspect_ratio
+            ? `${format.block_aspect_ratio}`
+            : 'auto',
         }}
       >
         {!isLoaded && (
           <div
             className={placeholder}
             style={{
-              width:
-                format?.block_aspect_ratio && format.block_aspect_ratio < 1
-                  ? `${format.block_aspect_ratio * 100}%`
-                  : format?.block_width
-                    ? format.block_width > MAX_WIDTH
-                      ? '100%'
-                      : `${format.block_width}px`
-                    : '100%',
+              width: format?.block_width
+                ? format.block_width > MAX_WIDTH
+                  ? '100%'
+                  : `${format.block_width}px`
+                : '100%',
               aspectRatio: format?.block_aspect_ratio
                 ? `${format.block_aspect_ratio}`
                 : 'auto',
@@ -104,7 +104,7 @@ const Image: React.FC<ImageProps> = ({
           })}
           src={src}
           alt={alt}
-          loading={priority ? 'eager' : 'lazy'}
+          loading="lazy"
           onLoad={() => setIsLoaded(true)}
           width={format?.block_width}
           height={format?.block_height}
@@ -120,7 +120,7 @@ const Image: React.FC<ImageProps> = ({
           <MemoizedRichText richTexts={imageCaption} />
         </figcaption>
       )}
-    </figure>
+    </div>
   );
 };
 

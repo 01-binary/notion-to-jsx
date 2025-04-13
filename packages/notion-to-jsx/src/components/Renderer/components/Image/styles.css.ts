@@ -23,9 +23,6 @@ export const imageWrapper = recipe({
     position: 'relative',
     maxWidth: '100%',
     width: fallbackVar(imageWidthVar, '100%'),
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   variants: {
     hasWidth: {
@@ -51,9 +48,12 @@ export const styledImage = recipe({
   },
   variants: {
     loaded: {
-      true: {},
+      true: {
+        opacity: 1,
+      },
       false: {
-        display: 'none',
+        opacity: 0,
+        height: 0,
       },
     },
     hasAspectRatio: {
