@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 1.2.5
+
+### Patch Changes
+
+- 706b173: Add word break properties to link text
+
 ## 1.2.4
 
 ### Patch Changes
