@@ -8,16 +8,14 @@ export const link = style({
   paddingBottom: vars.spacing.xxs,
 });
 
-export const card = style({
+export const preview = style({
   display: 'flex',
   border: `1px solid ${vars.colors.border}`,
   borderRadius: vars.borderRadius.md,
   overflow: 'hidden',
   transition: 'box-shadow 0.2s ease',
   alignItems: 'center',
-  maxHeight: '4rem',
   padding: vars.spacing.base,
-  paddingLeft: vars.spacing.md,
   gap: vars.spacing.md,
   ':hover': {
     boxShadow: vars.shadows.md,
@@ -28,7 +26,6 @@ export const content = style({
   display: 'flex',
   flex: '1 1 auto',
   flexDirection: 'column',
-  justifyContent: 'space-between',
   overflow: 'hidden',
 });
 
@@ -36,14 +33,14 @@ export const iconContainer = style({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  maxWidth: '2.5rem',
-  height: '100%',
+  width: '2.5rem',
+  height: '2.5rem',
   flexShrink: 0,
 });
 
 export const icon = style({
-  width: '2.5rem',
-  height: '2.5rem',
+  width: '100%',
+  height: '100%',
   objectFit: 'contain',
   borderRadius: vars.borderRadius.sm,
 });
@@ -57,10 +54,25 @@ export const title = style({
   whiteSpace: 'nowrap',
 });
 
-export const updatedText = style({
+export const description = style({
   fontSize: vars.typography.fontSize.xs,
   color: vars.colors.secondary,
   overflow: 'hidden',
   textOverflow: 'ellipsis',
   whiteSpace: 'nowrap',
+});
+
+/**
+ * 타입별 특수 스타일: 각 링크 타입에만 필요한 추가 스타일
+ */
+
+// GitHub 프리뷰에만 필요한 스타일
+export const githubPreview = style({
+  maxHeight: '4rem',
+  paddingLeft: vars.spacing.md,
+});
+
+// GitHub 컨텐츠에만 필요한 스타일
+export const githubContent = style({
+  justifyContent: 'space-between',
 });
