@@ -11,6 +11,7 @@ import { Heading1, Heading2, Heading3, Paragraph } from '../Typography';
 import { ColumnList } from '../Column';
 import { Quote } from '../Quote';
 import Table from '../Table';
+import { Toggle } from '../Toggle';
 
 export interface Props {
   block: any;
@@ -97,6 +98,9 @@ const BlockRenderer: React.FC<Props> = ({ block, onFocus, index }) => {
 
     case 'table':
       return <Table block={block} tabIndex={blockProps.tabIndex} />;
+      
+    case 'toggle':
+      return <Toggle block={block} tabIndex={blockProps.tabIndex} onFocus={onFocus} />;
 
     default:
       console.log(`지원되지 않는 블록 타입: ${block.type}`, block);

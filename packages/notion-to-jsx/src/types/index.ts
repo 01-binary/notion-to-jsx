@@ -15,7 +15,8 @@ export interface NotionBlock {
     | 'bookmark'
     | 'table'
     | 'table_row'
-    | 'quote';
+    | 'quote'
+    | 'toggle';
   paragraph?: {
     rich_text: RichTextItem[];
     color: string;
@@ -64,6 +65,10 @@ export interface NotionBlock {
     cells: RichTextItem[][];
   };
   quote?: {
+    rich_text: RichTextItem[];
+    color: string;
+  };
+  toggle?: {
     rich_text: RichTextItem[];
     color: string;
   };
