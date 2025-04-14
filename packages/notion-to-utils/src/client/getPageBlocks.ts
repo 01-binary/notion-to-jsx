@@ -126,8 +126,6 @@ async function fetchBlockChildren(
               favicon: `https://www.google.com/s2/favicons?domain=${domain}&sz=64`,
             };
           } catch (error) {
-            console.error('북마크 메타데이터 추출 중 오류:', error);
-
             // 오류 발생 시 기본 메타데이터 설정
             try {
               const domain = new URL(block.bookmark.url).hostname;
@@ -140,7 +138,6 @@ async function fetchBlockChildren(
                 favicon: `https://www.google.com/s2/favicons?domain=${domain}&sz=64`,
               };
             } catch (urlError) {
-              console.error('URL 파싱 중 오류:', urlError);
               blockWithChildren.bookmark.metadata = {
                 title: block.bookmark.url,
                 description: '',
