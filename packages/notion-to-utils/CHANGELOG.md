@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 1.0.2
+
+### Patch Changes
+
+- 966553e: Remove fixed font size from code block styling, add getPageBlocks utility to fetch and parse Notion page blocks
+
 ## 1.0.1
 
 ### Patch Changes

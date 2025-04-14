@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 1.2.7
+
+### Patch Changes
+
+- 966553e: Remove fixed font size from code block styling, add getPageBlocks utility to fetch and parse Notion page blocks
+
 ## 1.2.6
 
 ### Patch Changes
