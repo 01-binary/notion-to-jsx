@@ -8,7 +8,7 @@ export const codeBlock = style({
   borderRadius: vars.borderRadius.md,
   overflow: 'auto',
   fontFamily: vars.typography.fontFamily.code,
-  fontSize: '0.85em !important',
+  fontSize: '0.85rem',
   lineHeight: vars.typography.lineHeight.relaxed,
   margin: `${vars.spacing.sm} 0`,
 });

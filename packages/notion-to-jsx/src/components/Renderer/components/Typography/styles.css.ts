@@ -19,7 +19,7 @@ export const paragraph = style({
   ...baseTypography,
   padding: `${vars.spacing.xs} ${vars.spacing.xxs}`,
   fontSize: vars.typography.fontSize.base,
-  fontWeight: vars.typography.fontWeight.medium,
+  fontWeight: vars.typography.fontWeight.normal,
   whiteSpace: 'pre-wrap', // 줄바꿈
 });
 
