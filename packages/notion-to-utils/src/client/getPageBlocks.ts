@@ -97,8 +97,19 @@ async function fetchBlockChildren(
             const bookmarkBlock = block as any;
             const bookmarkUrl = bookmarkBlock.bookmark.url;
 
+            const options = {
+              url: bookmarkUrl,
+              headers: {
+                'user-agent':
+                  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+                accept:
+                  'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+                'cache-control': 'max-age=0',
+              },
+            };
+
             // open-graph-scraper를 이용한 메타데이터 추출
-            const { result } = await ogs({ url: bookmarkUrl });
+            const { result } = await ogs(options);
 
             const parsedUrl = new URL(bookmarkUrl);
             const domain = parsedUrl.hostname;
