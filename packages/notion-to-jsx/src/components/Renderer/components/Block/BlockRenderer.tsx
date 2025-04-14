@@ -91,7 +91,12 @@ const BlockRenderer: React.FC<Props> = ({
       );
 
     case 'bookmark':
-      return <MemoizedBookmark url={block.bookmark.url} />;
+      return (
+        <MemoizedBookmark
+          url={block.bookmark.url}
+          metadata={block.bookmark.metadata}
+        />
+      );
 
     case 'column_list':
       return <ColumnList block={block} onFocus={onFocus} />;
