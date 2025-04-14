@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { MemoizedRichText } from '../MemoizedComponents';
 import {
   imageContainer,
@@ -73,10 +73,6 @@ const Image: React.FC<ImageProps> = ({
   isColumn = false,
 }) => {
   const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    setIsLoaded(false);
-  }, [src]);
 
   return (
     <div className={imageContainer}>
