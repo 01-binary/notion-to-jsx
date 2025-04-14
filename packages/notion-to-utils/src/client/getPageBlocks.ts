@@ -6,6 +6,7 @@ import {
 } from '@notionhq/client/build/src/api-endpoints';
 import { formatNotionImageUrl } from './formatNotionImageUrl';
 import { addMetadataToImageBlock } from '../utils';
+import ogs from 'open-graph-scraper';
 
 // 블록 타입 정의
 export type NotionBlock = BlockObjectResponse | PartialBlockObjectResponse;
@@ -86,6 +87,57 @@ async function fetchBlockChildren(
               await addMetadataToImageBlock(imageBlock);
             } catch (metadataError) {
               console.error('이미지 메타데이터 추출 중 오류:', metadataError);
+            }
+          }
+        }
+
+        // Bookmark 블록인 경우 URL 처리
+        if ('type' in block && block.type === 'bookmark') {
+          try {
+            const bookmarkBlock = block as any;
+            const bookmarkUrl = bookmarkBlock.bookmark.url;
+
+            // open-graph-scraper를 이용한 메타데이터 추출
+            const { result } = await ogs({ url: bookmarkUrl });
+
+            const parsedUrl = new URL(bookmarkUrl);
+            const domain = parsedUrl.hostname;
+
+            // 추출한 메타데이터를 블록에 추가
+            bookmarkBlock.bookmark.metadata = {
+              title: result.ogTitle || result.twitterTitle || domain,
+              description:
+                result.ogDescription || result.twitterDescription || '',
+              image:
+                result.ogImage?.[0]?.url || result.twitterImage?.[0]?.url || '',
+              siteName: result.ogSiteName || domain,
+              url: bookmarkUrl,
+              favicon: `https://www.google.com/s2/favicons?domain=${domain}&sz=64`,
+            };
+          } catch (error) {
+            console.error('북마크 메타데이터 추출 중 오류:', error);
+
+            // 오류 발생 시 기본 메타데이터 설정
+            try {
+              const domain = new URL(block.bookmark.url).hostname;
+              blockWithChildren.bookmark.metadata = {
+                title: domain,
+                description: '',
+                image: '',
+                siteName: domain,
+                url: block.bookmark.url,
+                favicon: `https://www.google.com/s2/favicons?domain=${domain}&sz=64`,
+              };
+            } catch (urlError) {
+              console.error('URL 파싱 중 오류:', urlError);
+              blockWithChildren.bookmark.metadata = {
+                title: block.bookmark.url,
+                description: '',
+                image: '',
+                siteName: '',
+                url: block.bookmark.url,
+                favicon: '',
+              };
             }
           }
         }

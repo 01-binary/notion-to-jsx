@@ -53,6 +53,7 @@
   "dependencies": {
     "@notionhq/client": "^2.2.15",
     "lqip-modern": "^2.2.1",
+    "open-graph-scraper": "^6.9.0",
     "probe-image-size": "^7.2.3"
   }
 }
