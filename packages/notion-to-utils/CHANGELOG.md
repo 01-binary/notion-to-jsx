@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 1.0.1
+
+### Patch Changes
+
+- e19f523: fix: 뒤로가기 후 재 진입 시 Image 안나오는 현상 FIX
+
 ## 1.0.0
 
 ### Major Changes
