@@ -5,7 +5,7 @@ import probe from 'probe-image-size';
  * @param url 이미지 URL
  * @returns 이미지 메타데이터 (너비, 높이, 종횡비) 또는 null (추출 실패 시)
  */
-export async function getImageMetadata(url: string): Promise<{
+async function getImageMetadata(url: string): Promise<{
   width: number;
   height: number;
   aspectRatio: number;

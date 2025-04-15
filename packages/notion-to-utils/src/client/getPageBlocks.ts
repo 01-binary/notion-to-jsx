@@ -1,12 +1,12 @@
 import { Client } from '@notionhq/client';
+import ogs from 'open-graph-scraper';
 import {
   ListBlockChildrenResponse,
   BlockObjectResponse,
   PartialBlockObjectResponse,
 } from '@notionhq/client/build/src/api-endpoints';
-import { formatNotionImageUrl } from './formatNotionImageUrl';
-import { addMetadataToImageBlock } from '../utils';
-import ogs from 'open-graph-scraper';
+import { formatNotionImageUrl } from '../utils/formatNotionImageUrl';
+import { addMetadataToImageBlock } from './utils/getImageMetadata';
 
 // 블록 타입 정의
 export type NotionBlock = BlockObjectResponse | PartialBlockObjectResponse;
