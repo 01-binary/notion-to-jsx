@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 1.1.0
+
+### Minor Changes
+
+- c4f4545: refactor: Remove makePreviewImage and formatNotionImageUrl functionality
+
 ## 1.0.2
 
 ### Patch Changes
