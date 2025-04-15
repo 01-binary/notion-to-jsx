@@ -1,7 +1,7 @@
 import { Client } from '@notionhq/client';
 import { isPageObjectResponse } from './utils/isPageObjectResponse';
 import { extractValuesFromProperties } from './utils/extractValuesFromProperties';
-import { formatNotionImageUrl } from './formatNotionImageUrl';
+import { formatNotionImageUrl } from '../utils/formatNotionImageUrl';
 
 /**
  * Retrieves properties of a Notion page.

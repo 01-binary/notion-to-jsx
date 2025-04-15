@@ -43,7 +43,6 @@
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@types/lqip-modern": "^1.1.7",
     "@types/probe-image-size": "^7.2.5",
     "@vitest/coverage-v8": "2.1.2",
     "jsdom": "^26.0.0",
@@ -52,7 +51,6 @@
   },
   "dependencies": {
     "@notionhq/client": "^2.2.15",
-    "lqip-modern": "^2.2.1",
     "open-graph-scraper": "^6.9.0",
     "probe-image-size": "^7.2.3"
   }
