@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 1.2.8
+
+### Patch Changes
+
+- 3493118: Update link property type and access nested url property for text links, add loading skeleton to image and cover components
+
 ## 1.2.7
 
 ### Patch Changes
