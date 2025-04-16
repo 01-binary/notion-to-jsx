@@ -1,6 +1,5 @@
 import { style } from '@vanilla-extract/css';
 import { recipe } from '@vanilla-extract/recipes';
-import { createVar, fallbackVar } from '@vanilla-extract/css';
 import { vars } from '../../../../styles/theme.css';
 
 export const imageContainer = style({
@@ -15,36 +14,18 @@ export const imageContainer = style({
   alignItems: 'center',
 });
 
-export const imageWidthVar = createVar();
-export const imageAspectRatioVar = createVar();
-
-export const imageWrapper = recipe({
-  base: {
-    position: 'relative',
-    maxWidth: '100%',
-    width: fallbackVar(imageWidthVar, '100%'),
-  },
-  variants: {
-    hasWidth: {
-      true: {},
-      false: {
-        width: '100%',
-      },
-    },
-  },
-  defaultVariants: {
-    hasWidth: false,
-  },
+export const imageWrapper = style({
+  position: 'relative',
+  maxWidth: '100%',
 });
 
-export const styledImage = recipe({
+export const imageStyle = recipe({
   base: {
     width: '100%',
     height: 'auto',
     display: 'block',
     transition: 'opacity 0.3s ease',
     objectFit: 'contain',
-    aspectRatio: fallbackVar(imageAspectRatioVar, 'auto'),
   },
   variants: {
     loaded: {
@@ -53,12 +34,16 @@ export const styledImage = recipe({
       },
       false: {
         opacity: 0,
-        height: 0,
       },
     },
     hasAspectRatio: {
-      true: {},
-      false: {},
+      true: {
+        // aspectRatio는 recipe 단계에서는 빈 객체로 두고
+        // 컴포넌트에서 동적으로 계산된 값으로 채워집니다
+      },
+      false: {
+        aspectRatio: 'auto',
+      },
     },
   },
   defaultVariants: {
@@ -67,15 +52,34 @@ export const styledImage = recipe({
   },
 });
 
-export const placeholder = style({
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-});
-
 export const caption = style({
   textAlign: 'center',
   color: vars.colors.secondary,
   marginTop: vars.spacing.sm,
   fontSize: vars.typography.fontSize.small,
+});
+
+export const skeletonWrapper = recipe({
+  base: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    zIndex: 1,
+    transition: 'opacity 0.3s ease',
+  },
+  variants: {
+    isLoaded: {
+      true: {
+        opacity: 0,
+      },
+      false: {
+        opacity: 1,
+      },
+    },
+  },
+  defaultVariants: {
+    isLoaded: false,
+  },
 });
