@@ -44,7 +44,9 @@ export interface RichTextItem {
 
   text?: {
     content: string;
-    link: string | null;
+    link: {
+      url: string | null;
+    } | null;
   };
 }
 
@@ -76,8 +78,9 @@ const RichTexts: React.FC<RichTextProps> = ({ richTexts }) => {
           case 'text': {
             if (text.text) {
               const { text: textData } = text;
-              content = textData.link
-                ? renderLink(textData.link, textData.content)
+
+              content = textData.link?.url
+                ? renderLink(textData.link.url, textData.content)
                 : textData.content;
             } else {
               content = text.plain_text;
