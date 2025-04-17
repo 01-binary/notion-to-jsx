@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 1.1.1
+
+### Patch Changes
+
+- aebfe8f: add image url formatting utility for Notion API image blocks
+
 ## 1.1.0
 
 ### Minor Changes
