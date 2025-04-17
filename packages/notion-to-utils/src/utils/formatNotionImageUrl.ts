@@ -21,7 +21,6 @@ export const formatNotionImageUrl = (
   if (!url || typeof url !== 'string' || !url.startsWith('https://')) {
     return url ?? '';
   }
-
   try {
     // 이미 notion.so 형식인 경우 그대로 반환
     if (url.includes('notion.so/image/')) {
@@ -45,7 +44,8 @@ export const formatNotionImageUrl = (
 
     // 블록 ID가 있는 경우 추가
     if (blockId) {
-      params.push(`table=block&id=${blockId}`);
+      const formattedBlockId = formatNotionId(blockId);
+      params.push(`table=block&id=${formattedBlockId}`);
     }
 
     // 추가 파라미터가 있는 경우 URL에 추가
@@ -61,6 +61,29 @@ export const formatNotionImageUrl = (
   } catch (error) {
     console.error('이미지 URL 변환 중 오류 발생:', error);
     return url ?? ''; // 오류 발생 시 원래 URL 반환
+  }
+};
+
+/**
+ * Notion ID 문자열에 하이픈을 추가하는 함수
+ *
+ * 예시 입력: 1239c6bf2b178076a838d17ca1c89783
+ * 예시 출력: 1239c6bf-2b17-8076-a838-d17ca1c89783
+ *
+ * @param id - 하이픈 없는 Notion ID 문자열
+ * @returns 하이픈이 추가된 UUID 형식의 문자열
+ */
+const formatNotionId = (id: string): string => {
+  if (!id || typeof id !== 'string' || id.length !== 32) {
+    return id; // 유효하지 않은 ID인 경우 원래 ID 반환
+  }
+
+  try {
+    // 8-4-4-4-12 형식으로 하이픈 추가 (UUID 형식)
+    return `${id.slice(0, 8)}-${id.slice(8, 12)}-${id.slice(12, 16)}-${id.slice(16, 20)}-${id.slice(20)}`;
+  } catch (error) {
+    console.error('Notion ID 포맷팅 중 오류 발생:', error);
+    return id; // 오류 발생 시 원래 ID 반환
   }
 };
 
