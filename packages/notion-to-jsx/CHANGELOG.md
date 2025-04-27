@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 1.2.9
+
+### Patch Changes
+
+- 7619237: update font-family inheritance
+
 ## 1.2.8
 
 ### Patch Changes
