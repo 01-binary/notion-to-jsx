@@ -3,10 +3,6 @@ import { recipe } from '@vanilla-extract/recipes';
 import { vars } from '../../../../styles/theme.css';
 
 export const richText = recipe({
-  base: {
-    fontFamily: 'inherit',
-  },
-
   variants: {
     bold: {
       true: {

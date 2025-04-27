@@ -4,7 +4,6 @@ import { vars } from '../../../../styles/theme.css';
 // 공통 타이포그래피 스타일
 const baseTypography = {
   color: vars.colors.text,
-  fontFamily: vars.typography.fontFamily.base,
   lineHeight: vars.typography.lineHeight.base,
   selectors: {
     '&:focus-visible': {
