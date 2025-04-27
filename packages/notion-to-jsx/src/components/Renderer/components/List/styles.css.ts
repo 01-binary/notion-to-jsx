@@ -6,6 +6,7 @@ export const list = recipe({
   base: {
     padding: `${vars.spacing.xs} ${vars.spacing.xxs}`,
     paddingLeft: vars.spacing.lg,
+    color: vars.colors.text,
   },
   variants: {
     type: {
