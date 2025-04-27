@@ -11,6 +11,8 @@ globalStyle('*::before, *::after', {
   boxSizing: 'border-box',
 });
 
+
+
 // HTML과 body 요소
 globalStyle('html, body', {
   height: '100%',

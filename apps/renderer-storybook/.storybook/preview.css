@@ -1,0 +1,4 @@
+/* 스토리북 글로벌 스타일 */
+html, body, * {
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif !important;
+}

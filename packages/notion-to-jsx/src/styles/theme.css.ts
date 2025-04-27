@@ -1,4 +1,7 @@
-import { createTheme, createThemeContract } from '@vanilla-extract/css';
+import {
+  createTheme,
+  createThemeContract,
+} from '@vanilla-extract/css';
 
 /**
  * 이 변수는 테마의 구조만 정의하며, 실제 값은 없습니다.
@@ -100,7 +103,7 @@ export const vars = createThemeContract({
 const commonThemeValues = {
   typography: {
     fontFamily: {
-      base: 'ui-sans-serif -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif',
+      base: 'inherit',
       code: 'SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace',
     },
     fontSize: {
