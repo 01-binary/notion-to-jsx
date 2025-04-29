@@ -1,17 +1,15 @@
-import React from 'react';
+import { memo } from 'react';
 import RichText, { RichTextItem, RichTextProps } from './RichText/RichTexts';
 import { Image, ImageProps } from './Image';
-import Bookmark, { type BookmarkProps } from './Bookmark/Bookmark';
+import Bookmark, { type Props as BookmarkProps } from './Bookmark/Bookmark';
+
 import LinkPreview, { type LinkPreviewProps } from './LinkPreview/LinkPreview';
 
-export const MemoizedRichText = React.memo<RichTextProps>(
-  RichText,
-  (prev, next) => {
-    return JSON.stringify(prev.richTexts) === JSON.stringify(next.richTexts);
-  }
-);
+export const MemoizedRichText = memo<RichTextProps>(RichText, (prev, next) => {
+  return JSON.stringify(prev.richTexts) === JSON.stringify(next.richTexts);
+});
 
-export const MemoizedImage = React.memo<ImageProps>(Image, (prev, next) => {
+export const MemoizedImage = memo<ImageProps>(Image, (prev, next) => {
   return (
     prev.src === next.src &&
     prev.alt === next.alt &&
@@ -19,14 +17,11 @@ export const MemoizedImage = React.memo<ImageProps>(Image, (prev, next) => {
   );
 });
 
-export const MemoizedBookmark = React.memo<BookmarkProps>(
-  Bookmark,
-  (prev, next) => {
-    return prev.url === next.url;
-  }
-);
+export const MemoizedBookmark = memo<BookmarkProps>(Bookmark, (prev, next) => {
+  return prev.url === next.url;
+});
 
-export const MemoizedLinkPreview = React.memo<LinkPreviewProps>(
+export const MemoizedLinkPreview = memo<LinkPreviewProps>(
   LinkPreview,
   (prev, next) => {
     return prev.url === next.url;

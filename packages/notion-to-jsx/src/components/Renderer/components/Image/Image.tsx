@@ -16,15 +16,6 @@ export interface ImageFormat {
   block_aspect_ratio?: number;
 }
 
-export interface ImageProps {
-  src: string;
-  alt: string;
-  caption?: RichTextItem[];
-  priority?: boolean;
-  format?: ImageFormat;
-  isColumn?: boolean;
-}
-
 const MAX_WIDTH = 720;
 
 // 이미지 태그에 사용되는 aspectRatio 스타일
@@ -34,13 +25,22 @@ const getImageTagStyle = (format?: ImageFormat) => {
     : undefined;
 };
 
-const Image: React.FC<ImageProps> = ({
+export interface Props {
+  src: string;
+  alt: string;
+  caption?: RichTextItem[];
+  priority?: boolean;
+  format?: ImageFormat;
+  isColumn?: boolean;
+}
+
+const Image = ({
   src,
   alt,
   caption: imageCaption,
   format,
   isColumn = false,
-}) => {
+}: Props) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (

@@ -12,12 +12,6 @@ if (typeof window !== 'undefined') {
   window.Prism = Prism;
 }
 
-export interface Props {
-  code: string;
-  language: string;
-  caption?: RichTextItem[];
-}
-
 const renderToken = (token: string | Token, i: number): React.ReactNode => {
   if (typeof token === 'string') {
     return <span key={i}>{token}</span>;
@@ -41,7 +35,13 @@ const renderToken = (token: string | Token, i: number): React.ReactNode => {
   );
 };
 
-const CodeBlock: React.FC<Props> = ({ code, language, caption }) => {
+export interface Props {
+  code: string;
+  language: string;
+  caption?: RichTextItem[];
+}
+
+const CodeBlock = ({ code, language, caption }: Props) => {
   const tokens = useMemo(() => {
     const prismLanguage =
       Prism.languages[language] || Prism.languages.plaintext;

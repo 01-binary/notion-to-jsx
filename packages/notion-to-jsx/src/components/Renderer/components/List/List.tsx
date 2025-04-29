@@ -1,20 +1,19 @@
-import React from 'react';
+import { PropsWithChildren, HTMLAttributes } from 'react';
 import { list, listItem } from './styles.css';
 
 interface ListProps
-  extends React.HTMLAttributes<HTMLUListElement | HTMLOListElement> {
+  extends HTMLAttributes<HTMLUListElement | HTMLOListElement> {
   as?: 'ul' | 'ol';
-  type: 'bulleted' | 'numbered';
-  children: React.ReactNode;
+  type: 'bulleted_list_item' | 'numbered_list_item';
 }
 
-export const List: React.FC<ListProps> = ({
+export const List = ({
   as: Component = 'ul',
   type,
   className,
   children,
   ...props
-}) => {
+}: PropsWithChildren<ListProps>) => {
   return (
     <Component className={list({ type })} {...props}>
       {children}
@@ -22,15 +21,11 @@ export const List: React.FC<ListProps> = ({
   );
 };
 
-interface ListItemProps extends React.HTMLAttributes<HTMLLIElement> {
-  children: React.ReactNode;
-}
-
-export const ListItem: React.FC<ListItemProps> = ({
+export const ListItem = ({
   className,
   children,
   ...props
-}) => {
+}: PropsWithChildren<HTMLAttributes<HTMLLIElement>>) => {
   return (
     <li className={listItem} {...props}>
       {children}

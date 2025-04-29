@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {
   MemoizedRichText,
   MemoizedImage,
@@ -12,76 +10,63 @@ import { ColumnList } from '../Column';
 import { Quote } from '../Quote';
 import Table from '../Table';
 import { Toggle } from '../Toggle';
+import { NotionBlock } from '../../../../types';
 
 export interface Props {
-  block: any;
-  onFocus?: () => void;
-  index: number;
+  block: NotionBlock;
   isColumn?: boolean;
 }
 
-const BlockRenderer: React.FC<Props> = ({
-  block,
-  onFocus,
-  index,
-  isColumn = false,
-}) => {
+const BlockRenderer = ({ block, isColumn = false }: Props) => {
   if (!block) return null;
-
-  const blockProps = {
-    tabIndex: 0,
-    onFocus,
-  };
 
   switch (block.type) {
     case 'link_preview':
-      return (
-        <MemoizedLinkPreview url={block.link_preview.url} {...blockProps} />
-      );
+      return <MemoizedLinkPreview url={block.link_preview.url} />;
     case 'paragraph':
       return (
-        <Paragraph {...blockProps}>
+        <Paragraph>
           <MemoizedRichText richTexts={block.paragraph.rich_text} />
         </Paragraph>
       );
 
     case 'heading_1':
       return (
-        <Heading1 {...blockProps}>
+        <Heading1>
           <MemoizedRichText richTexts={block.heading_1.rich_text} />
         </Heading1>
       );
 
     case 'heading_2':
       return (
-        <Heading2 {...blockProps}>
+        <Heading2>
           <MemoizedRichText richTexts={block.heading_2.rich_text} />
         </Heading2>
       );
 
     case 'heading_3':
       return (
-        <Heading3 {...blockProps}>
+        <Heading3>
           <MemoizedRichText richTexts={block.heading_3.rich_text} />
         </Heading3>
       );
 
     case 'code':
       return (
-        <div {...blockProps}>
+        <div>
           <CodeBlock
-            code={block.code.rich_text[0].text.content}
+            code={block.code.rich_text[0]?.text?.content || ''}
             language={block.code.language}
-            caption={block.code.caption?.[0]?.plain_text}
+            caption={block.code.caption}
           />
         </div>
       );
 
     case 'image':
       return (
-        <figure {...blockProps}>
+        <figure>
           <MemoizedImage
-            src={block.image.file?.url || block.image.external?.url}
+            src={block.image.file?.url || block.image.external?.url || ''}
             alt={block.image.caption?.[0]?.plain_text || ''}
             caption={block.image.caption}
             format={block.image.format}
@@ -99,26 +84,20 @@ const BlockRenderer: React.FC<Props> = ({
       );
 
     case 'column_list':
-      return <ColumnList block={block} onFocus={onFocus} />;
+      return <ColumnList block={block} />;
 
     case 'column':
       // 개별 column은 ColumnList에서 처리됩니다
       return null;
 
     case 'quote':
-      return <Quote richTexts={block.quote.rich_text} {...blockProps} />;
+      return <Quote richTexts={block.quote.rich_text} />;
 
     case 'table':
-      return <Table block={block} tabIndex={blockProps.tabIndex} />;
+      return <Table block={block} />;
 
     case 'toggle':
-      return (
-        <Toggle
-          block={block}
-          tabIndex={blockProps.tabIndex}
-          onFocus={onFocus}
-        />
-      );
+      return <Toggle block={block} />;
 
     default:
       return null;
