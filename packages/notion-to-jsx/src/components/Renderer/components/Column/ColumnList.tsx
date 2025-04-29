@@ -1,19 +1,18 @@
-import React from 'react';
 import Column from './Column';
 import { columnListContainer } from './styles.css';
+import { ColumnListBlock } from '../../../../types';
 
 export interface ColumnListProps {
-  block: any;
-  onFocus?: () => void;
+  block: ColumnListBlock;
 }
 
-const ColumnList: React.FC<ColumnListProps> = ({ block, onFocus }) => {
+const ColumnList = ({ block }: ColumnListProps) => {
   if (!block || !block.children) return null;
 
   return (
     <div className={columnListContainer}>
-      {block.children.map((column: any) => (
-        <Column key={column.id} block={column} onFocus={onFocus} />
+      {block.children.map((column) => (
+        <Column key={column.id} block={column} />
       ))}
     </div>
   );

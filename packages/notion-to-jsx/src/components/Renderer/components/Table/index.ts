@@ -1,5 +1,3 @@
 import Table from './Table';
-import TableRow from './TableRow';
-
-export { TableRow };
+export { default as TableRow } from './TableRow';
 export default Table;

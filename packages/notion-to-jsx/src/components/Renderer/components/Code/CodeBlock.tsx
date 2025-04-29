@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import { ReactNode, useMemo } from 'react';
 import { codeBlock } from './styles.css';
 import Prism, { Grammar, Token } from 'prismjs';
 import { MemoizedRichText } from '../MemoizedComponents';
@@ -12,13 +12,13 @@ if (typeof window !== 'undefined') {
   window.Prism = Prism;
 }
 
-const renderToken = (token: string | Token, i: number): React.ReactNode => {
+const renderToken = (token: string | Token, i: number): ReactNode => {
   if (typeof token === 'string') {
     return <span key={i}>{token}</span>;
   }
 
   const content = token.content;
-  let tokenContent: React.ReactNode;
+  let tokenContent: ReactNode;
 
   if (Array.isArray(content)) {
     tokenContent = content.map((subToken, j) => renderToken(subToken, j));

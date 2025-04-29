@@ -1,15 +1,13 @@
-import React from 'react';
+import { HTMLAttributes, PropsWithChildren } from 'react';
 import { paragraph, heading1, heading2, heading3 } from './styles.css';
 
-interface TypographyProps extends React.HTMLAttributes<HTMLElement> {
-  children: React.ReactNode;
-}
+type TypographyProps = PropsWithChildren<HTMLAttributes<HTMLElement>>;
 
-export const Paragraph: React.FC<TypographyProps> = ({
+export const Paragraph = ({
   className,
   children,
   ...props
-}) => {
+}: TypographyProps) => {
   return (
     <p className={paragraph} {...props}>
       {children}
@@ -17,11 +15,11 @@ export const Paragraph: React.FC<TypographyProps> = ({
   );
 };
 
-export const Heading1: React.FC<TypographyProps> = ({
+export const Heading1 = ({
   className,
   children,
   ...props
-}) => {
+}: TypographyProps) => {
   return (
     <h1 className={heading1} {...props}>
       {children}
@@ -29,11 +27,11 @@ export const Heading1: React.FC<TypographyProps> = ({
   );
 };
 
-export const Heading2: React.FC<TypographyProps> = ({
+export const Heading2 = ({
   className,
   children,
   ...props
-}) => {
+}: TypographyProps) => {
   return (
     <h2 className={heading2} {...props}>
       {children}
@@ -41,11 +39,11 @@ export const Heading2: React.FC<TypographyProps> = ({
   );
 };
 
-export const Heading3: React.FC<TypographyProps> = ({
+export const Heading3 = ({
   className,
   children,
   ...props
-}) => {
+}: TypographyProps) => {
   return (
     <h3 className={heading3} {...props}>
       {children}

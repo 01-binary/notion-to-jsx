@@ -1,4 +1,3 @@
-import React from 'react';
 import { List, ListItem } from './List';
 import { MemoizedRichText } from '../MemoizedComponents';
 import {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState, KeyboardEvent } from 'react';
 import { ToggleBlock } from '../../../../types';
 import {
   toggleContainer,
@@ -26,7 +26,7 @@ const Toggle = ({ block }: ToggleProps) => {
     setIsOpen(!isOpen);
   };
 
-  const handleKeyDown = (e: React.KeyboardEvent) => {
+  const handleKeyDown = (e: KeyboardEvent) => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
       handleToggle();

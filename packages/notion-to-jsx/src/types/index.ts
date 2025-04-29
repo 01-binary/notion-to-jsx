@@ -94,17 +94,18 @@ interface BookmarkBlock extends BaseNotionBlock {
 }
 
 // 테이블 블록
-interface TableBlock extends BaseNotionBlock {
+export interface TableBlock extends BaseNotionBlock {
   type: 'table';
   table: {
     table_width: number;
     has_column_header: boolean;
     has_row_header: boolean;
   };
+  children?: TableRowBlock[];
 }
 
 // 테이블 행 블록
-interface TableRowBlock extends BaseNotionBlock {
+export interface TableRowBlock extends BaseNotionBlock {
   type: 'table_row';
   table_row: {
     cells: RichTextItem[][];
@@ -148,12 +149,13 @@ export interface NumberedListItemBlock extends BaseNotionBlock {
 }
 
 // 컬럼 리스트 블록
-interface ColumnListBlock extends BaseNotionBlock {
+export interface ColumnListBlock extends BaseNotionBlock {
   type: 'column_list';
+  children?: ColumnBlock[];
 }
 
 // 컬럼 블록
-interface ColumnBlock extends BaseNotionBlock {
+export interface ColumnBlock extends BaseNotionBlock {
   type: 'column';
 }
 

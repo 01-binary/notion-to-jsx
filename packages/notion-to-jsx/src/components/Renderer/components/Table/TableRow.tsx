@@ -1,20 +1,19 @@
-import React from 'react';
 import { tableCell, firstCell, lastCell, hasRowHeader } from './styles.css';
 import { MemoizedRichText } from '../MemoizedComponents';
-import { NotionBlock } from '../../../../types';
+import { TableRowBlock } from '../../../../types';
 import { RichTextItem } from '../RichText/RichTexts';
 
 interface TableRowProps {
-  rowBlock: NotionBlock;
+  rowBlock: TableRowBlock;
   cellClassName?: string;
   rowHeaderIndex?: number;
 }
 
-const TableRow: React.FC<TableRowProps> = ({
+const TableRow = ({
   rowBlock,
   cellClassName = '',
   rowHeaderIndex = -1,
-}) => {
+}: TableRowProps) => {
   if (!rowBlock.table_row?.cells) {
     return null;
   }
