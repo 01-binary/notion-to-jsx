@@ -1,2 +1,2 @@
-export * from './components/Renderer';
+export { default as Renderer } from './components/Renderer';
 export * from './types';

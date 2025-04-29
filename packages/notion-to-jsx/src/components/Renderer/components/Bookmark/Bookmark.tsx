@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   link,
   card,
@@ -11,22 +10,14 @@ import {
   favicon,
   urlText,
 } from './styles.css';
+import { OpenGraphData } from './type';
 
-interface OpenGraphData {
-  title: string;
-  description: string;
-  image: string;
-  siteName: string;
-  url: string;
-  favicon?: string;
-}
-
-export interface BookmarkProps {
+export interface Props {
   url: string;
   metadata?: OpenGraphData;
 }
 
-const Bookmark: React.FC<BookmarkProps> = ({ url, metadata }) => {
+const Bookmark = ({ url, metadata }: Props) => {
   return (
     <a href={url} target="_blank" rel="noopener noreferrer" className={link}>
       <div className={card}>

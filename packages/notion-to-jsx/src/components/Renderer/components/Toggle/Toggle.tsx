@@ -1,22 +1,20 @@
-import React, { useState } from 'react';
-import { NotionBlock } from '../../../../types';
-import { 
-  toggleContainer, 
-  toggleHeader, 
-  toggleIcon, 
-  toggleIconOpen, 
-  toggleContent 
+import { useState, KeyboardEvent } from 'react';
+import { ToggleBlock } from '../../../../types';
+import {
+  toggleContainer,
+  toggleHeader,
+  toggleIcon,
+  toggleIconOpen,
+  toggleContent,
 } from './styles.css';
 import { RichTexts } from '../../components/RichText';
 import BlockRenderer from '../../components/Block/BlockRenderer';
 
 interface ToggleProps {
-  block: NotionBlock;
-  tabIndex?: number;
-  onFocus?: () => void;
+  block: ToggleBlock;
 }
 
-const Toggle: React.FC<ToggleProps> = ({ block, tabIndex = 0, onFocus }) => {
+const Toggle = ({ block }: ToggleProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   // Toggle이 없거나 children이 없는 경우 렌더링하지 않음
@@ -28,7 +26,7 @@ const Toggle: React.FC<ToggleProps> = ({ block, tabIndex = 0, onFocus }) => {
     setIsOpen(!isOpen);
   };
 
-  const handleKeyDown = (e: React.KeyboardEvent) => {
+  const handleKeyDown = (e: KeyboardEvent) => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
       handleToggle();
@@ -37,12 +35,10 @@ const Toggle: React.FC<ToggleProps> = ({ block, tabIndex = 0, onFocus }) => {
 
   return (
     <div className={toggleContainer}>
-      <div 
+      <div
         className={toggleHeader}
         onClick={handleToggle}
         onKeyDown={handleKeyDown}
-        tabIndex={tabIndex}
-        onFocus={onFocus}
         role="button"
         aria-expanded={isOpen}
       >
@@ -54,12 +50,8 @@ const Toggle: React.FC<ToggleProps> = ({ block, tabIndex = 0, onFocus }) => {
 
       {isOpen && block.children && (
         <div className={toggleContent}>
-          {block.children.map((childBlock, index) => (
-            <BlockRenderer
-              key={childBlock.id}
-              block={childBlock}
-              index={index}
-            />
+          {block.children.map((childBlock) => (
+            <BlockRenderer key={childBlock.id} block={childBlock} />
           ))}
         </div>
       )}

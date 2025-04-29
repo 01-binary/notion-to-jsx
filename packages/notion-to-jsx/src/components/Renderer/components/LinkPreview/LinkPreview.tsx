@@ -1,9 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import * as styles from './styles.css';
-
-export interface LinkPreviewProps {
-  url: string;
-}
 
 interface RepoData {
   name: string;
@@ -172,7 +168,10 @@ const formatUpdatedTime = (dateString: string): string => {
   }
 };
 
-const LinkPreview: React.FC<LinkPreviewProps> = ({ url }) => {
+export interface LinkPreviewProps {
+  url: string;
+}
+const LinkPreview = ({ url }: LinkPreviewProps) => {
   const [repoData, setRepoData] = useState<RepoData | null>(null);
   const [figmaData, setFigmaData] = useState<FigmaData | null>(null);
   const [loading, setLoading] = useState(true);

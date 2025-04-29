@@ -1,4 +1,4 @@
-import React from 'react';
+import { ReactNode } from 'react';
 import { richText, link } from './styles.css';
 
 // 지원하는 Notion 색상 타입 정의
@@ -50,20 +50,20 @@ export interface RichTextItem {
   };
 }
 
-export interface RichTextProps {
-  richTexts: RichTextItem[];
-}
-
 /**
  * 링크 컴포넌트를 생성하는 함수
  */
-const renderLink = (href: string, content: React.ReactNode) => (
+const renderLink = (href: string, content: ReactNode) => (
   <a href={href} target="_blank" rel="noopener noreferrer" className={link}>
     {content}
   </a>
 );
 
-const RichTexts: React.FC<RichTextProps> = ({ richTexts }) => {
+export interface RichTextProps {
+  richTexts: RichTextItem[];
+}
+
+const RichTexts = ({ richTexts }: RichTextProps) => {
   return (
     <>
       {richTexts.map((text, index) => {

@@ -10,10 +10,10 @@ export const list = recipe({
   },
   variants: {
     type: {
-      bulleted: {
+      bulleted_list_item: {
         listStyleType: 'disc',
       },
-      numbered: {
+      numbered_list_item: {
         listStyleType: 'decimal',
       },
     },
