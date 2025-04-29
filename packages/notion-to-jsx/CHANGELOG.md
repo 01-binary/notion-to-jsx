@@ -1,5 +1,12 @@
 # notion-to-jsx
 
+## 1.2.10
+
+### Patch Changes
+
+- 36b54f7: refactor: components to use TypeScript types and remove React imports
+- 2a96163: Update text color to use theme variable in List and Quote components
+
 ## 1.2.9
 
 ### Patch Changes
