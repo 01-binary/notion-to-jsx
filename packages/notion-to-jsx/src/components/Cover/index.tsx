@@ -17,7 +17,7 @@ const Cover = ({ src, alt }: Props) => {
   return (
     <div className={coverContainer}>
       <div className={skeletonWrapper({ isLoaded })}>
-        <Skeleton variant="image" />
+        <Skeleton variant="image" isLoading={!isLoaded} />
       </div>
       <img
         src={src}

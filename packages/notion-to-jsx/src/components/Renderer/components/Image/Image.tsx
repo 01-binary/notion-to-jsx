@@ -47,7 +47,7 @@ const Image = ({
     <div className={imageContainer}>
       <div className={imageWrapper} style={getImageStyles(format, isColumn)}>
         <div className={skeletonWrapper({ isLoaded })}>
-          <Skeleton variant="image" />
+          <Skeleton variant="image" isLoading={!isLoaded} />
         </div>
         <img
           className={imageStyle({
