@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 1.2.12
+
+### Patch Changes
+
+- 5de03d9: add loading state to image skeleton component
+
 ## 1.2.11
 
 ### Patch Changes
