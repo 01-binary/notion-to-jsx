@@ -18,6 +18,10 @@ type SkeletonProps = {
    * 추가 CSS 클래스명
    */
   className?: string;
+  /**
+   * 로딩 상태
+   */
+  isLoading?: boolean;
 };
 
 /**
@@ -29,6 +33,7 @@ const Skeleton = ({
   width,
   height,
   className,
+  isLoading = true,
 }: SkeletonProps) => {
   const getVariantClass = () => {
     switch (variant) {
@@ -41,6 +46,10 @@ const Skeleton = ({
         return styles.rect;
     }
   };
+
+  if (!isLoading) {
+    return null;
+  }
 
   return (
     <div
