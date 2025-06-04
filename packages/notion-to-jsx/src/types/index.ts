@@ -159,6 +159,18 @@ export interface ColumnBlock extends BaseNotionBlock {
   type: 'column';
 }
 
+// 비디오 블록
+export interface VideoBlock extends BaseNotionBlock {
+  type: 'video';
+  video: {
+    caption: RichTextItem[];
+    type: 'external' | 'file';
+    external?: {
+      url: string;
+    };
+  };
+}
+
 // 최종 NotionBlock 타입은 모든 블록 타입의 유니온
 export type NotionBlock =
   | LinkPreviewBlock
@@ -176,4 +188,5 @@ export type NotionBlock =
   | BulletedListItemBlock
   | NumberedListItemBlock
   | ColumnListBlock
-  | ColumnBlock;
+  | ColumnBlock
+  | VideoBlock;

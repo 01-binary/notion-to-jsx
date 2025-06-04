@@ -10,6 +10,7 @@ import { ColumnList } from '../Column';
 import { Quote } from '../Quote';
 import Table from '../Table';
 import { Toggle } from '../Toggle';
+import { Video } from '../Video';
 import { NotionBlock } from '../../../../types';
 
 export interface Props {
@@ -98,6 +99,9 @@ const BlockRenderer = ({ block, isColumn = false }: Props) => {
 
     case 'toggle':
       return <Toggle block={block} />;
+
+    case 'video':
+      return <Video block={block} />;
 
     default:
       return null;
