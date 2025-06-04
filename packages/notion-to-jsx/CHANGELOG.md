@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 1.2.11
+
+### Patch Changes
+
+- 08d9e11: add video block support with YouTube embed functionality
+
 ## 1.2.10
 
 ### Patch Changes
