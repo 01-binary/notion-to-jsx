@@ -12,7 +12,7 @@ const __dirname = dirname(__filename);
 dotenv.config({ path: resolve(__dirname, '../.env.local') });
 
 // 페이지 ID
-const PAGE_ID = '56874170f8d44bcc996ebe4e43f67930';
+const PAGE_ID = 'b71705621e0d4f8bae2a65cb2715757e';
 
 // ? using this script : pnpx tsx scripts/fetchNotionBlocks.ts
 async function fetchAndSaveBlocks() {
