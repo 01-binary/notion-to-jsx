@@ -1,6 +1,6 @@
 import { useMemo, memo } from 'react';
 
-import { ListBlocksRenderer } from './components/List';
+import { ListGroup } from './components/List';
 import { BlockRenderer } from './components/Block';
 import Title from '../Title';
 import Cover from '../Cover';
@@ -42,25 +42,32 @@ const Renderer = memo(({ blocks, isDarkMode = false, title, cover }: Props) => {
           block.type === listItemType &&
           (i === 0 || blocks[i - 1]?.type !== listItemType)
         ) {
+          // 연속된 리스트 아이템 수집
+          const listItems: (BulletedListItemBlock | NumberedListItemBlock)[] =
+            [];
+          let j = i;
+          while (
+            j < blocks.length &&
+            blocks[j] &&
+            blocks[j]?.type === listItemType
+          ) {
+            listItems.push(
+              blocks[j] as BulletedListItemBlock | NumberedListItemBlock
+            );
+            j++;
+          }
+
           result.push(
-            <ListBlocksRenderer
+            <ListGroup
               key={block.id}
-              blocks={
-                blocks as (BulletedListItemBlock | NumberedListItemBlock)[]
-              }
-              startIndex={i}
+              blocks={listItems}
               type={listItemType}
+              renderBlock={(childBlock) => <BlockRenderer block={childBlock} />}
             />
           );
 
-          // 연속된 같은 타입의 리스트 아이템 건너뛰기
-          while (
-            i + 1 < blocks.length &&
-            blocks[i + 1] &&
-            blocks[i + 1]?.type === listItemType
-          ) {
-            i++;
-          }
+          // 이미 처리된 리스트 아이템 건너뛰기 (j는 다음 블록의 인덱스)
+          i = j - 1;
 
           return true;
         }
