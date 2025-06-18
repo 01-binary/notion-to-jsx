@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 1.2.13
+
+### Patch Changes
+
+- eea19de: reimplement list rendering with ListGroup component for nested lists / add empty rich text component
+
 ## 1.2.12
 
 ### Patch Changes
