@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { richText, link } from './styles.css';
+import { richText, link, emptyRichText } from './styles.css';
 
 // 지원하는 Notion 색상 타입 정의
 type NotionColor =
@@ -63,7 +63,13 @@ export interface RichTextProps {
   richTexts: RichTextItem[];
 }
 
+const EmptyRichText = () => <div className={emptyRichText} />;
+
 const RichTexts = ({ richTexts }: RichTextProps) => {
+  if (richTexts.length === 0) {
+    return <EmptyRichText />;
+  }
+
   return (
     <>
       {richTexts.map((text, index) => {

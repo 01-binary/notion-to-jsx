@@ -25,8 +25,6 @@ export const toggleIcon = style({
   alignItems: 'center',
   justifyContent: 'center',
   transition: 'transform 0.2s ease',
-  width: '1.2rem',
-  height: '1.2rem',
 });
 
 export const toggleIconOpen = style({

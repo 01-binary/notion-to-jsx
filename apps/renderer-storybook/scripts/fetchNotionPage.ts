@@ -12,10 +12,10 @@ const __dirname = dirname(__filename);
 dotenv.config({ path: resolve(__dirname, '../.env.local') });
 
 // 페이지 ID
-const PAGE_ID = '76318ec3-9f83-4cc2-af54-7d81daab0131';
+const PAGE_ID = '2149c6bf2b17802a9b75db1f01b9cbe7';
 
-// ? using this script : pnpx tsx scripts/fetchNotionProperties.ts
-async function fetchNotionPage() {
+// ? using this script : pnpx tsx scripts/fetchNotionBlocks.ts
+async function fetchAndSaveBlocks() {
   try {
     // Notion API 키 확인
     let apiKey = process.env.NOTION_API_KEY;
@@ -45,24 +45,26 @@ async function fetchNotionPage() {
       process.exit(1);
     }
 
-    console.log('Notion API에서 페이지 속성 데이터를 가져오는 중...');
+    console.log('Notion API에서 블록 데이터를 가져오는 중...');
 
     // Notion 클라이언트 생성
     const client = new Client({ auth: apiKey });
 
+    // 페이지 블록 가져오기
     const blocks = await client.getPageBlocks(PAGE_ID);
-
     // JSON 파일로 저장
     const outputPath = join(__dirname, '../src/sample-data/notionPage.json');
     console.log(`저장 경로: ${outputPath}`);
     writeFileSync(outputPath, JSON.stringify(blocks, null, 2), 'utf8');
 
-    console.log(`페이지 데이터가 성공적으로 저장되었습니다: ${outputPath}`);
+    console.log(`블록 데이터가 성공적으로 저장되었습니다: ${outputPath}`);
+    console.log(`총 ${blocks.length}개의 블록을 가져왔습니다.`);
+    process.exit(0);
   } catch (error) {
-    console.error('페이지 데이터 가져오기 실패:', error);
+    console.error('블록 데이터 가져오기 실패:', error);
     process.exit(1);
   }
 }
 
 // 스크립트 실행
-fetchNotionPage();
+fetchAndSaveBlocks();
