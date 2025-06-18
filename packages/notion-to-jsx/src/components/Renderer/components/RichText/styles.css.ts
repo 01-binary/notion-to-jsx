@@ -89,3 +89,7 @@ export const link = style({
   wordBreak: 'break-word',
   overflowWrap: 'break-word',
 });
+
+export const emptyRichText = style({
+  height: vars.spacing.lg,
+});

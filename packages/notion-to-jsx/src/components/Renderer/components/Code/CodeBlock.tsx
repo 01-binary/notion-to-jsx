@@ -55,7 +55,7 @@ const CodeBlock = ({ code, language, caption }: Props) => {
           {tokens.map((token, i) => renderToken(token, i))}
         </code>
       </pre>
-      {caption && (
+      {caption && caption.length > 0 && (
         <figcaption>
           <MemoizedRichText richTexts={caption} />
         </figcaption>
