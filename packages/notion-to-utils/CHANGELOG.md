@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 1.1.2
+
+### Patch Changes
+
+- 24e921f: error log modification
+
 ## 1.1.1
 
 ### Patch Changes
