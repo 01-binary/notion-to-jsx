@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 1.2.14
+
+### Patch Changes
+
+- 408433a: improve image loading state handling with useRef and complete check
+
 ## 1.2.13
 
 ### Patch Changes
