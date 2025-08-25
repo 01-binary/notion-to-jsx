@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { coverContainer, skeletonWrapper, imageStyle } from './styles.css';
 import Skeleton from '../Skeleton';
 
@@ -13,6 +13,19 @@ interface Props {
  */
 const Cover = ({ src, alt }: Props) => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const imgRef = useRef<HTMLImageElement>(null);
+
+  // 이미지가 이미 로드된 경우를 체크
+  useEffect(() => {
+    const img = imgRef.current;
+    if (img && img.complete && img.naturalHeight !== 0) {
+      setIsLoaded(true);
+    }
+  }, [src]);
+
+  const handleLoad = () => {
+    setIsLoaded(true);
+  };
 
   return (
     <div className={coverContainer}>
@@ -20,10 +33,11 @@ const Cover = ({ src, alt }: Props) => {
         <Skeleton variant="image" isLoading={!isLoaded} />
       </div>
       <img
+        ref={imgRef}
         src={src}
         alt={alt}
         className={imageStyle({ isLoaded })}
-        onLoad={() => setIsLoaded(true)}
+        onLoad={handleLoad}
         loading="lazy"
       />
     </div>

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { MemoizedRichText } from '../MemoizedComponents';
 import {
   imageContainer,
@@ -42,6 +42,19 @@ const Image = ({
   isColumn = false,
 }: Props) => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const imgRef = useRef<HTMLImageElement>(null);
+
+  // 이미지가 이미 로드된 경우를 체크
+  useEffect(() => {
+    const img = imgRef.current;
+    if (img && img.complete && img.naturalHeight !== 0) {
+      setIsLoaded(true);
+    }
+  }, [src]);
+
+  const handleLoad = () => {
+    setIsLoaded(true);
+  };
 
   return (
     <div className={imageContainer}>
@@ -50,6 +63,7 @@ const Image = ({
           <Skeleton variant="image" isLoading={!isLoaded} />
         </div>
         <img
+          ref={imgRef}
           className={imageStyle({
             loaded: isLoaded,
             hasAspectRatio: !!format?.block_aspect_ratio,
@@ -57,7 +71,7 @@ const Image = ({
           src={src}
           alt={alt}
           loading="lazy"
-          onLoad={() => setIsLoaded(true)}
+          onLoad={handleLoad}
           width={format?.block_width}
           height={format?.block_height}
           style={getImageTagStyle(format)}
