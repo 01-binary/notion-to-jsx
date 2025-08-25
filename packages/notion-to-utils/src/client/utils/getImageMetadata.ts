@@ -18,7 +18,7 @@ async function getImageMetadata(url: string): Promise<{
       aspectRatio: result.height > 0 ? result.width / result.height : 1,
     };
   } catch (error) {
-    console.error('이미지 메타데이터 추출 실패:', error);
+    console.error('이미지 메타데이터 추출 실패:', url, error);
     return null;
   }
 }
