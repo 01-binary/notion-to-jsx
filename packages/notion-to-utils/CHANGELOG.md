@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 1.1.3
+
+### Patch Changes
+
+- 6cc6dcb: dependency update
+
 ## 1.1.2
 
 ### Patch Changes
