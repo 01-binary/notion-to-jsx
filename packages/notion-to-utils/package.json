@@ -44,14 +44,14 @@
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/probe-image-size": "^7.2.5",
-    "@vitest/coverage-v8": "2.1.2",
+    "@vitest/coverage-v8": "4.0.17",
     "jsdom": "^26.0.0",
-    "typescript": "^5.6.3",
-    "vitest": "2.1.2"
+    "typescript": "^5.9.3",
+    "vitest": "4.0.17"
   },
   "dependencies": {
-    "@notionhq/client": "^2.2.15",
-    "open-graph-scraper": "^6.9.0",
+    "@notionhq/client": "^5.6.0",
+    "open-graph-scraper": "^6.11.0",
     "probe-image-size": "^7.2.3"
   }
 }

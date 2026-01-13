@@ -5,11 +5,13 @@ import type {
   PageObjectResponse,
   MultiSelectPropertyItemObjectResponse,
   GetPageResponse,
-  QueryDatabaseResponse,
+  QueryDataSourceResponse,
 } from '@notionhq/client/build/src/api-endpoints';
 export type {
   PageObjectResponse,
   MultiSelectPropertyItemObjectResponse,
   GetPageResponse,
-  QueryDatabaseResponse,
+  /** @deprecated Use QueryDataSourceResponse instead (renamed in @notionhq/client v5) */
+  QueryDataSourceResponse as QueryDatabaseResponse,
+  QueryDataSourceResponse,
 };
