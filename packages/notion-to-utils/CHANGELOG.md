@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 1.2.0
+
+### Minor Changes
+
+- cf2bbb8: notion-to-utils 코드 모듈화 및 테스트 보강
+
 ## 1.1.3
 
 ### Patch Changes
