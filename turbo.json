@@ -13,14 +13,6 @@
     "dev": {
       "cache": false,
       "persistent": true
-    },
-    "storybook": {
-      "cache": false,
-      "persistent": true
-    },
-    "build:storybook": {
-      "cache": true,
-      "outputs": ["storybook-static/**"]
     }
   }
 }
