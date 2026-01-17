@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import {
   MemoizedRichText,
   MemoizedImage,
@@ -18,7 +19,7 @@ export interface Props {
   isColumn?: boolean;
 }
 
-const BlockRenderer = ({ block, isColumn = false }: Props) => {
+const BlockRenderer = memo(({ block, isColumn = false }: Props) => {
   if (!block) return null;
 
   switch (block.type) {
@@ -106,6 +107,8 @@ const BlockRenderer = ({ block, isColumn = false }: Props) => {
     default:
       return null;
   }
-};
+});
+
+BlockRenderer.displayName = 'BlockRenderer';
 
 export default BlockRenderer;

@@ -23,6 +23,34 @@ type NotionColor =
   | 'pink_background'
   | 'red_background';
 
+// 모듈 스코프로 이동 - 매 렌더마다 배열 재생성 방지
+const NOTION_COLORS: NotionColor[] = [
+  'default',
+  'gray',
+  'brown',
+  'orange',
+  'yellow',
+  'green',
+  'blue',
+  'purple',
+  'pink',
+  'red',
+  'gray_background',
+  'brown_background',
+  'orange_background',
+  'yellow_background',
+  'green_background',
+  'blue_background',
+  'purple_background',
+  'pink_background',
+  'red_background',
+] as const;
+
+// 타입 가드 함수
+const isNotionColor = (color: string): color is NotionColor => {
+  return NOTION_COLORS.includes(color as NotionColor);
+};
+
 export interface RichTextItem {
   type: 'text' | 'mention' | string;
   annotations: {
@@ -107,32 +135,8 @@ const RichTexts = ({ richTexts }: RichTextProps) => {
         }
 
         // NOTION COLOR 적용
-        // color 값이 지원하는 색상이 아닌 경우 undefined로 처리하여 타입 에러 방지
-        const notionColors: NotionColor[] = [
-          'default',
-          'gray',
-          'brown',
-          'orange',
-          'yellow',
-          'green',
-          'blue',
-          'purple',
-          'pink',
-          'red',
-          'gray_background',
-          'brown_background',
-          'orange_background',
-          'yellow_background',
-          'green_background',
-          'blue_background',
-          'purple_background',
-          'pink_background',
-          'red_background',
-        ];
-
-        const safeColor = notionColors.includes(color as NotionColor)
-          ? (color as NotionColor)
-          : undefined;
+        // 타입 가드를 사용하여 지원하는 색상인지 검증
+        const safeColor = isNotionColor(color) ? color : undefined;
 
         return (
           <span

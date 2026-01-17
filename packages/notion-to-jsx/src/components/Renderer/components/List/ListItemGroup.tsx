@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { List, ListItem } from './List';
 
 import { MemoizedRichText } from '../MemoizedComponents';
@@ -12,8 +12,9 @@ interface RecursiveListItemProps {
   block: BulletedListItemBlock | NumberedListItemBlock;
   renderBlock: (block: NotionBlock, parentBlockId?: string) => React.ReactNode;
 }
+
 // 리스트 아이템을 렌더링하는 컴포넌트 (중첩 리스트 지원)
-const RecursiveListItem = ({ block, renderBlock }: RecursiveListItemProps) => {
+const RecursiveListItem = memo(({ block, renderBlock }: RecursiveListItemProps) => {
   let content:
     | BulletedListItemBlock['bulleted_list_item']
     | NumberedListItemBlock['numbered_list_item'];
@@ -87,7 +88,9 @@ const RecursiveListItem = ({ block, renderBlock }: RecursiveListItemProps) => {
       {renderedChildren.length > 0 && renderedChildren}
     </ListItem>
   );
-};
+});
+
+RecursiveListItem.displayName = 'RecursiveListItem';
 
 interface ListGroupProps {
   blocks: (BulletedListItemBlock | NumberedListItemBlock)[];
@@ -95,7 +98,7 @@ interface ListGroupProps {
   renderBlock: (block: NotionBlock, parentBlockId?: string) => React.ReactNode;
 }
 
-export const ListGroup = ({ blocks, type, renderBlock }: ListGroupProps) => {
+export const ListGroup = memo(({ blocks, type, renderBlock }: ListGroupProps) => {
   if (blocks.length === 0) return null;
 
   return (
@@ -114,4 +117,6 @@ export const ListGroup = ({ blocks, type, renderBlock }: ListGroupProps) => {
       ))}
     </List>
   );
-};
+});
+
+ListGroup.displayName = 'ListGroup';

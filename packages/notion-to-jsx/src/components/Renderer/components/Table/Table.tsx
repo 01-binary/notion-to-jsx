@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { tableContainer, table, headerCell } from './styles.css';
 import TableRow from './TableRow';
 import { TableBlock } from '../../../../types';
@@ -6,7 +7,7 @@ interface TableProps {
   block: TableBlock;
 }
 
-const Table = ({ block }: TableProps) => {
+const Table = memo(({ block }: TableProps) => {
   if (!block.table || !block.children) {
     return null;
   }
@@ -49,6 +50,8 @@ const Table = ({ block }: TableProps) => {
       </table>
     </div>
   );
-};
+});
+
+Table.displayName = 'Table';
 
 export default Table;

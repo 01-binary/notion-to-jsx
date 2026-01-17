@@ -1,6 +1,6 @@
-import { useState, useRef, useEffect } from 'react';
 import { coverContainer, skeletonWrapper, imageStyle } from './styles.css';
 import Skeleton from '../Skeleton';
+import { useImageLoad } from '../../hooks/useImageLoad';
 
 interface Props {
   src: string;
@@ -12,20 +12,7 @@ interface Props {
  * 이미지 로딩 중에는 스켈레톤 UI를 표시하고, 로딩 완료 시 자연스럽게 이미지로 전환됩니다.
  */
 const Cover = ({ src, alt }: Props) => {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const imgRef = useRef<HTMLImageElement>(null);
-
-  // 이미지가 이미 로드된 경우를 체크
-  useEffect(() => {
-    const img = imgRef.current;
-    if (img && img.complete && img.naturalHeight !== 0) {
-      setIsLoaded(true);
-    }
-  }, [src]);
-
-  const handleLoad = () => {
-    setIsLoaded(true);
-  };
+  const { isLoaded, imgRef, handleLoad } = useImageLoad(src);
 
   return (
     <div className={coverContainer}>

@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { ColumnBlock } from '../../../../types';
 import BlockRenderer from '../Block/BlockRenderer';
 import { columnContainer } from './styles.css';
@@ -6,7 +7,7 @@ export interface ColumnProps {
   block: ColumnBlock;
 }
 
-const Column = ({ block }: ColumnProps) => {
+const Column = memo(({ block }: ColumnProps) => {
   if (!block || !block.children) return null;
 
   return (
@@ -16,6 +17,8 @@ const Column = ({ block }: ColumnProps) => {
       ))}
     </div>
   );
-};
+});
+
+Column.displayName = 'Column';
 
 export default Column;
