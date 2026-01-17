@@ -4,6 +4,25 @@ import { getPageProperties as getPagePropertiesFunc } from './getPageProperties'
 import { getFileUrl as getFileUrlFunc } from './getFileUrl';
 import { getPageBlocks as getPageBlocksFunc } from './getPageBlocks';
 
+// 사용자를 위한 타입 re-export
+export type {
+  NotionBlock,
+  NotionBlockWithChildren,
+  ImageBlockContent,
+  ImageFormatMetadata,
+  BookmarkMetadata,
+  BookmarkBlockContent,
+} from './types';
+
+export {
+  isImageBlock,
+  isBookmarkBlock,
+  hasChildren,
+  extractImageUrl,
+  extractDomain,
+  createBookmarkMetadata,
+} from './types';
+
 export class Client extends NotionClient {
   constructor(options: ClientOptions = {}) {
     super(options);
