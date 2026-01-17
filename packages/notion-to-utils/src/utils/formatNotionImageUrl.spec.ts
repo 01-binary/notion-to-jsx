@@ -1,11 +1,8 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import {
-  formatNotionImageUrl,
-  getFormattedImageUrlFromBlock,
-} from './formatNotionImageUrl';
+import { formatNotionImageUrl } from './formatNotionImageUrl';
 
 describe('formatNotionImageUrl', () => {
-  // 콘솔 에러 메시지 출력 방지
+  // Suppress console.error during tests
   const originalConsoleError = console.error;
   beforeEach(() => {
     console.error = vi.fn();
@@ -70,7 +67,7 @@ describe('formatNotionImageUrl', () => {
   it('URL 변환 중 오류가 발생하면 원래 URL을 반환해야 함', () => {
     const mockUrl = 'https://example.com/image.jpg';
 
-    // encodeURIComponent에서 오류가 발생하도록 모킹
+    // Mock encodeURIComponent to throw an error
     const originalEncodeURIComponent = global.encodeURIComponent;
     global.encodeURIComponent = vi.fn(() => {
       throw new Error('인코딩 오류');
@@ -78,122 +75,26 @@ describe('formatNotionImageUrl', () => {
 
     const result = formatNotionImageUrl(mockUrl);
 
-    expect(console.error).toHaveBeenCalled();
+    // Should return original URL on error (silent failure)
     expect(result).toBe(mockUrl);
 
-    // 원래 함수로 복원
+    // Restore original function
     global.encodeURIComponent = originalEncodeURIComponent;
   });
-});
 
-describe('getFormattedImageUrlFromBlock', () => {
-  // 콘솔 에러 메시지 출력 방지
-  const originalConsoleError = console.error;
-  beforeEach(() => {
-    console.error = vi.fn();
+  it('undefined URL을 빈 문자열로 반환해야 함', () => {
+    expect(formatNotionImageUrl(undefined)).toBe('');
   });
 
-  afterEach(() => {
-    console.error = originalConsoleError;
-  });
+  it('AWS 파라미터가 있는 URL에서 파라미터를 제거해야 함', () => {
+    const s3UrlWithParams =
+      'https://prod-files-secure.s3.us-west-2.amazonaws.com/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=test';
+    const baseUrl =
+      'https://prod-files-secure.s3.us-west-2.amazonaws.com/image.png';
+    const expected = `https://www.notion.so/image/${encodeURIComponent(baseUrl)}?cache=v2`;
 
-  it('이미지 블록에서 URL을 추출하고 포맷팅해야 함', () => {
-    const mockBlock = {
-      id: '17f9c6bf-2b17-8016-bf79-dc83ab79fb78',
-      type: 'image',
-      image: {
-        file: {
-          url: 'https://prod-files-secure.s3.us-west-2.amazonaws.com/cd7314a5-d906-43b0-81e7-42eff82c02a3/566f127b-9e73-491d-bee6-5afd075653a2/image.png',
-        },
-      },
-      last_edited_by: {
-        id: '5146391e-8b65-47f2-83b6-2bfe81194f32',
-      },
-    };
+    const result = formatNotionImageUrl(s3UrlWithParams);
 
-    const expectedUrl = formatNotionImageUrl(
-      mockBlock.image.file.url,
-      mockBlock.id
-    );
-
-    const result = getFormattedImageUrlFromBlock(mockBlock);
-
-    expect(result).toBe(expectedUrl);
-  });
-
-  it('external URL이 있는 이미지 블록도 처리해야 함', () => {
-    const mockBlock = {
-      id: '17f9c6bf-2b17-8016-bf79-dc83ab79fb78',
-      type: 'image',
-      image: {
-        external: {
-          url: 'https://example.com/image.jpg',
-        },
-      },
-      last_edited_by: {
-        id: '5146391e-8b65-47f2-83b6-2bfe81194f32',
-      },
-    };
-
-    const expectedUrl = formatNotionImageUrl(
-      mockBlock.image.external.url,
-      mockBlock.id
-    );
-
-    const result = getFormattedImageUrlFromBlock(mockBlock);
-
-    expect(result).toBe(expectedUrl);
-  });
-
-  it('이미지 블록이 아닌 경우 null을 반환해야 함', () => {
-    const mockBlock = {
-      id: '17f9c6bf-2b17-8016-bf79-dc83ab79fb78',
-      type: 'paragraph',
-      paragraph: {
-        rich_text: [],
-      },
-    };
-
-    const result = getFormattedImageUrlFromBlock(mockBlock);
-
-    expect(result).toBeNull();
-  });
-
-  it('URL이 없는 이미지 블록은 null을 반환해야 함', () => {
-    const mockBlock = {
-      id: '17f9c6bf-2b17-8016-bf79-dc83ab79fb78',
-      type: 'image',
-      image: {},
-    };
-
-    const result = getFormattedImageUrlFromBlock(mockBlock);
-
-    expect(result).toBeNull();
-  });
-
-  it('블록이 null이면 null을 반환해야 함', () => {
-    expect(getFormattedImageUrlFromBlock(null)).toBeNull();
-  });
-
-  it('처리 중 오류가 발생하면 null을 반환해야 함', () => {
-    const mockBlock = {
-      id: '17f9c6bf-2b17-8016-bf79-dc83ab79fb78',
-      type: 'image',
-      image: {
-        file: {
-          get url() {
-            throw new Error('액세스 오류');
-          },
-        },
-      },
-    };
-
-    // 콘솔 에러 스파이 설정
-    vi.spyOn(console, 'error').mockImplementation(() => {});
-
-    const result = getFormattedImageUrlFromBlock(mockBlock);
-
-    expect(console.error).toHaveBeenCalled();
-    expect(result).toBeNull();
+    expect(result).toBe(expected);
   });
 });

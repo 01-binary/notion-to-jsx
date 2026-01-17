@@ -1,3 +1,5 @@
+import { NOTION_ID_LENGTH } from '../client/types';
+
 /**
  * 노션 이미지 URL을 깔끔한 형태로 변환하는 함수
  *
@@ -5,8 +7,7 @@
  * AWS 인증 토큰 등의 복잡한 파라미터를 제거하고 기본 이미지 URL만 사용합니다.
  *
  * @param url - 변환할 S3 이미지 URL
- * @param blockId - 블록 ID (선택적)
- * @param userId - 사용자 ID (선택적)
+ * @param blockId - 블록 ID (선택)
  * @returns 변환된 노션 스타일 이미지 URL
  *
  * @example
@@ -21,100 +22,53 @@ export const formatNotionImageUrl = (
   if (!url || typeof url !== 'string' || !url.startsWith('https://')) {
     return url ?? '';
   }
+
   try {
     // 이미 notion.so 형식인 경우 그대로 반환
     if (url.includes('notion.so/image/')) {
-      return url; // 이미 노션 이미지 URL 형식인 경우 그대로 반환
+      return url;
     }
 
     // S3 URL에서 AWS 인증 파라미터 제거 (? 이후 부분 제거)
-    // 안전하게 URL 처리 - 항상 문자열 반환 보장
-    // 이 시점에서 url은 string 타입이 보장됨
-    const baseUrl = url.includes('?') ? url.split('?')[0] : url;
+    const baseUrl = url.includes('?') ? (url.split('?')[0] ?? url) : url;
 
-    // URL 인코딩 (문자열만 인코딩 가능)
-    // 타입 단언을 사용하여 TypeScript에게 baseUrl이 문자열임을 알림
-    const encodedUrl = encodeURIComponent(baseUrl as string);
+    // URL 인코딩
+    const encodedUrl = encodeURIComponent(baseUrl);
 
     // 기본 노션 이미지 URL 형식
     let formattedUrl = `https://www.notion.so/image/${encodedUrl}`;
 
-    // 추가 파라미터 설정
-    const params: string[] = [];
-
     // 블록 ID가 있는 경우 추가
     if (blockId) {
       const formattedBlockId = formatNotionId(blockId);
-      params.push(`table=block&id=${formattedBlockId}`);
-    }
-
-    // 추가 파라미터가 있는 경우 URL에 추가
-    if (params.length > 0) {
-      formattedUrl += `?${params.join('&')}`;
+      formattedUrl += `?table=block&id=${formattedBlockId}`;
     }
 
     // 캐시 버스팅 파라미터 추가
-    formattedUrl += formattedUrl.includes('?') ? '&' : '?';
-    formattedUrl += 'cache=v2';
+    formattedUrl += formattedUrl.includes('?') ? '&cache=v2' : '?cache=v2';
 
     return formattedUrl;
-  } catch (error) {
-    console.error('이미지 URL 변환 중 오류 발생:', error);
-    return url ?? ''; // 오류 발생 시 원래 URL 반환
+  } catch {
+    // 오류 발생 시 원래 URL 반환
+    return url ?? '';
   }
 };
 
 /**
- * Notion ID 문자열에 하이픈을 추가하는 함수
+ * 노션 ID 문자열에 하이픈을 추가하는 함수
  *
- * 예시 입력: 1239c6bf2b178076a838d17ca1c89783
- * 예시 출력: 1239c6bf-2b17-8076-a838-d17ca1c89783
+ * @param id - 하이픈 없는 노션 ID 문자열 (32자)
+ * @returns 하이픈이 추가된 UUID 형식의 문자열 (8-4-4-4-12)
  *
- * @param id - 하이픈 없는 Notion ID 문자열
- * @returns 하이픈이 추가된 UUID 형식의 문자열
+ * @example
+ * formatNotionId('1239c6bf2b178076a838d17ca1c89783')
+ * // 결과: '1239c6bf-2b17-8076-a838-d17ca1c89783'
  */
 const formatNotionId = (id: string): string => {
-  if (!id || typeof id !== 'string' || id.length !== 32) {
-    return id; // 유효하지 않은 ID인 경우 원래 ID 반환
+  if (!id || typeof id !== 'string' || id.length !== NOTION_ID_LENGTH) {
+    return id;
   }
 
-  try {
-    // 8-4-4-4-12 형식으로 하이픈 추가 (UUID 형식)
-    return `${id.slice(0, 8)}-${id.slice(8, 12)}-${id.slice(12, 16)}-${id.slice(16, 20)}-${id.slice(20)}`;
-  } catch (error) {
-    console.error('Notion ID 포맷팅 중 오류 발생:', error);
-    return id; // 오류 발생 시 원래 ID 반환
-  }
-};
-
-/**
- * 노션 블록에서 이미지 URL을 추출하고 포맷팅하는 함수
- * ! 현재 미사용 (25.4.7)
- *
- * @param block - 노션 블록 객체
- * @returns 포맷팅된 이미지 URL 또는 null
- */
-export const getFormattedImageUrlFromBlock = (block: any): string | null => {
-  if (!block) return null;
-
-  try {
-    // 이미지 블록인 경우
-    if (block.type === 'image') {
-      const imageData = block.image;
-      const url = imageData?.file?.url || imageData?.external?.url;
-
-      // URL이 존재하는 경우 처리
-      if (url) {
-        // expiry_time 필드가 있는 경우에도 무시하고 URL만 사용
-        // URL에서 기본 이미지 경로만 추출하여 사용
-        const blockId = block.id;
-        return formatNotionImageUrl(url, blockId);
-      }
-    }
-
-    return null;
-  } catch (error) {
-    console.error('블록에서 이미지 URL 추출 중 오류 발생:', error);
-    return null;
-  }
+  // UUID 형식: 8-4-4-4-12
+  return `${id.slice(0, 8)}-${id.slice(8, 12)}-${id.slice(12, 16)}-${id.slice(16, 20)}-${id.slice(20)}`;
 };
