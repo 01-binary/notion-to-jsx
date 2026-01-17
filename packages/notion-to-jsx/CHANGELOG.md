@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 1.2.16
+
+### Patch Changes
+
+- cb2897b: reset delete
+
 ## 1.2.15
 
 ### Patch Changes
