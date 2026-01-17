@@ -11,17 +11,15 @@ export const useImageLoad = (src: string) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
 
-  // 이미지가 이미 로드된 경우를 체크 (브라우저 캐시)
   useEffect(() => {
+    // src 변경 시 먼저 로딩 상태 리셋
+    setIsLoaded(false);
+
+    // 브라우저 캐시로 이미 로드된 경우 체크
     const img = imgRef.current;
     if (img && img.complete && img.naturalHeight !== 0) {
       setIsLoaded(true);
     }
-  }, [src]);
-
-  // src 변경 시 로딩 상태 리셋
-  useEffect(() => {
-    setIsLoaded(false);
   }, [src]);
 
   const handleLoad = useCallback(() => {
