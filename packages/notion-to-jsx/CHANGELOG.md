@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 1.3.0
+
+### Minor Changes
+
+- f82d93d: perf: React 컴포넌트 성능 최적화 및 메모이제이션 적용
+
 ## 1.2.16
 
 ### Patch Changes
