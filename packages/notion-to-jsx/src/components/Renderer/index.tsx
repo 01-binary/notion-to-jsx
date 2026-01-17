@@ -11,7 +11,6 @@ import {
   NumberedListItemBlock,
 } from '../../types';
 import { container } from './styles.css';
-import '../../styles/reset.css';
 import { darkTheme, lightTheme } from '../../styles/theme.css';
 
 interface Props {
