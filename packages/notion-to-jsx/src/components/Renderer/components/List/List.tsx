@@ -1,4 +1,4 @@
-import { PropsWithChildren, HTMLAttributes } from 'react';
+import { PropsWithChildren, HTMLAttributes, memo } from 'react';
 import { list, listItem } from './styles.css';
 
 interface ListProps
@@ -7,10 +7,9 @@ interface ListProps
   type: 'bulleted_list_item' | 'numbered_list_item';
 }
 
-export const List = ({
+export const List = memo(({
   as: Component = 'ul',
   type,
-  className,
   children,
   ...props
 }: PropsWithChildren<ListProps>) => {
@@ -19,10 +18,11 @@ export const List = ({
       {children}
     </Component>
   );
-};
+});
 
-export const ListItem = ({
-  className,
+List.displayName = 'List';
+
+export const ListItem = memo(({
   children,
   ...props
 }: PropsWithChildren<HTMLAttributes<HTMLLIElement>>) => {
@@ -31,4 +31,6 @@ export const ListItem = ({
       {children}
     </li>
   );
-};
+});
+
+ListItem.displayName = 'ListItem';

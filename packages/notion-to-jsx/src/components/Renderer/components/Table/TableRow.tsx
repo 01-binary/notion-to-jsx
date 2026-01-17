@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { tableCell, firstCell, lastCell, hasRowHeader } from './styles.css';
 import { MemoizedRichText } from '../MemoizedComponents';
 import { TableRowBlock } from '../../../../types';
@@ -9,7 +10,7 @@ interface TableRowProps {
   rowHeaderIndex?: number;
 }
 
-const TableRow = ({
+const TableRow = memo(({
   rowBlock,
   cellClassName = '',
   rowHeaderIndex = -1,
@@ -44,6 +45,8 @@ const TableRow = ({
       })}
     </tr>
   );
-};
+});
+
+TableRow.displayName = 'TableRow';
 
 export default TableRow;

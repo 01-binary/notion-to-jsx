@@ -1,4 +1,4 @@
-import { useMemo, memo } from 'react';
+import { useMemo, memo, useCallback } from 'react';
 
 import { ListGroup } from './components/List';
 import { BlockRenderer } from './components/Block';
@@ -22,6 +22,12 @@ interface Props {
 
 const Renderer = memo(({ blocks, isDarkMode = false, title, cover }: Props) => {
   const theme = isDarkMode ? darkTheme : lightTheme;
+
+  // useCallback으로 안정적인 참조 유지 - 리스트 리렌더 방지
+  const renderBlock = useCallback(
+    (childBlock: NotionBlock) => <BlockRenderer block={childBlock} />,
+    []
+  );
 
   const renderedBlocks = useMemo(() => {
     const result: JSX.Element[] = [];
@@ -61,7 +67,7 @@ const Renderer = memo(({ blocks, isDarkMode = false, title, cover }: Props) => {
               key={block.id}
               blocks={listItems}
               type={listItemType}
-              renderBlock={(childBlock) => <BlockRenderer block={childBlock} />}
+              renderBlock={renderBlock}
             />
           );
 
@@ -85,7 +91,7 @@ const Renderer = memo(({ blocks, isDarkMode = false, title, cover }: Props) => {
     }
 
     return result;
-  }, [blocks]);
+  }, [blocks, renderBlock]);
 
   return (
     <>

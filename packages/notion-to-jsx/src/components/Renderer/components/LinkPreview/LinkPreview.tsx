@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, memo } from 'react';
 import * as styles from './styles.css';
 
 interface RepoData {
@@ -18,11 +18,12 @@ interface FigmaData {
 
 // GitHub 레포지토리 데이터를 가져오는 함수
 const fetchGitHubRepoData = async (
-  repoPath: string
+  repoPath: string,
+  signal?: AbortSignal
 ): Promise<RepoData | null> => {
   try {
     const apiUrl = `https://api.github.com/repos/${repoPath}`;
-    const response = await fetch(apiUrl);
+    const response = await fetch(apiUrl, { signal });
 
     if (!response.ok) {
       throw new Error('Failed to fetch GitHub repo data');
@@ -31,6 +32,10 @@ const fetchGitHubRepoData = async (
     const data = await response.json();
     return data;
   } catch (error) {
+    // AbortError는 정상적인 cleanup이므로 무시
+    if (error instanceof Error && error.name === 'AbortError') {
+      return null;
+    }
     console.error('Error fetching GitHub repo data:', error);
     return null;
   }
@@ -49,20 +54,11 @@ const extractFigmaData = (url: string): FigmaData | null => {
 
       if (!fileSegment) return null;
 
-      // 파일 ID와 이름 파싱
-      const fileIdMatch = fileSegment.match(/file\/([^/]+)/);
-      const fileId = fileIdMatch ? fileIdMatch[1] : '';
-
-      // URL에서 파일 이름 추출 (URL 파라미터에서)
+      // URL 경로에서 파일 이름 추출 (/file/ID/NAME 형식)
       let fileName = '';
-      let mode = '';
-
-      // URL 경로에서 파일 이름 추출 시도
       if (pathSegments.length > 3) {
-        // URL 경로에서 이름 부분 추출 (/file/ID/NAME 형식)
         const encodedName = pathSegments[3];
         if (encodedName) {
-          // URL 디코딩 및 하이픈을 공백으로 변환
           fileName = decodeURIComponent(encodedName).replace(/-/g, ' ');
         }
       }
@@ -70,18 +66,11 @@ const extractFigmaData = (url: string): FigmaData | null => {
       // 파일 이름이 추출되지 않았으면 URL에서 직접 찾기
       if (!fileName && parsedUrl.pathname.includes('-')) {
         const nameMatch = parsedUrl.pathname.match(/\/([^/]+)(?:\?|$)/);
-        if (nameMatch && nameMatch[1]) {
+        if (nameMatch?.[1]) {
           fileName = decodeURIComponent(nameMatch[1].replace(/-/g, ' '));
         }
       }
 
-      // 파라미터에서 모드 추출 (dev, design 등)
-      if (parsedUrl.search) {
-        const searchParams = new URLSearchParams(parsedUrl.search);
-        mode = searchParams.get('mode') || '';
-      }
-
-      // 이름이 추출되지 않았으면 기본값 사용
       fileName = fileName || 'Figma Design';
 
       return {
@@ -132,6 +121,12 @@ const getLinkType = (url: string): 'github' | 'figma' | 'unknown' => {
   }
 };
 
+// 월 이름 배열을 모듈 스코프로 이동 - 매 호출마다 재생성 방지
+const MONTH_NAMES = [
+  'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+  'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
+] as const;
+
 // 날짜 포맷팅 함수
 const formatUpdatedTime = (dateString: string): string => {
   const date = new Date(dateString);
@@ -142,35 +137,93 @@ const formatUpdatedTime = (dateString: string): string => {
 
   if (diffInHours < 24) {
     return `Updated ${diffInHours} hours ago`;
-  } else {
-    const diffInDays = Math.floor(diffInHours / 24);
-    if (diffInDays === 1) {
-      return 'Updated yesterday';
-    } else if (diffInDays < 30) {
-      return `Updated ${diffInDays} days ago`;
-    } else {
-      const months = [
-        'Jan',
-        'Feb',
-        'Mar',
-        'Apr',
-        'May',
-        'Jun',
-        'Jul',
-        'Aug',
-        'Sep',
-        'Oct',
-        'Nov',
-        'Dec',
-      ];
-      return `Updated on ${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
-    }
   }
+
+  const diffInDays = Math.floor(diffInHours / 24);
+  if (diffInDays === 1) {
+    return 'Updated yesterday';
+  }
+  if (diffInDays < 30) {
+    return `Updated ${diffInDays} days ago`;
+  }
+
+  return `Updated on ${MONTH_NAMES[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
 };
+
+// ============ 서브 컴포넌트 ============
+
+interface FigmaPreviewProps {
+  data: FigmaData;
+}
+
+const FigmaPreview = memo(({ data }: FigmaPreviewProps) => (
+  <div className={styles.preview}>
+    <div className={styles.iconContainer}>
+      <img
+        src={data.thumbnailUrl || 'https://static.figma.com/app/icon/1/favicon.svg'}
+        alt="Figma icon"
+        className={styles.icon}
+      />
+    </div>
+    <div className={styles.content}>
+      <div className={styles.title}>{data.name}</div>
+      <div className={styles.description}>www.figma.com</div>
+    </div>
+  </div>
+));
+
+FigmaPreview.displayName = 'FigmaPreview';
+
+interface GitHubPreviewProps {
+  repoData: RepoData | null;
+  repoName: string;
+  updatedTimeText: string;
+  loading: boolean;
+}
+
+const GitHubPreview = memo(({ repoData, repoName, updatedTimeText, loading }: GitHubPreviewProps) => (
+  <div className={`${styles.preview} ${styles.githubPreview}`}>
+    <div className={styles.iconContainer}>
+      <img
+        src={
+          repoData?.owner?.avatar_url ||
+          'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
+        }
+        alt="Repository icon"
+        className={styles.icon}
+      />
+    </div>
+    <div className={`${styles.content} ${styles.githubContent}`}>
+      <div className={styles.title}>{repoName}</div>
+      <div className={styles.description}>
+        {loading ? 'Loading...' : `${repoName} • ${updatedTimeText}`}
+      </div>
+    </div>
+  </div>
+));
+
+GitHubPreview.displayName = 'GitHubPreview';
+
+interface DefaultPreviewProps {
+  url: string;
+}
+
+const DefaultPreview = memo(({ url }: DefaultPreviewProps) => (
+  <div className={styles.preview}>
+    <div className={styles.content}>
+      <div className={styles.title}>{url}</div>
+    </div>
+  </div>
+));
+
+DefaultPreview.displayName = 'DefaultPreview';
+
+// ============ 메인 컴포넌트 ============
 
 export interface LinkPreviewProps {
   url: string;
 }
+
 const LinkPreview = ({ url }: LinkPreviewProps) => {
   const [repoData, setRepoData] = useState<RepoData | null>(null);
   const [figmaData, setFigmaData] = useState<FigmaData | null>(null);
@@ -180,6 +233,8 @@ const LinkPreview = ({ url }: LinkPreviewProps) => {
   );
 
   useEffect(() => {
+    const abortController = new AbortController();
+
     const loadLinkData = async () => {
       setLoading(true);
       const type = getLinkType(url);
@@ -188,18 +243,30 @@ const LinkPreview = ({ url }: LinkPreviewProps) => {
       if (type === 'github') {
         const repoPath = extractRepoPathFromUrl(url);
         if (repoPath) {
-          const data = await fetchGitHubRepoData(repoPath);
-          setRepoData(data);
+          const data = await fetchGitHubRepoData(repoPath, abortController.signal);
+          // 취소된 요청이면 state 업데이트 하지 않음
+          if (!abortController.signal.aborted) {
+            setRepoData(data);
+          }
         }
       } else if (type === 'figma') {
         const data = extractFigmaData(url);
-        setFigmaData(data);
+        if (!abortController.signal.aborted) {
+          setFigmaData(data);
+        }
       }
 
-      setLoading(false);
+      if (!abortController.signal.aborted) {
+        setLoading(false);
+      }
     };
 
     loadLinkData();
+
+    // Cleanup: 컴포넌트 언마운트 또는 url 변경 시 요청 취소
+    return () => {
+      abortController.abort();
+    };
   }, [url]);
 
   // 레포지토리 이름 추출 (full_name에서 organization/repo 형식)
@@ -213,7 +280,23 @@ const LinkPreview = ({ url }: LinkPreviewProps) => {
     ? formatUpdatedTime(repoData.updated_at)
     : '';
 
-  // 모든 링크 타입을 조건부 렌더링으로 통합
+  const renderPreview = () => {
+    if (linkType === 'figma' && figmaData) {
+      return <FigmaPreview data={figmaData} />;
+    }
+    if (linkType === 'github') {
+      return (
+        <GitHubPreview
+          repoData={repoData}
+          repoName={repoName}
+          updatedTimeText={updatedTimeText}
+          loading={loading}
+        />
+      );
+    }
+    return <DefaultPreview url={url} />;
+  };
+
   return (
     <a
       href={url}
@@ -221,52 +304,7 @@ const LinkPreview = ({ url }: LinkPreviewProps) => {
       rel="noopener noreferrer"
       className={styles.link}
     >
-      {linkType === 'figma' && figmaData ? (
-        // Figma 프리뷰 렌더링
-        <div className={styles.preview}>
-          <div className={styles.iconContainer}>
-            <img
-              src={
-                figmaData.thumbnailUrl ||
-                'https://static.figma.com/app/icon/1/favicon.svg'
-              }
-              alt="Figma icon"
-              className={styles.icon}
-            />
-          </div>
-          <div className={styles.content}>
-            <div className={styles.title}>{figmaData.name}</div>
-            <div className={styles.description}>www.figma.com</div>
-          </div>
-        </div>
-      ) : linkType === 'github' ? (
-        // GitHub 프리뷰 렌더링
-        <div className={`${styles.preview} ${styles.githubPreview}`}>
-          <div className={styles.iconContainer}>
-            <img
-              src={
-                repoData?.owner?.avatar_url ||
-                'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
-              }
-              alt="Repository icon"
-              className={styles.icon}
-            />
-          </div>
-          <div className={`${styles.content} ${styles.githubContent}`}>
-            <div className={styles.title}>{repoName}</div>
-            <div className={styles.description}>
-              {loading ? 'Loading...' : `${repoName} • ${updatedTimeText}`}
-            </div>
-          </div>
-        </div>
-      ) : (
-        // 기본 링크 프리뷰 렌더링
-        <div className={styles.preview}>
-          <div className={styles.content}>
-            <div className={styles.title}>{url}</div>
-          </div>
-        </div>
-      )}
+      {renderPreview()}
     </a>
   );
 };

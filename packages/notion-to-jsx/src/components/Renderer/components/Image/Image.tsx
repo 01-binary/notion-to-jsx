@@ -1,4 +1,3 @@
-import { useState, useRef, useEffect } from 'react';
 import { MemoizedRichText } from '../MemoizedComponents';
 import {
   imageContainer,
@@ -9,6 +8,7 @@ import {
 } from './styles.css';
 import { RichTextItem } from '../RichText/RichTexts';
 import Skeleton from '../../../Skeleton';
+import { useImageLoad } from '../../../../hooks/useImageLoad';
 
 export interface ImageFormat {
   block_width?: number;
@@ -41,20 +41,7 @@ const Image = ({
   format,
   isColumn = false,
 }: Props) => {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const imgRef = useRef<HTMLImageElement>(null);
-
-  // 이미지가 이미 로드된 경우를 체크
-  useEffect(() => {
-    const img = imgRef.current;
-    if (img && img.complete && img.naturalHeight !== 0) {
-      setIsLoaded(true);
-    }
-  }, [src]);
-
-  const handleLoad = () => {
-    setIsLoaded(true);
-  };
+  const { isLoaded, imgRef, handleLoad } = useImageLoad(src);
 
   return (
     <div className={imageContainer}>

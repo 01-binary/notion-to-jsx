@@ -1,4 +1,4 @@
-import { ReactNode, useMemo } from 'react';
+import { ReactNode, useMemo, memo } from 'react';
 import { codeBlock } from './styles.css';
 import Prism, { Grammar, Token } from 'prismjs';
 import { MemoizedRichText } from '../MemoizedComponents';
@@ -41,7 +41,7 @@ export interface Props {
   caption?: RichTextItem[];
 }
 
-const CodeBlock = ({ code, language, caption }: Props) => {
+const CodeBlock = memo(({ code, language, caption }: Props) => {
   const tokens = useMemo(() => {
     const prismLanguage =
       Prism.languages[language] || Prism.languages.plaintext;
@@ -62,6 +62,8 @@ const CodeBlock = ({ code, language, caption }: Props) => {
       )}
     </>
   );
-};
+});
+
+CodeBlock.displayName = 'CodeBlock';
 
 export default CodeBlock;
