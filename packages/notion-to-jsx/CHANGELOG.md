@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 1.3.1
+
+### Patch Changes
+
+- 324e498: img render bug fix
+
 ## 1.3.0
 
 ### Minor Changes
