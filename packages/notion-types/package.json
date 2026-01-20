@@ -1,6 +1,6 @@
 {
   "name": "notion-types",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Shared types for notion-to-jsx and notion-to-utils",
   "private": true,
   "main": "./dist/index.js",
