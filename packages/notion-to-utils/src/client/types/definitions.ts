@@ -6,8 +6,9 @@ import type {
   BlockObjectResponse,
   PartialBlockObjectResponse,
 } from '@notionhq/client/build/src/api-endpoints';
+import type { OpenGraphData } from 'notion-types';
 
-/** 기본 블록 타입 */
+/** 기본 블록 타입 (Notion SDK) */
 export type NotionBlock = BlockObjectResponse | PartialBlockObjectResponse;
 
 /** 이미지 포맷 메타데이터 */
@@ -24,20 +25,10 @@ export interface ImageBlockContent {
   format?: ImageFormatMetadata;
 }
 
-/** 북마크 메타데이터 구조 */
-export interface BookmarkMetadata {
-  title: string;
-  description: string;
-  image: string;
-  siteName: string;
-  url: string;
-  favicon: string;
-}
-
 /** 북마크 블록 콘텐츠 구조 */
 export interface BookmarkBlockContent {
   url: string;
-  metadata?: BookmarkMetadata;
+  metadata?: OpenGraphData;
 }
 
 /** 하위 블록을 포함한 블록 (재귀 구조) */
@@ -60,3 +51,6 @@ export interface OGScraperResult {
   twitterImage?: Array<{ url: string }>;
   ogSiteName?: string;
 }
+
+// Re-export OpenGraphData for convenience
+export type { OpenGraphData } from 'notion-types';

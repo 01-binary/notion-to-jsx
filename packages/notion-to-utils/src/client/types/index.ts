@@ -27,7 +27,7 @@ export type {
   NotionBlock,
   ImageFormatMetadata,
   ImageBlockContent,
-  BookmarkMetadata,
+  OpenGraphData,
   BookmarkBlockContent,
   NotionBlockWithChildren,
   OGScraperResult,

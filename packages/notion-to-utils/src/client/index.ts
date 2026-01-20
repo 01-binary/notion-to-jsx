@@ -10,7 +10,7 @@ export type {
   NotionBlockWithChildren,
   ImageBlockContent,
   ImageFormatMetadata,
-  BookmarkMetadata,
+  OpenGraphData,
   BookmarkBlockContent,
 } from './types';
 

@@ -8,7 +8,7 @@ import {
   type NotionBlock,
   type NotionBlockWithChildren,
   type ImageBlockContent,
-  type BookmarkMetadata,
+  type OpenGraphData,
   isImageBlock,
   isBookmarkBlock,
   hasChildren,
@@ -73,7 +73,7 @@ async function processImageBlock(
  * 북마크 URL에서 Open Graph 메타데이터를 가져옵니다.
  * 실패 시 기본 메타데이터를 반환합니다.
  */
-async function fetchOGMetadata(url: string): Promise<BookmarkMetadata> {
+async function fetchOGMetadata(url: string): Promise<OpenGraphData> {
   try {
     const { result } = await ogs({
       url,

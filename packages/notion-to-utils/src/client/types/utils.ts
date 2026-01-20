@@ -4,7 +4,7 @@
 
 import type {
   ImageBlockContent,
-  BookmarkMetadata,
+  OpenGraphData,
   OGScraperResult,
 } from './definitions';
 import { FAVICON_SIZE_PX, GOOGLE_FAVICON_API } from './constants';
@@ -46,7 +46,7 @@ export function extractDomain(url: string): string | null {
 export function createBookmarkMetadata(
   bookmarkUrl: string,
   ogResult?: OGScraperResult
-): BookmarkMetadata {
+): OpenGraphData {
   const domain = extractDomain(bookmarkUrl);
 
   // OG 데이터 추출 헬퍼
