@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import type { NotionBlock } from 'notion-to-jsx';
 import { notionClient } from '../../../lib/notion';
 import PostRenderer from './PostRenderer';
 
@@ -30,7 +29,7 @@ export default async function PostPage({ params }: PostPageProps) {
           &larr; 목록으로
         </Link>
         <PostRenderer
-          blocks={blocks as unknown as NotionBlock[]}
+          blocks={blocks}
           title={title}
           cover={coverUrl}
         />

@@ -60,7 +60,7 @@ export interface RichTextItem {
 // Base Block
 // ============================================
 
-interface BaseNotionBlock {
+export interface BaseNotionBlock {
   object: 'block';
   id: string;
   children?: NotionBlock[];
@@ -69,6 +69,7 @@ interface BaseNotionBlock {
     type: string;
     [key: string]: unknown;
   };
+  [key: string]: unknown;
 }
 
 // ============================================

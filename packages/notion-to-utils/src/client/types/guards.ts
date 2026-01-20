@@ -2,19 +2,19 @@
  * 타입 가드 함수
  */
 
-import type { BlockObjectResponse } from '@notionhq/client/build/src/api-endpoints';
 import type {
   NotionBlock,
-  ImageBlockContent,
-  BookmarkBlockContent,
+  ImageBlock,
+  BookmarkBlock,
+  NotionAPIBlock,
 } from './definitions';
 
 /**
  * 이미지 블록인지 확인하는 타입 가드
  */
 export function isImageBlock(
-  block: NotionBlock
-): block is BlockObjectResponse & { type: 'image'; image: ImageBlockContent } {
+  block: NotionBlock | NotionAPIBlock
+): block is ImageBlock {
   return 'type' in block && block.type === 'image';
 }
 
@@ -22,20 +22,16 @@ export function isImageBlock(
  * 북마크 블록인지 확인하는 타입 가드
  */
 export function isBookmarkBlock(
-  block: NotionBlock
-): block is BlockObjectResponse & {
-  type: 'bookmark';
-  bookmark: BookmarkBlockContent;
-} {
+  block: NotionBlock | NotionAPIBlock
+): block is BookmarkBlock {
   return 'type' in block && block.type === 'bookmark';
 }
 
 /**
  * 하위 블록이 있는지 확인하는 타입 가드
  */
-export function hasChildren(block: NotionBlock): block is BlockObjectResponse {
-  return (
-    'has_children' in block &&
-    (block as BlockObjectResponse).has_children === true
-  );
+export function hasChildren(
+  block: NotionBlock | NotionAPIBlock
+): boolean {
+  return 'has_children' in block && block.has_children === true;
 }

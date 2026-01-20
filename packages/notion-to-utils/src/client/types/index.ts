@@ -25,12 +25,14 @@ export {
 // 타입 정의
 export type {
   NotionBlock,
+  NotionAPIBlock,
   ImageFormatMetadata,
   ImageBlockContent,
   OpenGraphData,
   BookmarkBlockContent,
-  NotionBlockWithChildren,
   OGScraperResult,
+  ImageBlock,
+  BookmarkBlock,
 } from './definitions';
 
 // 타입 가드
