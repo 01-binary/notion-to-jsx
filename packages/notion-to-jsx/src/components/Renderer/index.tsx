@@ -1,4 +1,5 @@
 import { useMemo, memo, useCallback } from 'react';
+import type { ReactNode } from 'react';
 
 import { ListGroup } from './components/List';
 import { BlockRenderer } from './components/Block';
@@ -30,7 +31,7 @@ const Renderer = memo(({ blocks, isDarkMode = false, title, cover }: Props) => {
   );
 
   const renderedBlocks = useMemo(() => {
-    const result: JSX.Element[] = [];
+    const result: ReactNode[] = [];
 
     for (let i = 0; i < blocks.length; i++) {
       const block = blocks[i];

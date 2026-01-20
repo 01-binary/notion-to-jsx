@@ -33,8 +33,8 @@
   "author": "Jinsoo Lee",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "dependencies": {
     "@vanilla-extract/css": "^1.18.0",
@@ -46,8 +46,8 @@
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/prismjs": "^1.26.5",
-    "@types/react": "^18.3.18",
-    "@types/react-dom": "^18.3.5",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
     "@vanilla-extract/esbuild-plugin": "^2.3.21",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3"
