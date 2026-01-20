@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 1.3.2
+
+### Patch Changes
+
+- cdcf215: feat: React 19 지원
+
 ## 1.3.1
 
 ### Patch Changes
