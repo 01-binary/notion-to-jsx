@@ -1,5 +1,8 @@
 import { ReactNode } from 'react';
+import type { RichTextItem } from 'notion-types';
 import { richText, link, emptyRichText } from './styles.css';
+
+export type { RichTextItem };
 
 // 지원하는 Notion 색상 타입 정의
 type NotionColor =
@@ -50,33 +53,6 @@ const NOTION_COLORS: NotionColor[] = [
 const isNotionColor = (color: string): color is NotionColor => {
   return NOTION_COLORS.includes(color as NotionColor);
 };
-
-export interface RichTextItem {
-  type: 'text' | 'mention' | string;
-  annotations: {
-    bold: boolean;
-    italic: boolean;
-    strikethrough: boolean;
-    underline: boolean;
-    code: boolean;
-    color: string;
-  };
-  bold: boolean;
-  italic: boolean;
-  strikethrough: boolean;
-  underline: boolean;
-  code: boolean;
-  color: string;
-  plain_text: string;
-  href: string | null;
-
-  text?: {
-    content: string;
-    link: {
-      url: string | null;
-    } | null;
-  };
-}
 
 /**
  * 링크 컴포넌트를 생성하는 함수

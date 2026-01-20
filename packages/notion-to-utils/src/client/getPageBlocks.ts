@@ -6,9 +6,11 @@ import { formatNotionImageUrl } from '../utils/formatNotionImageUrl';
 import { enrichImageWithMetadata } from './utils/getImageMetadata';
 import {
   type NotionBlock,
-  type NotionBlockWithChildren,
+  type NotionAPIBlock,
   type ImageBlockContent,
-  type BookmarkMetadata,
+  type OpenGraphData,
+  type ImageBlock,
+  type BookmarkBlock,
   isImageBlock,
   isBookmarkBlock,
   hasChildren,
@@ -19,7 +21,7 @@ import {
 } from './types';
 
 // 하위 호환성을 위한 타입 re-export
-export type { NotionBlock, NotionBlockWithChildren };
+export type { NotionBlock };
 
 /**
  * 페이지네이션을 처리하며 모든 블록을 가져옵니다.
@@ -28,8 +30,8 @@ export type { NotionBlock, NotionBlockWithChildren };
 async function fetchAllPaginatedBlocks(
   client: Client,
   blockId: string
-): Promise<NotionBlock[]> {
-  const allBlocks: NotionBlock[] = [];
+): Promise<NotionAPIBlock[]> {
+  const allBlocks: NotionAPIBlock[] = [];
   let cursor: string | undefined = undefined;
 
   do {
@@ -50,9 +52,9 @@ async function fetchAllPaginatedBlocks(
  * 새로운 블록 객체를 반환합니다 (불변성).
  */
 async function processImageBlock(
-  block: NotionBlock & { type: 'image'; image: ImageBlockContent }
-): Promise<NotionBlockWithChildren> {
-  const image = block.image;
+  block: ImageBlock
+): Promise<NotionBlock> {
+  const image = block.image as ImageBlockContent;
   const url = extractImageUrl(image);
 
   // 이미지 URL 포맷팅
@@ -66,14 +68,14 @@ async function processImageBlock(
   return {
     ...block,
     image: enrichedImage,
-  } as NotionBlockWithChildren;
+  } as NotionBlock;
 }
 
 /**
  * 북마크 URL에서 Open Graph 메타데이터를 가져옵니다.
  * 실패 시 기본 메타데이터를 반환합니다.
  */
-async function fetchOGMetadata(url: string): Promise<BookmarkMetadata> {
+async function fetchOGMetadata(url: string): Promise<OpenGraphData> {
   try {
     const { result } = await ogs({
       url,
@@ -96,8 +98,8 @@ async function fetchOGMetadata(url: string): Promise<BookmarkMetadata> {
  * 새로운 블록 객체를 반환합니다 (불변성).
  */
 async function processBookmarkBlock(
-  block: NotionBlock & { type: 'bookmark'; bookmark: { url: string } }
-): Promise<NotionBlockWithChildren> {
+  block: BookmarkBlock
+): Promise<NotionBlock> {
   const bookmarkUrl = block.bookmark.url;
   const metadata = await fetchOGMetadata(bookmarkUrl);
 
@@ -107,7 +109,7 @@ async function processBookmarkBlock(
       ...block.bookmark,
       metadata,
     },
-  } as NotionBlockWithChildren;
+  } as NotionBlock;
 }
 
 /**
@@ -115,8 +117,8 @@ async function processBookmarkBlock(
  * 이미지, 북마크 등 블록 타입별 처리를 수행합니다.
  */
 async function processBlock(
-  block: NotionBlock
-): Promise<NotionBlockWithChildren> {
+  block: NotionAPIBlock
+): Promise<NotionBlock> {
   if (isImageBlock(block)) {
     return processImageBlock(block);
   }
@@ -125,7 +127,7 @@ async function processBlock(
     return processBookmarkBlock(block);
   }
 
-  return { ...block } as NotionBlockWithChildren;
+  return { ...block } as NotionBlock;
 }
 
 /**
@@ -141,7 +143,7 @@ async function processBlock(
 async function fetchBlockChildren(
   client: Client,
   blockId: string
-): Promise<NotionBlockWithChildren[]> {
+): Promise<NotionBlock[]> {
   try {
     const allBlocks = await fetchAllPaginatedBlocks(client, blockId);
 
@@ -189,7 +191,7 @@ async function fetchBlockChildren(
 export async function getPageBlocks(
   client: Client,
   pageId: string
-): Promise<NotionBlockWithChildren[]> {
+): Promise<NotionBlock[]> {
   try {
     return await fetchBlockChildren(client, pageId);
   } catch (error) {

@@ -41,6 +41,7 @@
   "author": "Jinsoo Lee",
   "license": "MIT",
   "devDependencies": {
+    "notion-types": "workspace:*",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/probe-image-size": "^7.2.5",

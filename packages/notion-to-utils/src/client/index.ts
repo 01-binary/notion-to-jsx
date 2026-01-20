@@ -7,10 +7,9 @@ import { getPageBlocks as getPageBlocksFunc } from './getPageBlocks';
 // 사용자를 위한 타입 re-export
 export type {
   NotionBlock,
-  NotionBlockWithChildren,
   ImageBlockContent,
   ImageFormatMetadata,
-  BookmarkMetadata,
+  OpenGraphData,
   BookmarkBlockContent,
 } from './types';
 

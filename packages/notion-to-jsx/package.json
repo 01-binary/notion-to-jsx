@@ -43,6 +43,7 @@
     "prismjs": "^1.30.0"
   },
   "devDependencies": {
+    "notion-types": "workspace:*",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/prismjs": "^1.26.5",

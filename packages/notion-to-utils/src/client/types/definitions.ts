@@ -7,47 +7,42 @@ import type {
   PartialBlockObjectResponse,
 } from '@notionhq/client/build/src/api-endpoints';
 
-/** 기본 블록 타입 */
-export type NotionBlock = BlockObjectResponse | PartialBlockObjectResponse;
+// notion-types에서 공유 타입 re-export
+export type {
+  OpenGraphData,
+  ImageFormatMetadata,
+  NotionBlock,
+  ImageBlock,
+  BookmarkBlock,
+} from 'notion-types';
 
-/** 이미지 포맷 메타데이터 */
-export interface ImageFormatMetadata {
-  block_width?: number;
-  block_height?: number;
-  block_aspect_ratio?: number;
-}
+/** Notion SDK 블록 타입 (API 응답용) */
+export type NotionAPIBlock = BlockObjectResponse | PartialBlockObjectResponse;
 
-/** 이미지 블록 콘텐츠 구조 */
+/** 이미지 블록 콘텐츠 구조 (내부 처리용) */
 export interface ImageBlockContent {
+  type?: 'file' | 'external';
   file?: { url: string; expiry_time?: string };
   external?: { url: string };
-  format?: ImageFormatMetadata;
+  format?: {
+    block_width?: number;
+    block_height?: number;
+    block_aspect_ratio?: number;
+  };
 }
 
-/** 북마크 메타데이터 구조 */
-export interface BookmarkMetadata {
-  title: string;
-  description: string;
-  image: string;
-  siteName: string;
-  url: string;
-  favicon: string;
-}
-
-/** 북마크 블록 콘텐츠 구조 */
+/** 북마크 블록 콘텐츠 구조 (내부 처리용) */
 export interface BookmarkBlockContent {
   url: string;
-  metadata?: BookmarkMetadata;
-}
-
-/** 하위 블록을 포함한 블록 (재귀 구조) */
-export interface NotionBlockWithChildren {
-  id: string;
-  type?: string;
-  image?: ImageBlockContent;
-  bookmark?: BookmarkBlockContent;
-  children?: NotionBlockWithChildren[];
-  [key: string]: unknown;
+  caption?: unknown[];
+  metadata?: {
+    title: string;
+    description: string;
+    image: string;
+    siteName: string;
+    url: string;
+    favicon?: string;
+  };
 }
 
 /** OG 스크래퍼 결과 타입 */
