@@ -28,7 +28,7 @@ const TableRow = memo(({
         const isLastCell = index === cells.length - 1;
         const isRowHeader = index === rowHeaderIndex;
 
-        let cellClasses = [tableCell, cellClassName];
+        const cellClasses = [tableCell, cellClassName];
 
         if (isFirstCell) cellClasses.push(firstCell);
         if (isLastCell) cellClasses.push(lastCell);

@@ -29,6 +29,7 @@
   "scripts": {
     "dev": "tsup --watch",
     "build": "tsup",
+    "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest --watch"
   },
@@ -46,6 +47,7 @@
     "@repo/typescript-config": "workspace:*",
     "@types/probe-image-size": "^7.2.5",
     "@vitest/coverage-v8": "4.0.17",
+    "eslint": "^9.18.0",
     "jsdom": "^26.0.0",
     "typescript": "^5.9.3",
     "vitest": "4.0.17"

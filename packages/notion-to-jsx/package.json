@@ -14,7 +14,7 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "lint": "ESLINT_USE_FLAT_CONFIG=false eslint .",
+    "lint": "eslint .",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "files": [
@@ -50,6 +50,7 @@
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@vanilla-extract/esbuild-plugin": "^2.3.21",
+    "eslint": "^9.18.0",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3"
   }

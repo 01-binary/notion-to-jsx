@@ -1,39 +1,29 @@
-const { resolve } = require("node:path");
+import eslint from '@eslint/js';
+import tseslint from 'typescript-eslint';
+import eslintConfigPrettier from 'eslint-config-prettier';
+import onlyWarn from 'eslint-plugin-only-warn';
 
-const project = resolve(process.cwd(), "tsconfig.json");
-
-/*
- * This is a custom ESLint configuration for use with
- * internal (bundled by their consumer) libraries
- * that utilize React.
- */
-
-/** @type {import("eslint").Linter.Config} */
-module.exports = {
-  extends: ["eslint:recommended", "prettier", "turbo"],
-  plugins: ["only-warn"],
-  globals: {
-    React: true,
-    JSX: true,
+/** @type {import('eslint').Linter.Config[]} */
+export default [
+  {
+    ignores: ['**/node_modules/**', '**/dist/**', '**/*.js', '!eslint.config.js'],
   },
-  env: {
-    browser: true,
-  },
-  settings: {
-    "import/resolver": {
-      typescript: {
-        project,
+  eslint.configs.recommended,
+  ...tseslint.configs.recommended,
+  {
+    plugins: {
+      'only-warn': onlyWarn,
+    },
+    languageOptions: {
+      globals: {
+        React: 'readonly',
+        JSX: 'readonly',
+        window: 'readonly',
+        document: 'readonly',
+        navigator: 'readonly',
+        console: 'readonly',
       },
     },
   },
-  ignorePatterns: [
-    // Ignore dotfiles
-    ".*.js",
-    "node_modules/",
-    "dist/",
-  ],
-  overrides: [
-    // Force ESLint to detect .tsx files
-    { files: ["*.js?(x)", "*.ts?(x)"] },
-  ],
-};
+  eslintConfigPrettier,
+];

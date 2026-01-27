@@ -12,7 +12,7 @@ const Table = memo(({ block }: TableProps) => {
     return null;
   }
 
-  const { table_width, has_column_header, has_row_header } = block.table;
+  const { has_column_header, has_row_header } = block.table;
   const rows =
     block.children?.filter((child) => child.type === 'table_row') || [];
 

@@ -1,35 +1,32 @@
-const { resolve } = require("node:path");
+import eslint from '@eslint/js';
+import tseslint from 'typescript-eslint';
+import eslintConfigPrettier from 'eslint-config-prettier';
+import onlyWarn from 'eslint-plugin-only-warn';
 
-const project = resolve(process.cwd(), "tsconfig.json");
-
-/** @type {import("eslint").Linter.Config} */
-module.exports = {
-  extends: [
-    "eslint:recommended",
-    "prettier",
-    require.resolve("@vercel/style-guide/eslint/next"),
-    "turbo",
-  ],
-  globals: {
-    React: true,
-    JSX: true,
+/** @type {import('eslint').Linter.Config[]} */
+export default [
+  {
+    ignores: ['**/node_modules/**', '**/.next/**', '**/out/**', '**/build/**'],
   },
-  env: {
-    node: true,
-    browser: true,
-  },
-  plugins: ["only-warn"],
-  settings: {
-    "import/resolver": {
-      typescript: {
-        project,
+  eslint.configs.recommended,
+  ...tseslint.configs.recommended,
+  {
+    plugins: {
+      'only-warn': onlyWarn,
+    },
+    languageOptions: {
+      globals: {
+        React: 'readonly',
+        JSX: 'readonly',
+        window: 'readonly',
+        document: 'readonly',
+        navigator: 'readonly',
+        console: 'readonly',
+        fetch: 'readonly',
+        URL: 'readonly',
+        process: 'readonly',
       },
     },
   },
-  ignorePatterns: [
-    // Ignore dotfiles
-    ".*.js",
-    "node_modules/",
-  ],
-  overrides: [{ files: ["*.js?(x)", "*.ts?(x)"] }],
-};
+  eslintConfigPrettier,
+];

@@ -24,9 +24,6 @@
     "node": ">=18"
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["esbuild"],
-    "overrides": {
-      "eslint": "^8.57.0"
-    }
+    "onlyBuiltDependencies": ["esbuild"]
   }
 }
