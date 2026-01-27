@@ -1,13 +1,13 @@
 import { Client } from '@notionhq/client';
 import { isPropertyFileType } from './utils/isPropertyFileType';
 /**
- * Retrieves the URL of a file attached to a specific property of a Notion page.
+ * Notion 페이지의 특정 속성에 첨부된 파일의 URL을 가져옵니다.
  *
- * @async
- * @param {string} pageId - The ID of the Notion page.
- * @param {string} propertyKey - The key of the property containing the file.
- * @returns {Promise<string | undefined>} The URL of the file if found, otherwise undefined.
- * @throws {Error} If there's an issue retrieving the page or if the property is not of file type.
+ * @param client - Notion 클라이언트 인스턴스
+ * @param pageId - Notion 페이지 ID
+ * @param propertyKey - 파일이 포함된 속성의 키
+ * @returns 파일 URL 또는 없으면 undefined
+ * @throws 페이지 조회 중 문제가 발생하면 에러
  */
 export async function getFileUrl(
   client: Client,

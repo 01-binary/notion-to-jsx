@@ -14,7 +14,7 @@ afterEach(() => {
 const KEY = 'media';
 const TEST_ID = 'TEMP';
 
-// Mock response data
+// Mock 응답 데이터
 const getFileUrlValidMock = {
   object: 'page',
   properties: {

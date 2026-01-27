@@ -13,7 +13,7 @@ afterEach(() => {
 
 const TEST_ID = 'TEST_PAGE_ID';
 
-// Mock response data
+// Mock 응답 데이터
 const mockBlockResponse1 = {
   object: 'list',
   results: [
@@ -63,7 +63,7 @@ describe('getPageBlocks', () => {
     expect(blocks[1]!.id).toBe('block2');
     expect(blocks[2]!.id).toBe('block3');
 
-    // Verify pagination handling
+    // 페이지네이션 처리 검증
     expect(listMock).toHaveBeenCalledTimes(2);
     expect(listMock).toHaveBeenNthCalledWith(1, {
       block_id: TEST_ID,
