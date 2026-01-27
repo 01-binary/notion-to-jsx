@@ -1,4 +1,4 @@
-import { NOTION_ID_LENGTH } from '../client/types';
+import { NOTION_ID_LENGTH, NOTION_IMAGE_BASE_URL } from '../client/constants';
 
 /**
  * 노션 이미지 URL을 깔끔한 형태로 변환하는 함수
@@ -25,7 +25,7 @@ export const formatNotionImageUrl = (
 
   try {
     // 이미 notion.so 형식인 경우 그대로 반환
-    if (url.includes('notion.so/image/')) {
+    if (url.includes(NOTION_IMAGE_BASE_URL)) {
       return url;
     }
 
@@ -36,7 +36,7 @@ export const formatNotionImageUrl = (
     const encodedUrl = encodeURIComponent(baseUrl);
 
     // 기본 노션 이미지 URL 형식
-    let formattedUrl = `https://www.notion.so/image/${encodedUrl}`;
+    let formattedUrl = `${NOTION_IMAGE_BASE_URL}${encodedUrl}`;
 
     // 블록 ID가 있는 경우 추가
     if (blockId) {

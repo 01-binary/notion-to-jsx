@@ -11,6 +11,9 @@ export const NOTION_ID_LENGTH = 32;
 /** Google Favicon API URL */
 export const GOOGLE_FAVICON_API = 'https://www.google.com/s2/favicons';
 
+/** Notion 이미지 프록시 기본 URL */
+export const NOTION_IMAGE_BASE_URL = 'https://www.notion.so/image/';
+
 /** OG 스크래퍼용 HTTP 헤더 */
 export const OG_SCRAPER_HEADERS = {
   'user-agent':

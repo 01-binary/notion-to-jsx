@@ -1,89 +1,155 @@
 import { describe, it, expect } from 'vitest';
+import { isImageBlock, isBookmarkBlock, hasChildren } from './utils/guards';
 import {
-  isImageBlock,
-  isBookmarkBlock,
-  hasChildren,
   extractImageUrl,
   extractDomain,
   createBookmarkMetadata,
-  FAVICON_SIZE_PX,
-  GOOGLE_FAVICON_API,
-} from './types';
+} from './utils/bookmark';
+import { FAVICON_SIZE_PX, GOOGLE_FAVICON_API } from './constants';
+import type { NotionAPIBlock, ImageBlockContent } from './types';
+
+// ============================================
+// Mock 팩토리 함수
+// ============================================
+
+/** 기본 블록 Mock 생성 */
+function createMockBlock(
+  overrides: Partial<NotionAPIBlock> = {}
+): NotionAPIBlock {
+  return {
+    object: 'block',
+    id: 'test-block-id',
+    parent: { type: 'page_id', page_id: 'test-page-id' },
+    created_time: '2024-01-01T00:00:00.000Z',
+    last_edited_time: '2024-01-01T00:00:00.000Z',
+    created_by: { object: 'user', id: 'test-user-id' },
+    last_edited_by: { object: 'user', id: 'test-user-id' },
+    has_children: false,
+    archived: false,
+    in_trash: false,
+    type: 'paragraph',
+    paragraph: { rich_text: [], color: 'default' },
+    ...overrides,
+  } as NotionAPIBlock;
+}
+
+/** 이미지 블록 Mock 생성 */
+function createMockImageBlock(
+  imageContent: Partial<ImageBlockContent> = {}
+): NotionAPIBlock {
+  return createMockBlock({
+    type: 'image',
+    image: {
+      type: 'file',
+      file: { url: 'https://s3.amazonaws.com/test.jpg', expiry_time: '' },
+      ...imageContent,
+    },
+  } as Partial<NotionAPIBlock>);
+}
+
+/** 북마크 블록 Mock 생성 */
+function createMockBookmarkBlock(url = 'https://example.com'): NotionAPIBlock {
+  return createMockBlock({
+    type: 'bookmark',
+    bookmark: { url, caption: [] },
+  } as Partial<NotionAPIBlock>);
+}
+
+/** 이미지 콘텐츠 Mock 생성 */
+function createMockImageContent(
+  overrides: Partial<ImageBlockContent> = {}
+): ImageBlockContent {
+  return {
+    type: 'file',
+    file: { url: 'https://s3.amazonaws.com/test.jpg', expiry_time: '' },
+    ...overrides,
+  } as ImageBlockContent;
+}
+
+// ============================================
+// 테스트
+// ============================================
 
 describe('types', () => {
   describe('isImageBlock', () => {
     it('이미지 블록이면 true를 반환한다', () => {
-      const block = { type: 'image', image: { file: { url: 'test.jpg' } } };
-      expect(isImageBlock(block as any)).toBe(true);
+      const block = createMockImageBlock();
+      expect(isImageBlock(block)).toBe(true);
     });
 
     it('이미지 블록이 아니면 false를 반환한다', () => {
-      const block = { type: 'paragraph' };
-      expect(isImageBlock(block as any)).toBe(false);
+      const block = createMockBlock({ type: 'paragraph' });
+      expect(isImageBlock(block)).toBe(false);
     });
 
     it('type 속성이 없으면 false를 반환한다', () => {
-      const block = { id: 'test' };
-      expect(isImageBlock(block as any)).toBe(false);
+      const block = { id: 'test' } as unknown as NotionAPIBlock;
+      expect(isImageBlock(block)).toBe(false);
     });
   });
 
   describe('isBookmarkBlock', () => {
     it('북마크 블록이면 true를 반환한다', () => {
-      const block = { type: 'bookmark', bookmark: { url: 'https://example.com' } };
-      expect(isBookmarkBlock(block as any)).toBe(true);
+      const block = createMockBookmarkBlock('https://example.com');
+      expect(isBookmarkBlock(block)).toBe(true);
     });
 
     it('북마크 블록이 아니면 false를 반환한다', () => {
-      const block = { type: 'paragraph' };
-      expect(isBookmarkBlock(block as any)).toBe(false);
+      const block = createMockBlock({ type: 'paragraph' });
+      expect(isBookmarkBlock(block)).toBe(false);
     });
   });
 
   describe('hasChildren', () => {
     it('has_children이 true면 true를 반환한다', () => {
-      const block = { has_children: true };
-      expect(hasChildren(block as any)).toBe(true);
+      const block = createMockBlock({ has_children: true });
+      expect(hasChildren(block)).toBe(true);
     });
 
     it('has_children이 false면 false를 반환한다', () => {
-      const block = { has_children: false };
-      expect(hasChildren(block as any)).toBe(false);
+      const block = createMockBlock({ has_children: false });
+      expect(hasChildren(block)).toBe(false);
     });
 
     it('has_children 속성이 없으면 false를 반환한다', () => {
-      const block = { id: 'test' };
-      expect(hasChildren(block as any)).toBe(false);
+      const block = { id: 'test' } as unknown as NotionAPIBlock;
+      expect(hasChildren(block)).toBe(false);
     });
   });
 
   describe('extractImageUrl', () => {
     it('file 타입 이미지에서 URL을 추출한다', () => {
-      const image = { file: { url: 'https://s3.amazonaws.com/test.jpg' } };
+      const image = createMockImageContent({
+        file: { url: 'https://s3.amazonaws.com/test.jpg', expiry_time: '' },
+      });
       expect(extractImageUrl(image)).toBe('https://s3.amazonaws.com/test.jpg');
     });
 
     it('external 타입 이미지에서 URL을 추출한다', () => {
-      const image = { external: { url: 'https://example.com/image.png' } };
+      const image = createMockImageContent({
+        type: 'external',
+        file: undefined,
+        external: { url: 'https://example.com/image.png' },
+      });
       expect(extractImageUrl(image)).toBe('https://example.com/image.png');
     });
 
     it('file이 external보다 우선순위가 높다', () => {
-      const image = {
-        file: { url: 'https://s3.amazonaws.com/file.jpg' },
+      const image = createMockImageContent({
+        file: { url: 'https://s3.amazonaws.com/file.jpg', expiry_time: '' },
         external: { url: 'https://example.com/external.jpg' },
-      };
+      });
       expect(extractImageUrl(image)).toBe('https://s3.amazonaws.com/file.jpg');
     });
 
     it('URL이 없으면 null을 반환한다', () => {
-      const image = {};
+      const image = {} as ImageBlockContent;
       expect(extractImageUrl(image)).toBeNull();
     });
 
     it('빈 file 객체면 null을 반환한다', () => {
-      const image = { file: {} };
-      expect(extractImageUrl(image as any)).toBeNull();
+      const image = { file: {} } as ImageBlockContent;
+      expect(extractImageUrl(image)).toBeNull();
     });
   });
 

@@ -1,25 +1,40 @@
 import probe from 'probe-image-size';
 import type { ImageBlockContent, ImageFormatMetadata } from '../types';
-import { extractImageUrl } from '../types';
+import { extractImageUrl } from './bookmark';
+import { imageMetadataCache } from './cache';
 
 /**
  * 이미지 URL에서 메타데이터(너비, 높이, 종횡비)를 추출합니다.
+ * LRU 캐시를 사용하여 동일 URL에 대한 중복 요청을 방지합니다.
  *
  * @param url - 이미지 URL
  * @returns 이미지 메타데이터 또는 실패 시 null
  */
 async function getImageMetadata(
-  url: string
+  url: string,
 ): Promise<ImageFormatMetadata | null> {
+  // 캐시 확인
+  const cached = imageMetadataCache.get(url) as
+    | ImageFormatMetadata
+    | null
+    | undefined;
+  if (cached !== undefined) {
+    return cached;
+  }
+
   try {
     const result = await probe(url);
-    return {
+    const metadata: ImageFormatMetadata = {
       block_width: result.width,
       block_height: result.height,
       block_aspect_ratio: result.height > 0 ? result.width / result.height : 1,
     };
+    imageMetadataCache.set(url, metadata);
+    return metadata;
   } catch {
     // 이미지 메타데이터는 선택적 기능이므로 조용히 실패
+    // 실패도 캐시하여 같은 URL에 대한 반복 실패 방지
+    imageMetadataCache.set(url, null);
     return null;
   }
 }
@@ -32,7 +47,7 @@ async function getImageMetadata(
  * @returns 메타데이터가 추가된 이미지 콘텐츠
  */
 export async function enrichImageWithMetadata(
-  image: ImageBlockContent
+  image: ImageBlockContent,
 ): Promise<ImageBlockContent> {
   const url = extractImageUrl(image);
   if (!url) {
@@ -51,21 +66,4 @@ export async function enrichImageWithMetadata(
       ...metadata,
     },
   };
-}
-
-/**
- * @deprecated enrichImageWithMetadata를 사용하세요.
- * 이 함수는 블록을 직접 변경합니다 - 하위 호환성을 위해 유지됩니다.
- */
-export async function addMetadataToImageBlock(block: {
-  type: string;
-  image?: ImageBlockContent;
-}): Promise<typeof block> {
-  if (block.type !== 'image' || !block.image) {
-    return block;
-  }
-
-  const enrichedImage = await enrichImageWithMetadata(block.image);
-  block.image = enrichedImage;
-  return block;
 }

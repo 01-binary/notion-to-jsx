@@ -46,8 +46,10 @@ describe('getPageProperties', () => {
       .fn()
       .mockResolvedValue(getPagePropertiesMock);
 
-    // extractValues를 false로 명시적으로 설정
-    const properties = await notionClient.getPageProperties(TEST_ID, [], false);
+    // extractValues를 false로 명시적으로 설정 (새 API: options 객체)
+    const properties = await notionClient.getPageProperties(TEST_ID, {
+      extractValues: false,
+    });
     expect(properties).toEqual(getPagePropertiesMock.properties);
     expect(notionClient.pages.retrieve).toHaveBeenCalledWith({
       page_id: TEST_ID,
@@ -59,12 +61,11 @@ describe('getPageProperties', () => {
       .fn()
       .mockResolvedValue(getPagePropertiesMock);
 
-    // extractValues를 false로 명시적으로 설정
-    const filteredProperties = await notionClient.getPageProperties(
-      TEST_ID,
-      ['Category', 'Date'],
-      false
-    );
+    // extractValues를 false로 명시적으로 설정 (새 API: options 객체)
+    const filteredProperties = await notionClient.getPageProperties(TEST_ID, {
+      keys: ['Category', 'Date'],
+      extractValues: false,
+    });
 
     expect(filteredProperties).toEqual({
       Category: getPagePropertiesMock.properties.Category,
@@ -78,11 +79,10 @@ describe('getPageProperties', () => {
   it('유효하지 않은 pageId가 제공될 때 undefined를 반환한다', async () => {
     notionClient.pages.retrieve = vi.fn().mockResolvedValue(null);
 
-    const filteredProperties = await notionClient.getPageProperties(
-      TEST_ID,
-      ['Category'],
-      false
-    );
+    const filteredProperties = await notionClient.getPageProperties(TEST_ID, {
+      keys: ['Category'],
+      extractValues: false,
+    });
 
     expect(filteredProperties).toBeUndefined();
     expect(notionClient.pages.retrieve).toHaveBeenCalledWith({
@@ -95,11 +95,10 @@ describe('getPageProperties', () => {
       .fn()
       .mockResolvedValue(getPagePropertiesMock);
 
-    const filteredProperties = await notionClient.getPageProperties(
-      TEST_ID,
-      ['NonExistentKey'],
-      false
-    );
+    const filteredProperties = await notionClient.getPageProperties(TEST_ID, {
+      keys: ['NonExistentKey'],
+      extractValues: false,
+    });
 
     expect(filteredProperties).toEqual({});
     expect(notionClient.pages.retrieve).toHaveBeenCalledWith({
@@ -107,14 +106,14 @@ describe('getPageProperties', () => {
     });
   });
 
-  it('API 오류를 적절히 처리한다', async () => {
+  it('API 오류를 적절히 처리한다 (undefined 반환)', async () => {
     notionClient.pages.retrieve = vi
       .fn()
       .mockRejectedValue(new Error('API Error'));
 
-    await expect(notionClient.getPageProperties(TEST_ID)).rejects.toThrow(
-      'API Error'
-    );
+    // 에러 발생 시 undefined 반환 (throw 대신)
+    const result = await notionClient.getPageProperties(TEST_ID);
+    expect(result).toBeUndefined();
     expect(notionClient.pages.retrieve).toHaveBeenCalledWith({
       page_id: TEST_ID,
     });
@@ -126,9 +125,11 @@ describe('getPageProperties', () => {
       .fn()
       .mockResolvedValue(getPagePropertiesMockWithCover);
 
-    // 테스트 실행
-    const properties = await notionClient.getPageProperties(TEST_ID, [], false);
-    console.log(properties);
+    // 테스트 실행 (새 API: options 객체)
+    const properties = await notionClient.getPageProperties(TEST_ID, {
+      extractValues: false,
+    });
+
     // 결과 검증
     expect(properties).not.toBeUndefined();
     expect(properties).toHaveProperty('coverUrl');
@@ -154,8 +155,10 @@ describe('getPageProperties', () => {
       .fn()
       .mockResolvedValue(mockWithExternalCover);
 
-    // 테스트 실행
-    const properties = await notionClient.getPageProperties(TEST_ID, [], false);
+    // 테스트 실행 (새 API: options 객체)
+    const properties = await notionClient.getPageProperties(TEST_ID, {
+      extractValues: false,
+    });
 
     // 결과 검증
     expect(properties).not.toBeUndefined();
@@ -180,8 +183,10 @@ describe('getPageProperties', () => {
     };
 
     notionClient.pages.retrieve = vi.fn().mockResolvedValue(mockWithoutCover);
-    // 테스트 실행
-    const properties = await notionClient.getPageProperties(TEST_ID, [], false);
+    // 테스트 실행 (새 API: options 객체)
+    const properties = await notionClient.getPageProperties(TEST_ID, {
+      extractValues: false,
+    });
 
     // 결과 검증
     expect(properties).not.toBeUndefined();
@@ -205,8 +210,10 @@ describe('getPageProperties', () => {
       .fn()
       .mockResolvedValue(mockWithExternalCover);
 
-    // 테스트 실행 - extractValues를 true로 설정
-    const properties = await notionClient.getPageProperties(TEST_ID, [], true);
+    // 테스트 실행 - extractValues를 true로 설정 (새 API: options 객체)
+    const properties = await notionClient.getPageProperties(TEST_ID, {
+      extractValues: true,
+    });
 
     // 결과 검증
     expect(properties).not.toBeUndefined();

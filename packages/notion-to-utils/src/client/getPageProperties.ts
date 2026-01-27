@@ -1,8 +1,22 @@
 import { Client } from '@notionhq/client';
-import type { PageObjectResponse } from '@notionhq/client/build/src/api-endpoints';
-import { isPageObjectResponse } from './utils/isPageObjectResponse';
-import { extractValuesFromProperties } from './utils/extractValuesFromProperties';
+import type {
+  PageObjectResponse,
+  GetPageResponse,
+} from '@notionhq/client/build/src/api-endpoints';
+
+import {
+  extractValuesFromProperties,
+  type ExtractedValue,
+} from './utils/extractValuesFromProperties';
 import { formatNotionImageUrl } from '../utils/formatNotionImageUrl';
+
+/**
+ * getPageProperties 반환 타입
+ */
+export type GetPagePropertiesResult =
+  | Record<string, ExtractedValue>
+  | PageObjectResponse['properties']
+  | undefined;
 
 /**
  * 커버 이미지에서 URL을 추출합니다.
@@ -13,7 +27,7 @@ import { formatNotionImageUrl } from '../utils/formatNotionImageUrl';
  */
 function extractCoverUrl(
   cover: PageObjectResponse['cover'],
-  pageId: string
+  pageId: string,
 ): string {
   if (!cover) return '';
 
@@ -37,7 +51,7 @@ function extractCoverUrl(
  */
 function filterProperties(
   properties: PageObjectResponse['properties'],
-  keys: string[]
+  keys: string[],
 ): PageObjectResponse['properties'] {
   const result: PageObjectResponse['properties'] = {};
   for (const key of keys) {
@@ -50,12 +64,21 @@ function filterProperties(
 }
 
 /**
+ * getPageProperties 옵션
+ */
+export interface GetPagePropertiesOptions {
+  /** 가져올 속성 키 배열 (빈 배열이면 모든 속성) */
+  keys?: string[];
+  /** 값을 추출할지 여부 (기본값: true) */
+  extractValues?: boolean;
+}
+
+/**
  * Notion 페이지의 속성을 조회합니다.
  *
  * @param client - Notion 클라이언트 인스턴스
  * @param pageId - 페이지 ID
- * @param keys - 가져올 속성 키 배열 (빈 배열이면 모든 속성)
- * @param extractValues - 값을 추출할지 여부 (기본값: true)
+ * @param options - 옵션 객체
  * @returns 속성 객체 또는 추출된 값 객체
  *
  * @example
@@ -63,38 +86,64 @@ function filterProperties(
  * const props = await getPageProperties(client, 'page-id');
  *
  * // 특정 속성만 가져오기
- * const props = await getPageProperties(client, 'page-id', ['Title', 'Category']);
+ * const props = await getPageProperties(client, 'page-id', { keys: ['Title', 'Category'] });
  *
  * // 원본 속성 객체 가져오기
- * const props = await getPageProperties(client, 'page-id', [], false);
+ * const props = await getPageProperties(client, 'page-id', { extractValues: false });
  */
 export async function getPageProperties(
   client: Client,
   pageId: string,
-  keys: string[] = [],
-  extractValues = true
-) {
-  const page = await client.pages.retrieve({ page_id: pageId });
+  options: GetPagePropertiesOptions = {},
+): Promise<GetPagePropertiesResult> {
+  const { keys = [], extractValues = true } = options;
 
-  if (!isPageObjectResponse(page)) return;
+  try {
+    const page = await client.pages.retrieve({ page_id: pageId });
 
-  const { properties, cover } = page;
+    if (!isPageObjectResponse(page)) return undefined;
 
-  // 커버 이미지 URL 추가
-  const coverUrl = extractCoverUrl(cover, pageId);
-  if (coverUrl) {
-    properties.coverUrl = {
-      type: 'url',
-      url: coverUrl,
-      id: `${pageId}-coverUrl`,
-    };
+    const { properties, cover } = page;
+
+    // 새 객체로 복사하여 원본 불변성 유지
+    const enhancedProperties = { ...properties };
+
+    // 커버 이미지 URL 추가
+    const coverUrl = extractCoverUrl(cover, pageId);
+    if (coverUrl) {
+      enhancedProperties.coverUrl = {
+        type: 'url',
+        url: coverUrl,
+        id: `${pageId}-coverUrl`,
+      };
+    }
+
+    // 필터링 또는 전체 반환
+    const targetProperties =
+      keys.length > 0
+        ? filterProperties(enhancedProperties, keys)
+        : enhancedProperties;
+
+    return extractValues
+      ? extractValuesFromProperties(targetProperties)
+      : targetProperties;
+  } catch (error) {
+    // 에러 발생 시 undefined 반환 (getPageBlocks의 빈 배열과 일관된 패턴)
+    if (process.env.NODE_ENV === 'development') {
+      console.warn(
+        `[notion-to-utils] 페이지 속성 가져오기 실패: ${pageId}`,
+        error,
+      );
+    }
+    return undefined;
   }
-
-  // 필터링 또는 전체 반환
-  const targetProperties =
-    keys.length > 0 ? filterProperties(properties, keys) : properties;
-
-  return extractValues
-    ? extractValuesFromProperties(targetProperties)
-    : targetProperties;
 }
+
+/**
+ * 응답이 PageObjectResponse인지 확인하는 타입 가드
+ */
+export const isPageObjectResponse = (
+  obj: GetPageResponse,
+): obj is PageObjectResponse => {
+  return obj && 'properties' in obj;
+};

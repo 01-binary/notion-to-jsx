@@ -4,21 +4,19 @@ import type { ListBlockChildrenResponse } from '@notionhq/client/build/src/api-e
 
 import { formatNotionImageUrl } from '../utils/formatNotionImageUrl';
 import { enrichImageWithMetadata } from './utils/getImageMetadata';
-import {
-  type NotionBlock,
-  type NotionAPIBlock,
-  type ImageBlockContent,
-  type OpenGraphData,
-  type ImageBlock,
-  type BookmarkBlock,
-  isImageBlock,
-  isBookmarkBlock,
-  hasChildren,
-  extractImageUrl,
-  updateImageUrl,
-  createBookmarkMetadata,
-  OG_SCRAPER_HEADERS,
+import type {
+  NotionBlock,
+  NotionAPIBlock,
+  ImageBlockContent,
+  OpenGraphData,
+  ImageBlock,
+  BookmarkBlock,
 } from './types';
+import { isImageBlock, isBookmarkBlock, hasChildren } from './utils/guards';
+import { extractImageUrl, createBookmarkMetadata } from './utils/bookmark';
+import { updateImageUrl } from './utils/imageUtils';
+import { OG_SCRAPER_HEADERS } from './constants';
+import { ogMetadataCache } from './utils/cache';
 
 // 하위 호환성을 위한 타입 re-export
 export type { NotionBlock };
@@ -73,9 +71,16 @@ async function processImageBlock(
 
 /**
  * 북마크 URL에서 Open Graph 메타데이터를 가져옵니다.
+ * LRU 캐시를 사용하여 동일 URL에 대한 중복 요청을 방지합니다.
  * 실패 시 기본 메타데이터를 반환합니다.
  */
 async function fetchOGMetadata(url: string): Promise<OpenGraphData> {
+  // 캐시 확인
+  const cached = ogMetadataCache.get(url) as OpenGraphData | undefined;
+  if (cached) {
+    return cached;
+  }
+
   try {
     const { result } = await ogs({
       url,
@@ -83,13 +88,18 @@ async function fetchOGMetadata(url: string): Promise<OpenGraphData> {
         headers: OG_SCRAPER_HEADERS,
       },
     });
-    return createBookmarkMetadata(url, result);
+    const metadata = createBookmarkMetadata(url, result);
+    ogMetadataCache.set(url, metadata);
+    return metadata;
   } catch (error) {
     // OG 메타데이터 가져오기는 선택적 기능이므로 조용히 폴백
     if (process.env.NODE_ENV === 'development') {
       console.warn(`[notion-to-utils] OG 메타데이터 가져오기 실패: ${url}`, error);
     }
-    return createBookmarkMetadata(url);
+    const fallback = createBookmarkMetadata(url);
+    // 실패도 캐시하여 같은 URL에 대한 반복 실패 방지
+    ogMetadataCache.set(url, fallback);
+    return fallback;
   }
 }
 

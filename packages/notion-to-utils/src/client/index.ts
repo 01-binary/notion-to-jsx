@@ -1,6 +1,9 @@
 import { Client as NotionClient } from '@notionhq/client';
 import type { ClientOptions } from '@notionhq/client/build/src/Client';
-import { getPageProperties as getPagePropertiesFunc } from './getPageProperties';
+import {
+  getPageProperties as getPagePropertiesFunc,
+  type GetPagePropertiesOptions,
+} from './getPageProperties';
 import { getFileUrl as getFileUrlFunc } from './getFileUrl';
 import { getPageBlocks as getPageBlocksFunc } from './getPageBlocks';
 
@@ -13,25 +16,22 @@ export type {
   BookmarkBlockContent,
 } from './types';
 
+// 유틸리티 함수 re-export
+export { isImageBlock, isBookmarkBlock, hasChildren } from './utils/guards';
+
 export {
-  isImageBlock,
-  isBookmarkBlock,
-  hasChildren,
   extractImageUrl,
   extractDomain,
   createBookmarkMetadata,
-} from './types';
+} from './utils/bookmark';
 
 export class Client extends NotionClient {
   constructor(options: ClientOptions = {}) {
     super(options);
   }
 
-  getPageProperties = (
-    pageId: string,
-    keys: string[] = [],
-    extractValues = true
-  ) => getPagePropertiesFunc(this, pageId, keys, extractValues);
+  getPageProperties = (pageId: string, options: GetPagePropertiesOptions = {}) =>
+    getPagePropertiesFunc(this, pageId, options);
 
   getPageBlocks = (pageId: string) => getPageBlocksFunc(this, pageId);
 

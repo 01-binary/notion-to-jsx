@@ -2,7 +2,7 @@
  * 이미지 URL 관련 유틸리티 함수
  */
 
-import type { ImageBlockContent } from './definitions';
+import type { ImageBlockContent } from '../types/definitions';
 
 /**
  * 이미지 소스 타입 (file 또는 external)
@@ -38,7 +38,7 @@ export function extractImageUrlWithSource(image: ImageBlockContent): {
  */
 export function updateImageUrl(
   image: ImageBlockContent,
-  newUrl: string
+  newUrl: string,
 ): ImageBlockContent {
   if (image.file?.url) {
     return {

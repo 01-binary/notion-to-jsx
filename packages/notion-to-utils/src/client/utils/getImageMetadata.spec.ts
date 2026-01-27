@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { enrichImageWithMetadata, addMetadataToImageBlock } from './getImageMetadata';
+import { enrichImageWithMetadata } from './getImageMetadata';
 
 // probe-image-size 모킹
 vi.mock('probe-image-size', () => ({
@@ -132,46 +132,6 @@ describe('getImageMetadata', () => {
 
       expect(result).not.toBe(originalImage);
       expect((originalImage as Record<string, unknown>).format).toBeUndefined();
-    });
-  });
-
-  describe('addMetadataToImageBlock (deprecated)', () => {
-    it('이미지 블록에 메타데이터를 추가한다', async () => {
-      vi.mocked(probe).mockResolvedValue({
-        width: 1200,
-        height: 800,
-        type: 'jpg',
-        mime: 'image/jpeg',
-        wUnits: 'px',
-        hUnits: 'px',
-        length: 10000,
-        url: 'https://example.com/photo.jpg',
-      });
-
-      const block = {
-        type: 'image',
-        image: { file: { url: 'https://example.com/photo.jpg' } },
-      };
-      const result = await addMetadataToImageBlock(block);
-
-      expect(result.image?.format?.block_width).toBe(1200);
-      expect(result.image?.format?.block_height).toBe(800);
-    });
-
-    it('이미지 블록이 아니면 그대로 반환한다', async () => {
-      const block = { type: 'paragraph', paragraph: { text: [] } };
-      const result = await addMetadataToImageBlock(block as any);
-
-      expect(result).toEqual(block);
-      expect(probe).not.toHaveBeenCalled();
-    });
-
-    it('image 속성이 없으면 그대로 반환한다', async () => {
-      const block = { type: 'image' };
-      const result = await addMetadataToImageBlock(block as any);
-
-      expect(result).toEqual(block);
-      expect(probe).not.toHaveBeenCalled();
     });
   });
 });

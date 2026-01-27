@@ -1,38 +1,54 @@
 /**
- * 유틸리티 함수
+ * 북마크 관련 유틸리티 함수
  */
 
 import type {
   ImageBlockContent,
   OpenGraphData,
   OGScraperResult,
-} from './definitions';
-import { FAVICON_SIZE_PX, GOOGLE_FAVICON_API } from './constants';
+} from '../types/definitions';
+import { FAVICON_SIZE_PX, GOOGLE_FAVICON_API } from '../constants';
+import { extractImageUrlWithSource } from './imageUtils';
 
 /**
  * 이미지 블록에서 URL을 추출합니다.
  * file과 external 이미지 소스 모두 처리합니다.
  */
 export function extractImageUrl(image: ImageBlockContent): string | null {
-  if (image.file?.url) {
-    return image.file.url;
-  }
-  if (image.external?.url) {
-    return image.external.url;
-  }
-  return null;
+  return extractImageUrlWithSource(image).url;
 }
+
+/** 도메인 추출 결과 캐시 (URL 파싱 비용 절감) */
+const domainCache = new Map<string, string | null>();
 
 /**
  * URL에서 도메인을 안전하게 추출합니다.
  * URL 파싱 실패 시 null을 반환합니다.
+ * 캐시를 사용하여 동일 URL의 반복 파싱을 방지합니다.
  */
 export function extractDomain(url: string): string | null {
+  const cached = domainCache.get(url);
+  if (cached !== undefined) {
+    return cached;
+  }
+
   try {
-    return new URL(url).hostname;
+    const hostname = new URL(url).hostname;
+    domainCache.set(url, hostname);
+    return hostname;
   } catch {
+    domainCache.set(url, null);
     return null;
   }
+}
+
+/**
+ * Google Favicon API URL 생성
+ */
+function createFaviconUrl(domain: string | null): string {
+  return domain
+    ? `${GOOGLE_FAVICON_API}?domain=${domain}&sz=${FAVICON_SIZE_PX}`
+    : '';
 }
 
 /**
@@ -48,27 +64,17 @@ export function createBookmarkMetadata(
   ogResult?: OGScraperResult
 ): OpenGraphData {
   const domain = extractDomain(bookmarkUrl);
-
-  // OG 데이터 추출 헬퍼
-  const getTitle = () =>
-    ogResult?.ogTitle || ogResult?.twitterTitle || domain || bookmarkUrl;
-  const getDescription = () =>
-    ogResult?.ogDescription || ogResult?.twitterDescription || '';
-  const getImage = () =>
-    ogResult?.ogImage?.[0]?.url || ogResult?.twitterImage?.[0]?.url || '';
-  const getSiteName = () => ogResult?.ogSiteName || domain || '';
-  const getFavicon = () =>
-    domain ? `${GOOGLE_FAVICON_API}?domain=${domain}&sz=${FAVICON_SIZE_PX}` : '';
+  const favicon = createFaviconUrl(domain);
 
   // OG 스크래퍼 성공 시
   if (ogResult?.ogTitle || ogResult?.twitterTitle) {
     return {
-      title: getTitle(),
-      description: getDescription(),
-      image: getImage(),
-      siteName: getSiteName(),
+      title: ogResult.ogTitle || ogResult.twitterTitle || domain || bookmarkUrl,
+      description: ogResult.ogDescription || ogResult.twitterDescription || '',
+      image: ogResult.ogImage?.[0]?.url || ogResult.twitterImage?.[0]?.url || '',
+      siteName: ogResult.ogSiteName || domain || '',
       url: bookmarkUrl,
-      favicon: getFavicon(),
+      favicon,
     };
   }
 
@@ -80,7 +86,7 @@ export function createBookmarkMetadata(
       image: '',
       siteName: domain,
       url: bookmarkUrl,
-      favicon: getFavicon(),
+      favicon,
     };
   }
 

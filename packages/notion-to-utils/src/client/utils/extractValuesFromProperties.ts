@@ -3,7 +3,7 @@ import type { PageObjectResponse } from '@notionhq/client/build/src/api-endpoint
 /**
  * Notion 속성 타입 (PageObjectResponse의 properties 값)
  */
-type NotionProperty = PageObjectResponse['properties'][string];
+export type NotionProperty = PageObjectResponse['properties'][string];
 
 /**
  * 추출된 값의 타입
@@ -13,7 +13,7 @@ type NotionProperty = PageObjectResponse['properties'][string];
  * - null: 빈 multi_select
  * - 원본 속성: 지원하지 않는 타입
  */
-type ExtractedValue =
+export type ExtractedValue =
   | string
   | boolean
   | { start: string | null; end: string | null; time_zone: string | null }
@@ -22,33 +22,54 @@ type ExtractedValue =
   | NotionProperty;
 
 /**
- * 속성 타입별 값 추출 함수 매핑
+ * 지원되는 Notion 속성 타입
+ * 이 타입의 속성들만 값 추출이 지원됩니다.
+ * 다른 타입은 원본 속성 객체가 그대로 반환됩니다.
  */
-const extractors: Record<string, (property: NotionProperty) => ExtractedValue> =
-  {
-    date: (property) =>
-      'date' in property ? (property.date as ExtractedValue) : null,
+type SupportedPropertyType =
+  | 'date'
+  | 'multi_select'
+  | 'rich_text'
+  | 'checkbox'
+  | 'title'
+  | 'url';
 
-    multi_select: (property) =>
-      'multi_select' in property && property.multi_select.length > 0
-        ? (property.multi_select[0] as ExtractedValue)
-        : null,
+/** 속성 타입별 추출 함수 시그니처 */
+type PropertyExtractor = (property: NotionProperty) => ExtractedValue;
 
-    rich_text: (property) =>
-      'rich_text' in property && property.rich_text[0]
-        ? property.rich_text[0].plain_text
-        : '',
+/**
+ * 속성 타입별 값 추출 함수 매핑
+ * SupportedPropertyType에 정의된 타입만 지원합니다.
+ */
+const extractors: Record<SupportedPropertyType, PropertyExtractor> = {
+  date: (property) =>
+    'date' in property ? (property.date as ExtractedValue) : null,
 
-    checkbox: (property) =>
-      'checkbox' in property ? property.checkbox : false,
+  multi_select: (property) =>
+    'multi_select' in property && property.multi_select.length > 0
+      ? (property.multi_select[0] as ExtractedValue)
+      : null,
 
-    title: (property) =>
-      'title' in property && property.title[0]
-        ? property.title[0].plain_text
-        : '',
+  rich_text: (property) =>
+    'rich_text' in property && property.rich_text[0]
+      ? property.rich_text[0].plain_text
+      : '',
 
-    url: (property) => ('url' in property ? (property.url ?? '') : ''),
-  };
+  checkbox: (property) =>
+    'checkbox' in property ? property.checkbox : false,
+
+  title: (property) =>
+    'title' in property && property.title[0]
+      ? property.title[0].plain_text
+      : '',
+
+  url: (property) => ('url' in property ? (property.url ?? '') : ''),
+};
+
+/** 지원되는 속성 타입인지 확인 */
+function isSupportedType(type: string): type is SupportedPropertyType {
+  return type in extractors;
+}
 
 /**
  * Notion 페이지 속성에서 실제 값만 추출합니다.
@@ -75,12 +96,16 @@ const extractors: Record<string, (property: NotionProperty) => ExtractedValue> =
 export const extractValuesFromProperties = (
   properties: Record<string, NotionProperty>
 ): Record<string, ExtractedValue> => {
-  return Object.entries(properties).reduce(
-    (acc, [key, property]) => {
-      const extractor = extractors[property.type];
-      const value = extractor ? extractor(property) : property;
-      return { ...acc, [key]: value };
-    },
-    {} as Record<string, ExtractedValue>
-  );
+  const result: Record<string, ExtractedValue> = {};
+
+  for (const [key, property] of Object.entries(properties)) {
+    if (isSupportedType(property.type)) {
+      result[key] = extractors[property.type](property);
+    } else {
+      // 지원하지 않는 타입은 원본 속성 그대로 반환
+      result[key] = property;
+    }
+  }
+
+  return result;
 };
