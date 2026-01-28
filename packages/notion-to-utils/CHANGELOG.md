@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 2.1.0
+
+### Minor Changes
+
+- 7cecc18: types 폴더 구조 정리 및 코드 품질 개선
+
 ## 2.0.0
 
 ### Major Changes
