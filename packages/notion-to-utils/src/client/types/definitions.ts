@@ -30,28 +30,3 @@ export interface ImageBlockContent {
     block_aspect_ratio?: number;
   };
 }
-
-/** 북마크 블록 콘텐츠 구조 (내부 처리용) */
-export interface BookmarkBlockContent {
-  url: string;
-  caption?: unknown[];
-  metadata?: {
-    title: string;
-    description: string;
-    image: string;
-    siteName: string;
-    url: string;
-    favicon?: string;
-  };
-}
-
-/** OG 스크래퍼 결과 타입 */
-export interface OGScraperResult {
-  ogTitle?: string;
-  twitterTitle?: string;
-  ogDescription?: string;
-  twitterDescription?: string;
-  ogImage?: Array<{ url: string }>;
-  twitterImage?: Array<{ url: string }>;
-  ogSiteName?: string;
-}

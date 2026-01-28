@@ -1,5 +1,5 @@
 import { afterEach, beforeAll, describe, expect, it, vi } from 'vitest';
-import Client from '.';
+import Client from '..';
 
 let notionClient: Client;
 

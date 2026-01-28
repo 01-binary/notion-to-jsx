@@ -1,3 +1,8 @@
+import type { OpenGraphData, ImageFormatMetadata } from '../../types';
+
+/** 메타데이터 캐시 최대 크기 */
+const METADATA_CACHE_MAX_SIZE = 500;
+
 /**
  * 간단한 LRU (Least Recently Used) 캐시 구현
  *
@@ -7,7 +12,7 @@
 export class LRUCache<K, V> {
   private cache = new Map<K, V>();
 
-  constructor(private maxSize: number = 500) {}
+  constructor(private maxSize: number = METADATA_CACHE_MAX_SIZE) {}
 
   get(key: K): V | undefined {
     const value = this.cache.get(key);
@@ -48,13 +53,29 @@ export class LRUCache<K, V> {
 }
 
 /**
- * OG 메타데이터 캐시 (최대 500개)
+ * OG 메타데이터 캐시
  * 같은 요청 내에서 동일 북마크 URL의 중복 요청 방지
  */
-export const ogMetadataCache = new LRUCache<string, unknown>(500);
+export const ogMetadataCache = new LRUCache<string, OpenGraphData>(
+  METADATA_CACHE_MAX_SIZE,
+);
 
 /**
- * 이미지 메타데이터 캐시 (최대 500개)
+ * 이미지 메타데이터 캐시
  * 같은 요청 내에서 동일 이미지 URL의 중복 요청 방지
  */
-export const imageMetadataCache = new LRUCache<string, unknown>(500);
+export const imageMetadataCache = new LRUCache<
+  string,
+  ImageFormatMetadata | null
+>(METADATA_CACHE_MAX_SIZE);
+
+/** 도메인 추출 결과 캐시 최대 크기 */
+const DOMAIN_CACHE_MAX_SIZE = 1000;
+
+/**
+ * 도메인 추출 결과 캐시
+ * URL 파싱 비용 절감
+ */
+export const domainCache = new LRUCache<string, string | null>(
+  DOMAIN_CACHE_MAX_SIZE,
+);

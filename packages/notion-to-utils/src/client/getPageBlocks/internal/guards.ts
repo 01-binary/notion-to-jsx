@@ -7,7 +7,7 @@ import type {
   ImageBlock,
   BookmarkBlock,
   NotionAPIBlock,
-} from '../types/definitions';
+} from '../../types/definitions';
 
 /**
  * 이미지 블록인지 확인하는 타입 가드

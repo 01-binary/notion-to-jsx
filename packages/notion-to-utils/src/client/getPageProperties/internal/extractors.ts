@@ -55,8 +55,7 @@ const extractors: Record<SupportedPropertyType, PropertyExtractor> = {
       ? property.rich_text[0].plain_text
       : '',
 
-  checkbox: (property) =>
-    'checkbox' in property ? property.checkbox : false,
+  checkbox: (property) => ('checkbox' in property ? property.checkbox : false),
 
   title: (property) =>
     'title' in property && property.title[0]
@@ -81,20 +80,18 @@ function isSupportedType(type: string): type is SupportedPropertyType {
  * @returns 추출된 값들의 객체
  *
  * @example
- * // 입력
  * {
  *   Title: { type: 'title', title: [{ plain_text: '제목' }] },
  *   Published: { type: 'checkbox', checkbox: true }
  * }
  *
- * // 출력
  * {
  *   Title: '제목',
  *   Published: true
  * }
  */
 export const extractValuesFromProperties = (
-  properties: Record<string, NotionProperty>
+  properties: Record<string, NotionProperty>,
 ): Record<string, ExtractedValue> => {
   const result: Record<string, ExtractedValue> = {};
 

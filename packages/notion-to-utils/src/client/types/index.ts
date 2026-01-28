@@ -4,8 +4,6 @@ export type {
   ImageFormatMetadata,
   ImageBlockContent,
   OpenGraphData,
-  BookmarkBlockContent,
-  OGScraperResult,
   ImageBlock,
   BookmarkBlock,
 } from './definitions';

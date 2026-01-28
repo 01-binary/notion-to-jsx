@@ -1,5 +1,5 @@
 import { Client } from '@notionhq/client';
-import { isPropertyFileType } from './utils/isPropertyFileType';
+import { isPropertyFileType } from './internal/guards';
 /**
  * Notion 페이지의 특정 속성에 첨부된 파일의 URL을 가져옵니다.
  *
@@ -21,6 +21,6 @@ export async function getFileUrl(
   if (!isPropertyFileType(page, propertyKey)) return undefined;
 
   const property = page.properties[propertyKey]!;
-  const fileObj = property.files[0];
-  return 'file' in fileObj ? fileObj.file.url : undefined;
+  const firstFile = property.files[0];
+  return 'file' in firstFile ? firstFile.file.url : undefined;
 }
