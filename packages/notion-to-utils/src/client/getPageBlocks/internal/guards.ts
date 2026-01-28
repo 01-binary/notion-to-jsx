@@ -7,13 +7,13 @@ import type {
   ImageBlock,
   BookmarkBlock,
   NotionAPIBlock,
-} from './definitions';
+} from '../../types/definitions';
 
 /**
  * 이미지 블록인지 확인하는 타입 가드
  */
 export function isImageBlock(
-  block: NotionBlock | NotionAPIBlock
+  block: NotionBlock | NotionAPIBlock,
 ): block is ImageBlock {
   return 'type' in block && block.type === 'image';
 }
@@ -22,7 +22,7 @@ export function isImageBlock(
  * 북마크 블록인지 확인하는 타입 가드
  */
 export function isBookmarkBlock(
-  block: NotionBlock | NotionAPIBlock
+  block: NotionBlock | NotionAPIBlock,
 ): block is BookmarkBlock {
   return 'type' in block && block.type === 'bookmark';
 }
@@ -30,8 +30,6 @@ export function isBookmarkBlock(
 /**
  * 하위 블록이 있는지 확인하는 타입 가드
  */
-export function hasChildren(
-  block: NotionBlock | NotionAPIBlock
-): boolean {
+export function hasChildren(block: NotionBlock | NotionAPIBlock): boolean {
   return 'has_children' in block && block.has_children === true;
 }

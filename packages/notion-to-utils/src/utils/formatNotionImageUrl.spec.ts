@@ -2,7 +2,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { formatNotionImageUrl } from './formatNotionImageUrl';
 
 describe('formatNotionImageUrl', () => {
-  // Suppress console.error during tests
+  // 테스트 중 console.error 억제
   const originalConsoleError = console.error;
   beforeEach(() => {
     console.error = vi.fn();
@@ -67,7 +67,7 @@ describe('formatNotionImageUrl', () => {
   it('URL 변환 중 오류가 발생하면 원래 URL을 반환해야 함', () => {
     const mockUrl = 'https://example.com/image.jpg';
 
-    // Mock encodeURIComponent to throw an error
+    // encodeURIComponent가 오류를 발생하도록 모킹
     const originalEncodeURIComponent = global.encodeURIComponent;
     global.encodeURIComponent = vi.fn(() => {
       throw new Error('인코딩 오류');
@@ -75,10 +75,10 @@ describe('formatNotionImageUrl', () => {
 
     const result = formatNotionImageUrl(mockUrl);
 
-    // Should return original URL on error (silent failure)
+    // 오류 시 원래 URL 반환 (조용히 실패)
     expect(result).toBe(mockUrl);
 
-    // Restore original function
+    // 원래 함수 복원
     global.encodeURIComponent = originalEncodeURIComponent;
   });
 

@@ -1,5 +1,5 @@
 import { afterEach, beforeAll, describe, expect, it, vi } from 'vitest';
-import Client from '.';
+import Client from '..';
 
 let notionClient: Client;
 
@@ -14,7 +14,7 @@ afterEach(() => {
 const KEY = 'media';
 const TEST_ID = 'TEMP';
 
-// Mock response data
+// Mock 응답 데이터
 const getFileUrlValidMock = {
   object: 'page',
   properties: {
@@ -73,7 +73,7 @@ describe('getFileUrl', () => {
 
     const fileUrl = await notionClient.getFileUrl(TEST_ID, KEY);
     expect(fileUrl).toEqual(
-      getFileUrlValidMock.properties[KEY].files[0]?.file.url
+      getFileUrlValidMock.properties[KEY].files[0]?.file.url,
     );
     expect(notionClient.pages.retrieve).toHaveBeenCalledWith({
       page_id: TEST_ID,
@@ -122,7 +122,7 @@ describe('getFileUrl', () => {
       .mockRejectedValue(new Error('API Error'));
 
     await expect(notionClient.getFileUrl(TEST_ID, KEY)).rejects.toThrow(
-      'API Error'
+      'API Error',
     );
     expect(notionClient.pages.retrieve).toHaveBeenCalledWith({
       page_id: TEST_ID,

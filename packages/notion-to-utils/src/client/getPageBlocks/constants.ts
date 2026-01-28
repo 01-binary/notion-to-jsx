@@ -1,12 +1,5 @@
-/**
- * 상수 정의
- */
-
 /** Favicon 이미지 크기 (픽셀) */
 export const FAVICON_SIZE_PX = 64;
-
-/** Notion ID 길이 (하이픈 제외) */
-export const NOTION_ID_LENGTH = 32;
 
 /** Google Favicon API URL */
 export const GOOGLE_FAVICON_API = 'https://www.google.com/s2/favicons';
