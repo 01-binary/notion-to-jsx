@@ -94,51 +94,10 @@ const url = formatNotionImageUrl(
 // 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure...?table=block&id=block-id&cache=v2'
 ```
 
-## 유틸리티 함수
-
-```typescript
-import {
-  isImageBlock,
-  isBookmarkBlock,
-  hasChildren,
-  extractImageUrl,
-  extractDomain,
-  createBookmarkMetadata,
-} from 'notion-to-utils';
-
-// 타입 가드
-if (isImageBlock(block)) {
-  // block.image 접근 가능
-}
-
-if (isBookmarkBlock(block)) {
-  // block.bookmark 접근 가능
-}
-
-if (hasChildren(block)) {
-  // block.children 존재
-}
-
-// 이미지 URL 추출
-const url = extractImageUrl(block.image); // file 또는 external 모두 처리
-
-// 도메인 추출
-const domain = extractDomain('https://example.com/path'); // 'example.com'
-
-// 북마크 메타데이터 생성
-const metadata = createBookmarkMetadata('https://example.com', ogResult);
-```
-
 ## 타입
 
 ```typescript
-import type {
-  NotionBlock,
-  ImageBlockContent,
-  ImageFormatMetadata,
-  OpenGraphData,
-  BookmarkBlockContent,
-} from 'notion-to-utils';
+import type { NotionBlock } from 'notion-to-utils';
 ```
 
 ## 라이선스
