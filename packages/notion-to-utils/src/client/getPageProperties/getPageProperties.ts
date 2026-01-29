@@ -5,10 +5,10 @@ import type {
 } from '@notionhq/client/build/src/api-endpoints';
 
 import {
+  extractCoverUrl,
   extractValuesFromProperties,
   type ExtractedValue,
-} from './internal/extractors';
-import { formatNotionImageUrl } from '../../utils/formatNotionImageUrl';
+} from '../../utils';
 
 /** getPageProperties 반환 타입 */
 export type GetPagePropertiesResult =
@@ -22,17 +22,6 @@ export interface GetPagePropertiesOptions {
   keys?: string[];
   /** 값을 추출할지 여부 (기본값: true) */
   extractValues?: boolean;
-}
-
-/** 커버 이미지에서 URL 추출 */
-function extractCoverUrl(
-  cover: PageObjectResponse['cover'],
-  pageId: string,
-): string {
-  if (!cover) return '';
-  if (cover.type === 'file') return formatNotionImageUrl(cover.file?.url, pageId);
-  if (cover.type === 'external') return cover.external?.url ?? '';
-  return '';
 }
 
 /** 커버 URL을 포함한 속성 객체 생성 */
