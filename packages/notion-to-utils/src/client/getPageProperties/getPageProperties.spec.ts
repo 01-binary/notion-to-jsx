@@ -1,5 +1,6 @@
 import { afterEach, beforeAll, describe, expect, it, vi } from 'vitest';
 import Client from '..';
+import { formatNotionImageUrl } from '../../utils';
 
 let notionClient: Client;
 
@@ -165,7 +166,7 @@ describe('getPageProperties', () => {
     expect(properties).toHaveProperty('coverUrl');
     expect((properties as Record<string, any>).coverUrl).toEqual({
       type: 'url',
-      url: mockWithExternalCover.cover.external.url,
+      url: formatNotionImageUrl(mockWithExternalCover.cover.external.url, TEST_ID),
       id: `${TEST_ID}-coverUrl`,
     });
   });
@@ -219,7 +220,7 @@ describe('getPageProperties', () => {
     expect(properties).not.toBeUndefined();
     expect(properties).toHaveProperty('coverUrl');
     expect((properties as Record<string, any>).coverUrl).toBe(
-      mockWithExternalCover.cover.external.url
+      formatNotionImageUrl(mockWithExternalCover.cover.external.url, TEST_ID)
     );
   });
 });
