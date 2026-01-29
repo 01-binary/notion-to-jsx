@@ -1,5 +1,11 @@
 # notion-to-utils
 
+## 2.1.1
+
+### Patch Changes
+
+- 3f4efc7: 유틸리티 함수 utils 폴더로 분리
+
 ## 2.1.0
 
 ### Minor Changes
