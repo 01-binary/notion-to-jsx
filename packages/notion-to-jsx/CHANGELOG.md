@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 2.0.1
+
+### Patch Changes
+
+- 9a372e1: 다크모드 하드코딩 색상을 테마 변수로 교체
+
 ## 2.0.0
 
 ### Major Changes
