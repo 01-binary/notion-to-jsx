@@ -5,7 +5,7 @@ export const container = style({
   position: 'relative',
   margin: `${vars.spacing.xs} 0`,
   padding: `${vars.spacing.xs} 0 ${vars.spacing.xs} 1rem`,
-  borderLeft: '3px solid #e1e1e1',
+  borderLeft: `3px solid ${vars.colors.quoteBorder}`,
   color: vars.colors.text,
   fontSize: vars.typography.fontSize.base,
   lineHeight: vars.typography.lineHeight.base,

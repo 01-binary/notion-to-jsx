@@ -15,7 +15,7 @@ export const toggleHeader = style({
   padding: `${vars.spacing.xs} 0`,
   borderRadius: vars.borderRadius.sm,
   ':hover': {
-    background: 'rgba(55, 53, 47, 0.08)',
+    background: vars.colors.hoverBackground,
   },
 });
 

@@ -18,7 +18,7 @@ export const table = style({
 });
 
 export const headerCell = style({
-  backgroundColor: '#f7f6f3',
+  backgroundColor: vars.colors.tableHeader,
   fontWeight: vars.typography.fontWeight.semibold,
 });
 
@@ -26,7 +26,7 @@ export const tableCell = style({
   position: 'relative',
   padding: `${vars.spacing.xs} ${vars.spacing.sm}`,
   minHeight: '2rem',
-  border: '1px solid rgba(55, 53, 47, 0.09)',
+  border: `1px solid ${vars.colors.tableBorder}`,
   borderLeft: 'none',
   borderRight: 'none',
   verticalAlign: 'top',
@@ -35,14 +35,14 @@ export const tableCell = style({
 });
 
 export const firstCell = style({
-  borderLeft: '1px solid rgba(55, 53, 47, 0.09)',
+  borderLeft: `1px solid ${vars.colors.tableBorder}`,
 });
 
 export const lastCell = style({
-  borderRight: '1px solid rgba(55, 53, 47, 0.09)',
+  borderRight: `1px solid ${vars.colors.tableBorder}`,
 });
 
 export const hasRowHeader = style({
-  backgroundColor: '#f7f6f3',
+  backgroundColor: vars.colors.tableHeader,
   fontWeight: vars.typography.fontWeight.semibold,
 });
