@@ -1,4 +1,5 @@
 import { style, keyframes } from '@vanilla-extract/css';
+import { vars } from '../../styles/theme.css';
 
 const shimmer = keyframes({
   '0%': {
@@ -13,7 +14,7 @@ export const skeleton = style({
   display: 'inline-block',
   height: '100%',
   width: '100%',
-  backgroundColor: '#f0f0f0',
+  backgroundColor: vars.colors.skeleton,
   borderRadius: '4px',
   position: 'relative',
   overflow: 'hidden',
@@ -25,7 +26,7 @@ export const skeleton = style({
     bottom: 0,
     left: 0,
     backgroundImage:
-      'linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0))',
+      'linear-gradient(90deg, transparent 0, rgba(255, 255, 255, 0.1) 20%, rgba(255, 255, 255, 0.2) 60%, transparent)',
     animation: `${shimmer} .8s infinite linear`,
     backgroundSize: '100% 100%',
     backgroundRepeat: 'no-repeat',

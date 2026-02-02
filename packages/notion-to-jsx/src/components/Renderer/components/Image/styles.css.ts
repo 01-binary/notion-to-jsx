@@ -6,8 +6,6 @@ export const imageContainer = style({
   position: 'relative',
   width: '100%',
   padding: `${vars.spacing.sm} 0`,
-  borderRadius: vars.borderRadius.md,
-  overflow: 'hidden',
   margin: '0 auto',
   display: 'flex',
   flexDirection: 'column',
@@ -17,6 +15,8 @@ export const imageContainer = style({
 export const imageWrapper = style({
   position: 'relative',
   maxWidth: '100%',
+  borderRadius: vars.borderRadius.lg,
+  overflow: 'hidden',
 });
 
 export const imageStyle = recipe({

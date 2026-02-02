@@ -18,6 +18,12 @@ export const vars = createThemeContract({
     primary: null,
     secondary: null,
     border: null,
+    // UI 컴포넌트 색상
+    skeleton: null,
+    tableHeader: null,
+    tableBorder: null,
+    quoteBorder: null,
+    hoverBackground: null,
     code: {
       background: null,
       text: null,
@@ -158,6 +164,12 @@ export const lightTheme = createTheme(vars, {
     primary: '#0366d6',
     secondary: '#586069',
     border: '#e1e4e8',
+    // UI 컴포넌트 색상 - 라이트
+    skeleton: '#f0f0f0',
+    tableHeader: '#f7f6f3',
+    tableBorder: 'rgba(55, 53, 47, 0.09)',
+    quoteBorder: '#e1e1e1',
+    hoverBackground: 'rgba(55, 53, 47, 0.08)',
     code: {
       background: 'rgba(135,131,120,.1)',
       text: '#24292e',
@@ -206,6 +218,12 @@ export const darkTheme = createTheme(vars, {
     primary: '#58a6ff',
     secondary: '#8b949e',
     border: '#30363d',
+    // UI 컴포넌트 색상 - 다크
+    skeleton: '#21262d',
+    tableHeader: '#161b22',
+    tableBorder: 'rgba(240, 246, 252, 0.1)',
+    quoteBorder: '#30363d',
+    hoverBackground: 'rgba(177, 186, 196, 0.12)',
     code: {
       background: '#161b22',
       text: '#c9d1d9',
