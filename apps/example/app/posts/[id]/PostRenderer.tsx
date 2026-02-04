@@ -50,7 +50,7 @@ export default function PostRenderer({
         cover={cover}
         isDarkMode={isDarkMode}
         showToc
-        tocStyle={{ top: '30%' }}
+        tocStyle={{ top: '20%' }}
       />
     </div>
   );

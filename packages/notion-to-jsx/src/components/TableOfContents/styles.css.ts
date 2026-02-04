@@ -15,13 +15,13 @@ export const linesWrapper = style({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-end',
-  gap: '10px',
+  gap: '12px',
 });
 
 export const line = style({
-  height: '2px',
-  backgroundColor: vars.colors.secondary,
-  borderRadius: '1px',
+  height: '2.5px',
+  backgroundColor: vars.colors.border,
+  borderRadius: '5px',
 });
 
 export const lineLevel1 = style({
@@ -65,6 +65,8 @@ export const menuList = style({
   border: `1px solid ${vars.colors.border}`,
   borderRadius: vars.borderRadius.lg,
   boxShadow: '0 0 8px rgba(0, 0, 0, 0.1)',
+  maxHeight: '60vh',
+  overflowY: 'auto',
 });
 
 export const menuLink = style({
@@ -78,7 +80,6 @@ export const menuLink = style({
   whiteSpace: 'nowrap',
   ':hover': {
     backgroundColor: vars.colors.hoverBackground,
-    color: vars.colors.text,
   },
 });
 
@@ -92,4 +93,15 @@ export const menuLinkLevel2 = style({
 
 export const menuLinkLevel3 = style({
   paddingLeft: vars.spacing.xl,
+});
+
+// ============================================
+// Active 상태 (현재 보이는 섹션)
+// ============================================
+export const lineActive = style({
+  backgroundColor: vars.colors.text,
+});
+
+export const menuLinkActive = style({
+  color: vars.colors.primary,
 });

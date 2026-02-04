@@ -1,4 +1,4 @@
-import { memo } from 'react';
+import { memo, useState, useEffect } from 'react';
 import type { HeadingItem } from '../../utils/extractHeadings';
 import {
   tocContainer,
@@ -7,12 +7,14 @@ import {
   lineLevel1,
   lineLevel2,
   lineLevel3,
+  lineActive,
   menuWrapper,
   menuList,
   menuLink,
   menuLinkLevel1,
   menuLinkLevel2,
   menuLinkLevel3,
+  menuLinkActive,
 } from './styles.css';
 
 export interface TableOfContentsProps {
@@ -45,41 +47,69 @@ const menuLevelStyles = {
  * ```
  */
 const TableOfContents = memo(({ headings }: TableOfContentsProps) => {
+  const [activeId, setActiveId] = useState<string | null>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveId(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: '-10% 0px -20% 0px' }
+    );
+
+    headings.forEach(({ id }) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, [headings]);
+
   if (headings.length === 0) {
     return null;
   }
 
   return (
     <nav className={tocContainer} aria-label="목차">
-        {/* 선 컴포넌트 (기본 상태) */}
-        <div className={linesWrapper}>
-          {headings.map((heading) => (
-            <div
-              key={heading.id}
-              className={`${line} ${lineLevelStyles[heading.level]}`}
-            />
-          ))}
-        </div>
+      {/* 선 컴포넌트 (기본 상태) */}
+      <div className={linesWrapper}>
+        {headings.map((heading) => (
+          <div
+            key={heading.id}
+            className={`${line} ${lineLevelStyles[heading.level]} ${activeId === heading.id ? lineActive : ''}`}
+          />
+        ))}
+      </div>
 
-        {/* 메뉴 컴포넌트 (호버 시 표시) */}
-        <div className={menuWrapper}>
-          <ul className={menuList}>
-            {headings.map((heading) => (
-              <li key={heading.id}>
-                <a
-                  href={`#${heading.id}`}
-                  className={`${menuLink} ${menuLevelStyles[heading.level]}`}
-                >
-                  {heading.text}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </nav>
-    );
-  }
-);
+      {/* 메뉴 컴포넌트 (호버 시 표시) */}
+      <div className={menuWrapper}>
+        <ul className={menuList}>
+          {headings.map((heading) => (
+            <li key={heading.id}>
+              <a
+                href={`#${heading.id}`}
+                className={`${menuLink} ${menuLevelStyles[heading.level]} ${activeId === heading.id ? menuLinkActive : ''}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById(heading.id)?.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                  });
+                }}
+              >
+                {heading.text}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
+  );
+});
 
 TableOfContents.displayName = 'TableOfContents';
 
