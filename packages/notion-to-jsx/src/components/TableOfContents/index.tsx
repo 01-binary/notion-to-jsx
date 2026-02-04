@@ -98,8 +98,9 @@ const TableOfContents = memo(({ headings, scrollOffset = 0 }: TableOfContentsPro
                   e.preventDefault();
                   const el = document.getElementById(heading.id);
                   if (el) {
+                    const top = el.getBoundingClientRect().top + window.scrollY - scrollOffset;
                     window.scrollTo({
-                      top: el.offsetTop - scrollOffset,
+                      top,
                       behavior: 'smooth',
                     });
                   }
