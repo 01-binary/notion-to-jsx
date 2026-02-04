@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 2.1.0
+
+### Minor Changes
+
+- 022b098: 목차(ToC) 기능 추가
+
 ## 2.0.1
 
 ### Patch Changes
