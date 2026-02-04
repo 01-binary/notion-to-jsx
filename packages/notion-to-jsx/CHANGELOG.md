@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 2.1.1
+
+### Patch Changes
+
+- 5c3e4a3: showToc 기본값 설정
+
 ## 2.1.0
 
 ### Minor Changes
