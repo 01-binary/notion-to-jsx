@@ -42,3 +42,34 @@ export const heading3 = style({
   fontWeight: vars.typography.fontWeight.bold,
   padding: `${vars.spacing.base} 0 ${vars.spacing.xs}`,
 });
+
+// Heading 컨테이너 (앵커 링크용)
+export const headingContainer = style({
+  position: 'relative',
+  display: 'flex',
+  alignItems: 'center',
+  gap: vars.spacing.sm,
+});
+
+// 앵커 링크 스타일
+export const anchorLink = style({
+  opacity: 0,
+  color: vars.colors.secondary,
+  textDecoration: 'none',
+  fontSize: '0.8em',
+  transition: 'opacity 0.2s ease',
+  selectors: {
+    [`${headingContainer}:hover &`]: {
+      opacity: 1,
+    },
+    '&:hover': {
+      color: vars.colors.primary,
+    },
+    '&:focus-visible': {
+      opacity: 1,
+      outline: `2px solid ${vars.colors.primary}`,
+      outlineOffset: '2px',
+      borderRadius: vars.borderRadius.sm,
+    },
+  },
+});

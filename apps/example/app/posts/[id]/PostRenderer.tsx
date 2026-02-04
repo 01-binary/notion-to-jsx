@@ -10,11 +10,21 @@ interface PostRendererProps {
   cover?: string;
 }
 
-export default function PostRenderer({ blocks, title, cover }: PostRendererProps) {
+export default function PostRenderer({
+  blocks,
+  title,
+  cover,
+}: PostRendererProps) {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   return (
-    <div style={{ backgroundColor: isDarkMode ? '#0d1117' : '#ffffff', minHeight: '100vh', transition: 'background-color 0.3s' }}>
+    <div
+      style={{
+        backgroundColor: isDarkMode ? '#0d1117' : '#ffffff',
+        minHeight: '100vh',
+        transition: 'background-color 0.3s',
+      }}
+    >
       <button
         onClick={() => setIsDarkMode(!isDarkMode)}
         style={{
@@ -33,7 +43,15 @@ export default function PostRenderer({ blocks, title, cover }: PostRendererProps
       >
         {isDarkMode ? '☀️ Light' : '🌙 Dark'}
       </button>
-      <Renderer blocks={blocks} title={title} cover={cover} isDarkMode={isDarkMode} />
+
+      <Renderer
+        blocks={blocks}
+        title={title}
+        cover={cover}
+        isDarkMode={isDarkMode}
+        showToc
+        tocStyle={{ top: '20%' }}
+      />
     </div>
   );
 }

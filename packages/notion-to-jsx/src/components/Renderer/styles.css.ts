@@ -11,3 +11,18 @@ export const container = style({
     },
   },
 });
+
+export const tocWrapper = style({
+  position: 'fixed',
+  right: '2rem',
+  top: '20%',
+  zIndex: 100,
+  width: 'auto',
+  minWidth: '40px',
+  overflow: 'visible',
+  '@media': {
+    '(max-width: 900px)': {
+      display: 'none',
+    },
+  },
+});
