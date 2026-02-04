@@ -34,21 +34,21 @@ const BlockRenderer = memo(({ block, isColumn = false }: Props) => {
 
     case 'heading_1':
       return (
-        <Heading1>
+        <Heading1 blockId={block.id}>
           <MemoizedRichText richTexts={block.heading_1.rich_text} />
         </Heading1>
       );
 
     case 'heading_2':
       return (
-        <Heading2>
+        <Heading2 blockId={block.id}>
           <MemoizedRichText richTexts={block.heading_2.rich_text} />
         </Heading2>
       );
 
     case 'heading_3':
       return (
-        <Heading3>
+        <Heading3 blockId={block.id}>
           <MemoizedRichText richTexts={block.heading_3.rich_text} />
         </Heading3>
       );
