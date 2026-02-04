@@ -1,6 +1,6 @@
 {
   "name": "notion-to-jsx",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "description": "Notion blocks to JSX renderer",
   "private": false,
   "repository": {
