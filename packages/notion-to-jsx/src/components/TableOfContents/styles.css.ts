@@ -19,9 +19,9 @@ export const linesWrapper = style({
 });
 
 export const line = style({
-  height: '2.5px',
+  height: '3px',
   backgroundColor: vars.colors.border,
-  borderRadius: '5px',
+  borderRadius: '6px',
 });
 
 export const lineLevel1 = style({
