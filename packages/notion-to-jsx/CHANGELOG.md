@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 2.1.4
+
+### Patch Changes
+
+- 5141fc5: ToC 스크롤 위치 계산 정확도 개선
+
 ## 2.1.3
 
 ### Patch Changes
