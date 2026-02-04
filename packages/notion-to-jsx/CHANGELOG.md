@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 2.1.2
+
+### Patch Changes
+
+- 09fa184: ToC 라인 두께 및 모서리 조정
+
 ## 2.1.1
 
 ### Patch Changes
