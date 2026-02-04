@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 2.1.3
+
+### Patch Changes
+
+- c620e77: ToC scrollOffset prop 추가
+
 ## 2.1.2
 
 ### Patch Changes
