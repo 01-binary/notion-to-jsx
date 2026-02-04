@@ -18,6 +18,7 @@ import { darkTheme, lightTheme } from '../../styles/theme.css';
 
 export interface TocStyleOptions {
   top?: string;
+  scrollOffset?: number;
 }
 
 interface Props {
@@ -129,7 +130,7 @@ const Renderer = memo(
             className={`${theme} ${tocWrapper}`}
             style={tocStyle?.top ? { top: tocStyle.top } : undefined}
           >
-            <TableOfContents headings={headings} />
+            <TableOfContents headings={headings} scrollOffset={tocStyle?.scrollOffset} />
           </div>
         )}
       </>

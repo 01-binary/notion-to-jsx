@@ -19,6 +19,7 @@ import {
 
 export interface TableOfContentsProps {
   headings: HeadingItem[];
+  scrollOffset?: number;
 }
 
 const lineLevelStyles = {
@@ -46,7 +47,7 @@ const menuLevelStyles = {
  * <TableOfContents headings={headings} />
  * ```
  */
-const TableOfContents = memo(({ headings }: TableOfContentsProps) => {
+const TableOfContents = memo(({ headings, scrollOffset = 0 }: TableOfContentsProps) => {
   const [activeId, setActiveId] = useState<string | null>(null);
 
   useEffect(() => {
@@ -95,10 +96,13 @@ const TableOfContents = memo(({ headings }: TableOfContentsProps) => {
                 className={`${menuLink} ${menuLevelStyles[heading.level]} ${activeId === heading.id ? menuLinkActive : ''}`}
                 onClick={(e) => {
                   e.preventDefault();
-                  document.getElementById(heading.id)?.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start',
-                  });
+                  const el = document.getElementById(heading.id);
+                  if (el) {
+                    window.scrollTo({
+                      top: el.offsetTop - scrollOffset,
+                      behavior: 'smooth',
+                    });
+                  }
                 }}
               >
                 {heading.text}
