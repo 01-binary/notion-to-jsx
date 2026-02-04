@@ -30,7 +30,14 @@ interface Props {
 }
 
 const Renderer = memo(
-  ({ blocks, isDarkMode = false, title, cover, showToc, tocStyle }: Props) => {
+  ({
+    blocks,
+    isDarkMode = false,
+    title,
+    cover,
+    showToc = true,
+    tocStyle,
+  }: Props) => {
     const theme = isDarkMode ? darkTheme : lightTheme;
     const headings = useMemo(
       () => (showToc ? extractHeadings(blocks) : []),
