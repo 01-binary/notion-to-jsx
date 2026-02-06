@@ -12,6 +12,7 @@ import { Quote } from '../Quote';
 import Table from '../Table';
 import { Toggle } from '../Toggle';
 import { Video } from '../Video';
+import { Embed } from '../Embed';
 import { NotionBlock } from '../../../../types';
 
 export interface Props {
@@ -103,6 +104,9 @@ const BlockRenderer = memo(({ block, isColumn = false }: Props) => {
 
     case 'video':
       return <Video block={block} />;
+
+    case 'embed':
+      return <Embed block={block} />;
 
     default:
       return null;

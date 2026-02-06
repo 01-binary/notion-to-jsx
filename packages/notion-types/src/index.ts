@@ -213,6 +213,14 @@ export interface VideoBlock extends BaseNotionBlock {
   };
 }
 
+export interface EmbedBlock extends BaseNotionBlock {
+  type: 'embed';
+  embed: {
+    url: string;
+    caption: RichTextItem[];
+  };
+}
+
 // ============================================
 // NotionBlock Union Type
 // ============================================
@@ -234,4 +242,5 @@ export type NotionBlock =
   | NumberedListItemBlock
   | ColumnListBlock
   | ColumnBlock
-  | VideoBlock;
+  | VideoBlock
+  | EmbedBlock;

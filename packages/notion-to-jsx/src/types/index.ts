@@ -21,4 +21,5 @@ export type {
   ColumnListBlock,
   ColumnBlock,
   VideoBlock,
+  EmbedBlock,
 } from 'notion-types';
