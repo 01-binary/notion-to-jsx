@@ -1,4 +1,4 @@
-import { ReactNode, useMemo, memo } from 'react';
+import { ReactNode, useMemo, useState, useEffect, memo } from 'react';
 import { codeBlock } from './styles.css';
 import Prism, { Grammar, Token } from 'prismjs';
 import { MemoizedRichText } from '../MemoizedComponents';
@@ -7,10 +7,6 @@ import { RichTextItem } from '../RichText/RichTexts';
 import 'prismjs/components/prism-typescript';
 import 'prismjs/components/prism-jsx';
 import 'prismjs/components/prism-tsx';
-
-if (typeof window !== 'undefined') {
-  window.Prism = Prism;
-}
 
 const renderToken = (token: string | Token, i: number): ReactNode => {
   if (typeof token === 'string') {
@@ -42,17 +38,24 @@ export interface Props {
 }
 
 const CodeBlock = memo(({ code, language, caption }: Props) => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   const tokens = useMemo(() => {
+    if (!isMounted) return null;
     const prismLanguage =
       Prism.languages[language] || Prism.languages.plaintext;
     return Prism.tokenize(code, prismLanguage as Grammar);
-  }, [code, language]);
+  }, [code, language, isMounted]);
 
   return (
     <>
-      <pre className={`${codeBlock} language-${language}`}>
+      <pre className={`${codeBlock} language-${language}`} tabIndex={0}>
         <code className={`language-${language}`}>
-          {tokens.map((token, i) => renderToken(token, i))}
+          {tokens ? tokens.map((token, i) => renderToken(token, i)) : code}
         </code>
       </pre>
       {caption && caption.length > 0 && (
