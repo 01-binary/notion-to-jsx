@@ -1,5 +1,8 @@
 # notion-to-utils
 
+[![npm version](https://img.shields.io/npm/v/notion-to-utils.svg)](https://www.npmjs.com/package/notion-to-utils)
+[![license](https://img.shields.io/npm/l/notion-to-utils.svg)](https://github.com/01-binary/notion-to-jsx/blob/main/LICENSE)
+
 Notion API 래퍼 라이브러리입니다. 블록/속성 조회 시 이미지 메타데이터와 북마크 OG 데이터를 자동으로 처리합니다.
 
 ## 설치
@@ -99,6 +102,10 @@ const url = formatNotionImageUrl(
 ```typescript
 import type { NotionBlock } from 'notion-to-utils';
 ```
+
+## 관련 패키지
+
+- [notion-to-jsx](https://www.npmjs.com/package/notion-to-jsx) - Notion 블록 React 렌더러
 
 ## 라이선스
 
