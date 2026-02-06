@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 2.1.6
+
+### Patch Changes
+
+- 895b61c: Embed 블록 지원 (CodeSandbox, CodePen)
+
 ## 2.1.5
 
 ### Patch Changes
