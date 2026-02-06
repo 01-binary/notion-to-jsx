@@ -67,7 +67,7 @@ export interface RichTextProps {
   richTexts: RichTextItem[];
 }
 
-const EmptyRichText = () => <div className={emptyRichText} />;
+const EmptyRichText = () => <span className={emptyRichText} />;
 
 const RichTexts = ({ richTexts }: RichTextProps) => {
   if (richTexts.length === 0) {

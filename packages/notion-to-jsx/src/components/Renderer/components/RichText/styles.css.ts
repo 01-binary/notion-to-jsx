@@ -91,5 +91,6 @@ export const link = style({
 });
 
 export const emptyRichText = style({
+  display: 'inline-block',
   height: vars.spacing.lg,
 });
