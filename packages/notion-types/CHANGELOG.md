@@ -1,5 +1,11 @@
 # notion-types
 
+## 1.0.1
+
+### Patch Changes
+
+- 895b61c: Embed 블록 지원 (CodeSandbox, CodePen)
+
 ## 1.0.0
 
 ### Major Changes
