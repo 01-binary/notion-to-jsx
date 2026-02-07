@@ -1,0 +1,61 @@
+---
+title: Renderer
+---
+
+# Renderer
+
+Notion 블록을 React JSX로 렌더링하는 메인 컴포넌트입니다.
+
+## Import
+
+```tsx copy
+import { Renderer } from 'notion-to-jsx';
+```
+
+## Props
+
+| Prop | 타입 | 기본값 | 설명 |
+|------|------|--------|------|
+| `blocks` | `NotionBlock[]` | **필수** | `getPageBlocks()`로 가져온 블록 배열 |
+| `title` | `string` | — | 페이지 제목 |
+| `cover` | `string` | — | 커버 이미지 URL |
+| `isDarkMode` | `boolean` | `false` | 다크 테마 활성화 |
+| `showToc` | `boolean` | `true` | 목차 표시 |
+| `tocStyle` | `TocStyleOptions` | — | 목차 위치 옵션 |
+
+### TocStyleOptions
+
+| 속성 | 타입 | 설명 |
+|------|------|------|
+| `top` | `string` | CSS `top` 값 (예: `'80px'`) |
+| `scrollOffset` | `number` | 헤딩 클릭 시 스크롤 오프셋 (px) |
+
+## 기본 사용
+
+```tsx copy
+<Renderer blocks={blocks} />
+```
+
+## 전체 예제
+
+```tsx copy filename="PostRenderer.tsx"
+<Renderer
+  blocks={blocks}
+  title="내 페이지"
+  cover="https://..."
+  isDarkMode={false}
+  showToc={true}
+  tocStyle={{ top: '80px', scrollOffset: 100 }}
+/>
+```
+
+## 동작 방식
+
+1. 연속된 리스트 아이템을 리스트 컨테이너로 그룹핑
+2. 헤딩에서 목차 자동 생성
+3. 각 블록을 전용 블록 컴포넌트로 렌더링
+4. 다크/라이트 모드에 맞는 테마 클래스 적용
+5. 커버 이미지와 제목 렌더링
+
+> [!NOTE]
+> 성능을 위해 메모이제이션이 적용됩니다. 스타일링을 위해 `notion-to-jsx/dist/index.css` import가 필요합니다.

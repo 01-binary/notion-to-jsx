@@ -1,0 +1,47 @@
+---
+title: Notion Integration
+---
+
+import { Steps } from 'nextra/components'
+
+# Notion Integration
+
+To fetch data from Notion, you need an **Internal Integration Token** and a **connected database**.
+
+<Steps>
+
+### Create an integration
+
+1. Go to [My Integrations](https://www.notion.so/my-integrations)
+2. Click **New integration**
+3. Name it (e.g. `my-blog`)
+4. Select the workspace
+5. Copy the **Internal Integration Secret** — this is your `NOTION_TOKEN`
+
+### Connect a database
+
+1. Open the Notion database you want to use
+2. Click the **···** menu → **Connections**
+3. Search for your integration and connect it
+
+### Get the database ID
+
+The database ID is part of the URL:
+
+```
+https://www.notion.so/<workspace>/<database_id>?v=...
+```
+
+Copy the 32-character hex string.
+
+### Set environment variables
+
+```bash copy filename=".env.local"
+NOTION_TOKEN=ntn_xxxxxxxxxxxxxxxxxxxx
+NOTION_DATABASE_ID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+</Steps>
+
+> [!WARNING]
+> The integration needs **Read content** capability at minimum. Configure this in the integration settings page.

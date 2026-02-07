@@ -1,0 +1,44 @@
+---
+title: getPageBlocks()
+---
+
+# getPageBlocks()
+
+Recursively fetches all blocks from a Notion page with automatic metadata enrichment.
+
+## Signature
+
+```ts
+client.getPageBlocks(pageId: string): Promise<NotionBlock[]>
+```
+
+## Parameters
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `pageId` | `string` | The Notion page ID |
+
+## Return value
+
+Returns `Promise<NotionBlock[]>` — an array of typed block objects with nested `children`.
+
+## Features
+
+- **Automatic pagination** — fetches all blocks regardless of page size
+- **Recursive children** — nested blocks are included via `block.children`
+- **Image enrichment** — automatically adds `format` metadata (width, height, aspect ratio)
+- **Bookmark enrichment** — fetches OG metadata (title, description, image, favicon)
+- **Parallel processing** — child blocks and metadata are fetched concurrently
+
+## Example
+
+```ts copy
+const client = new Client({ auth: process.env.NOTION_TOKEN });
+const blocks = await client.getPageBlocks('page-id');
+
+// blocks[0].type → 'paragraph'
+// blocks[0].children → [...nested blocks]
+```
+
+> [!NOTE]
+> Returns an empty array on failure and logs a warning in development.

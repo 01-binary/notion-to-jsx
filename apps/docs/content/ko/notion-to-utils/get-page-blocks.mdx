@@ -1,0 +1,44 @@
+---
+title: getPageBlocks()
+---
+
+# getPageBlocks()
+
+Notion 페이지의 모든 블록을 재귀적으로 가져오며 메타데이터를 자동 보강합니다.
+
+## 시그니처
+
+```ts
+client.getPageBlocks(pageId: string): Promise<NotionBlock[]>
+```
+
+## 파라미터
+
+| 파라미터 | 타입 | 설명 |
+|----------|------|------|
+| `pageId` | `string` | Notion 페이지 ID |
+
+## 반환값
+
+`Promise<NotionBlock[]>` — 중첩된 `children`을 포함하는 타입된 블록 객체 배열
+
+## 주요 기능
+
+- **자동 페이지네이션** — 페이지 크기에 관계없이 모든 블록을 가져옴
+- **재귀적 자식 블록** — 중첩 블록이 `block.children`에 포함됨
+- **이미지 보강** — `format` 메타데이터 자동 추가 (너비, 높이, 종횡비)
+- **북마크 보강** — OG 메타데이터 자동 가져오기 (제목, 설명, 이미지, 파비콘)
+- **병렬 처리** — 자식 블록과 메타데이터를 동시에 가져옴
+
+## 예제
+
+```ts copy
+const client = new Client({ auth: process.env.NOTION_TOKEN });
+const blocks = await client.getPageBlocks('page-id');
+
+// blocks[0].type → 'paragraph'
+// blocks[0].children → [...중첩 블록]
+```
+
+> [!NOTE]
+> 실패 시 빈 배열을 반환하고 개발 환경에서 경고를 출력합니다.

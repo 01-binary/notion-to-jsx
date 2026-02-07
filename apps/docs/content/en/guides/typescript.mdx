@@ -1,0 +1,105 @@
+---
+title: TypeScript
+---
+
+# TypeScript
+
+All packages are written in TypeScript and export their types.
+
+## Importing types
+
+```ts copy
+import type { NotionBlock } from 'notion-to-jsx';
+import type { TocStyleOptions } from 'notion-to-jsx';
+```
+
+Or from `notion-to-utils`:
+
+```ts copy
+import type { NotionBlock } from 'notion-to-utils';
+```
+
+## Block types
+
+The `NotionBlock` is a union type of all supported block interfaces:
+
+```ts
+type NotionBlock =
+  | ParagraphBlock
+  | Heading1Block
+  | Heading2Block
+  | Heading3Block
+  | CodeBlock
+  | ImageBlock
+  | BookmarkBlock
+  | TableBlock
+  | TableRowBlock
+  | QuoteBlock
+  | ToggleBlock
+  | BulletedListItemBlock
+  | NumberedListItemBlock
+  | ColumnListBlock
+  | ColumnBlock
+  | VideoBlock
+  | EmbedBlock
+  | LinkPreviewBlock;
+```
+
+## Common interfaces
+
+### RichTextItem
+
+```ts
+interface RichTextItem {
+  type: 'text' | 'mention' | string;
+  plain_text: string;
+  href: string | null;
+  annotations: {
+    bold: boolean;
+    italic: boolean;
+    strikethrough: boolean;
+    underline: boolean;
+    code: boolean;
+    color: string;
+  };
+}
+```
+
+### ImageFormatMetadata
+
+```ts
+interface ImageFormatMetadata {
+  block_width: number;
+  block_height: number;
+  block_aspect_ratio: number;
+}
+```
+
+### OpenGraphData
+
+```ts
+interface OpenGraphData {
+  title: string;
+  description: string;
+  image: string;
+  siteName: string;
+  url: string;
+  favicon?: string;
+}
+```
+
+## Type narrowing
+
+Use the `type` field to narrow block types:
+
+```ts copy
+function getBlockText(block: NotionBlock): string {
+  if (block.type === 'paragraph') {
+    return block.paragraph.rich_text.map(rt => rt.plain_text).join('');
+  }
+  if (block.type === 'heading_1') {
+    return block.heading_1.rich_text.map(rt => rt.plain_text).join('');
+  }
+  return '';
+}
+```

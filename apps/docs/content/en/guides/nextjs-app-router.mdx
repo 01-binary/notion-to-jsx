@@ -1,0 +1,142 @@
+---
+title: Next.js App Router
+---
+
+import { Steps, FileTree } from 'nextra/components'
+
+# Next.js App Router Guide
+
+A complete guide to integrating `notion-to-jsx` with Next.js App Router.
+
+## Project structure
+
+<FileTree>
+  <FileTree.Folder name="app" defaultOpen>
+    <FileTree.File name="layout.tsx" />
+    <FileTree.Folder name="lib" defaultOpen>
+      <FileTree.File name="notion.ts" />
+    </FileTree.Folder>
+    <FileTree.Folder name="posts" defaultOpen>
+      <FileTree.File name="page.tsx" />
+      <FileTree.Folder name="[id]" defaultOpen>
+        <FileTree.File name="page.tsx" />
+        <FileTree.File name="PostRenderer.tsx" />
+      </FileTree.Folder>
+    </FileTree.Folder>
+  </FileTree.Folder>
+</FileTree>
+
+<Steps>
+
+### Notion client (server-only)
+
+```ts copy filename="lib/notion.ts"
+import { Client } from 'notion-to-utils';
+
+export const notionClient = new Client({
+  auth: process.env.NOTION_TOKEN,
+});
+
+export const databaseId = process.env.NOTION_DATABASE_ID;
+```
+
+### Root layout with CSS
+
+```tsx copy filename="app/layout.tsx"
+import 'notion-to-jsx/dist/index.css';
+import 'prismjs/themes/prism-tomorrow.css';
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}
+```
+
+### Post list page (Server Component)
+
+```tsx copy filename="app/posts/page.tsx"
+import Link from 'next/link';
+import { notionClient, databaseId } from '@/lib/notion';
+
+export default async function PostsPage() {
+  const response = await notionClient.databases.query({
+    database_id: databaseId!,
+  });
+
+  return (
+    <ul>
+      {response.results.map((page: any) => (
+        <li key={page.id}>
+          <Link href={`/posts/${page.id}`}>
+            {page.properties.Name?.title?.[0]?.plain_text}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
+```
+
+### Post detail page (Server Component)
+
+```tsx copy filename="app/posts/[id]/page.tsx"
+import { notionClient } from '@/lib/notion';
+import PostRenderer from './PostRenderer';
+
+export default async function PostPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+
+  const [blocks, properties] = await Promise.all([
+    notionClient.getPageBlocks(id),
+    notionClient.getPageProperties(id),
+  ]);
+
+  return (
+    <PostRenderer
+      blocks={blocks}
+      title={(properties?.['Name'] as string) || ''}
+      cover={(properties?.['coverUrl'] as string) || ''}
+    />
+  );
+}
+```
+
+### Renderer wrapper (Client Component)
+
+```tsx copy filename="app/posts/[id]/PostRenderer.tsx"
+'use client';
+
+import { Renderer } from 'notion-to-jsx';
+import type { NotionBlock } from 'notion-to-jsx';
+
+interface Props {
+  blocks: NotionBlock[];
+  title?: string;
+  cover?: string;
+}
+
+export default function PostRenderer({ blocks, title, cover }: Props) {
+  return (
+    <Renderer
+      blocks={blocks}
+      title={title}
+      cover={cover}
+      showToc
+      tocStyle={{ top: '20%' }}
+    />
+  );
+}
+```
+
+</Steps>
+
+## Why server + client split?
+
+- **Server Component**: Fetches data from Notion API using server-only environment variables
+- **Client Component**: `Renderer` needs client-side features (scroll, interactive ToC)
+
+> [!TIP]
+> This pattern ensures API tokens stay on the server while the UI remains interactive.

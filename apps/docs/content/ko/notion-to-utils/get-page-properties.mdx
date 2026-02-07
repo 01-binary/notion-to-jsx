@@ -1,0 +1,56 @@
+---
+title: getPageProperties()
+---
+
+# getPageProperties()
+
+페이지 속성을 필터링 및 값 추출 옵션과 함께 가져옵니다.
+
+## 시그니처
+
+```ts
+client.getPageProperties(
+  pageId: string,
+  options?: GetPagePropertiesOptions
+): Promise<GetPagePropertiesResult>
+```
+
+## 파라미터
+
+| 파라미터 | 타입 | 설명 |
+|----------|------|------|
+| `pageId` | `string` | Notion 페이지 ID |
+| `options.keys` | `string[]` | 가져올 속성 키 (빈 배열 = 전체) |
+| `options.extractValues` | `boolean` | 단순화된 값 추출 (기본: `true`) |
+
+## 반환값
+
+`extractValues`가 `true` (기본)인 경우:
+
+```ts
+{ title: 'My Page', status: 'published', coverUrl: 'https://...' }
+```
+
+`extractValues`가 `false`인 경우 Notion 원본 속성 객체를 반환합니다.
+
+페이지를 찾을 수 없으면 `undefined`를 반환합니다.
+
+## 예제
+
+```ts copy
+// 모든 속성을 추출된 값으로 가져오기
+const props = await client.getPageProperties('page-id');
+
+// 특정 속성만 가져오기
+const props = await client.getPageProperties('page-id', {
+  keys: ['title', 'status'],
+});
+
+// 원본 속성 객체 가져오기
+const props = await client.getPageProperties('page-id', {
+  extractValues: false,
+});
+```
+
+> [!TIP]
+> 커버 이미지가 있는 경우 `coverUrl`로 자동 포함됩니다.

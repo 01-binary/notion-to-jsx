@@ -1,0 +1,72 @@
+---
+title: 빠른 시작
+---
+
+import { Steps } from 'nextra/components'
+
+# 빠른 시작
+
+Next.js App Router로 Notion 페이지를 렌더링하는 최소 예제입니다.
+
+<Steps>
+
+### Notion 클라이언트 설정
+
+```ts copy filename="lib/notion.ts"
+import { Client } from 'notion-to-utils';
+
+export const notionClient = new Client({
+  auth: process.env.NOTION_TOKEN,
+});
+```
+
+### 서버에서 블록 가져오기
+
+```tsx copy filename="app/posts/[id]/page.tsx"
+import { notionClient } from '@/lib/notion';
+import PostRenderer from './PostRenderer';
+
+export default async function PostPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+
+  const [blocks, properties] = await Promise.all([
+    notionClient.getPageBlocks(id),
+    notionClient.getPageProperties(id),
+  ]);
+
+  const title = (properties?.['Name'] as string) || '';
+  const cover = (properties?.['coverUrl'] as string) || '';
+
+  return <PostRenderer blocks={blocks} title={title} cover={cover} />;
+}
+```
+
+### 클라이언트 컴포넌트로 렌더링
+
+```tsx copy filename="app/posts/[id]/PostRenderer.tsx"
+'use client';
+
+import { Renderer } from 'notion-to-jsx';
+import type { NotionBlock } from 'notion-to-jsx';
+
+interface Props {
+  blocks: NotionBlock[];
+  title?: string;
+  cover?: string;
+}
+
+export default function PostRenderer({ blocks, title, cover }: Props) {
+  return (
+    <Renderer
+      blocks={blocks}
+      title={title}
+      cover={cover}
+      showToc
+    />
+  );
+}
+```
+
+</Steps>
+
+`Renderer`가 모든 블록 렌더링, 스타일링, 목차 생성을 자동으로 처리합니다.

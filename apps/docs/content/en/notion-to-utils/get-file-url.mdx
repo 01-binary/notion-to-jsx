@@ -1,0 +1,37 @@
+---
+title: getFileUrl()
+---
+
+# getFileUrl()
+
+Extracts the URL from a file property on a Notion page.
+
+## Signature
+
+```ts
+client.getFileUrl(
+  pageId: string,
+  propertyKey: string
+): Promise<string | undefined>
+```
+
+## Parameters
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `pageId` | `string` | The Notion page ID |
+| `propertyKey` | `string` | The property name containing the file |
+
+## Return value
+
+Returns the file URL as a `string`, or `undefined` if the property has no files or is not a file type.
+
+## Example
+
+```ts copy
+const fileUrl = await client.getFileUrl('page-id', 'Attachment');
+// 'https://prod-files-secure.s3.us-west-2.amazonaws.com/...'
+```
+
+> [!NOTE]
+> Returns the **first file** only if multiple files exist in the property. Returns `undefined` for non-file property types.

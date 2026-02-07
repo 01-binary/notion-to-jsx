@@ -1,0 +1,45 @@
+---
+title: Client
+---
+
+# Client
+
+The `Client` class extends the official `@notionhq/client` with convenience methods for fetching pages.
+
+## Import
+
+```ts copy
+import { Client } from 'notion-to-utils';
+```
+
+## Constructor
+
+```ts copy
+const client = new Client({
+  auth: process.env.NOTION_TOKEN,
+});
+```
+
+Accepts the same `ClientOptions` as the official Notion SDK.
+
+## Methods
+
+All standard `@notionhq/client` methods are available, plus:
+
+| Method | Return Type | Description |
+|--------|-------------|-------------|
+| `getPageBlocks(pageId)` | `Promise<NotionBlock[]>` | Fetch all blocks recursively |
+| `getPageProperties(pageId, options?)` | `Promise<GetPagePropertiesResult>` | Fetch page properties |
+| `getFileUrl(pageId, propertyKey)` | `Promise<string \| undefined>` | Extract file URL from a property |
+
+## Example
+
+```ts copy
+const client = new Client({ auth: process.env.NOTION_TOKEN });
+
+// Fetch blocks and properties in parallel
+const [blocks, properties] = await Promise.all([
+  client.getPageBlocks('page-id'),
+  client.getPageProperties('page-id'),
+]);
+```
