@@ -1,0 +1,50 @@
+---
+title: 스타일링
+---
+
+# 스타일링
+
+`notion-to-jsx`는 [Vanilla Extract](https://vanilla-extract.style/) 기반의 제로 런타임 CSS를 사용합니다.
+
+## 필수 CSS import
+
+루트 레이아웃에서 스타일시트를 import하세요:
+
+```tsx copy filename="app/layout.tsx"
+import 'notion-to-jsx/dist/index.css';
+```
+
+## 코드 구문 강조
+
+코드 블록을 위해 Prism.js 테마를 import하세요:
+
+```tsx copy filename="app/layout.tsx"
+import 'prismjs/themes/prism-tomorrow.css';
+```
+
+원하는 Prism.js 테마를 사용할 수 있습니다 — `prism-tomorrow` (다크), `prism` (라이트), `prism-okaidia` 등.
+
+## 스타일링 아키텍처
+
+Vanilla Extract로 빌드되어:
+
+- **런타임 오버헤드 없음** — 모든 CSS가 빌드 타임에 생성
+- **타입 안전** — TypeScript로 스타일 정의
+- **스코프** — 앱의 스타일과 클래스명 충돌 없음
+- **테마 인식** — 다크/라이트 모드가 런타임 JS 없이 CSS 클래스로 동작
+
+## 커스터마이징
+
+`Renderer`는 시맨틱 HTML 요소를 출력합니다. CSS 특이성을 이용하여 스타일을 오버라이드할 수 있습니다:
+
+```css copy filename="custom.css"
+/* 문단 스타일 오버라이드 */
+.notion-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+```
+
+## 다크 모드
+
+다크 모드 스타일은 컨테이너의 `.dark` 클래스를 통해 적용됩니다. 자세한 내용은 [다크 모드](/ko/notion-to-jsx/dark-mode) 페이지를 참고하세요.

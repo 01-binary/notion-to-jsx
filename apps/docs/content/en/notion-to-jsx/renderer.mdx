@@ -1,0 +1,61 @@
+---
+title: Renderer
+---
+
+# Renderer
+
+The main component that renders Notion blocks as React JSX.
+
+## Import
+
+```tsx copy
+import { Renderer } from 'notion-to-jsx';
+```
+
+## Props
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `blocks` | `NotionBlock[]` | **required** | Array of Notion blocks from `getPageBlocks()` |
+| `title` | `string` | — | Page title |
+| `cover` | `string` | — | Cover image URL |
+| `isDarkMode` | `boolean` | `false` | Enable dark theme |
+| `showToc` | `boolean` | `true` | Show table of contents |
+| `tocStyle` | `TocStyleOptions` | — | ToC positioning options |
+
+### TocStyleOptions
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `top` | `string` | CSS `top` value (e.g. `'80px'`) |
+| `scrollOffset` | `number` | Pixel offset when scrolling to a heading |
+
+## Basic usage
+
+```tsx copy
+<Renderer blocks={blocks} />
+```
+
+## Full example
+
+```tsx copy filename="PostRenderer.tsx"
+<Renderer
+  blocks={blocks}
+  title="My Page"
+  cover="https://..."
+  isDarkMode={false}
+  showToc={true}
+  tocStyle={{ top: '80px', scrollOffset: 100 }}
+/>
+```
+
+## How it works
+
+1. Groups consecutive list items into list containers
+2. Extracts headings for automatic table of contents
+3. Renders each block using specialized block components
+4. Applies theme classes for dark/light mode
+5. Renders cover image and title if provided
+
+> [!NOTE]
+> The component is memoized for performance. Requires `notion-to-jsx/dist/index.css` to be imported for styling.

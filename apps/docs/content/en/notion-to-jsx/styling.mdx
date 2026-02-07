@@ -1,0 +1,50 @@
+---
+title: Styling
+---
+
+# Styling
+
+`notion-to-jsx` uses [Vanilla Extract](https://vanilla-extract.style/) for zero-runtime CSS.
+
+## Required CSS import
+
+Import the stylesheet in your root layout:
+
+```tsx copy filename="app/layout.tsx"
+import 'notion-to-jsx/dist/index.css';
+```
+
+## Code syntax highlighting
+
+For code blocks, import a Prism.js theme:
+
+```tsx copy filename="app/layout.tsx"
+import 'prismjs/themes/prism-tomorrow.css';
+```
+
+You can use any Prism.js theme — `prism-tomorrow` (dark), `prism` (light), `prism-okaidia`, etc.
+
+## Styling architecture
+
+The styles are built with Vanilla Extract, meaning:
+
+- **Zero runtime overhead** — all CSS is generated at build time
+- **Type-safe** — styles are defined in TypeScript
+- **Scoped** — no class name conflicts with your app's styles
+- **Theme-aware** — dark/light mode via CSS classes, not runtime JS
+
+## Customization
+
+The `Renderer` outputs semantic HTML elements. You can override styles using CSS specificity:
+
+```css copy filename="custom.css"
+/* Override paragraph styles */
+.notion-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+```
+
+## Dark mode
+
+Dark mode styles are applied via a `.dark` class on the container. See the [Dark Mode](/en/notion-to-jsx/dark-mode) page for details.

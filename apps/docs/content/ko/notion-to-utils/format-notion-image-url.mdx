@@ -1,0 +1,53 @@
+---
+title: formatNotionImageUrl()
+---
+
+# formatNotionImageUrl()
+
+Notion S3 이미지 URL을 캐시 가능한 Notion 프록시 URL로 변환합니다.
+
+## 시그니처
+
+```ts copy
+import { formatNotionImageUrl } from 'notion-to-utils';
+
+formatNotionImageUrl(url: string | undefined, blockId?: string): string
+```
+
+## 파라미터
+
+| 파라미터 | 타입 | 설명 |
+|----------|------|------|
+| `url` | `string \| undefined` | 원본 S3 또는 이미지 URL |
+| `blockId` | `string` | Notion 블록 ID (선택) |
+
+## URL 변환
+
+**입력:**
+```
+https://prod-files-secure.s3.us-west-2.amazonaws.com/...?X-Amz-Signature=...
+```
+
+**출력:**
+```
+https://www.notion.so/image/https%3A%2F%2Fprod-files-secure...?table=block&id=xxxx&cache=v2
+```
+
+## 예제
+
+```ts copy
+const url = formatNotionImageUrl(
+  'https://prod-files-secure.s3.us-west-2.amazonaws.com/abc/123.png',
+  'block-id'
+);
+```
+
+> [!TIP]
+> 이 함수는 `getPageBlocks()`에서 자동으로 호출됩니다 — 직접 호출할 일은 거의 없습니다.
+
+## 참고
+
+- 유효한 HTTPS URL이 아니면 원본 URL을 그대로 반환
+- 이미 Notion 프록시 형식이면 원본을 반환
+- AWS 인증 파라미터를 제거
+- `cache=v2`를 추가하여 캐싱 지원

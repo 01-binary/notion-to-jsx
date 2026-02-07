@@ -1,0 +1,45 @@
+---
+title: Client
+---
+
+# Client
+
+`Client` 클래스는 공식 `@notionhq/client`를 확장하여 페이지 데이터를 쉽게 가져올 수 있는 메서드를 제공합니다.
+
+## Import
+
+```ts copy
+import { Client } from 'notion-to-utils';
+```
+
+## 생성자
+
+```ts copy
+const client = new Client({
+  auth: process.env.NOTION_TOKEN,
+});
+```
+
+공식 Notion SDK의 `ClientOptions`를 그대로 사용합니다.
+
+## 메서드
+
+기존 `@notionhq/client`의 모든 메서드에 추가로:
+
+| 메서드 | 반환 타입 | 설명 |
+|--------|-----------|------|
+| `getPageBlocks(pageId)` | `Promise<NotionBlock[]>` | 모든 블록을 재귀적으로 가져오기 |
+| `getPageProperties(pageId, options?)` | `Promise<GetPagePropertiesResult>` | 페이지 속성 가져오기 |
+| `getFileUrl(pageId, propertyKey)` | `Promise<string \| undefined>` | 파일 속성에서 URL 추출 |
+
+## 예제
+
+```ts copy
+const client = new Client({ auth: process.env.NOTION_TOKEN });
+
+// 블록과 속성을 병렬로 가져오기
+const [blocks, properties] = await Promise.all([
+  client.getPageBlocks('page-id'),
+  client.getPageProperties('page-id'),
+]);
+```

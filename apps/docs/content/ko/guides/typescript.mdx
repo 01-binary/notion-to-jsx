@@ -1,0 +1,105 @@
+---
+title: TypeScript
+---
+
+# TypeScript
+
+모든 패키지가 TypeScript로 작성되어 있으며 타입을 export합니다.
+
+## 타입 import
+
+```ts copy
+import type { NotionBlock } from 'notion-to-jsx';
+import type { TocStyleOptions } from 'notion-to-jsx';
+```
+
+또는 `notion-to-utils`에서:
+
+```ts copy
+import type { NotionBlock } from 'notion-to-utils';
+```
+
+## 블록 타입
+
+`NotionBlock`은 모든 지원 블록 인터페이스의 유니온 타입입니다:
+
+```ts
+type NotionBlock =
+  | ParagraphBlock
+  | Heading1Block
+  | Heading2Block
+  | Heading3Block
+  | CodeBlock
+  | ImageBlock
+  | BookmarkBlock
+  | TableBlock
+  | TableRowBlock
+  | QuoteBlock
+  | ToggleBlock
+  | BulletedListItemBlock
+  | NumberedListItemBlock
+  | ColumnListBlock
+  | ColumnBlock
+  | VideoBlock
+  | EmbedBlock
+  | LinkPreviewBlock;
+```
+
+## 주요 인터페이스
+
+### RichTextItem
+
+```ts
+interface RichTextItem {
+  type: 'text' | 'mention' | string;
+  plain_text: string;
+  href: string | null;
+  annotations: {
+    bold: boolean;
+    italic: boolean;
+    strikethrough: boolean;
+    underline: boolean;
+    code: boolean;
+    color: string;
+  };
+}
+```
+
+### ImageFormatMetadata
+
+```ts
+interface ImageFormatMetadata {
+  block_width: number;
+  block_height: number;
+  block_aspect_ratio: number;
+}
+```
+
+### OpenGraphData
+
+```ts
+interface OpenGraphData {
+  title: string;
+  description: string;
+  image: string;
+  siteName: string;
+  url: string;
+  favicon?: string;
+}
+```
+
+## 타입 내로잉
+
+`type` 필드를 사용하여 블록 타입을 좁힐 수 있습니다:
+
+```ts copy
+function getBlockText(block: NotionBlock): string {
+  if (block.type === 'paragraph') {
+    return block.paragraph.rich_text.map(rt => rt.plain_text).join('');
+  }
+  if (block.type === 'heading_1') {
+    return block.heading_1.rich_text.map(rt => rt.plain_text).join('');
+  }
+  return '';
+}
+```

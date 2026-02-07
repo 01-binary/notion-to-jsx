@@ -1,0 +1,69 @@
+---
+title: Installation
+---
+
+import { Tabs } from 'nextra/components'
+
+# Installation
+
+## Requirements
+
+- **Node.js** 18 or later
+- **React** 19+
+- **Next.js** 14+ (recommended, for server components)
+
+## Install packages
+
+<Tabs items={['pnpm', 'npm', 'yarn']}>
+  <Tabs.Tab>
+    ```bash copy
+    pnpm add notion-to-utils notion-to-jsx
+    ```
+  </Tabs.Tab>
+  <Tabs.Tab>
+    ```bash copy
+    npm install notion-to-utils notion-to-jsx
+    ```
+  </Tabs.Tab>
+  <Tabs.Tab>
+    ```bash copy
+    yarn add notion-to-utils notion-to-jsx
+    ```
+  </Tabs.Tab>
+</Tabs>
+
+`notion-to-utils` fetches data from the Notion API. `notion-to-jsx` renders blocks as React components.
+
+## CSS setup
+
+Import the styles in your root layout:
+
+```tsx copy filename="app/layout.tsx"
+import 'notion-to-jsx/dist/index.css';
+import 'prismjs/themes/prism-tomorrow.css'; // code syntax highlighting (optional)
+```
+
+> [!NOTE]
+> The CSS import is required for block styling to work correctly. The Prism.js theme is optional and only needed for code block syntax highlighting.
+
+## Peer dependencies
+
+Both packages require `react` and `react-dom`. If not already installed:
+
+<Tabs items={['pnpm', 'npm', 'yarn']}>
+  <Tabs.Tab>
+    ```bash copy
+    pnpm add react react-dom
+    ```
+  </Tabs.Tab>
+  <Tabs.Tab>
+    ```bash copy
+    npm install react react-dom
+    ```
+  </Tabs.Tab>
+  <Tabs.Tab>
+    ```bash copy
+    yarn add react react-dom
+    ```
+  </Tabs.Tab>
+</Tabs>

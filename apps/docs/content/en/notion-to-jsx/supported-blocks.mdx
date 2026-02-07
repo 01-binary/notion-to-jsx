@@ -1,0 +1,60 @@
+---
+title: Supported Blocks
+---
+
+# Supported Block Types
+
+`notion-to-jsx` supports the following Notion block types:
+
+## Text
+
+| Block Type | Type String | Description |
+|-----------|-------------|-------------|
+| Paragraph | `paragraph` | Basic text block |
+| Heading 1 | `heading_1` | Large heading |
+| Heading 2 | `heading_2` | Medium heading |
+| Heading 3 | `heading_3` | Small heading |
+| Quote | `quote` | Blockquote |
+| Callout | `callout` | Callout with icon |
+
+## Lists
+
+| Block Type | Type String | Description |
+|-----------|-------------|-------------|
+| Bulleted List | `bulleted_list_item` | Unordered list item |
+| Numbered List | `numbered_list_item` | Ordered list item |
+| Toggle | `toggle` | Collapsible content |
+
+## Media
+
+| Block Type | Type String | Description |
+|-----------|-------------|-------------|
+| Image | `image` | Image with caption |
+| Video | `video` | Embedded video |
+| Bookmark | `bookmark` | Link with OG preview |
+| Embed | `embed` | Embedded content (CodeSandbox, CodePen, etc.) |
+| Link Preview | `link_preview` | Link preview card |
+
+## Code
+
+| Block Type | Type String | Description |
+|-----------|-------------|-------------|
+| Code | `code` | Code block with syntax highlighting |
+
+## Structure
+
+| Block Type | Type String | Description |
+|-----------|-------------|-------------|
+| Table | `table` | Table with headers |
+| Column List | `column_list` | Multi-column layout |
+| Column | `column` | Column container |
+| Divider | `divider` | Horizontal rule |
+
+## Rich text features
+
+All text blocks support Notion's rich text annotations:
+
+- **Bold**, *italic*, ~~strikethrough~~, <u>underline</u>
+- `inline code`
+- [Links](https://example.com)
+- Text colors and background colors

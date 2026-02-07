@@ -1,0 +1,45 @@
+---
+title: Dark Mode
+---
+
+# Dark Mode
+
+The `Renderer` component has built-in dark mode support.
+
+## Usage
+
+```tsx copy
+<Renderer blocks={blocks} isDarkMode={true} />
+```
+
+## How it works
+
+When `isDarkMode` is `true`, the `Renderer` applies a `dark` CSS class to the root container. All block components adjust their styles automatically — text colors, backgrounds, borders, and code blocks all adapt to the dark theme.
+
+## Integration with theme systems
+
+Since `isDarkMode` is a simple boolean prop, you can connect it to any theme system:
+
+```tsx copy filename="PostRenderer.tsx"
+'use client';
+
+import { useState } from 'react';
+import { Renderer } from 'notion-to-jsx';
+
+export default function PostRenderer({ blocks }) {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  return (
+    <div style={{ backgroundColor: isDarkMode ? '#0d1117' : '#fff' }}>
+      <button onClick={() => setIsDarkMode(!isDarkMode)}>
+        {isDarkMode ? 'Light' : 'Dark'}
+      </button>
+      <Renderer blocks={blocks} isDarkMode={isDarkMode} />
+    </div>
+  );
+}
+```
+
+## Default
+
+`isDarkMode` defaults to `false` (light mode).

@@ -1,0 +1,42 @@
+---
+title: Table of Contents
+---
+
+# Table of Contents
+
+The `Renderer` automatically generates a table of contents from heading blocks.
+
+## Enable / Disable
+
+```tsx copy
+// Enabled by default
+<Renderer blocks={blocks} showToc={true} />
+
+// Disable
+<Renderer blocks={blocks} showToc={false} />
+```
+
+## Customize positioning
+
+Use `tocStyle` to control the ToC position:
+
+```tsx copy
+<Renderer
+  blocks={blocks}
+  showToc
+  tocStyle={{
+    top: '80px',         // CSS top position
+    scrollOffset: 100,   // pixel offset when clicking a heading link
+  }}
+/>
+```
+
+## How it works
+
+1. The `Renderer` extracts all `heading_1`, `heading_2`, and `heading_3` blocks
+2. Generates a sticky sidebar with anchor links
+3. Clicking a link scrolls to the corresponding heading
+4. The `scrollOffset` accounts for fixed headers or other UI elements
+
+> [!NOTE]
+> The ToC is only rendered when there are heading blocks in the content. It is responsive and hidden on small screens. Heading IDs are auto-generated from the heading text.

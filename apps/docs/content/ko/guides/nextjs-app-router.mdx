@@ -1,0 +1,142 @@
+---
+title: Next.js App Router
+---
+
+import { Steps, FileTree } from 'nextra/components'
+
+# Next.js App Router 가이드
+
+Next.js App Router에서 `notion-to-jsx`를 통합하는 전체 가이드입니다.
+
+## 프로젝트 구조
+
+<FileTree>
+  <FileTree.Folder name="app" defaultOpen>
+    <FileTree.File name="layout.tsx" />
+    <FileTree.Folder name="lib" defaultOpen>
+      <FileTree.File name="notion.ts" />
+    </FileTree.Folder>
+    <FileTree.Folder name="posts" defaultOpen>
+      <FileTree.File name="page.tsx" />
+      <FileTree.Folder name="[id]" defaultOpen>
+        <FileTree.File name="page.tsx" />
+        <FileTree.File name="PostRenderer.tsx" />
+      </FileTree.Folder>
+    </FileTree.Folder>
+  </FileTree.Folder>
+</FileTree>
+
+<Steps>
+
+### Notion 클라이언트 (서버 전용)
+
+```ts copy filename="lib/notion.ts"
+import { Client } from 'notion-to-utils';
+
+export const notionClient = new Client({
+  auth: process.env.NOTION_TOKEN,
+});
+
+export const databaseId = process.env.NOTION_DATABASE_ID;
+```
+
+### 루트 레이아웃 (CSS 포함)
+
+```tsx copy filename="app/layout.tsx"
+import 'notion-to-jsx/dist/index.css';
+import 'prismjs/themes/prism-tomorrow.css';
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="ko">
+      <body>{children}</body>
+    </html>
+  );
+}
+```
+
+### 글 목록 페이지 (서버 컴포넌트)
+
+```tsx copy filename="app/posts/page.tsx"
+import Link from 'next/link';
+import { notionClient, databaseId } from '@/lib/notion';
+
+export default async function PostsPage() {
+  const response = await notionClient.databases.query({
+    database_id: databaseId!,
+  });
+
+  return (
+    <ul>
+      {response.results.map((page: any) => (
+        <li key={page.id}>
+          <Link href={`/posts/${page.id}`}>
+            {page.properties.Name?.title?.[0]?.plain_text}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
+```
+
+### 글 상세 페이지 (서버 컴포넌트)
+
+```tsx copy filename="app/posts/[id]/page.tsx"
+import { notionClient } from '@/lib/notion';
+import PostRenderer from './PostRenderer';
+
+export default async function PostPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+
+  const [blocks, properties] = await Promise.all([
+    notionClient.getPageBlocks(id),
+    notionClient.getPageProperties(id),
+  ]);
+
+  return (
+    <PostRenderer
+      blocks={blocks}
+      title={(properties?.['Name'] as string) || ''}
+      cover={(properties?.['coverUrl'] as string) || ''}
+    />
+  );
+}
+```
+
+### Renderer 래퍼 (클라이언트 컴포넌트)
+
+```tsx copy filename="app/posts/[id]/PostRenderer.tsx"
+'use client';
+
+import { Renderer } from 'notion-to-jsx';
+import type { NotionBlock } from 'notion-to-jsx';
+
+interface Props {
+  blocks: NotionBlock[];
+  title?: string;
+  cover?: string;
+}
+
+export default function PostRenderer({ blocks, title, cover }: Props) {
+  return (
+    <Renderer
+      blocks={blocks}
+      title={title}
+      cover={cover}
+      showToc
+      tocStyle={{ top: '20%' }}
+    />
+  );
+}
+```
+
+</Steps>
+
+## 서버 + 클라이언트 분리 이유
+
+- **서버 컴포넌트**: 서버 전용 환경변수로 Notion API 데이터 페칭
+- **클라이언트 컴포넌트**: `Renderer`는 클라이언트 사이드 기능 필요 (스크롤, 인터랙티브 목차)
+
+> [!TIP]
+> 이 패턴으로 API 토큰은 서버에 유지하면서 UI는 인터랙티브하게 동작합니다.

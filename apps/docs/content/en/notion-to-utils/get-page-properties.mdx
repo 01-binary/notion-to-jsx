@@ -1,0 +1,56 @@
+---
+title: getPageProperties()
+---
+
+# getPageProperties()
+
+Fetches page properties with optional filtering and value extraction.
+
+## Signature
+
+```ts
+client.getPageProperties(
+  pageId: string,
+  options?: GetPagePropertiesOptions
+): Promise<GetPagePropertiesResult>
+```
+
+## Parameters
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `pageId` | `string` | The Notion page ID |
+| `options.keys` | `string[]` | Property keys to fetch (empty = all) |
+| `options.extractValues` | `boolean` | Extract simplified values (default: `true`) |
+
+## Return value
+
+When `extractValues` is `true` (default):
+
+```ts
+{ title: 'My Page', status: 'published', coverUrl: 'https://...' }
+```
+
+When `extractValues` is `false`, returns raw Notion property objects.
+
+Returns `undefined` if the page is not found.
+
+## Examples
+
+```ts copy
+// Get all properties with extracted values
+const props = await client.getPageProperties('page-id');
+
+// Get specific properties only
+const props = await client.getPageProperties('page-id', {
+  keys: ['title', 'status'],
+});
+
+// Get raw property objects
+const props = await client.getPageProperties('page-id', {
+  extractValues: false,
+});
+```
+
+> [!TIP]
+> The cover image URL is automatically included as `coverUrl` when present.

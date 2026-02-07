@@ -1,0 +1,42 @@
+---
+title: 목차
+---
+
+# 목차 (Table of Contents)
+
+`Renderer`는 헤딩 블록에서 목차를 자동 생성합니다.
+
+## 활성화 / 비활성화
+
+```tsx copy
+// 기본적으로 활성화
+<Renderer blocks={blocks} showToc={true} />
+
+// 비활성화
+<Renderer blocks={blocks} showToc={false} />
+```
+
+## 위치 커스터마이징
+
+`tocStyle`로 목차 위치를 조정할 수 있습니다:
+
+```tsx copy
+<Renderer
+  blocks={blocks}
+  showToc
+  tocStyle={{
+    top: '80px',         // CSS top 위치
+    scrollOffset: 100,   // 헤딩 링크 클릭 시 스크롤 오프셋 (px)
+  }}
+/>
+```
+
+## 동작 방식
+
+1. `Renderer`가 모든 `heading_1`, `heading_2`, `heading_3` 블록을 추출
+2. 앵커 링크가 있는 스티키 사이드바 생성
+3. 링크 클릭 시 해당 헤딩으로 스크롤
+4. `scrollOffset`으로 고정 헤더 등의 UI 요소를 고려
+
+> [!NOTE]
+> 헤딩 블록이 있을 때만 목차가 렌더링됩니다. 반응형으로 작은 화면에서는 숨겨지며, 헤딩 텍스트에서 자동으로 ID가 생성됩니다.

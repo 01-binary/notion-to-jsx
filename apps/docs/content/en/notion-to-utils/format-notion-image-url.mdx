@@ -1,0 +1,53 @@
+---
+title: formatNotionImageUrl()
+---
+
+# formatNotionImageUrl()
+
+Converts Notion S3 image URLs to cacheable Notion proxy URLs.
+
+## Signature
+
+```ts copy
+import { formatNotionImageUrl } from 'notion-to-utils';
+
+formatNotionImageUrl(url: string | undefined, blockId?: string): string
+```
+
+## Parameters
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `url` | `string \| undefined` | The original S3 or image URL |
+| `blockId` | `string` | The Notion block ID (optional) |
+
+## URL transformation
+
+**Input:**
+```
+https://prod-files-secure.s3.us-west-2.amazonaws.com/...?X-Amz-Signature=...
+```
+
+**Output:**
+```
+https://www.notion.so/image/https%3A%2F%2Fprod-files-secure...?table=block&id=xxxx&cache=v2
+```
+
+## Example
+
+```ts copy
+const url = formatNotionImageUrl(
+  'https://prod-files-secure.s3.us-west-2.amazonaws.com/abc/123.png',
+  'block-id'
+);
+```
+
+> [!TIP]
+> This function is called automatically by `getPageBlocks()` — you rarely need to call it directly.
+
+## Notes
+
+- Returns the original URL if not a valid HTTPS URL
+- Returns the original URL if already in Notion proxy format
+- Strips AWS authentication parameters
+- Adds `cache=v2` for caching
