@@ -1,24 +1,24 @@
-**한국어** | [English](./README.en.md)
+[한국어](./README.md) | **English**
 
 # notion-types
 
-`notion-to-jsx`와 `notion-to-utils`에서 공유하는 타입 정의 패키지입니다.
+Shared type definitions used by `notion-to-jsx` and `notion-to-utils`.
 
-> **Private 패키지**: 워크스페이스 내부에서만 사용됩니다.
+> **Private package**: Used only within the workspace.
 
-## 타입
+## Types
 
 ### NotionBlock
 
-모든 블록 타입의 유니온 타입입니다.
+A union type of all block types.
 
 ```typescript
 import type { NotionBlock } from 'notion-types';
 ```
 
-지원하는 블록 타입:
+Supported block types:
 
-| 타입 | 인터페이스 |
+| Type | Interface |
 |------|-----------|
 | `paragraph` | `ParagraphBlock` |
 | `heading_1` | `Heading1Block` |
@@ -41,7 +41,7 @@ import type { NotionBlock } from 'notion-types';
 
 ### RichTextItem
 
-Notion 리치 텍스트 항목입니다. 텍스트 서식(bold, italic, underline, strikethrough, code, color)과 링크 정보를 포함합니다.
+A Notion rich text item. Contains text formatting (bold, italic, underline, strikethrough, code, color) and link information.
 
 ```typescript
 import type { RichTextItem } from 'notion-types';
@@ -49,7 +49,7 @@ import type { RichTextItem } from 'notion-types';
 
 ### OpenGraphData
 
-북마크 블록의 OG 메타데이터입니다.
+OG metadata for bookmark blocks.
 
 ```typescript
 import type { OpenGraphData } from 'notion-types';
@@ -59,7 +59,7 @@ import type { OpenGraphData } from 'notion-types';
 
 ### ImageFormatMetadata
 
-이미지 블록의 크기 메타데이터입니다.
+Size metadata for image blocks.
 
 ```typescript
 import type { ImageFormatMetadata } from 'notion-types';
@@ -67,6 +67,6 @@ import type { ImageFormatMetadata } from 'notion-types';
 // { block_width, block_height, block_aspect_ratio }
 ```
 
-## 라이선스
+## License
 
 MIT

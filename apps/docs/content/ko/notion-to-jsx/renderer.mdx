@@ -57,5 +57,8 @@ import { Renderer } from 'notion-to-jsx';
 4. 다크/라이트 모드에 맞는 테마 클래스 적용
 5. 커버 이미지와 제목 렌더링
 
+> [!IMPORTANT]
+> `Renderer`는 **클라이언트 컴포넌트** (`'use client'`)에서 사용해야 합니다. 서버 컴포넌트에서 데이터를 fetch하고 props로 전달하세요.
+
 > [!NOTE]
 > 성능을 위해 메모이제이션이 적용됩니다. 스타일링을 위해 `notion-to-jsx/dist/index.css` import가 필요합니다.

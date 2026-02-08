@@ -67,6 +67,8 @@ interface RichTextItem {
 
 ### ImageFormatMetadata
 
+Image metadata automatically injected by `getPageBlocks()` via image probing. Values represent the **original image dimensions**, not the Notion display size.
+
 ```ts
 interface ImageFormatMetadata {
   block_width: number;
@@ -86,6 +88,18 @@ interface OpenGraphData {
   url: string;
   favicon?: string;
 }
+```
+
+## Re-exported types from Notion SDK
+
+`notion-to-utils` re-exports commonly used types from `@notionhq/client` so you don't need to install it separately:
+
+```ts copy
+import type {
+  PageObjectResponse,
+  MultiSelectPropertyItemObjectResponse,
+  GetPageResponse,
+} from 'notion-to-utils';
 ```
 
 ## Type narrowing

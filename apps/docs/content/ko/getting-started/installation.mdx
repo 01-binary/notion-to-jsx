@@ -43,8 +43,8 @@ import 'notion-to-jsx/dist/index.css';
 import 'prismjs/themes/prism-tomorrow.css'; // 코드 구문 강조 (선택)
 ```
 
-> [!NOTE]
-> CSS import는 블록 스타일링이 올바르게 동작하기 위해 필수입니다. Prism.js 테마는 선택사항이며 코드 블록 구문 강조에만 필요합니다.
+> [!IMPORTANT]
+> import 순서가 중요합니다: `notion-to-jsx/dist/index.css`를 Prism.js 테마와 커스텀 스타일보다 **먼저** import해야 오버라이드가 올바르게 동작합니다.
 
 ## Peer 의존성
 

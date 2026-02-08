@@ -1,0 +1,47 @@
+---
+title: extractCoverUrl()
+---
+
+# extractCoverUrl()
+
+Notion 페이지의 커버 객체에서 이미지 URL을 추출합니다.
+
+## Import
+
+```ts copy
+import { extractCoverUrl } from 'notion-to-utils';
+```
+
+## 시그니처
+
+```ts
+function extractCoverUrl(
+  cover: PageObjectResponse['cover'],
+  pageId: string
+): string
+```
+
+## 매개변수
+
+| 매개변수 | 타입 | 설명 |
+|----------|------|------|
+| `cover` | `PageObjectResponse['cover']` | Notion 페이지 응답의 커버 객체 |
+| `pageId` | `string` | 페이지 ID (내부 파일 URL 포맷팅에 사용) |
+
+## 반환값
+
+`string` — 커버 이미지 URL. 커버가 없으면 빈 문자열을 반환합니다.
+
+## 예제
+
+```ts copy
+import { Client, extractCoverUrl, isPageObjectResponse } from 'notion-to-utils';
+
+const client = new Client({ auth: process.env.NOTION_TOKEN });
+
+const response = await client.raw.pages.retrieve({ page_id: pageId });
+
+if (isPageObjectResponse(response)) {
+  const coverUrl = extractCoverUrl(response.cover, pageId);
+}
+```

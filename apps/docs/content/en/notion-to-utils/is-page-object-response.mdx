@@ -1,0 +1,47 @@
+---
+title: isPageObjectResponse()
+---
+
+# isPageObjectResponse()
+
+A type guard that checks whether a Notion API response is a full `PageObjectResponse`.
+
+## Import
+
+```ts copy
+import { isPageObjectResponse } from 'notion-to-utils';
+```
+
+## Signature
+
+```ts
+function isPageObjectResponse(
+  obj: GetPageResponse
+): obj is PageObjectResponse
+```
+
+## Parameters
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `obj` | `GetPageResponse` | The response from `pages.retrieve()` |
+
+## Returns
+
+`boolean` — `true` if the response is a full `PageObjectResponse` (not a partial response).
+
+## Example
+
+```ts copy
+import { Client, isPageObjectResponse, extractCoverUrl } from 'notion-to-utils';
+
+const client = new Client({ auth: process.env.NOTION_TOKEN });
+
+const response = await client.raw.pages.retrieve({ page_id: pageId });
+
+if (isPageObjectResponse(response)) {
+  // TypeScript now knows response is PageObjectResponse
+  const coverUrl = extractCoverUrl(response.cover, pageId);
+  const title = response.properties.Name;
+}
+```

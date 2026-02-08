@@ -43,8 +43,8 @@ import 'notion-to-jsx/dist/index.css';
 import 'prismjs/themes/prism-tomorrow.css'; // code syntax highlighting (optional)
 ```
 
-> [!NOTE]
-> The CSS import is required for block styling to work correctly. The Prism.js theme is optional and only needed for code block syntax highlighting.
+> [!IMPORTANT]
+> Import order matters: `notion-to-jsx/dist/index.css` must come **before** the Prism.js theme and your custom styles, so that overrides work correctly.
 
 ## Peer dependencies
 

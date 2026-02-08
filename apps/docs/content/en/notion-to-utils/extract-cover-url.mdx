@@ -1,0 +1,47 @@
+---
+title: extractCoverUrl()
+---
+
+# extractCoverUrl()
+
+Extracts the cover image URL from a Notion page's cover object.
+
+## Import
+
+```ts copy
+import { extractCoverUrl } from 'notion-to-utils';
+```
+
+## Signature
+
+```ts
+function extractCoverUrl(
+  cover: PageObjectResponse['cover'],
+  pageId: string
+): string
+```
+
+## Parameters
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `cover` | `PageObjectResponse['cover']` | The cover object from a Notion page response |
+| `pageId` | `string` | The page ID (used for internal file URL formatting) |
+
+## Returns
+
+`string` — The cover image URL. Returns an empty string if no cover exists.
+
+## Example
+
+```ts copy
+import { Client, extractCoverUrl, isPageObjectResponse } from 'notion-to-utils';
+
+const client = new Client({ auth: process.env.NOTION_TOKEN });
+
+const response = await client.raw.pages.retrieve({ page_id: pageId });
+
+if (isPageObjectResponse(response)) {
+  const coverUrl = extractCoverUrl(response.cover, pageId);
+}
+```
