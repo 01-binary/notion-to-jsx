@@ -36,14 +36,11 @@ function extractValuesFromProperties(
 |----------|---------|
 | `title` | `string` |
 | `rich_text` | `string` |
-| `number` | `string` (문자열 변환) |
-| `select` | `string` (이름) |
+| `select` | `{ id, name, color }` |
 | `multi_select` | `{ id, name, color }` (첫 번째 항목) |
 | `date` | `{ start, end, time_zone }` |
 | `checkbox` | `boolean` |
 | `url` | `string` |
-| `email` | `string` |
-| `phone_number` | `string` |
 | 기타 타입 | 원본 속성 객체 |
 
 ## 예제
