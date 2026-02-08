@@ -18,7 +18,7 @@ Next.js App Router에서 `notion-to-jsx`를 통합하는 전체 가이드입니�
     <FileTree.File name="layout.tsx" />
     <FileTree.Folder name="posts" defaultOpen>
       <FileTree.File name="page.tsx" />
-      <FileTree.Folder name="[id]" defaultOpen>
+      <FileTree.Folder name="[slug]" defaultOpen>
         <FileTree.File name="page.tsx" />
         <FileTree.File name="PostRenderer.tsx" />
       </FileTree.Folder>
@@ -60,6 +60,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 ```tsx copy filename="app/posts/page.tsx"
 import Link from 'next/link';
 import { notionClient, databaseId } from '@/lib/notion';
+import { extractValuesFromProperties } from 'notion-to-utils';
 
 export default async function PostsPage() {
   const response = await notionClient.dataSources.query({
@@ -68,13 +69,16 @@ export default async function PostsPage() {
 
   return (
     <ul>
-      {response.results.map((page: any) => (
-        <li key={page.id}>
-          <Link href={`/posts/${page.id}`}>
-            {page.properties.Name?.title?.[0]?.plain_text}
-          </Link>
-        </li>
-      ))}
+      {response.results.map((page: any) => {
+        const values = extractValuesFromProperties(page.properties);
+        return (
+          <li key={page.id}>
+            <Link href={`/posts/${values.Slug}`}>
+              {values.Name}
+            </Link>
+          </li>
+        );
+      })}
     </ul>
   );
 }
@@ -82,16 +86,26 @@ export default async function PostsPage() {
 
 ### 글 상세 페이지 (서버 컴포넌트)
 
-```tsx copy filename="app/posts/[id]/page.tsx"
-import { notionClient } from '@/lib/notion';
+```tsx copy filename="app/posts/[slug]/page.tsx"
+import { notionClient, databaseId } from '@/lib/notion';
 import PostRenderer from './PostRenderer';
 
-export default async function PostPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
+export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+
+  // Slug로 페이지 ID 조회
+  const { results } = await notionClient.dataSources.query({
+    data_source_id: databaseId!,
+    filter: {
+      property: 'Slug',
+      rich_text: { equals: slug },
+    },
+  });
+  const pageId = results[0].id;
 
   const [blocks, properties] = await Promise.all([
-    notionClient.getPageBlocks(id),
-    notionClient.getPageProperties(id),
+    notionClient.getPageBlocks(pageId),
+    notionClient.getPageProperties(pageId),
   ]);
 
   return (
@@ -106,7 +120,7 @@ export default async function PostPage({ params }: { params: Promise<{ id: strin
 
 ### Renderer 래퍼 (클라이언트 컴포넌트)
 
-```tsx copy filename="app/posts/[id]/PostRenderer.tsx"
+```tsx copy filename="app/posts/[slug]/PostRenderer.tsx"
 'use client';
 
 import { Renderer } from 'notion-to-jsx';
