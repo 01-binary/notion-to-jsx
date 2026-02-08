@@ -8,6 +8,9 @@ import { Steps } from 'nextra/components';
 
 Notion에서 데이터를 가져오려면 **내부 통합 토큰**과 **연결된 데이터베이스**가 필요합니다.
 
+> [!TIP]
+> 빠르게 시작하려면 [블로그 데이터베이스 템플릿](https://likeable-eggnog-5b5.notion.site/3019c6bf2b1780d19126df1136126616?v=3019c6bf2b178094a9d1000c960bac28&pvs=73)을 복제하세요.
+
 <Steps>
 
 ### 통합 생성
@@ -40,6 +43,19 @@ NOTION_DATABASE_ID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 </Steps>
+
+## 데이터베이스 속성
+
+[블로그 템플릿](https://likeable-eggnog-5b5.notion.site/3019c6bf2b1780d19126df1136126616?v=3019c6bf2b178094a9d1000c960bac28&pvs=73)은 다음 속성을 사용합니다:
+
+| 속성 | 타입 | 설명 |
+|------|------|------|
+| `Name` | title | 글 제목 |
+| `Desc` | rich_text | 글 설명 |
+| `Slug` | rich_text | URL 경로 (예: `my-first-post`) |
+| `Category` | select | 카테고리 |
+| `Date` | date | 작성일 |
+| `isPublished` | checkbox | 공개 여부 |
 
 > [!WARNING]
 > 통합에 최소 **콘텐츠 읽기** 권한이 필요합니다. 통합 설정 페이지에서 구성하세요.

@@ -62,8 +62,8 @@ import Link from 'next/link';
 import { notionClient, databaseId } from '@/lib/notion';
 
 export default async function PostsPage() {
-  const response = await notionClient.databases.query({
-    database_id: databaseId!,
+  const response = await notionClient.dataSources.query({
+    data_source_id: databaseId!,
   });
 
   return (

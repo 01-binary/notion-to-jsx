@@ -70,3 +70,14 @@ export default function PostRenderer({ blocks, title, cover }: Props) {
 </Steps>
 
 The `Renderer` handles all block rendering, styling, and table of contents generation automatically.
+
+## Start with a template
+
+Use the blog template with category filtering, dark mode, RSS, and more.
+
+```bash copy
+git clone https://github.com/01-binary/notion-to-jsx-template.git
+cd notion-to-jsx-template
+cp .env.example .env.local  # Set NOTION_TOKEN, NOTION_DATABASE_ID
+pnpm install && pnpm dev
+```
