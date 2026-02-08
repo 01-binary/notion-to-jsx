@@ -8,6 +8,9 @@ import { Steps } from 'nextra/components';
 
 To fetch data from Notion, you need an **Internal Integration Token** and a **connected database**.
 
+> [!TIP]
+> To get started quickly, duplicate the [blog database template](https://likeable-eggnog-5b5.notion.site/3019c6bf2b1780d19126df1136126616?v=3019c6bf2b178094a9d1000c960bac28&pvs=73).
+
 <Steps>
 
 ### Create an integration
@@ -40,6 +43,19 @@ NOTION_DATABASE_ID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 </Steps>
+
+## Database properties
+
+The [blog template](https://likeable-eggnog-5b5.notion.site/3019c6bf2b1780d19126df1136126616?v=3019c6bf2b178094a9d1000c960bac28&pvs=73) uses the following properties:
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `Name` | title | Post title |
+| `Desc` | rich_text | Post description |
+| `Slug` | rich_text | URL path (e.g. `my-first-post`) |
+| `Category` | select | Category |
+| `Date` | date | Published date |
+| `isPublished` | checkbox | Publish status |
 
 > [!WARNING]
 > The integration needs **Read content** capability at minimum. Configure this in the integration settings page.

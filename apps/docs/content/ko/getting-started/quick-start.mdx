@@ -2,11 +2,84 @@
 title: 빠른 시작
 ---
 
-import { Steps } from 'nextra/components'
+import { Steps, Tabs } from 'nextra/components'
 
 # 빠른 시작
 
-Next.js App Router로 Notion 페이지를 렌더링하는 최소 예제입니다.
+## 템플릿으로 시작하기
+
+카테고리 필터, 다크모드, RSS 등이 포함된 블로그 템플릿을 바로 사용할 수 있습니다.
+
+<Steps>
+
+### 템플릿 생성
+
+[notion-to-jsx-template](https://github.com/01-binary/notion-to-jsx-template)에서 **Use this template** → **Create a new repository** 클릭
+
+### 환경 변수 설정
+
+생성된 repo를 clone 후 환경 변수를 설정하세요.
+
+```bash copy
+cp .env.example .env.local
+```
+
+```bash copy filename=".env.local"
+NOTION_TOKEN=ntn_xxxxxxxxxxxxxxxxxxxx
+NOTION_DATABASE_ID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+### 실행
+
+```bash copy
+pnpm install && pnpm dev
+```
+
+</Steps>
+
+## 직접 설치
+
+기존 Next.js 프로젝트에 추가하는 경우:
+
+### 요구사항
+
+- **Node.js** 18 이상
+- **React** 19+
+- **Next.js** 14+ (권장, 서버 컴포넌트 활용)
+
+### 패키지 설치
+
+<Tabs items={['pnpm', 'npm', 'yarn']}>
+  <Tabs.Tab>
+    ```bash copy
+    pnpm add notion-to-utils notion-to-jsx
+    ```
+  </Tabs.Tab>
+  <Tabs.Tab>
+    ```bash copy
+    npm install notion-to-utils notion-to-jsx
+    ```
+  </Tabs.Tab>
+  <Tabs.Tab>
+    ```bash copy
+    yarn add notion-to-utils notion-to-jsx
+    ```
+  </Tabs.Tab>
+</Tabs>
+
+### CSS 설정
+
+루트 레이아웃에서 스타일시트를 import하세요:
+
+```tsx copy filename="app/layout.tsx"
+import 'notion-to-jsx/dist/index.css';
+import 'prismjs/themes/prism-tomorrow.css'; // 코드 구문 강조 (선택)
+```
+
+> [!IMPORTANT]
+> import 순서가 중요합니다: `notion-to-jsx/dist/index.css`를 Prism.js 테마와 커스텀 스타일보다 **먼저** import해야 오버라이드가 올바르게 동작합니다.
+
+### 최소 예제
 
 <Steps>
 
