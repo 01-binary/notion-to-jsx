@@ -2,7 +2,7 @@
 title: Notion 연동
 ---
 
-import { Steps } from 'nextra/components'
+import { Steps } from 'nextra/components';
 
 # Notion 연동
 
@@ -24,15 +24,13 @@ Notion에서 데이터를 가져오려면 **내부 통합 토큰**과 **연결�
 2. **···** 메뉴 → **연결** 클릭
 3. 생성한 통합을 검색하여 연결
 
-### 데이터베이스 ID 가져오기
+### 데이터 소스 ID 가져오기
 
-URL에서 데이터베이스 ID를 확인할 수 있습니다:
+데이터베이스의 **세팅** 메뉴 → **데이터 소스 관리** → **데이터 소스 ID 복사**를 클릭하세요.
 
-```
-https://www.notion.so/<workspace>/<database_id>?v=...
-```
+이것이 `NOTION_DATABASE_ID`입니다.
 
-32자리 hex 문자열을 복사하세요.
+![데이터 소스 ID 가져오기](/images/get-datasource-id.gif)
 
 ### 환경 변수 설정
 
