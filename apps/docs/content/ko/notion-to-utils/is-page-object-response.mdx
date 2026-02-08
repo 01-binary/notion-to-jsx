@@ -1,0 +1,47 @@
+---
+title: isPageObjectResponse()
+---
+
+# isPageObjectResponse()
+
+Notion API 응답이 전체 `PageObjectResponse`인지 확인하는 타입 가드입니다.
+
+## Import
+
+```ts copy
+import { isPageObjectResponse } from 'notion-to-utils';
+```
+
+## 시그니처
+
+```ts
+function isPageObjectResponse(
+  obj: GetPageResponse
+): obj is PageObjectResponse
+```
+
+## 매개변수
+
+| 매개변수 | 타입 | 설명 |
+|----------|------|------|
+| `obj` | `GetPageResponse` | `pages.retrieve()`의 응답 |
+
+## 반환값
+
+`boolean` — 응답이 전체 `PageObjectResponse`이면 `true` (부분 응답이 아닌 경우).
+
+## 예제
+
+```ts copy
+import { Client, isPageObjectResponse, extractCoverUrl } from 'notion-to-utils';
+
+const client = new Client({ auth: process.env.NOTION_TOKEN });
+
+const response = await client.raw.pages.retrieve({ page_id: pageId });
+
+if (isPageObjectResponse(response)) {
+  // TypeScript가 response를 PageObjectResponse로 인식
+  const coverUrl = extractCoverUrl(response.cover, pageId);
+  const title = response.properties.Name;
+}
+```

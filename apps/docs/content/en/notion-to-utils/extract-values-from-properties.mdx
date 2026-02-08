@@ -1,0 +1,59 @@
+---
+title: extractValuesFromProperties()
+---
+
+# extractValuesFromProperties()
+
+Extracts plain values from Notion page properties, converting complex property objects into simple JavaScript values.
+
+## Import
+
+```ts copy
+import { extractValuesFromProperties } from 'notion-to-utils';
+```
+
+## Signature
+
+```ts
+function extractValuesFromProperties(
+  properties: Record<string, NotionProperty>
+): Record<string, ExtractedValue>
+```
+
+## Parameters
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `properties` | `Record<string, NotionProperty>` | The properties object from a Notion page |
+
+## Returns
+
+`Record<string, ExtractedValue>` — A flat object mapping property names to extracted values.
+
+Supported property types and their extracted values:
+
+| Property Type | Extracted Value |
+|--------------|----------------|
+| `title` | `string` |
+| `rich_text` | `string` |
+| `number` | `string` (stringified) |
+| `select` | `string` (name) |
+| `multi_select` | `{ id, name, color }` (first item) |
+| `date` | `{ start, end, time_zone }` |
+| `checkbox` | `boolean` |
+| `url` | `string` |
+| `email` | `string` |
+| `phone_number` | `string` |
+| Other types | Raw property object |
+
+## Example
+
+```ts copy
+import { Client, extractValuesFromProperties } from 'notion-to-utils';
+
+const client = new Client({ auth: process.env.NOTION_TOKEN });
+const properties = await client.getPageProperties(pageId);
+
+const values = extractValuesFromProperties(properties);
+// { Name: 'My Page', Status: 'Published', Tags: { id: '...', name: 'blog', color: 'blue' } }
+```

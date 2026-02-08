@@ -57,5 +57,8 @@ import { Renderer } from 'notion-to-jsx';
 4. Applies theme classes for dark/light mode
 5. Renders cover image and title if provided
 
+> [!IMPORTANT]
+> `Renderer` must be used in a **client component** (`'use client'`). Fetch data in a server component and pass it as props.
+
 > [!NOTE]
 > The component is memoized for performance. Requires `notion-to-jsx/dist/index.css` to be imported for styling.

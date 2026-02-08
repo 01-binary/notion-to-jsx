@@ -1,0 +1,59 @@
+---
+title: extractValuesFromProperties()
+---
+
+# extractValuesFromProperties()
+
+Notion 페이지 속성에서 단순한 값을 추출합니다. 복잡한 속성 객체를 간단한 JavaScript 값으로 변환합니다.
+
+## Import
+
+```ts copy
+import { extractValuesFromProperties } from 'notion-to-utils';
+```
+
+## 시그니처
+
+```ts
+function extractValuesFromProperties(
+  properties: Record<string, NotionProperty>
+): Record<string, ExtractedValue>
+```
+
+## 매개변수
+
+| 매개변수 | 타입 | 설명 |
+|----------|------|------|
+| `properties` | `Record<string, NotionProperty>` | Notion 페이지의 속성 객체 |
+
+## 반환값
+
+`Record<string, ExtractedValue>` — 속성 이름을 추출된 값으로 매핑하는 객체.
+
+지원하는 속성 타입과 추출 값:
+
+| 속성 타입 | 추출 값 |
+|----------|---------|
+| `title` | `string` |
+| `rich_text` | `string` |
+| `number` | `string` (문자열 변환) |
+| `select` | `string` (이름) |
+| `multi_select` | `{ id, name, color }` (첫 번째 항목) |
+| `date` | `{ start, end, time_zone }` |
+| `checkbox` | `boolean` |
+| `url` | `string` |
+| `email` | `string` |
+| `phone_number` | `string` |
+| 기타 타입 | 원본 속성 객체 |
+
+## 예제
+
+```ts copy
+import { Client, extractValuesFromProperties } from 'notion-to-utils';
+
+const client = new Client({ auth: process.env.NOTION_TOKEN });
+const properties = await client.getPageProperties(pageId);
+
+const values = extractValuesFromProperties(properties);
+// { Name: 'My Page', Status: 'Published', Tags: { id: '...', name: 'blog', color: 'blue' } }
+```
