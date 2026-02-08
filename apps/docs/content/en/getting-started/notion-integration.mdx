@@ -2,7 +2,7 @@
 title: Notion Integration
 ---
 
-import { Steps } from 'nextra/components'
+import { Steps } from 'nextra/components';
 
 # Notion Integration
 
@@ -24,15 +24,13 @@ To fetch data from Notion, you need an **Internal Integration Token** and a **co
 2. Click the **···** menu → **Connections**
 3. Search for your integration and connect it
 
-### Get the database ID
+### Get the data source ID
 
-The database ID is part of the URL:
+Click the **Setting** menu on your database → **Manage data sources** → **Copy data source ID**.
 
-```
-https://www.notion.so/<workspace>/<database_id>?v=...
-```
+This is your `NOTION_DATABASE_ID`.
 
-Copy the 32-character hex string.
+![Get data source ID](/images/get-datasource-id.gif)
 
 ### Set environment variables
 

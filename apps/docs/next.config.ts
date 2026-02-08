@@ -9,4 +9,7 @@ export default withNextra({
     locales: ['ko', 'en'],
     defaultLocale: 'ko',
   },
+  images: {
+    unoptimized: true,
+  },
 })
