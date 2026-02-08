@@ -1,3 +1,5 @@
+**한국어** | [English](./README.en.md)
+
 # notion-to-jsx
 
 [![npm version](https://img.shields.io/npm/v/notion-to-jsx.svg)](https://www.npmjs.com/package/notion-to-jsx)
@@ -10,7 +12,7 @@ Notion 페이지를 React 컴포넌트로 렌더링하는 풀스택 솔루션입
 
 - **공식 Notion API** 기반 — `@notionhq/client` 확장
 - **자동 메타데이터 주입** — 이미지 크기, 북마크 OG 데이터를 페칭 시 자동 처리
-- **18개 블록 타입** 지원 — 텍스트, 리스트, 이미지, 코드, 테이블, 토글, 비디오, 임베드 등
+- **17개 블록 타입** 지원 — 텍스트, 리스트, 이미지, 코드, 테이블, 토글, 비디오, 임베드 등
 - **다크 모드 / 목차** — 내장 테마와 자동 생성 목차
 - **Zero-runtime CSS** — Vanilla Extract 기반 스타일링
 

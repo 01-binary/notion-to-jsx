@@ -26,12 +26,7 @@ const RootLayout: FC<LayoutProps> = async ({ children, params }) => {
 
   const navbar = (
     <Navbar
-      logo={
-        <div>
-          <b>notion-to-jsx</b>{' '}
-          <span style={{ opacity: '60%' }}>{dictionary.logo.title}</span>
-        </div>
-      }
+      logo={<b>notion-to-jsx</b>}
       projectLink="https://github.com/01-binary/notion-to-jsx"
     >
       <LocaleSwitch lite />

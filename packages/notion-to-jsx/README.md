@@ -1,3 +1,5 @@
+**한국어** | [English](./README.en.md)
+
 # notion-to-jsx
 
 [![npm version](https://img.shields.io/npm/v/notion-to-jsx.svg)](https://www.npmjs.com/package/notion-to-jsx)

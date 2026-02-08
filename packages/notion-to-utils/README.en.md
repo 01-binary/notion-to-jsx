@@ -1,23 +1,23 @@
-**한국어** | [English](./README.en.md)
+[한국어](./README.md) | **English**
 
 # notion-to-utils
 
 [![npm version](https://img.shields.io/npm/v/notion-to-utils.svg)](https://www.npmjs.com/package/notion-to-utils)
 [![license](https://img.shields.io/npm/l/notion-to-utils.svg)](https://github.com/01-binary/notion-to-jsx/blob/main/LICENSE)
 
-Notion API 래퍼 라이브러리입니다. 블록/속성 조회 시 이미지 메타데이터와 북마크 OG 데이터를 자동으로 처리합니다.
+A Notion API wrapper library. Automatically handles image metadata and bookmark OG data when fetching blocks and properties.
 
-## 설치
+## Install
 
 ```bash
 pnpm add notion-to-utils
 ```
 
-## 주요 기능
+## Key Features
 
 ### Client
 
-`@notionhq/client`를 확장한 클라이언트입니다. 기존 Notion SDK의 모든 기능을 사용할 수 있습니다.
+An extended client built on `@notionhq/client`. All existing Notion SDK features are available.
 
 ```typescript
 import Client from 'notion-to-utils';
@@ -27,17 +27,17 @@ const client = new Client({ auth: process.env.NOTION_TOKEN });
 
 ### getPageBlocks
 
-페이지의 모든 블록을 재귀적으로 가져옵니다.
+Recursively fetches all blocks from a page.
 
-- 페이지네이션 자동 처리
-- 중첩된 하위 블록 포함
-- 이미지 블록: 크기 메타데이터 자동 추가 (`width`, `height`, `aspectRatio`)
-- 북마크 블록: OG 메타데이터 자동 추가 (`title`, `description`, `image`, `favicon`)
+- Automatic pagination handling
+- Includes nested child blocks
+- Image blocks: auto-injects size metadata (`width`, `height`, `aspectRatio`)
+- Bookmark blocks: auto-injects OG metadata (`title`, `description`, `image`, `favicon`)
 
 ```typescript
 const blocks = await client.getPageBlocks('page-id');
 
-// 이미지 블록 예시
+// Image block example
 // {
 //   type: 'image',
 //   image: {
@@ -46,7 +46,7 @@ const blocks = await client.getPageBlocks('page-id');
 //   }
 // }
 
-// 북마크 블록 예시
+// Bookmark block example
 // {
 //   type: 'bookmark',
 //   bookmark: {
@@ -58,19 +58,19 @@ const blocks = await client.getPageBlocks('page-id');
 
 ### getPageProperties
 
-페이지 속성을 조회합니다. 커버 이미지 URL도 함께 반환합니다.
+Fetches page properties. Also returns the cover image URL.
 
 ```typescript
-// 모든 속성의 값 추출
+// Extract all property values
 const props = await client.getPageProperties('page-id');
-// { Title: '제목', Category: { name: 'Tech' }, Published: true, cover: 'https://...' }
+// { Title: 'My Title', Category: { name: 'Tech' }, Published: true, cover: 'https://...' }
 
-// 특정 속성만 가져오기
+// Fetch specific properties only
 const props = await client.getPageProperties('page-id', {
   keys: ['Title', 'Category'],
 });
 
-// 원본 속성 객체 가져오기 (값 추출 없이)
+// Get raw property objects (without value extraction)
 const props = await client.getPageProperties('page-id', {
   extractValues: false,
 });
@@ -78,7 +78,7 @@ const props = await client.getPageProperties('page-id', {
 
 ### getFileUrl
 
-파일 속성에서 URL을 추출합니다.
+Extracts a URL from a file property.
 
 ```typescript
 const fileUrl = await client.getFileUrl('page-id', 'Attachment');
@@ -87,7 +87,7 @@ const fileUrl = await client.getFileUrl('page-id', 'Attachment');
 
 ### formatNotionImageUrl
 
-S3 URL을 Notion 이미지 프록시 URL로 변환합니다. AWS 인증 파라미터를 제거하고 캐시 가능한 URL을 생성합니다.
+Converts S3 URLs to Notion image proxy URLs. Strips AWS auth parameters and generates cacheable URLs.
 
 ```typescript
 import { formatNotionImageUrl } from 'notion-to-utils';
@@ -99,16 +99,16 @@ const url = formatNotionImageUrl(
 // 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure...?table=block&id=block-id&cache=v2'
 ```
 
-## 타입
+## Types
 
 ```typescript
 import type { NotionBlock } from 'notion-to-utils';
 ```
 
-## 관련 패키지
+## Related Packages
 
-- [notion-to-jsx](https://www.npmjs.com/package/notion-to-jsx) - Notion 블록 React 렌더러
+- [notion-to-jsx](https://www.npmjs.com/package/notion-to-jsx) - Notion block React renderer
 
-## 라이선스
+## License
 
 MIT
