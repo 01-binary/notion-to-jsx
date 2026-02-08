@@ -9,8 +9,8 @@ export type NotionProperty = PageObjectResponse['properties'][string];
  * 추출된 값의 타입
  * - 문자열: title, rich_text, url
  * - 불리언: checkbox
- * - 객체: date, multi_select의 첫 번째 항목
- * - null: 빈 multi_select
+ * - 객체: date, select, multi_select의 첫 번째 항목
+ * - null: 빈 select/multi_select
  * - 원본 속성: 지원하지 않는 타입
  */
 export type ExtractedValue =
@@ -28,6 +28,7 @@ export type ExtractedValue =
  */
 type SupportedPropertyType =
   | 'date'
+  | 'select'
   | 'multi_select'
   | 'rich_text'
   | 'checkbox'
@@ -44,6 +45,11 @@ type PropertyExtractor = (property: NotionProperty) => ExtractedValue;
 const extractors: Record<SupportedPropertyType, PropertyExtractor> = {
   date: (property) =>
     'date' in property ? (property.date as ExtractedValue) : null,
+
+  select: (property) =>
+    'select' in property && property.select
+      ? (property.select as ExtractedValue)
+      : null,
 
   multi_select: (property) =>
     'multi_select' in property && property.multi_select.length > 0
