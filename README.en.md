@@ -8,6 +8,8 @@
 
 A full-stack solution for rendering Notion pages as React components. Fetches data via the official Notion API and renders as JSX.
 
+**[Documentation](https://notion-to-jsx-docs.vercel.app)**
+
 ## Features
 
 - **Official Notion API** — Built on `@notionhq/client`
