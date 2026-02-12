@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 2.1.7
+
+### Patch Changes
+
+- c83f2fa: fix: Table, Toggle 다크모드 텍스트 색상 미적용 수정
+
 ## 2.1.6
 
 ### Patch Changes
