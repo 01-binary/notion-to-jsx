@@ -14,7 +14,7 @@ export const table = style({
   borderCollapse: 'collapse',
   borderSpacing: 0,
   fontSize: vars.typography.fontSize.small,
-  color: 'inherit',
+  color: vars.colors.text,
 });
 
 export const headerCell = style({
