@@ -1,0 +1,26 @@
+{
+  "name": "storybook",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build"
+  },
+  "dependencies": {
+    "notion-to-jsx": "workspace:*",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@storybook/react": "^10.2.8",
+    "@storybook/react-vite": "^10.2.8",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vanilla-extract/vite-plugin": "^5.1.4",
+    "chromatic": "^15.1.0",
+    "storybook": "^10.2.8",
+    "typescript": "^5.9.3"
+  }
+}

@@ -11,7 +11,7 @@ export const toggleHeader = style({
   cursor: 'pointer',
   fontSize: vars.typography.fontSize.base,
   fontWeight: vars.typography.fontWeight.normal,
-  color: 'inherit',
+  color: vars.colors.text,
   padding: `${vars.spacing.xs} 0`,
   borderRadius: vars.borderRadius.sm,
   ':hover': {

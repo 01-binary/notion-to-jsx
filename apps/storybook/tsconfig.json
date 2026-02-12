@@ -1,0 +1,12 @@
+{
+  "extends": "@repo/typescript-config/react-library.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "notion-to-jsx": ["../../packages/notion-to-jsx/src"]
+    }
+  },
+  "include": ["src", ".storybook"],
+  "exclude": ["node_modules", "dist", "storybook-static"]
+}
