@@ -1,7 +1,7 @@
 import { ReactNode, useMemo, useState, useEffect, memo } from 'react';
 import { codeBlock } from './styles.css';
 import Prism, { Grammar, Token } from 'prismjs';
-import { MemoizedRichText } from '../MemoizedComponents';
+import { Caption } from '../Caption';
 import { RichTextItem } from '../RichText/RichTexts';
 
 import 'prismjs/components/prism-typescript';
@@ -58,11 +58,7 @@ const CodeBlock = memo(({ code, language, caption }: Props) => {
           {tokens ? tokens.map((token, i) => renderToken(token, i)) : code}
         </code>
       </pre>
-      {caption && caption.length > 0 && (
-        <figcaption>
-          <MemoizedRichText richTexts={caption} />
-        </figcaption>
-      )}
+      <Caption caption={caption} />
     </>
   );
 });

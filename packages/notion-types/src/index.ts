@@ -210,6 +210,10 @@ export interface VideoBlock extends BaseNotionBlock {
     external?: {
       url: string;
     };
+    file?: {
+      url: string;
+      expiry_time?: string;
+    };
   };
 }
 

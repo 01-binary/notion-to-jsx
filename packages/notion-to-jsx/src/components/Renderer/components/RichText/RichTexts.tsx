@@ -63,6 +63,30 @@ const renderLink = (href: string, content: ReactNode) => (
   </a>
 );
 
+const contentRenderers: Record<
+  string,
+  (text: RichTextItem) => ReactNode
+> = {
+  text: (text) => {
+    if (text.text) {
+      return text.text.link?.url
+        ? renderLink(text.text.link.url, text.text.content)
+        : text.text.content;
+    }
+    return text.plain_text;
+  },
+  mention: (text) => {
+    return text.href
+      ? renderLink(text.href, text.plain_text)
+      : text.plain_text;
+  },
+};
+
+const renderContent = (text: RichTextItem): ReactNode => {
+  const renderer = contentRenderers[text.type];
+  return renderer ? renderer(text) : text.plain_text;
+};
+
 export interface RichTextProps {
   richTexts: RichTextItem[];
 }
@@ -80,35 +104,7 @@ const RichTexts = ({ richTexts }: RichTextProps) => {
         const { bold, italic, strikethrough, underline, code, color } =
           text.annotations;
 
-        // 컨텐츠 렌더링 로직
-        let content: React.ReactNode;
-
-        // TODO: Refactor
-        switch (text.type) {
-          case 'text': {
-            if (text.text) {
-              const { text: textData } = text;
-
-              content = textData.link?.url
-                ? renderLink(textData.link.url, textData.content)
-                : textData.content;
-            } else {
-              content = text.plain_text;
-            }
-            break;
-          }
-
-          case 'mention': {
-            content = text.href
-              ? renderLink(text.href, text.plain_text)
-              : text.plain_text;
-            break;
-          }
-
-          default: {
-            content = text.plain_text;
-          }
-        }
+        const content = renderContent(text);
 
         // NOTION COLOR 적용
         // 타입 가드를 사용하여 지원하는 색상인지 검증

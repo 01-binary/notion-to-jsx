@@ -28,7 +28,7 @@ const RecursiveListItem = memo(({ block, renderBlock }: RecursiveListItemProps) 
 
   const richTexts = content.rich_text;
 
-  const renderedChildren: JSX.Element[] = [];
+  const renderedChildren: React.ReactElement[] = [];
   const children: NotionBlock[] = block.children ?? [];
 
   if (children.length > 0) {

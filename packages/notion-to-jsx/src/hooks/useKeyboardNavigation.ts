@@ -11,7 +11,7 @@ interface KeyboardNavigationOptions {
 
 export const useKeyboardNavigation = <T extends HTMLElement>(
   options: KeyboardNavigationOptions
-): RefObject<T> => {
+): RefObject<T | null> => {
   const ref = useRef<T>(null);
 
   useEffect(() => {
