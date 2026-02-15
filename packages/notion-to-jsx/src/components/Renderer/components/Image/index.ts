@@ -1,2 +1,2 @@
 export { default as Image } from './Image';
-export type { Props as ImageProps } from './Image';
+export type { ImageProps } from './Image';

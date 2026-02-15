@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import * as styles from './styles.css';
 
 type SkeletonProps = {
@@ -28,7 +29,7 @@ type SkeletonProps = {
  * 콘텐츠 로딩 중에 표시되는 물결 효과가 있는 스켈레톤 컴포넌트입니다.
  * 이미지, 텍스트 등의 로딩 상태를 표시하는 데 사용합니다.
  */
-const Skeleton = ({
+const Skeleton = memo(({
   variant = 'rect',
   width,
   height,
@@ -60,6 +61,8 @@ const Skeleton = ({
       }}
     />
   );
-};
+});
+
+Skeleton.displayName = 'Skeleton';
 
 export default Skeleton;

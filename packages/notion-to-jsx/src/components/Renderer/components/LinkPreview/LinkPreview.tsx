@@ -93,12 +93,14 @@ const LinkPreview = ({ url }: LinkPreviewProps) => {
 
   const [repoData, setRepoData] = useState<RepoData | null>(null);
   const [loading, setLoading] = useState(linkType === 'github');
+  const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
     if (linkType !== 'github') return;
 
     const abortController = new AbortController();
     setLoading(true);
+    setHasError(false);
 
     const loadGitHubData = async () => {
       const repoPath = extractRepoPathFromUrl(url);
@@ -106,7 +108,10 @@ const LinkPreview = ({ url }: LinkPreviewProps) => {
         const data = await fetchGitHubRepoData(repoPath, abortController.signal);
         if (!abortController.signal.aborted) {
           setRepoData(data);
+          if (!data) setHasError(true);
         }
+      } else if (!abortController.signal.aborted) {
+        setHasError(true);
       }
       if (!abortController.signal.aborted) {
         setLoading(false);
@@ -134,6 +139,9 @@ const LinkPreview = ({ url }: LinkPreviewProps) => {
       return <FigmaPreview data={figmaData} />;
     }
     if (linkType === 'github') {
+      if (hasError && !loading) {
+        return <DefaultPreview url={url} />;
+      }
       return (
         <GitHubPreview
           repoData={repoData}

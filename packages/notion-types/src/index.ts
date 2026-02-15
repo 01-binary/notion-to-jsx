@@ -31,7 +31,7 @@ export interface ImageFormatMetadata {
 // ============================================
 
 export interface RichTextItem {
-  type: 'text' | 'mention' | string;
+  type: 'text' | 'mention' | 'equation';
   annotations: {
     bold: boolean;
     italic: boolean;
@@ -67,9 +67,11 @@ export interface BaseNotionBlock {
   has_children?: boolean;
   parent?: {
     type: string;
-    [key: string]: unknown;
+    page_id?: string;
+    database_id?: string;
+    block_id?: string;
+    workspace?: boolean;
   };
-  [key: string]: unknown;
 }
 
 // ============================================

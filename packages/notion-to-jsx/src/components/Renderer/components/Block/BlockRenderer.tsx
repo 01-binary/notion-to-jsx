@@ -15,14 +15,18 @@ import { Video } from '../Video';
 import { Embed } from '../Embed';
 import { NotionBlock } from '../../../../types';
 
-export interface Props {
+export interface BlockRendererProps {
   block: NotionBlock;
   isColumn?: boolean;
 }
 
+/** NotionBlock의 모든 type 리터럴 유니온 (e.g. 'paragraph' | 'heading_1' | ...) */
 type BlockType = NotionBlock['type'];
+
+/** 특정 BlockType에 해당하는 블록 타입을 추출. Extract로 discriminated union을 좁힘 */
 type BlockOfType<T extends BlockType> = Extract<NotionBlock, { type: T }>;
 
+/** 블록 타입별 렌더러 함수 맵. 각 키는 BlockType이고 값은 해당 타입의 블록을 받아 JSX를 반환하는 함수 */
 type BlockRendererMap = {
   [K in BlockType]?: (
     block: BlockOfType<K>,
@@ -60,7 +64,7 @@ const blockRenderers: BlockRendererMap = {
   code: (block) => (
     <div>
       <CodeBlock
-        code={block.code.rich_text[0]?.text?.content || ''}
+        code={block.code.rich_text.map(rt => rt.plain_text).join('')}
         language={block.code.language}
         caption={block.code.caption}
       />
@@ -96,12 +100,12 @@ const blockRenderers: BlockRendererMap = {
 
   toggle: (block) => <Toggle block={block} />,
 
-  video: (block) => <Video block={block} />,
+  video: (block) => <Video video={block.video} />,
 
-  embed: (block) => <Embed block={block} />,
+  embed: (block) => <Embed url={block.embed.url} caption={block.embed.caption} />,
 };
 
-const BlockRenderer = memo(({ block, isColumn = false }: Props) => {
+const BlockRenderer = memo(({ block, isColumn = false }: BlockRendererProps) => {
   if (!block) return null;
 
   const renderer = blockRenderers[block.type] as

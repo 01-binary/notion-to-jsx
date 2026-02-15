@@ -1,4 +1,4 @@
-import { useMemo, memo, useCallback, type ReactNode } from 'react';
+import { useMemo, memo, useCallback, type ReactNode, type ErrorInfo } from 'react';
 
 import { ListGroup } from './components/List';
 import { BlockRenderer } from './components/Block';
@@ -18,7 +18,7 @@ export interface TocStyleOptions {
   scrollOffset?: number;
 }
 
-interface Props {
+interface RendererProps {
   blocks: NotionBlock[];
   title?: string;
   cover?: string;
@@ -26,6 +26,7 @@ interface Props {
   showToc?: boolean;
   tocStyle?: TocStyleOptions;
   fallback?: ReactNode;
+  onError?: (error: Error, errorInfo: ErrorInfo) => void;
 }
 
 const Renderer = memo(
@@ -37,7 +38,8 @@ const Renderer = memo(
     showToc = true,
     tocStyle,
     fallback,
-  }: Props) => {
+    onError,
+  }: RendererProps) => {
     const theme = isDarkMode ? darkTheme : lightTheme;
     const headings = useMemo(
       () => (showToc ? extractHeadings(blocks) : []),
@@ -54,7 +56,7 @@ const Renderer = memo(
       return groupConsecutiveBlocks(blocks).map((group) => {
         if (group.kind === 'list') {
           return (
-            <BlockErrorBoundary key={group.blocks[0]?.id} fallback={fallback}>
+            <BlockErrorBoundary key={group.blocks[0]?.id} fallback={fallback} onError={onError}>
               <ListGroup
                 blocks={group.blocks}
                 type={group.type}
@@ -64,12 +66,12 @@ const Renderer = memo(
           );
         }
         return (
-          <BlockErrorBoundary key={group.block.id} fallback={fallback}>
+          <BlockErrorBoundary key={group.block.id} fallback={fallback} onError={onError}>
             <BlockRenderer block={group.block} />
           </BlockErrorBoundary>
         );
       });
-    }, [blocks, renderBlock, fallback]);
+    }, [blocks, renderBlock, fallback, onError]);
 
     return (
       <>

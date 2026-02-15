@@ -51,7 +51,7 @@ type NotionBlock =
 
 ```ts
 interface RichTextItem {
-  type: 'text' | 'mention' | string;
+  type: 'text' | 'mention' | 'equation';
   plain_text: string;
   href: string | null;
   annotations: {

@@ -85,6 +85,19 @@ export const extractFigmaData = (url: string): FigmaData | null => {
   }
 };
 
+const isRepoData = (data: unknown): data is RepoData => {
+  if (typeof data !== 'object' || data === null) return false;
+  const d = data as Record<string, unknown>;
+  return (
+    typeof d.name === 'string' &&
+    typeof d.full_name === 'string' &&
+    typeof d.updated_at === 'string' &&
+    typeof d.owner === 'object' &&
+    d.owner !== null &&
+    typeof (d.owner as Record<string, unknown>).avatar_url === 'string'
+  );
+};
+
 export const fetchGitHubRepoData = async (
   repoPath: string,
   signal?: AbortSignal
@@ -94,11 +107,11 @@ export const fetchGitHubRepoData = async (
     const response = await fetch(apiUrl, { signal });
 
     if (!response.ok) {
-      throw new Error('Failed to fetch GitHub repo data');
+      return null;
     }
 
-    const data = await response.json();
-    return data;
+    const data: unknown = await response.json();
+    return isRepoData(data) ? data : null;
   } catch (error) {
     if (error instanceof Error && error.name === 'AbortError') {
       return null;

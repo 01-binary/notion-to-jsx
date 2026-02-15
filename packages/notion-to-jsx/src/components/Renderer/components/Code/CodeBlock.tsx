@@ -1,4 +1,4 @@
-import { ReactNode, useMemo, useState, useEffect, memo } from 'react';
+import { ReactNode, useState, useEffect, useMemo, memo } from 'react';
 import { codeBlock } from './styles.css';
 import Prism, { Grammar, Token } from 'prismjs';
 import { Caption } from '../Caption';
@@ -31,13 +31,17 @@ const renderToken = (token: string | Token, i: number): ReactNode => {
   );
 };
 
-export interface Props {
+export interface CodeBlockProps {
   code: string;
   language: string;
   caption?: RichTextItem[];
 }
 
-const CodeBlock = memo(({ code, language, caption }: Props) => {
+// Prism.js는 브라우저 환경에서 window.Prism을 설정하여 추가 언어 플러그인을 등록합니다.
+// 이로 인해 서버(Node.js)와 클라이언트(브라우저)에서 토큰화 결과가 달라져
+// SSR 하이드레이션 불일치가 발생합니다. isMounted 패턴으로 클라이언트 마운트 후에만
+// 토큰화를 수행하여 이 문제를 방지합니다.
+const CodeBlock = memo(({ code, language, caption }: CodeBlockProps) => {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {

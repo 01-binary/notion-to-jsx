@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   link,
   card,
@@ -12,12 +13,14 @@ import {
 } from './styles.css';
 import { OpenGraphData } from './type';
 
-export interface Props {
+export interface BookmarkProps {
   url: string;
   metadata?: OpenGraphData;
 }
 
-const Bookmark = ({ url, metadata }: Props) => {
+const Bookmark = ({ url, metadata }: BookmarkProps) => {
+  const [isImageBroken, setIsImageBroken] = useState(false);
+
   return (
     <a href={url} target="_blank" rel="noopener noreferrer" className={link}>
       <div className={card}>
@@ -33,18 +36,14 @@ const Bookmark = ({ url, metadata }: Props) => {
             <span className={urlText}>{metadata?.url || ''}</span>
           </div>
         </div>
-        {metadata?.image && (
+        {metadata?.image && !isImageBroken && (
           <div className={previewContainer}>
             <img
               className={previewImage}
               src={metadata.image}
               alt={metadata.title}
               loading="lazy"
-              onError={(e) => {
-                // 이미지 로드 실패 시 처리
-                const target = e.target as HTMLImageElement;
-                target.style.display = 'none';
-              }}
+              onError={() => setIsImageBroken(true)}
             />
           </div>
         )}

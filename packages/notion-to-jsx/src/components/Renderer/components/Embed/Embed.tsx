@@ -1,20 +1,32 @@
 import { memo } from 'react';
-import { EmbedBlock } from '../../../../types';
 import { Caption } from '../Caption';
 import { mediaContainer } from '../Caption/styles.css';
-import { getEmbedUrl, getEmbedTitle } from '../../utils/embedUrlParser';
+import {
+  getEmbedUrl,
+  getEmbedTitle,
+  isAllowedEmbedDomain,
+} from '../../utils/embedUrlParser';
 import { embedIframe } from './styles.css';
+import { RichTextItem } from '../RichText/RichTexts';
 
 interface EmbedProps {
-  block: EmbedBlock;
+  url: string;
+  caption?: RichTextItem[];
 }
 
-const Embed = memo(({ block }: EmbedProps) => {
-  if (block.type !== 'embed' || !block.embed) {
-    return null;
+const Embed = memo(({ url, caption }: EmbedProps) => {
+
+  if (!isAllowedEmbedDomain(url)) {
+    return (
+      <div className={mediaContainer}>
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          {url}
+        </a>
+        <Caption caption={caption} />
+      </div>
+    );
   }
 
-  const { url, caption } = block.embed;
   const embedUrl = getEmbedUrl(url);
   const title = getEmbedTitle(url);
 

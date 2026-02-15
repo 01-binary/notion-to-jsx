@@ -18,37 +18,30 @@ const Table = memo(({ block }: TableProps) => {
   const rows =
     block.children?.filter((child) => child.type === 'table_row') || [];
 
+  if (rows.length === 0) {
+    return null;
+  }
+
+  const headerRow = has_column_header ? rows[0] : null;
+  const bodyRows = has_column_header ? rows.slice(1) : rows;
+
   return (
     <div className={tableContainer}>
       <table className={table}>
-        {rows.length > 0 && (
-          <>
-            {has_column_header && rows[0] && (
-              <thead>
-                <TableRow rowBlock={rows[0]} cellClassName={headerCell} />
-              </thead>
-            )}
-            <tbody>
-              {/* 유효한 row만 매핑하도록 필터링 추가 */}
-              {rows
-                .filter((row) => row !== undefined && row.type === 'table_row')
-                .map((row, rowIndex: number) => {
-                  // 열 헤더가 있고 첫 번째 행이면 이미 thead에서 렌더링되었으므로 건너뜁니다
-                  if (has_column_header && rowIndex === 0) {
-                    return null;
-                  }
-
-                  return (
-                    <TableRow
-                      key={row.id}
-                      rowBlock={row}
-                      rowHeaderIndex={has_row_header ? 0 : NO_ROW_HEADER}
-                    />
-                  );
-                })}
-            </tbody>
-          </>
+        {headerRow && (
+          <thead>
+            <TableRow rowBlock={headerRow} cellClassName={headerCell} isColumnHeader />
+          </thead>
         )}
+        <tbody>
+          {bodyRows.map((row) => (
+            <TableRow
+              key={row.id}
+              rowBlock={row}
+              rowHeaderIndex={has_row_header ? 0 : NO_ROW_HEADER}
+            />
+          ))}
+        </tbody>
       </table>
     </div>
   );
