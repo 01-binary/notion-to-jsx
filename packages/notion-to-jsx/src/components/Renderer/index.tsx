@@ -1,18 +1,15 @@
-import { useMemo, memo, useCallback } from 'react';
-import type { ReactNode } from 'react';
+import { useMemo, memo, useCallback, type ReactNode } from 'react';
 
 import { ListGroup } from './components/List';
 import { BlockRenderer } from './components/Block';
+import BlockErrorBoundary from './components/BlockErrorBoundary';
 import Title from '../Title';
 import Cover from '../Cover';
 import TableOfContents from '../TableOfContents';
 import { extractHeadings } from '../../utils/extractHeadings';
+import { groupConsecutiveBlocks } from './utils/groupBlocks';
 
-import {
-  BulletedListItemBlock,
-  NotionBlock,
-  NumberedListItemBlock,
-} from '../../types';
+import type { NotionBlock } from '../../types';
 import { container, tocWrapper } from './styles.css';
 import { darkTheme, lightTheme } from '../../styles/theme.css';
 
@@ -28,6 +25,7 @@ interface Props {
   isDarkMode?: boolean;
   showToc?: boolean;
   tocStyle?: TocStyleOptions;
+  fallback?: ReactNode;
 }
 
 const Renderer = memo(
@@ -38,6 +36,7 @@ const Renderer = memo(
     cover,
     showToc = true,
     tocStyle,
+    fallback,
   }: Props) => {
     const theme = isDarkMode ? darkTheme : lightTheme;
     const headings = useMemo(
@@ -52,68 +51,25 @@ const Renderer = memo(
     );
 
     const renderedBlocks = useMemo(() => {
-      const result: ReactNode[] = [];
-
-      for (let i = 0; i < blocks.length; i++) {
-        const block = blocks[i];
-        if (!block) break;
-
-        // 리스트 아이템 타입 처리를 위한 공통 함수
-        const handleListItem = (listType: 'bulleted' | 'numbered') => {
-          const listItemType = `${listType}_list_item` as (
-            | BulletedListItemBlock
-            | NumberedListItemBlock
-          )['type'];
-
-          if (
-            block.type === listItemType &&
-            (i === 0 || blocks[i - 1]?.type !== listItemType)
-          ) {
-            // 연속된 리스트 아이템 수집
-            const listItems: (BulletedListItemBlock | NumberedListItemBlock)[] =
-              [];
-            let j = i;
-            while (
-              j < blocks.length &&
-              blocks[j] &&
-              blocks[j]?.type === listItemType
-            ) {
-              listItems.push(
-                blocks[j] as BulletedListItemBlock | NumberedListItemBlock
-              );
-              j++;
-            }
-
-            result.push(
+      return groupConsecutiveBlocks(blocks).map((group) => {
+        if (group.kind === 'list') {
+          return (
+            <BlockErrorBoundary key={group.blocks[0]?.id} fallback={fallback}>
               <ListGroup
-                key={block.id}
-                blocks={listItems}
-                type={listItemType}
+                blocks={group.blocks}
+                type={group.type}
                 renderBlock={renderBlock}
               />
-            );
-
-            // 이미 처리된 리스트 아이템 건너뛰기 (j는 다음 블록의 인덱스)
-            i = j - 1;
-
-            return true;
-          }
-
-          return false;
-        };
-
-        // 순서대로 각 리스트 타입 처리 시도
-        if (handleListItem('bulleted') || handleListItem('numbered')) {
-          // 리스트 아이템이 처리되었으므로 다음 블록으로 진행
-          continue;
-        } else {
-          // 리스트 아이템이 아닌 일반 블록 처리
-          result.push(<BlockRenderer key={block.id} block={block} />);
+            </BlockErrorBoundary>
+          );
         }
-      }
-
-      return result;
-    }, [blocks, renderBlock]);
+        return (
+          <BlockErrorBoundary key={group.block.id} fallback={fallback}>
+            <BlockRenderer block={group.block} />
+          </BlockErrorBoundary>
+        );
+      });
+    }, [blocks, renderBlock, fallback]);
 
     return (
       <>

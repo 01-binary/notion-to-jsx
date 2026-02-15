@@ -24,13 +24,21 @@ export const Paragraph = memo(({ children, ...props }: TypographyProps) => {
 
 Paragraph.displayName = 'Paragraph';
 
-export const Heading1 = memo(
-  ({ children, blockId, ...props }: HeadingProps) => {
+const headingElements = { 1: 'h1', 2: 'h2', 3: 'h3' } as const;
+const headingStyles = { 1: heading1, 2: heading2, 3: heading3 } as const;
+
+interface InternalHeadingProps extends HeadingProps {
+  level: 1 | 2 | 3;
+}
+
+const Heading = memo(
+  ({ children, blockId, level, ...props }: InternalHeadingProps) => {
+    const Tag = headingElements[level];
     return (
       <div className={headingContainer}>
-        <h1 id={blockId} className={heading1} {...props}>
+        <Tag id={blockId} className={headingStyles[level]} {...props}>
           {children}
-        </h1>
+        </Tag>
         {blockId && (
           <a href={`#${blockId}`} className={anchorLink} aria-label="섹션 링크">
             #
@@ -41,42 +49,19 @@ export const Heading1 = memo(
   }
 );
 
+Heading.displayName = 'Heading';
+
+export const Heading1 = memo((props: HeadingProps) => (
+  <Heading level={1} {...props} />
+));
 Heading1.displayName = 'Heading1';
 
-export const Heading2 = memo(
-  ({ children, blockId, ...props }: HeadingProps) => {
-    return (
-      <div className={headingContainer}>
-        <h2 id={blockId} className={heading2} {...props}>
-          {children}
-        </h2>
-        {blockId && (
-          <a href={`#${blockId}`} className={anchorLink} aria-label="섹션 링크">
-            #
-          </a>
-        )}
-      </div>
-    );
-  }
-);
-
+export const Heading2 = memo((props: HeadingProps) => (
+  <Heading level={2} {...props} />
+));
 Heading2.displayName = 'Heading2';
 
-export const Heading3 = memo(
-  ({ children, blockId, ...props }: HeadingProps) => {
-    return (
-      <div className={headingContainer}>
-        <h3 id={blockId} className={heading3} {...props}>
-          {children}
-        </h3>
-        {blockId && (
-          <a href={`#${blockId}`} className={anchorLink} aria-label="섹션 링크">
-            #
-          </a>
-        )}
-      </div>
-    );
-  }
-);
-
+export const Heading3 = memo((props: HeadingProps) => (
+  <Heading level={3} {...props} />
+));
 Heading3.displayName = 'Heading3';
