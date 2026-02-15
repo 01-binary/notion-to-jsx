@@ -1,5 +1,11 @@
 # notion-types
 
+## 1.0.3
+
+### Patch Changes
+
+- 4d6bbfa: 코드 리뷰 기반 품질 개선
+
 ## 1.0.2
 
 ### Patch Changes
