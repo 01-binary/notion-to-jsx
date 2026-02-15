@@ -2,7 +2,7 @@
 
 # notion-to-jsx
 
-[![npm version](https://img.shields.io/npm/v/notion-to-jsx.svg)](https://www.npmjs.com/package/notion-to-jsx)
+[![npm version](https://img.shields.io/npm/v/notion-to-jsx.svg?label=notion-to-jsx)](https://www.npmjs.com/package/notion-to-jsx)
 [![npm version](https://img.shields.io/npm/v/notion-to-utils.svg?label=notion-to-utils)](https://www.npmjs.com/package/notion-to-utils)
 [![license](https://img.shields.io/npm/l/notion-to-jsx.svg)](https://github.com/01-binary/notion-to-jsx/blob/main/LICENSE)
 
