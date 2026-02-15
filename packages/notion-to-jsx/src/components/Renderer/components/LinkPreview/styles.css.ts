@@ -6,6 +6,9 @@ export const link = style({
   display: 'block',
   paddingTop: vars.spacing.xxs,
   paddingBottom: vars.spacing.xxs,
+  ':hover': {
+    textDecoration: 'none',
+  },
 });
 
 export const preview = style({

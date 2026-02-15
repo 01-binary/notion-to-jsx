@@ -12,6 +12,7 @@ import {
   urlText,
 } from './styles.css';
 import { OpenGraphData } from './type';
+import ExternalLink from '../shared/ExternalLink';
 
 export interface BookmarkProps {
   url: string;
@@ -22,7 +23,7 @@ const Bookmark = ({ url, metadata }: BookmarkProps) => {
   const [isImageBroken, setIsImageBroken] = useState(false);
 
   return (
-    <a href={url} target="_blank" rel="noopener noreferrer" className={link}>
+    <ExternalLink href={url} className={link}>
       <div className={card}>
         <div className={content}>
           <div>
@@ -48,7 +49,7 @@ const Bookmark = ({ url, metadata }: BookmarkProps) => {
           </div>
         )}
       </div>
-    </a>
+    </ExternalLink>
   );
 };
 

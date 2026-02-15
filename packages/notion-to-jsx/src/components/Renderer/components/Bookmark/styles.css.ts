@@ -6,6 +6,9 @@ export const link = style({
   display: 'block',
   paddingTop: vars.spacing.xs,
   paddingBottom: vars.spacing.xs,
+  ':hover': {
+    textDecoration: 'none',
+  },
 });
 
 export const card = style({

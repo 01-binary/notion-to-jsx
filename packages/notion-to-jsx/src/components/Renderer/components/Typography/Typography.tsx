@@ -51,17 +51,14 @@ const Heading = memo(
 
 Heading.displayName = 'Heading';
 
-export const Heading1 = memo((props: HeadingProps) => (
+export const Heading1 = (props: HeadingProps) => (
   <Heading level={1} {...props} />
-));
-Heading1.displayName = 'Heading1';
+);
 
-export const Heading2 = memo((props: HeadingProps) => (
+export const Heading2 = (props: HeadingProps) => (
   <Heading level={2} {...props} />
-));
-Heading2.displayName = 'Heading2';
+);
 
-export const Heading3 = memo((props: HeadingProps) => (
+export const Heading3 = (props: HeadingProps) => (
   <Heading level={3} {...props} />
-));
-Heading3.displayName = 'Heading3';
+);

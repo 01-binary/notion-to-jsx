@@ -1,4 +1,4 @@
-import { useState, useCallback, memo, KeyboardEvent } from 'react';
+import { useState, memo, KeyboardEvent } from 'react';
 import { ToggleBlock } from '../../../../types';
 import {
   toggleContainer,
@@ -17,21 +17,21 @@ interface ToggleProps {
 const Toggle = memo(({ block }: ToggleProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Toggle이 없거나 children이 없는 경우 렌더링하지 않음
-  if (!block.toggle || !block.children) {
-    return null;
-  }
-
-  const handleToggle = useCallback(() => {
+  const handleToggle = () => {
     setIsOpen((prev) => !prev);
-  }, []);
+  };
 
-  const handleKeyDown = useCallback((e: KeyboardEvent) => {
+  const handleKeyDown = (e: KeyboardEvent) => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
       setIsOpen((prev) => !prev);
     }
-  }, []);
+  };
+
+  // Toggle이 없거나 children이 없는 경우 렌더링하지 않음
+  if (!block.toggle || !block.children) {
+    return null;
+  }
 
   return (
     <div className={toggleContainer}>

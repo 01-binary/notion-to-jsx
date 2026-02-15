@@ -46,8 +46,14 @@ export const MemoizedImage = memo<ImageProps>(Image, (prev, next) => {
   );
 });
 
+// url과 metadata 모두 비교하여 OG 데이터 변경도 감지
 export const MemoizedBookmark = memo<BookmarkProps>(Bookmark, (prev, next) => {
-  return prev.url === next.url;
+  return (
+    prev.url === next.url &&
+    prev.metadata?.title === next.metadata?.title &&
+    prev.metadata?.description === next.metadata?.description &&
+    prev.metadata?.image === next.metadata?.image
+  );
 });
 
 export const MemoizedLinkPreview = memo<LinkPreviewProps>(

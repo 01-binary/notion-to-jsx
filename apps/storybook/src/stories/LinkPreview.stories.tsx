@@ -34,6 +34,35 @@ const mockGitHubFetch: StoryObj['loaders'] = [
   },
 ];
 
+const mockGitHubFetchWithDelay: StoryObj['loaders'] = [
+  async () => {
+    const originalFetch = window.fetch;
+    window.fetch = async (input, init) => {
+      const url = typeof input === 'string' ? input : input instanceof URL ? input.toString() : (input as Request).url;
+      if (url.includes('api.github.com/repos/')) {
+        await new Promise((r) => setTimeout(r, 3000));
+        return new Response(JSON.stringify(MOCK_GITHUB_RESPONSE), {
+          status: 200,
+          headers: { 'Content-Type': 'application/json' },
+        });
+      }
+      return originalFetch(input, init);
+    };
+    return { originalFetch };
+  },
+];
+
+export const GitHubLoading: StoryObj = {
+  loaders: mockGitHubFetchWithDelay,
+  render: (_, { globals }) => (
+    <Renderer
+      blocks={[linkPreview('https://github.com/01-binary/notion-to-jsx')]}
+      isDarkMode={globals.theme === 'dark'}
+      showToc={false}
+    />
+  ),
+};
+
 export const GitHub: StoryObj = {
   loaders: mockGitHubFetch,
   render: (_, { globals }) => (

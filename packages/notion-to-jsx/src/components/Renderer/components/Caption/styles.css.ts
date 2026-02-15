@@ -8,10 +8,3 @@ export const captionStyle = style({
   width: '100%',
   color: vars.colors.secondary,
 });
-
-export const mediaContainer = style({
-  margin: '10px 0',
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-});

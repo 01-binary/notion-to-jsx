@@ -1,67 +1,9 @@
 import { ReactNode } from 'react';
 import type { RichTextItem } from 'notion-types';
 import { richText, link, emptyRichText } from './styles.css';
+import ExternalLink from '../shared/ExternalLink';
 
 export type { RichTextItem };
-
-// 지원하는 Notion 색상 타입 정의
-type NotionColor =
-  | 'default'
-  | 'gray'
-  | 'brown'
-  | 'orange'
-  | 'yellow'
-  | 'green'
-  | 'blue'
-  | 'purple'
-  | 'pink'
-  | 'red'
-  | 'gray_background'
-  | 'brown_background'
-  | 'orange_background'
-  | 'yellow_background'
-  | 'green_background'
-  | 'blue_background'
-  | 'purple_background'
-  | 'pink_background'
-  | 'red_background';
-
-// 모듈 스코프로 이동 - 매 렌더마다 배열 재생성 방지
-const NOTION_COLORS: NotionColor[] = [
-  'default',
-  'gray',
-  'brown',
-  'orange',
-  'yellow',
-  'green',
-  'blue',
-  'purple',
-  'pink',
-  'red',
-  'gray_background',
-  'brown_background',
-  'orange_background',
-  'yellow_background',
-  'green_background',
-  'blue_background',
-  'purple_background',
-  'pink_background',
-  'red_background',
-] as const;
-
-// 타입 가드 함수
-const isNotionColor = (color: string): color is NotionColor => {
-  return NOTION_COLORS.includes(color as NotionColor);
-};
-
-/**
- * 링크 컴포넌트를 생성하는 함수
- */
-const renderLink = (href: string, content: ReactNode) => (
-  <a href={href} target="_blank" rel="noopener noreferrer" className={link}>
-    {content}
-  </a>
-);
 
 const contentRenderers: Record<
   string,
@@ -70,14 +12,14 @@ const contentRenderers: Record<
   text: (text) => {
     if (text.text) {
       return text.text.link?.url
-        ? renderLink(text.text.link.url, text.text.content)
+        ? <ExternalLink href={text.text.link.url} className={link}>{text.text.content}</ExternalLink>
         : text.text.content;
     }
     return text.plain_text;
   },
   mention: (text) => {
     return text.href
-      ? renderLink(text.href, text.plain_text)
+      ? <ExternalLink href={text.href} className={link}>{text.plain_text}</ExternalLink>
       : text.plain_text;
   },
 };
@@ -106,10 +48,6 @@ const RichTexts = ({ richTexts }: RichTextProps) => {
 
         const content = renderContent(text);
 
-        // NOTION COLOR 적용
-        // 타입 가드를 사용하여 지원하는 색상인지 검증
-        const safeColor = isNotionColor(color) ? color : undefined;
-
         return (
           <span
             key={`${text.plain_text}-${index}`}
@@ -119,7 +57,7 @@ const RichTexts = ({ richTexts }: RichTextProps) => {
               strikethrough,
               underline,
               code,
-              color: safeColor,
+              color,
             })}
           >
             {content}
