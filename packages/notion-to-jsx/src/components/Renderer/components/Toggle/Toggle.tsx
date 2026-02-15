@@ -1,4 +1,4 @@
-import { useState, KeyboardEvent } from 'react';
+import { useState, useCallback, memo, KeyboardEvent } from 'react';
 import { ToggleBlock } from '../../../../types';
 import {
   toggleContainer,
@@ -14,7 +14,7 @@ interface ToggleProps {
   block: ToggleBlock;
 }
 
-const Toggle = ({ block }: ToggleProps) => {
+const Toggle = memo(({ block }: ToggleProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   // Toggle이 없거나 children이 없는 경우 렌더링하지 않음
@@ -22,16 +22,16 @@ const Toggle = ({ block }: ToggleProps) => {
     return null;
   }
 
-  const handleToggle = () => {
-    setIsOpen(!isOpen);
-  };
+  const handleToggle = useCallback(() => {
+    setIsOpen((prev) => !prev);
+  }, []);
 
-  const handleKeyDown = (e: KeyboardEvent) => {
+  const handleKeyDown = useCallback((e: KeyboardEvent) => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
-      handleToggle();
+      setIsOpen((prev) => !prev);
     }
-  };
+  }, []);
 
   return (
     <div className={toggleContainer}>
@@ -40,6 +40,7 @@ const Toggle = ({ block }: ToggleProps) => {
         onClick={handleToggle}
         onKeyDown={handleKeyDown}
         role="button"
+        tabIndex={0}
         aria-expanded={isOpen}
       >
         <span className={`${toggleIcon} ${isOpen ? toggleIconOpen : ''}`}>
@@ -57,6 +58,8 @@ const Toggle = ({ block }: ToggleProps) => {
       )}
     </div>
   );
-};
+});
+
+Toggle.displayName = 'Toggle';
 
 export default Toggle;

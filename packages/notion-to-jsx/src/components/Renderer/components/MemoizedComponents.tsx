@@ -23,6 +23,8 @@ const areRichTextsEqual = (
       item.href === next[i]?.href &&
       item.annotations?.bold === next[i]?.annotations?.bold &&
       item.annotations?.italic === next[i]?.annotations?.italic &&
+      item.annotations?.strikethrough === next[i]?.annotations?.strikethrough &&
+      item.annotations?.underline === next[i]?.annotations?.underline &&
       item.annotations?.code === next[i]?.annotations?.code &&
       item.annotations?.color === next[i]?.annotations?.color
   );
@@ -36,6 +38,10 @@ export const MemoizedImage = memo<ImageProps>(Image, (prev, next) => {
   return (
     prev.src === next.src &&
     prev.alt === next.alt &&
+    prev.isColumn === next.isColumn &&
+    prev.format?.block_width === next.format?.block_width &&
+    prev.format?.block_height === next.format?.block_height &&
+    prev.format?.block_aspect_ratio === next.format?.block_aspect_ratio &&
     areRichTextsEqual(prev.caption, next.caption)
   );
 });
