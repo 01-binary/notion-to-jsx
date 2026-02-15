@@ -1,16 +1,17 @@
 import { Component, type ReactNode, type ErrorInfo } from 'react';
 
-interface Props {
+interface BlockErrorBoundaryProps {
   children: ReactNode;
   fallback?: ReactNode;
+  onError?: (error: Error, errorInfo: ErrorInfo) => void;
 }
 
 interface State {
   hasError: boolean;
 }
 
-class BlockErrorBoundary extends Component<Props, State> {
-  constructor(props: Props) {
+class BlockErrorBoundary extends Component<BlockErrorBoundaryProps, State> {
+  constructor(props: BlockErrorBoundaryProps) {
     super(props);
     this.state = { hasError: false };
   }
@@ -19,9 +20,8 @@ class BlockErrorBoundary extends Component<Props, State> {
     return { hasError: true };
   }
 
-  componentDidCatch(_error: Error, _errorInfo: ErrorInfo) {
-    // Error boundary caught a block rendering error.
-    // Silently handled — the fallback UI (or null) is rendered instead.
+  componentDidCatch(error: Error, errorInfo: ErrorInfo) {
+    this.props.onError?.(error, errorInfo);
   }
 
   render() {

@@ -44,3 +44,19 @@ export const getEmbedTitle = (url: string): string => {
   if (url.includes('codepen.io')) return 'CodePen';
   return 'Embed';
 };
+
+const ALLOWED_EMBED_DOMAINS = [
+  'codesandbox.io',
+  'codepen.io',
+] as const;
+
+export const isAllowedEmbedDomain = (url: string): boolean => {
+  try {
+    const { hostname } = new URL(url);
+    return ALLOWED_EMBED_DOMAINS.some(
+      (domain) => hostname === domain || hostname.endsWith(`.${domain}`)
+    );
+  } catch {
+    return false;
+  }
+};

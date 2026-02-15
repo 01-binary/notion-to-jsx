@@ -1,4 +1,4 @@
-import { memo, useState, useEffect } from 'react';
+import { memo, useState, useEffect, useCallback } from 'react';
 import type { HeadingItem } from '../../utils/extractHeadings';
 import {
   tocContainer,
@@ -72,6 +72,15 @@ const TableOfContents = memo(({ headings, scrollOffset = 0 }: TableOfContentsPro
     return () => observer.disconnect();
   }, [headings]);
 
+  const scrollToHeading = useCallback((e: React.MouseEvent<HTMLAnchorElement>, headingId: string) => {
+    e.preventDefault();
+    const el = document.getElementById(headingId);
+    if (el) {
+      const top = el.getBoundingClientRect().top + window.scrollY - scrollOffset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+  }, [scrollOffset]);
+
   if (headings.length === 0) {
     return null;
   }
@@ -96,17 +105,7 @@ const TableOfContents = memo(({ headings, scrollOffset = 0 }: TableOfContentsPro
               <a
                 href={`#${heading.id}`}
                 className={`${menuLink} ${menuLevelStyles[heading.level]} ${activeId === heading.id ? menuLinkActive : ''}`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  const el = document.getElementById(heading.id);
-                  if (el) {
-                    const top = el.getBoundingClientRect().top + window.scrollY - scrollOffset;
-                    window.scrollTo({
-                      top,
-                      behavior: 'smooth',
-                    });
-                  }
-                }}
+                onClick={(e) => scrollToHeading(e, heading.id)}
               >
                 {heading.text}
               </a>

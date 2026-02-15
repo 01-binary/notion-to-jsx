@@ -4,60 +4,95 @@ import { Caption } from '../Caption';
 import { mediaContainer } from '../Caption/styles.css';
 import { getVideoEmbedUrl } from '../../utils/embedUrlParser';
 import { videoPlayer, nativeVideo } from './styles.css';
+import { RichTextItem } from '../RichText/RichTexts';
 
-interface VideoProps {
-  block: VideoBlock;
+// ============ 서브 컴포넌트 ============
+
+interface NativeVideoProps {
+  url: string;
+  caption?: RichTextItem[];
 }
 
-const Video = memo(({ block }: VideoProps) => {
-  if (block.type !== 'video' || !block.video) {
-    return null;
-  }
+const NativeVideo = memo(({ url, caption }: NativeVideoProps) => (
+  <div className={mediaContainer}>
+    <video className={nativeVideo} controls preload="metadata">
+      <source src={url} />
+    </video>
+    <Caption caption={caption} />
+  </div>
+));
 
-  const { type, external, file, caption } = block.video;
+NativeVideo.displayName = 'NativeVideo';
+
+interface YouTubeEmbedProps {
+  url: string;
+  caption?: RichTextItem[];
+}
+
+const YouTubeEmbed = memo(({ url, caption }: YouTubeEmbedProps) => (
+  <div className={mediaContainer}>
+    <iframe
+      className={videoPlayer}
+      src={url}
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    />
+    <Caption caption={caption} />
+  </div>
+));
+
+YouTubeEmbed.displayName = 'YouTubeEmbed';
+
+interface ExternalVideoLinkProps {
+  url: string;
+  caption?: RichTextItem[];
+}
+
+const ExternalVideoLink = memo(({ url, caption }: ExternalVideoLinkProps) => (
+  <div className={mediaContainer}>
+    <p>
+      External video link:{' '}
+      <a href={url} target="_blank" rel="noopener noreferrer">
+        {url}
+      </a>
+    </p>
+    <Caption caption={caption} />
+  </div>
+));
+
+ExternalVideoLink.displayName = 'ExternalVideoLink';
+
+// ============ 메인 컴포넌트 ============
+
+export type VideoData = VideoBlock['video'];
+
+interface VideoProps {
+  video: VideoData;
+}
+
+const Video = memo(({ video }: VideoProps) => {
+  const { type, external, file, caption } = video;
 
   if (type === 'file' && file?.url) {
-    return (
-      <div className={mediaContainer}>
-        <video className={nativeVideo} controls preload="metadata">
-          <source src={file.url} />
-        </video>
-        <Caption caption={caption} />
-      </div>
-    );
+    return <NativeVideo url={file.url} caption={caption} />;
   }
 
   if (type === 'external') {
     const videoUrl = getVideoEmbedUrl(external?.url);
 
     if (!videoUrl) {
-      return <p>비디오를 불러올 수 없습니다.</p>;
+      return <p>Unable to load video.</p>;
     }
 
-    return (
-      <div className={mediaContainer}>
-        {videoUrl.includes('youtube.com/embed/') ? (
-          <iframe
-            className={videoPlayer}
-            src={videoUrl}
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        ) : (
-          <p>
-            외부 비디오 링크:{' '}
-            <a href={videoUrl} target="_blank" rel="noopener noreferrer">
-              {videoUrl}
-            </a>
-          </p>
-        )}
-        <Caption caption={caption} />
-      </div>
-    );
+    if (videoUrl.includes('youtube.com/embed/')) {
+      return <YouTubeEmbed url={videoUrl} caption={caption} />;
+    }
+
+    return <ExternalVideoLink url={videoUrl} caption={caption} />;
   }
 
-  return <p>비디오를 불러올 수 없습니다.</p>;
+  return <p>Unable to load video.</p>;
 });
 
 Video.displayName = 'Video';

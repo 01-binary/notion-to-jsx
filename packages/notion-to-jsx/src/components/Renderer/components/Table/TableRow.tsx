@@ -8,12 +8,14 @@ interface TableRowProps {
   rowBlock: TableRowBlock;
   cellClassName?: string;
   rowHeaderIndex?: number;
+  isColumnHeader?: boolean;
 }
 
 const TableRow = memo(({
   rowBlock,
   cellClassName = '',
   rowHeaderIndex = -1,
+  isColumnHeader = false,
 }: TableRowProps) => {
   if (!rowBlock.table_row?.cells) {
     return null;
@@ -34,13 +36,17 @@ const TableRow = memo(({
         if (isLastCell) cellClasses.push(lastCell);
         if (isRowHeader) cellClasses.push(hasRowHeader);
 
+        const CellTag = isColumnHeader || isRowHeader ? 'th' : 'td';
+        const scope = isColumnHeader ? 'col' : isRowHeader ? 'row' : undefined;
+
         return (
-          <td
+          <CellTag
             key={`${rowBlock.id}-cell-${index}`}
             className={cellClasses.filter(Boolean).join(' ')}
+            scope={scope}
           >
             <MemoizedRichText richTexts={cell} />
-          </td>
+          </CellTag>
         );
       })}
     </tr>

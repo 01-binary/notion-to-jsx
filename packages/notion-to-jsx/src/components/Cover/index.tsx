@@ -1,8 +1,9 @@
+import { memo } from 'react';
 import { coverContainer, skeletonWrapper, imageStyle } from './styles.css';
 import Skeleton from '../Skeleton';
 import { useImageLoad } from '../../hooks/useImageLoad';
 
-interface Props {
+interface CoverProps {
   src: string;
   alt: string;
 }
@@ -11,7 +12,7 @@ interface Props {
  * 노션 페이지 상단에 표시되는 커버 이미지 컴포넌트
  * 이미지 로딩 중에는 스켈레톤 UI를 표시하고, 로딩 완료 시 자연스럽게 이미지로 전환됩니다.
  */
-const Cover = ({ src, alt }: Props) => {
+const Cover = memo(({ src, alt }: CoverProps) => {
   const { isLoaded, imgRef, handleLoad } = useImageLoad(src);
 
   return (
@@ -29,6 +30,8 @@ const Cover = ({ src, alt }: Props) => {
       />
     </div>
   );
-};
+});
+
+Cover.displayName = 'Cover';
 
 export default Cover;

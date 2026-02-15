@@ -24,7 +24,7 @@ const getImageTagStyle = (format?: ImageFormat) => {
     : undefined;
 };
 
-export interface Props {
+export interface ImageProps {
   src: string;
   alt: string;
   caption?: RichTextItem[];
@@ -39,7 +39,7 @@ const Image = ({
   caption,
   format,
   isColumn = false,
-}: Props) => {
+}: ImageProps) => {
   const { isLoaded, imgRef, handleLoad } = useImageLoad(src);
 
   return (

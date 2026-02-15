@@ -13,6 +13,8 @@ export const useKeyboardNavigation = <T extends HTMLElement>(
   options: KeyboardNavigationOptions
 ): RefObject<T | null> => {
   const ref = useRef<T>(null);
+  const optionsRef = useRef(options);
+  optionsRef.current = options;
 
   useEffect(() => {
     const element = ref.current;
@@ -21,31 +23,31 @@ export const useKeyboardNavigation = <T extends HTMLElement>(
     const handleKeyDown = (event: KeyboardEvent) => {
       switch (event.key) {
         case 'Escape':
-          options.onEscape?.();
+          optionsRef.current.onEscape?.();
           break;
         case 'Enter':
-          options.onEnter?.();
+          optionsRef.current.onEnter?.();
           break;
         case 'ArrowUp':
           event.preventDefault();
-          options.onArrowUp?.();
+          optionsRef.current.onArrowUp?.();
           break;
         case 'ArrowDown':
           event.preventDefault();
-          options.onArrowDown?.();
+          optionsRef.current.onArrowDown?.();
           break;
         case 'ArrowLeft':
-          options.onArrowLeft?.();
+          optionsRef.current.onArrowLeft?.();
           break;
         case 'ArrowRight':
-          options.onArrowRight?.();
+          optionsRef.current.onArrowRight?.();
           break;
       }
     };
 
     element.addEventListener('keydown', handleKeyDown);
     return () => element.removeEventListener('keydown', handleKeyDown);
-  }, [options]);
+  }, []);
 
   return ref;
 };

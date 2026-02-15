@@ -112,7 +112,7 @@ const RichTexts = ({ richTexts }: RichTextProps) => {
 
         return (
           <span
-            key={index}
+            key={`${text.plain_text}-${index}`}
             className={richText({
               bold,
               italic,
