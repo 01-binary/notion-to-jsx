@@ -1,5 +1,11 @@
 # notion-types
 
+## 1.0.2
+
+### Patch Changes
+
+- 8fe4d06: notion-to-jsx refactor
+
 ## 1.0.1
 
 ### Patch Changes
