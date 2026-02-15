@@ -169,6 +169,16 @@ export const video = (youtubeUrl: string, captionText?: string): VideoBlock => (
   },
 });
 
+export const fileVideo = (fileUrl: string, caption?: RichTextItem[]): VideoBlock => ({
+  ...base(),
+  type: 'video',
+  video: {
+    type: 'file',
+    file: { url: fileUrl },
+    caption: caption ?? [],
+  },
+});
+
 export const embed = (url: string, captionText?: string): EmbedBlock => ({
   ...base(),
   type: 'embed',
