@@ -15,7 +15,7 @@ export const WithMetadata: StoryObj = {
         bookmark('https://github.com/01-binary/notion-to-jsx', {
           title: 'notion-to-jsx',
           description: 'Notion blocks to JSX renderer. Convert Notion API responses to React components.',
-          image: 'https://opengraph.githubassets.com/1/01-binary/notion-to-jsx',
+          image: 'https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png',
           siteName: 'GitHub',
           favicon: 'https://github.githubassets.com/favicons/favicon.svg',
         }),

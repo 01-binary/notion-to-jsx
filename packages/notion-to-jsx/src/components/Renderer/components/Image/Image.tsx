@@ -1,9 +1,8 @@
-import { MemoizedRichText } from '../MemoizedComponents';
+import { Caption } from '../Caption';
 import {
   imageContainer,
   imageWrapper,
   imageStyle,
-  caption,
   skeletonWrapper,
 } from './styles.css';
 import { RichTextItem } from '../RichText/RichTexts';
@@ -37,7 +36,7 @@ export interface Props {
 const Image = ({
   src,
   alt,
-  caption: imageCaption,
+  caption,
   format,
   isColumn = false,
 }: Props) => {
@@ -64,11 +63,7 @@ const Image = ({
           style={getImageTagStyle(format)}
         />
       </div>
-      {imageCaption && imageCaption.length > 0 && (
-        <figcaption className={caption}>
-          <MemoizedRichText richTexts={imageCaption} />
-        </figcaption>
-      )}
+      <Caption caption={caption} />
     </div>
   );
 };

@@ -52,13 +52,6 @@ export const imageStyle = recipe({
   },
 });
 
-export const caption = style({
-  textAlign: 'center',
-  color: vars.colors.secondary,
-  marginTop: vars.spacing.sm,
-  fontSize: vars.typography.fontSize.small,
-});
-
 export const skeletonWrapper = recipe({
   base: {
     position: 'absolute',
