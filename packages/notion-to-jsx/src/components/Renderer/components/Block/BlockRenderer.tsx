@@ -34,6 +34,13 @@ type BlockRendererMap = {
   ) => ReactElement | null;
 };
 
+/**
+ * 블록 타입별 렌더러 맵.
+ *
+ * Props 전달 컨벤션:
+ * - children이 있는 블록(Toggle, Table, ColumnList): block 통째 전달 (children 접근 필요)
+ * - 그 외: 필요한 데이터만 추출하여 전달
+ */
 const blockRenderers: BlockRendererMap = {
   link_preview: (block) => <MemoizedLinkPreview url={block.link_preview.url} />,
 
@@ -75,7 +82,7 @@ const blockRenderers: BlockRendererMap = {
     <figure>
       <MemoizedImage
         src={block.image.file?.url || block.image.external?.url || ''}
-        alt={block.image.caption?.[0]?.plain_text || ''}
+        alt={block.image.caption?.[0]?.plain_text || 'Notion image'}
         caption={block.image.caption}
         format={block.image.format}
         isColumn={isColumn}
@@ -108,6 +115,8 @@ const blockRenderers: BlockRendererMap = {
 const BlockRenderer = memo(({ block, isColumn = false }: BlockRendererProps) => {
   if (!block) return null;
 
+  // blockRenderers[block.type]의 반환 타입은 BlockRendererMap의 각 키별 함수이지만,
+  // TypeScript는 동적 키 접근 시 유니온의 개별 타입으로 좁히지 못해 as 단언이 필요
   const renderer = blockRenderers[block.type] as
     | ((block: NotionBlock, isColumn: boolean) => ReactElement | null)
     | undefined;

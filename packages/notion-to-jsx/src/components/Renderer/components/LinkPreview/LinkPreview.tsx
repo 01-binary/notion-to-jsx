@@ -1,14 +1,16 @@
-import { useState, useEffect, useMemo, memo } from 'react';
+import { useMemo, memo } from 'react';
 import * as styles from './styles.css';
+import Skeleton from '../../../../components/Skeleton';
+import ExternalLink from '../shared/ExternalLink';
 import {
   type RepoData,
   type FigmaData,
   getLinkType,
   extractRepoPathFromUrl,
   extractFigmaData,
-  fetchGitHubRepoData,
   formatUpdatedTime,
 } from './utils';
+import { useGitHubRepo } from './useGitHubRepo';
 
 // ============ 서브 컴포넌트 ============
 
@@ -56,7 +58,7 @@ const GitHubPreview = memo(({ repoData, repoName, updatedTimeText, loading }: Gi
     <div className={`${styles.content} ${styles.githubContent}`}>
       <div className={styles.title}>{repoName}</div>
       <div className={styles.description}>
-        {loading ? 'Loading...' : `${repoName} • ${updatedTimeText}`}
+        {loading ? <Skeleton width="60%" height="16px" /> : `${repoName} • ${updatedTimeText}`}
       </div>
     </div>
   </div>
@@ -91,48 +93,17 @@ const LinkPreview = ({ url }: LinkPreviewProps) => {
     [linkType, url]
   );
 
-  const [repoData, setRepoData] = useState<RepoData | null>(null);
-  const [loading, setLoading] = useState(linkType === 'github');
-  const [hasError, setHasError] = useState(false);
+  const { repoData, loading, hasError } = useGitHubRepo(url, linkType === 'github');
 
-  useEffect(() => {
-    if (linkType !== 'github') return;
+  const repoName = useMemo(
+    () => repoData?.name || extractRepoPathFromUrl(url)?.split('/')[1] || 'Repository',
+    [repoData?.name, url]
+  );
 
-    const abortController = new AbortController();
-    setLoading(true);
-    setHasError(false);
-
-    const loadGitHubData = async () => {
-      const repoPath = extractRepoPathFromUrl(url);
-      if (repoPath) {
-        const data = await fetchGitHubRepoData(repoPath, abortController.signal);
-        if (!abortController.signal.aborted) {
-          setRepoData(data);
-          if (!data) setHasError(true);
-        }
-      } else if (!abortController.signal.aborted) {
-        setHasError(true);
-      }
-      if (!abortController.signal.aborted) {
-        setLoading(false);
-      }
-    };
-
-    loadGitHubData();
-
-    return () => {
-      abortController.abort();
-    };
-  }, [url, linkType]);
-
-  const repoName =
-    repoData?.name ||
-    extractRepoPathFromUrl(url)?.split('/')[1] ||
-    'Repository';
-
-  const updatedTimeText = repoData?.updated_at
-    ? formatUpdatedTime(repoData.updated_at)
-    : '';
+  const updatedTimeText = useMemo(
+    () => (repoData?.updated_at ? formatUpdatedTime(repoData.updated_at) : ''),
+    [repoData?.updated_at]
+  );
 
   const renderPreview = () => {
     if (linkType === 'figma' && figmaData) {
@@ -155,14 +126,9 @@ const LinkPreview = ({ url }: LinkPreviewProps) => {
   };
 
   return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={styles.link}
-    >
+    <ExternalLink href={url} className={styles.link}>
       {renderPreview()}
-    </a>
+    </ExternalLink>
   );
 };
 

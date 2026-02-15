@@ -27,6 +27,34 @@ export interface ImageFormatMetadata {
 }
 
 // ============================================
+// Notion Color
+// ============================================
+
+export const NOTION_COLORS = [
+  'default',
+  'gray',
+  'brown',
+  'orange',
+  'yellow',
+  'green',
+  'blue',
+  'purple',
+  'pink',
+  'red',
+  'gray_background',
+  'brown_background',
+  'orange_background',
+  'yellow_background',
+  'green_background',
+  'blue_background',
+  'purple_background',
+  'pink_background',
+  'red_background',
+] as const;
+
+export type NotionColor = (typeof NOTION_COLORS)[number];
+
+// ============================================
 // RichText
 // ============================================
 
@@ -38,14 +66,14 @@ export interface RichTextItem {
     strikethrough: boolean;
     underline: boolean;
     code: boolean;
-    color: string;
+    color: NotionColor;
   };
   bold: boolean;
   italic: boolean;
   strikethrough: boolean;
   underline: boolean;
   code: boolean;
-  color: string;
+  color: NotionColor;
   plain_text: string;
   href: string | null;
   text?: {
@@ -89,7 +117,7 @@ export interface ParagraphBlock extends BaseNotionBlock {
   type: 'paragraph';
   paragraph: {
     rich_text: RichTextItem[];
-    color: string;
+    color: NotionColor;
   };
 }
 
@@ -97,7 +125,7 @@ export interface Heading1Block extends BaseNotionBlock {
   type: 'heading_1';
   heading_1: {
     rich_text: RichTextItem[];
-    color: string;
+    color: NotionColor;
   };
 }
 
@@ -105,7 +133,7 @@ export interface Heading2Block extends BaseNotionBlock {
   type: 'heading_2';
   heading_2: {
     rich_text: RichTextItem[];
-    color: string;
+    color: NotionColor;
   };
 }
 
@@ -113,7 +141,7 @@ export interface Heading3Block extends BaseNotionBlock {
   type: 'heading_3';
   heading_3: {
     rich_text: RichTextItem[];
-    color: string;
+    color: NotionColor;
   };
 }
 
@@ -167,7 +195,7 @@ export interface QuoteBlock extends BaseNotionBlock {
   type: 'quote';
   quote: {
     rich_text: RichTextItem[];
-    color: string;
+    color: NotionColor;
   };
 }
 
@@ -175,7 +203,7 @@ export interface ToggleBlock extends BaseNotionBlock {
   type: 'toggle';
   toggle: {
     rich_text: RichTextItem[];
-    color: string;
+    color: NotionColor;
   };
 }
 
@@ -183,7 +211,7 @@ export interface BulletedListItemBlock extends BaseNotionBlock {
   type: 'bulleted_list_item';
   bulleted_list_item: {
     rich_text: RichTextItem[];
-    color: string;
+    color: NotionColor;
   };
 }
 
@@ -191,7 +219,7 @@ export interface NumberedListItemBlock extends BaseNotionBlock {
   type: 'numbered_list_item';
   numbered_list_item: {
     rich_text: RichTextItem[];
-    color: string;
+    color: NotionColor;
   };
 }
 

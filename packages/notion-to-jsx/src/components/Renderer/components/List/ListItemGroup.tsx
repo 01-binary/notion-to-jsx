@@ -16,16 +16,10 @@ interface RecursiveListItemProps {
 
 // 리스트 아이템을 렌더링하는 컴포넌트 (중첩 리스트 지원)
 const RecursiveListItem = memo(({ block, renderBlock }: RecursiveListItemProps) => {
-  let content:
-    | BulletedListItemBlock['bulleted_list_item']
-    | NumberedListItemBlock['numbered_list_item'];
-
-  if (block.type === 'bulleted_list_item') {
-    content = block.bulleted_list_item;
-  } else {
-    // block.type이 'numbered_list_item'이라고 가정 (props 타입에 의해 보장됨)
-    content = (block as NumberedListItemBlock).numbered_list_item;
-  }
+  const content =
+    block.type === 'bulleted_list_item'
+      ? block.bulleted_list_item
+      : block.numbered_list_item;
 
   const richTexts = content.rich_text;
   const children: NotionBlock[] = block.children ?? [];

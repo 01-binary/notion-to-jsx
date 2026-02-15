@@ -17,7 +17,33 @@ export interface ImageFormat {
 
 const MAX_WIDTH = 720;
 
-// 이미지 태그에 사용되는 aspectRatio 스타일
+const getWidthStyle = (format?: ImageFormat, isColumn: boolean = false) => {
+  if (
+    !isColumn &&
+    format?.block_aspect_ratio &&
+    format.block_aspect_ratio < 1
+  ) {
+    return `${format.block_aspect_ratio * 100}%`;
+  }
+
+  if (format?.block_width) {
+    return format.block_width > MAX_WIDTH
+      ? '100%'
+      : `${format.block_width}px`;
+  }
+
+  return '100%';
+};
+
+const getAspectRatioStyle = (format?: ImageFormat) => {
+  return format?.block_aspect_ratio ? `${format.block_aspect_ratio}` : 'auto';
+};
+
+const getImageStyles = (format?: ImageFormat, isColumn: boolean = false) => ({
+  width: getWidthStyle(format, isColumn),
+  aspectRatio: getAspectRatioStyle(format),
+});
+
 const getImageTagStyle = (format?: ImageFormat) => {
   return format?.block_aspect_ratio
     ? { aspectRatio: `${format.block_aspect_ratio}` }
@@ -69,35 +95,3 @@ const Image = ({
 };
 
 export default Image;
-
-// 이미지 스타일 유틸리티 함수
-const getImageStyles = (format?: ImageFormat, isColumn: boolean = false) => {
-  // width 계산 로직
-  const getWidthStyle = () => {
-    if (
-      !isColumn &&
-      format?.block_aspect_ratio &&
-      format.block_aspect_ratio < 1
-    ) {
-      return `${format.block_aspect_ratio * 100}%`;
-    }
-
-    if (format?.block_width) {
-      return format.block_width > MAX_WIDTH
-        ? '100%'
-        : `${format.block_width}px`;
-    }
-
-    return '100%';
-  };
-
-  // aspectRatio 계산 로직
-  const getAspectRatioStyle = () => {
-    return format?.block_aspect_ratio ? `${format.block_aspect_ratio}` : 'auto';
-  };
-
-  return {
-    width: getWidthStyle(),
-    aspectRatio: getAspectRatioStyle(),
-  };
-};

@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import { Caption } from '../Caption';
-import { mediaContainer } from '../Caption/styles.css';
+import { mediaContainer } from '../shared/styles.css';
+import ExternalLink from '../shared/ExternalLink';
 import {
   getEmbedUrl,
   getEmbedTitle,
@@ -19,9 +20,7 @@ const Embed = memo(({ url, caption }: EmbedProps) => {
   if (!isAllowedEmbedDomain(url)) {
     return (
       <div className={mediaContainer}>
-        <a href={url} target="_blank" rel="noopener noreferrer">
-          {url}
-        </a>
+        <ExternalLink href={url}>{url}</ExternalLink>
         <Caption caption={caption} />
       </div>
     );

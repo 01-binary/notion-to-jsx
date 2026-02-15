@@ -1,7 +1,8 @@
 import { memo } from 'react';
 import { VideoBlock } from '../../../../types';
 import { Caption } from '../Caption';
-import { mediaContainer } from '../Caption/styles.css';
+import { mediaContainer } from '../shared/styles.css';
+import ExternalLink from '../shared/ExternalLink';
 import { getVideoEmbedUrl } from '../../utils/embedUrlParser';
 import { videoPlayer, nativeVideo } from './styles.css';
 import { RichTextItem } from '../RichText/RichTexts';
@@ -17,6 +18,7 @@ const NativeVideo = memo(({ url, caption }: NativeVideoProps) => (
   <div className={mediaContainer}>
     <video className={nativeVideo} controls preload="metadata">
       <source src={url} />
+      <track kind="captions" />
     </video>
     <Caption caption={caption} />
   </div>
@@ -53,9 +55,7 @@ const ExternalVideoLink = memo(({ url, caption }: ExternalVideoLinkProps) => (
   <div className={mediaContainer}>
     <p>
       External video link:{' '}
-      <a href={url} target="_blank" rel="noopener noreferrer">
-        {url}
-      </a>
+      <ExternalLink href={url}>{url}</ExternalLink>
     </p>
     <Caption caption={caption} />
   </div>
