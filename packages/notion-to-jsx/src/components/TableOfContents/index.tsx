@@ -22,6 +22,8 @@ export interface TableOfContentsProps {
   scrollOffset?: number;
 }
 
+const TOC_ROOT_MARGIN = '-10% 0px -20% 0px';
+
 const lineLevelStyles = {
   1: lineLevel1,
   2: lineLevel2,
@@ -59,7 +61,7 @@ const TableOfContents = memo(({ headings, scrollOffset = 0 }: TableOfContentsPro
           }
         });
       },
-      { rootMargin: '-10% 0px -20% 0px' }
+      { rootMargin: TOC_ROOT_MARGIN }
     );
 
     headings.forEach(({ id }) => {
