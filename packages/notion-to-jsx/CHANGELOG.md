@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 2.1.9
+
+### Patch Changes
+
+- 4d6bbfa: 코드 리뷰 기반 품질 개선
+
 ## 2.1.8
 
 ### Patch Changes
