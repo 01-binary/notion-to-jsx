@@ -3,11 +3,10 @@ import type { RichTextItem } from 'notion-types';
 import { richText, link, emptyRichText } from './styles.css';
 import ExternalLink from '../shared/ExternalLink';
 
-export type { RichTextItem };
+type RichTextType = RichTextItem['type'];
 
-const contentRenderers: Record<
-  string,
-  (text: RichTextItem) => ReactNode
+const contentRenderers: Partial<
+  Record<RichTextType, (text: RichTextItem) => ReactNode>
 > = {
   text: (text) => {
     if (text.text) {

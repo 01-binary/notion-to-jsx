@@ -1,4 +1,5 @@
 import { style } from '@vanilla-extract/css';
+import { vars } from '../../../../styles/theme.css';
 
 export const videoPlayer = style({
   width: '100%',
@@ -9,5 +10,5 @@ export const videoPlayer = style({
 export const nativeVideo = style({
   width: '100%',
   maxWidth: '100%',
-  borderRadius: '8px',
+  borderRadius: vars.borderRadius.lg,
 });

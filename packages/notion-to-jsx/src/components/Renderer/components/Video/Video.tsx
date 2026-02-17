@@ -5,7 +5,7 @@ import { mediaContainer } from '../shared/styles.css';
 import ExternalLink from '../shared/ExternalLink';
 import { getVideoEmbedUrl } from '../../utils/embedUrlParser';
 import { videoPlayer, nativeVideo } from './styles.css';
-import { RichTextItem } from '../RichText/RichTexts';
+import type { RichTextItem } from 'notion-types';
 
 // ============ 서브 컴포넌트 ============
 

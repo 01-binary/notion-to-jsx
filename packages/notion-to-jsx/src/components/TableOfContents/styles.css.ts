@@ -15,13 +15,13 @@ export const linesWrapper = style({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-end',
-  gap: '12px',
+  gap: vars.spacing.base,
 });
 
 export const line = style({
   height: '3px',
   backgroundColor: vars.colors.border,
-  borderRadius: '6px',
+  borderRadius: vars.borderRadius.md,
 });
 
 export const lineLevel1 = style({
@@ -75,7 +75,7 @@ export const menuLink = style({
   fontSize: vars.typography.fontSize.small,
   lineHeight: 1.4,
   color: vars.colors.secondary,
-  padding: `4px ${vars.spacing.sm}`,
+  padding: `${vars.spacing.xs} ${vars.spacing.sm}`,
   borderRadius: vars.borderRadius.sm,
   whiteSpace: 'nowrap',
   ':hover': {

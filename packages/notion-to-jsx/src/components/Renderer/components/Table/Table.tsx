@@ -3,8 +3,6 @@ import { tableContainer, table, headerCell } from './styles.css';
 import TableRow from './TableRow';
 import { TableBlock } from '../../../../types';
 
-const NO_ROW_HEADER = -1;
-
 interface TableProps {
   block: TableBlock;
 }
@@ -38,7 +36,7 @@ const Table = memo(({ block }: TableProps) => {
             <TableRow
               key={row.id}
               rowBlock={row}
-              rowHeaderIndex={has_row_header ? 0 : NO_ROW_HEADER}
+              rowHeaderIndex={has_row_header ? 0 : null}
             />
           ))}
         </tbody>
