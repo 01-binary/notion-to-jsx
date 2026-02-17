@@ -1,5 +1,6 @@
 import nextra from 'nextra'
 
+// test: turbo-ignore v4
 const withNextra = nextra({
   contentDirBasePath: '/',
 })
