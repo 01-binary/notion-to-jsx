@@ -1,5 +1,6 @@
 import nextra from 'nextra'
 
+// test: root dir v6
 const withNextra = nextra({
   contentDirBasePath: '/',
 })
