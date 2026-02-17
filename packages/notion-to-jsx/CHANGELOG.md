@@ -1,5 +1,11 @@
 # notion-to-jsx
 
+## 2.1.11
+
+### Patch Changes
+
+- add5029: 타입 안전성 강화, Props 전달 컨벤션 통일
+
 ## 2.1.10
 
 ### Patch Changes
