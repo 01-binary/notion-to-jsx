@@ -1,5 +1,6 @@
 import nextra from 'nextra'
 
+// test: vercel ignored build step
 const withNextra = nextra({
   contentDirBasePath: '/',
 })
