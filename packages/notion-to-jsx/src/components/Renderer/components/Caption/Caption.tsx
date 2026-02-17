@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { RichTextItem } from '../RichText/RichTexts';
+import type { RichTextItem } from 'notion-types';
 import { MemoizedRichText } from '../MemoizedComponents';
 import { captionStyle } from './styles.css';
 

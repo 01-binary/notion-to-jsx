@@ -8,14 +8,16 @@ import {
   isAllowedEmbedDomain,
 } from '../../utils/embedUrlParser';
 import { embedIframe } from './styles.css';
-import { RichTextItem } from '../RichText/RichTexts';
+import type { EmbedBlock } from 'notion-types';
+
+type EmbedData = EmbedBlock['embed'];
 
 interface EmbedProps {
-  url: string;
-  caption?: RichTextItem[];
+  embed: EmbedData;
 }
 
-const Embed = memo(({ url, caption }: EmbedProps) => {
+const Embed = memo(({ embed }: EmbedProps) => {
+  const { url, caption } = embed;
 
   if (!isAllowedEmbedDomain(url)) {
     return (

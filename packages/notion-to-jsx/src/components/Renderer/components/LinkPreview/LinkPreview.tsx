@@ -1,5 +1,15 @@
-import { useMemo, memo } from 'react';
-import * as styles from './styles.css';
+import { memo } from 'react';
+import {
+  link,
+  preview,
+  iconContainer,
+  icon,
+  content,
+  title,
+  description,
+  githubPreview,
+  githubContent,
+} from './styles.css';
 import Skeleton from '../../../../components/Skeleton';
 import ExternalLink from '../shared/ExternalLink';
 import {
@@ -19,17 +29,17 @@ interface FigmaPreviewProps {
 }
 
 const FigmaPreview = memo(({ data }: FigmaPreviewProps) => (
-  <div className={styles.preview}>
-    <div className={styles.iconContainer}>
+  <div className={preview}>
+    <div className={iconContainer}>
       <img
         src={data.thumbnailUrl || 'https://static.figma.com/app/icon/1/favicon.svg'}
         alt="Figma icon"
-        className={styles.icon}
+        className={icon}
       />
     </div>
-    <div className={styles.content}>
-      <div className={styles.title}>{data.name}</div>
-      <div className={styles.description}>www.figma.com</div>
+    <div className={content}>
+      <div className={title}>{data.name}</div>
+      <div className={description}>www.figma.com</div>
     </div>
   </div>
 ));
@@ -38,31 +48,35 @@ FigmaPreview.displayName = 'FigmaPreview';
 
 interface GitHubPreviewProps {
   repoData: RepoData | null;
-  repoName: string;
-  updatedTimeText: string;
+  url: string;
   loading: boolean;
 }
 
-const GitHubPreview = memo(({ repoData, repoName, updatedTimeText, loading }: GitHubPreviewProps) => (
-  <div className={`${styles.preview} ${styles.githubPreview}`}>
-    <div className={styles.iconContainer}>
-      <img
-        src={
-          repoData?.owner?.avatar_url ||
-          'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
-        }
-        alt="Repository icon"
-        className={styles.icon}
-      />
-    </div>
-    <div className={`${styles.content} ${styles.githubContent}`}>
-      <div className={styles.title}>{repoName}</div>
-      <div className={styles.description}>
-        {loading ? <Skeleton width="60%" height="16px" /> : `${repoName} • ${updatedTimeText}`}
+const GitHubPreview = memo(({ repoData, url, loading }: GitHubPreviewProps) => {
+  const repoName = repoData?.name || extractRepoPathFromUrl(url)?.split('/')[1] || 'Repository';
+  const updatedTimeText = repoData?.updated_at ? formatUpdatedTime(repoData.updated_at) : '';
+
+  return (
+    <div className={`${preview} ${githubPreview}`}>
+      <div className={iconContainer}>
+        <img
+          src={
+            repoData?.owner?.avatar_url ||
+            'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
+          }
+          alt="Repository icon"
+          className={icon}
+        />
+      </div>
+      <div className={`${content} ${githubContent}`}>
+        <div className={title}>{repoName}</div>
+        <div className={description}>
+          {loading ? <Skeleton width="60%" height="16px" /> : `${repoName} • ${updatedTimeText}`}
+        </div>
       </div>
     </div>
-  </div>
-));
+  );
+});
 
 GitHubPreview.displayName = 'GitHubPreview';
 
@@ -71,9 +85,9 @@ interface DefaultPreviewProps {
 }
 
 const DefaultPreview = memo(({ url }: DefaultPreviewProps) => (
-  <div className={styles.preview}>
-    <div className={styles.content}>
-      <div className={styles.title}>{url}</div>
+  <div className={preview}>
+    <div className={content}>
+      <div className={title}>{url}</div>
     </div>
   </div>
 ));
@@ -87,23 +101,10 @@ export interface LinkPreviewProps {
 }
 
 const LinkPreview = ({ url }: LinkPreviewProps) => {
-  const linkType = useMemo(() => getLinkType(url), [url]);
-  const figmaData = useMemo(
-    () => (linkType === 'figma' ? extractFigmaData(url) : null),
-    [linkType, url]
-  );
+  const linkType = getLinkType(url);
+  const figmaData = linkType === 'figma' ? extractFigmaData(url) : null;
 
   const { repoData, loading, hasError } = useGitHubRepo(url, linkType === 'github');
-
-  const repoName = useMemo(
-    () => repoData?.name || extractRepoPathFromUrl(url)?.split('/')[1] || 'Repository',
-    [repoData?.name, url]
-  );
-
-  const updatedTimeText = useMemo(
-    () => (repoData?.updated_at ? formatUpdatedTime(repoData.updated_at) : ''),
-    [repoData?.updated_at]
-  );
 
   const renderPreview = () => {
     if (linkType === 'figma' && figmaData) {
@@ -113,20 +114,13 @@ const LinkPreview = ({ url }: LinkPreviewProps) => {
       if (hasError && !loading) {
         return <DefaultPreview url={url} />;
       }
-      return (
-        <GitHubPreview
-          repoData={repoData}
-          repoName={repoName}
-          updatedTimeText={updatedTimeText}
-          loading={loading}
-        />
-      );
+      return <GitHubPreview repoData={repoData} url={url} loading={loading} />;
     }
     return <DefaultPreview url={url} />;
   };
 
   return (
-    <ExternalLink href={url} className={styles.link}>
+    <ExternalLink href={url} className={link}>
       {renderPreview()}
     </ExternalLink>
   );

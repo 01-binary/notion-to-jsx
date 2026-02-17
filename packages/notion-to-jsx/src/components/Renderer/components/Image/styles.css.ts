@@ -52,27 +52,4 @@ export const imageStyle = recipe({
   },
 });
 
-export const skeletonWrapper = recipe({
-  base: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-    zIndex: 1,
-    transition: 'opacity 0.3s ease',
-  },
-  variants: {
-    isLoaded: {
-      true: {
-        opacity: 0,
-      },
-      false: {
-        opacity: 1,
-      },
-    },
-  },
-  defaultVariants: {
-    isLoaded: false,
-  },
-});
+export { skeletonWrapper } from '../../../../styles/loadingOverlay.css';

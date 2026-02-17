@@ -5,17 +5,13 @@ import {
   imageStyle,
   skeletonWrapper,
 } from './styles.css';
-import { RichTextItem } from '../RichText/RichTexts';
+import type { ImageBlock } from 'notion-types';
 import Skeleton from '../../../Skeleton';
 import { useImageLoad } from '../../../../hooks/useImageLoad';
+import { CONTENT_MAX_WIDTH_PX } from '../../../../styles/layout';
 
-export interface ImageFormat {
-  block_width?: number;
-  block_height?: number;
-  block_aspect_ratio?: number;
-}
-
-const MAX_WIDTH = 720;
+type ImageData = ImageBlock['image'];
+type ImageFormat = ImageData['format'];
 
 const getWidthStyle = (format?: ImageFormat, isColumn: boolean = false) => {
   if (
@@ -27,7 +23,7 @@ const getWidthStyle = (format?: ImageFormat, isColumn: boolean = false) => {
   }
 
   if (format?.block_width) {
-    return format.block_width > MAX_WIDTH
+    return format.block_width > CONTENT_MAX_WIDTH_PX
       ? '100%'
       : `${format.block_width}px`;
   }
@@ -51,21 +47,17 @@ const getImageTagStyle = (format?: ImageFormat) => {
 };
 
 export interface ImageProps {
-  src: string;
-  alt: string;
-  caption?: RichTextItem[];
-  priority?: boolean;
-  format?: ImageFormat;
+  image: ImageData;
   isColumn?: boolean;
 }
 
 const Image = ({
-  src,
-  alt,
-  caption,
-  format,
+  image,
   isColumn = false,
 }: ImageProps) => {
+  const src = image.file?.url || image.external?.url || '';
+  const alt = image.caption?.[0]?.plain_text || 'Notion image';
+  const { caption, format } = image;
   const { isLoaded, imgRef, handleLoad } = useImageLoad(src);
 
   return (

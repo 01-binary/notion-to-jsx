@@ -15,7 +15,7 @@ export const skeleton = style({
   height: '100%',
   width: '100%',
   backgroundColor: vars.colors.skeleton,
-  borderRadius: '4px',
+  borderRadius: vars.borderRadius.sm,
   position: 'relative',
   overflow: 'hidden',
   '::after': {
@@ -36,7 +36,7 @@ export const skeleton = style({
 export const rect = style({
   width: '100%',
   height: '20px',
-  marginBottom: '8px',
+  marginBottom: vars.spacing.sm,
 });
 
 export const circle = style({
@@ -47,5 +47,5 @@ export const circle = style({
 
 export const image = style({
   width: '100%',
-  borderRadius: '8px',
+  borderRadius: vars.borderRadius.lg,
 });

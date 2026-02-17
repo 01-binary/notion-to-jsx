@@ -1,12 +1,13 @@
 import { style } from '@vanilla-extract/css';
 import { vars } from '../../styles/theme.css';
+import { CONTENT_MAX_WIDTH } from '../../styles/layout';
 
 export const container = style({
-  maxWidth: '720px',
+  maxWidth: CONTENT_MAX_WIDTH,
   margin: '0 auto',
   padding: vars.spacing.xl,
   '@media': {
-    '(max-width: 720px)': {
+    [`(max-width: ${CONTENT_MAX_WIDTH})`]: {
       padding: vars.spacing.md,
     },
   },

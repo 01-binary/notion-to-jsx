@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import * as styles from './styles.css';
+import { skeleton, rect, circle, image } from './styles.css';
 
 type SkeletonProps = {
   /**
@@ -39,12 +39,12 @@ const Skeleton = memo(({
   const getVariantClass = () => {
     switch (variant) {
       case 'circle':
-        return styles.circle;
+        return circle;
       case 'image':
-        return styles.image;
+        return image;
       case 'rect':
       default:
-        return styles.rect;
+        return rect;
     }
   };
 
@@ -54,7 +54,7 @@ const Skeleton = memo(({
 
   return (
     <div
-      className={`${styles.skeleton} ${getVariantClass()} ${className || ''}`}
+      className={`${skeleton} ${getVariantClass()} ${className || ''}`}
       style={{
         width: width || undefined,
         height: height || undefined,

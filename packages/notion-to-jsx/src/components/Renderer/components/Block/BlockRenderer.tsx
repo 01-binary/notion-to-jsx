@@ -39,7 +39,8 @@ type BlockRendererMap = {
  *
  * Props 전달 컨벤션:
  * - children이 있는 블록(Toggle, Table, ColumnList): block 통째 전달 (children 접근 필요)
- * - 그 외: 필요한 데이터만 추출하여 전달
+ * - 텍스트 블록(paragraph, heading): children으로 RichText 전달
+ * - 미디어/콘텐츠 블록: block.[type] 콘텐츠 객체를 전달 (컴포넌트가 내부 구조 처리)
  */
 const blockRenderers: BlockRendererMap = {
   link_preview: (block) => <MemoizedLinkPreview url={block.link_preview.url} />,
@@ -68,40 +69,21 @@ const blockRenderers: BlockRendererMap = {
     </Heading3>
   ),
 
-  code: (block) => (
-    <div>
-      <CodeBlock
-        code={block.code.rich_text.map(rt => rt.plain_text).join('')}
-        language={block.code.language}
-        caption={block.code.caption}
-      />
-    </div>
-  ),
+  code: (block) => <CodeBlock code={block.code} />,
 
   image: (block, isColumn) => (
     <figure>
-      <MemoizedImage
-        src={block.image.file?.url || block.image.external?.url || ''}
-        alt={block.image.caption?.[0]?.plain_text || 'Notion image'}
-        caption={block.image.caption}
-        format={block.image.format}
-        isColumn={isColumn}
-      />
+      <MemoizedImage image={block.image} isColumn={isColumn} />
     </figure>
   ),
 
-  bookmark: (block) => (
-    <MemoizedBookmark
-      url={block.bookmark.url}
-      metadata={block.bookmark.metadata}
-    />
-  ),
+  bookmark: (block) => <MemoizedBookmark bookmark={block.bookmark} />,
 
   column_list: (block) => <ColumnList block={block} />,
 
   column: () => null,
 
-  quote: (block) => <Quote richTexts={block.quote.rich_text} />,
+  quote: (block) => <Quote quote={block.quote} />,
 
   table: (block) => <Table block={block} />,
 
@@ -109,7 +91,7 @@ const blockRenderers: BlockRendererMap = {
 
   video: (block) => <Video video={block.video} />,
 
-  embed: (block) => <Embed url={block.embed.url} caption={block.embed.caption} />,
+  embed: (block) => <Embed embed={block.embed} />,
 };
 
 const BlockRenderer = memo(({ block, isColumn = false }: BlockRendererProps) => {

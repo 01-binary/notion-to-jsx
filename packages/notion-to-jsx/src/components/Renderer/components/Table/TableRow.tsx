@@ -2,19 +2,19 @@ import { memo } from 'react';
 import { tableCell, firstCell, lastCell, hasRowHeader } from './styles.css';
 import { MemoizedRichText } from '../MemoizedComponents';
 import { TableRowBlock } from '../../../../types';
-import { RichTextItem } from '../RichText/RichTexts';
+import type { RichTextItem } from 'notion-types';
 
 interface TableRowProps {
   rowBlock: TableRowBlock;
   cellClassName?: string;
-  rowHeaderIndex?: number;
+  rowHeaderIndex?: number | null;
   isColumnHeader?: boolean;
 }
 
 const TableRow = memo(({
   rowBlock,
   cellClassName = '',
-  rowHeaderIndex = -1,
+  rowHeaderIndex = null,
   isColumnHeader = false,
 }: TableRowProps) => {
   if (!rowBlock.table_row?.cells) {

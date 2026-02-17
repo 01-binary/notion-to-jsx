@@ -1,5 +1,6 @@
 import { memo } from 'react';
-import RichText, { RichTextItem, RichTextProps } from './RichText/RichTexts';
+import type { RichTextItem } from 'notion-types';
+import RichText, { type RichTextProps } from './RichText/RichTexts';
 import { Image, ImageProps } from './Image';
 import Bookmark, { type BookmarkProps } from './Bookmark/Bookmark';
 
@@ -35,24 +36,29 @@ export const MemoizedRichText = memo<RichTextProps>(RichText, (prev, next) => {
 });
 
 export const MemoizedImage = memo<ImageProps>(Image, (prev, next) => {
+  if (prev.isColumn !== next.isColumn) return false;
+
+  const prevImg = prev.image;
+  const nextImg = next.image;
   return (
-    prev.src === next.src &&
-    prev.alt === next.alt &&
-    prev.isColumn === next.isColumn &&
-    prev.format?.block_width === next.format?.block_width &&
-    prev.format?.block_height === next.format?.block_height &&
-    prev.format?.block_aspect_ratio === next.format?.block_aspect_ratio &&
-    areRichTextsEqual(prev.caption, next.caption)
+    prevImg.file?.url === nextImg.file?.url &&
+    prevImg.external?.url === nextImg.external?.url &&
+    prevImg.format?.block_width === nextImg.format?.block_width &&
+    prevImg.format?.block_height === nextImg.format?.block_height &&
+    prevImg.format?.block_aspect_ratio === nextImg.format?.block_aspect_ratio &&
+    areRichTextsEqual(prevImg.caption, nextImg.caption)
   );
 });
 
-// url과 metadata 모두 비교하여 OG 데이터 변경도 감지
+// bookmark 객체의 url과 metadata를 비교하여 OG 데이터 변경도 감지
 export const MemoizedBookmark = memo<BookmarkProps>(Bookmark, (prev, next) => {
+  const prevBm = prev.bookmark;
+  const nextBm = next.bookmark;
   return (
-    prev.url === next.url &&
-    prev.metadata?.title === next.metadata?.title &&
-    prev.metadata?.description === next.metadata?.description &&
-    prev.metadata?.image === next.metadata?.image
+    prevBm.url === nextBm.url &&
+    prevBm.metadata?.title === nextBm.metadata?.title &&
+    prevBm.metadata?.description === nextBm.metadata?.description &&
+    prevBm.metadata?.image === nextBm.metadata?.image
   );
 });
 

@@ -11,15 +11,17 @@ import {
   favicon,
   urlText,
 } from './styles.css';
-import { OpenGraphData } from './type';
+import type { BookmarkBlock } from 'notion-types';
 import ExternalLink from '../shared/ExternalLink';
 
+type BookmarkData = BookmarkBlock['bookmark'];
+
 export interface BookmarkProps {
-  url: string;
-  metadata?: OpenGraphData;
+  bookmark: BookmarkData;
 }
 
-const Bookmark = ({ url, metadata }: BookmarkProps) => {
+const Bookmark = ({ bookmark }: BookmarkProps) => {
+  const { url, metadata } = bookmark;
   const [isImageBroken, setIsImageBroken] = useState(false);
 
   return (

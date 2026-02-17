@@ -23,11 +23,17 @@ const isHeadingBlock = (block: NotionBlock): block is HeadingBlock => {
   return block.type in headingConfig;
 };
 
-type HeadingContent = { rich_text: Array<{ plain_text: string }> };
+const getHeadingContent = (block: HeadingBlock) => {
+  switch (block.type) {
+    case 'heading_1': return block.heading_1;
+    case 'heading_2': return block.heading_2;
+    case 'heading_3': return block.heading_3;
+  }
+};
 
 const extractHeadingData = (block: HeadingBlock) => {
   const level = headingConfig[block.type];
-  const content = block[block.type] as HeadingContent;
+  const content = getHeadingContent(block);
   return {
     text: content.rich_text.map((t) => t.plain_text).join(''),
     level,
